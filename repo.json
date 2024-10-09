@@ -635,7 +635,7 @@
             ]
         },
         {
-            "name": "Santander (Broken)",
+            "name": "SantanderTS (Broken)",
             "bundleIdentifier": "com.nsantoine.santander",
             "developerName": "NSAntoine",
             "subtitle": "Enhanced File Manager for iOS",
@@ -646,8 +646,8 @@
             "versions": [
                 {
                     "version": "1.0",
-                    "localizedDescription": "Initial release of Santander. Features modern UI and enhanced file management capabilities.",
-                    "downloadURL": "PLACEHOLDER",
+                    "localizedDescription": "Initial release of Santander (TS)(IOS14-16). Features modern UI and enhanced file management capabilities.",
+                    "downloadURL": "https://github.com/DRKCTRL/Santander/releases/download/1.0.0/SantanderTS.tipa",
                     "size": 5326438,
                     "minOSVersion": "14.0",
                     "maxOSVersion": "16.0"
@@ -701,7 +701,7 @@
             "versions": [
                 {
                     "version": "1.0.0",
-                    "localizedDescription": "Initial release of CAPerfHUD.",
+                    "localizedDescription": "First stable release. Minor code refactoring for improved readability and maintainability.",
                     "downloadURL": "https://github.com/DRKCTRL/CAPerfHUD/releases/download/1.0.0/com.kdt.CAPerfHUD_1.0.0.ipa",
                     "size": 11264,
                     "minOSVersion": "14.0",
