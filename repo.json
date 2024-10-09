@@ -110,10 +110,10 @@
             ]
         },
         {
-            "name": "TrollBox",
+            "name": "TrollBox (Deprecated)",
             "bundleIdentifier": "live.cclerc.trollbox",
             "developerName": "c22dev",
-            "subtitle": "AIO TrollStore Tool (Deprecated)",
+            "subtitle": "AIO TrollStore Tool",
             "localizedDescription": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium.",
             "iconURL": "https://raw.githubusercontent.com/c22dev/TrollBox/main/TrollBox/Assets.xcassets/AppIcon.appiconset/Untitled.png",
             "category": "utilities",
@@ -693,7 +693,7 @@
             ]
         },
         {
-            "name": "BROKEN Santander",
+            "name": "Santander (Broken)",
             "bundleIdentifier": "com.nsantoine.santander",
             "developerName": "NSAntoine",
             "subtitle": "Enhanced File Manager for iOS",
@@ -719,7 +719,7 @@
             "developerName": "khanhduytran0",
             "subtitle": "Launch Apps via FrontBoard",
             "localizedDescription": "FrontBoardAppLauncher is a utility that allows you to launch apps using FrontBoard on iOS devices. It provides a simple interface to interact with the FrontBoard framework for app management.",
-            "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Icon.png",
+            "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/icon.png",
             "category": "utilities",
             "screenshotURLs": [
                 "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/FrontBoardAppLauncher/IMG_1672.png",
