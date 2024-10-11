@@ -1,7 +1,7 @@
 {
     "name": "DRKSRC",
     "subtitle": "Your Fav Source...",
-    "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/icon.png",
+    "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/DRKSRC.png",
     "featuredApps": [
         "live.cclerc.geranium",
         "com.roothide.Bootstrap",
@@ -719,7 +719,7 @@
             "developerName": "khanhduytran0",
             "subtitle": "Launch Apps via FrontBoard",
             "localizedDescription": "FrontBoardAppLauncher is a utility that allows you to launch apps using FrontBoard on iOS devices. It provides a simple interface to interact with the FrontBoard framework for app management.",
-            "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/icon.png",
+            "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/NOICON.png",
             "category": "utilities",
             "screenshotURLs": [
                 "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/FrontBoardAppLauncher/IMG_1672.png",
