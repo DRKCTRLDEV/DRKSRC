@@ -316,6 +316,15 @@
             ],
             "versions": [
                 {
+                    "version": "2.8.15",
+                    "date": "2023-10-20",
+                    "localizedDescription": "New: Receive and inject .dylib files from share sheets. Fixed: In-box document renaming, removed ads, prevented crashes.",
+                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-15/TrollFools14_2.8-15.tipa",
+                    "size": 5431603,
+                    "minOSVersion": "14.0",
+                    "maxOSVersion": "14.8"
+                },
+                {
                     "version": "2.7.9",
                     "date": "",
                     "localizedDescription": "Bug fixes and Vietnamese language support.",
@@ -439,6 +448,15 @@
                 "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/TrollFools/IMG_1629.png"
             ],
             "versions": [
+                {
+                    "version": "2.8.15",
+                    "date": "2023-10-20",
+                    "localizedDescription": "New: Receive and inject .dylib files from share sheets. Fixed: In-box document renaming, removed ads, prevented crashes.",
+                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-15/TrollFools_2.8-15.tipa",
+                    "size": 3303014,
+                    "minOSVersion": "15.0",
+                    "maxOSVersion": "17.0"
+                },
                 {
                     "version": "2.7.9",
                     "date": "",
