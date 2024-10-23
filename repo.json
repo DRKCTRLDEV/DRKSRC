@@ -316,7 +316,7 @@
             ],
             "versions": [
                 {
-                    "version": "2.8.15",
+                    "version": "2.8",
                     "date": "2023-10-20",
                     "localizedDescription": "New: Receive and inject .dylib files from share sheets. Fixed: In-box document renaming, removed ads, prevented crashes.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-15/TrollFools14_2.8-15.tipa",
@@ -325,7 +325,7 @@
                     "maxOSVersion": "14.8"
                 },
                 {
-                    "version": "2.7.9",
+                    "version": "2.7",
                     "date": "",
                     "localizedDescription": "Bug fixes and Vietnamese language support.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.7-9/TrollFools14_2.7-9.tipa",
@@ -334,7 +334,7 @@
                     "maxOSVersion": "14.8"
                 },
                 {
-                    "version": "2.6.8",
+                    "version": "2.6",
                     "date": "",
                     "localizedDescription": "Bug fixes and Vietnamese language support.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.6-8/TrollFools14_2.6-8.tipa",
@@ -343,7 +343,7 @@
                     "maxOSVersion": "14.8"
                 },
                 {
-                    "version": "2.6.6",
+                    "version": "2.6",
                     "date": "",
                     "localizedDescription": "'Developer Mode' is no longer required. Now you can access 'iCloud Drive' from TrollFools14.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.6-6/TrollFools14_2.6-6.tipa",
@@ -352,7 +352,7 @@
                     "maxOSVersion": "14.8"
                 },
                 {
-                    "version": "2.5.3",
+                    "version": "2.5",
                     "date": "",
                     "localizedDescription": "'Developer Mode' is no longer required. Now you can access 'iCloud Drive' from TrollFools14.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.5-3/TrollFools14_2.5-3.tipa",
@@ -361,7 +361,7 @@
                     "maxOSVersion": "14.8"
                 },
                 {
-                    "version": "2.5.2",
+                    "version": "2.5",
                     "date": "",
                     "localizedDescription": "Added advanced options for weak references and main executable processing.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.5-2/TrollFools14_2.5-2.tipa",
@@ -370,7 +370,7 @@
                     "maxOSVersion": "14.8"
                 },
                 {
-                    "version": "2.4.2",
+                    "version": "2.4",
                     "date": "",
                     "localizedDescription": "Long press app to lock or unlock its version. Rebuild icon cache in TrollStore to apply changes.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.4-2/TrollFools14_2.4-2.tipa",
@@ -379,7 +379,7 @@
                     "maxOSVersion": "14.8"
                 },
                 {
-                    "version": "2.4.1",
+                    "version": "2.4",
                     "date": "",
                     "localizedDescription": "Observe app installation events and reload app list. Add context menu for apps and plug-ins.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.4-1/TrollFools14_2.4-1.tipa",
@@ -388,7 +388,7 @@
                     "maxOSVersion": "14.8"
                 },
                 {
-                    "version": "2.3.5",
+                    "version": "2.3",
                     "date": "",
                     "localizedDescription": "Improved animation, support for Calculator and MobileMail, added FLEX and TouchVis plug-ins.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-5/TrollFools14_2.3-5.tipa",
@@ -397,7 +397,7 @@
                     "maxOSVersion": "14.8"
                 },
                 {
-                    "version": "2.3.2",
+                    "version": "2.3",
                     "date": "",
                     "localizedDescription": "Support for TrollStore applications and removable system applications.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-2/TrollFools14_2.3-2.tipa",
@@ -406,7 +406,7 @@
                     "maxOSVersion": "14.8"
                 },
                 {
-                    "version": "2.1.6",
+                    "version": "2.1",
                     "date": "",
                     "localizedDescription": "Reduced package size. Use install_name_tool from Darwin CC Tools. Note: This version doesn't support search functionality.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.1-6/TrollFools14_2.1-6.fix3.tipa",
@@ -415,7 +415,7 @@
                     "maxOSVersion": "14.8"
                 },
                 {
-                    "version": "1.3.9",
+                    "version": "1.3",
                     "date": "",
                     "localizedDescription": "App icon updates. Fix ct_bypass error code 255. Fix app crashes for some tweaks.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.3-9/TrollFools14_1.3-9.tipa",
@@ -424,7 +424,7 @@
                     "maxOSVersion": "14.8"
                 },
                 {
-                    "version": "1.2.6",
+                    "version": "1.2",
                     "date": "",
                     "localizedDescription": "Initial iOS 14 support. Hides libswift from tweaks list.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.2-6/TrollFools14_1.2-6.tipa",
@@ -449,7 +449,7 @@
             ],
             "versions": [
                 {
-                    "version": "2.8.15",
+                    "version": "2.8",
                     "date": "2023-10-20",
                     "localizedDescription": "New: Receive and inject .dylib files from share sheets. Fixed: In-box document renaming, removed ads, prevented crashes.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-15/TrollFools_2.8-15.tipa",
@@ -458,7 +458,7 @@
                     "maxOSVersion": "17.0"
                 },
                 {
-                    "version": "2.7.9",
+                    "version": "2.7",
                     "date": "",
                     "localizedDescription": "Bug fixes: Now applications without a short version string will be displayed in the list. The auto-correction for the app search has been disabled. Added Vietnamese language support.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.7-9/TrollFools_2.7-9.tipa",
@@ -467,7 +467,7 @@
                     "maxOSVersion": "17.0"
                 },
                 {
-                    "version": "2.6.8",
+                    "version": "2.6",
                     "date": "",
                     "localizedDescription": "Bug fixes: Now applications without a short version string will be displayed in the list. Added Vietnamese language support.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.6-8/TrollFools_2.6-8.tipa",
@@ -476,7 +476,7 @@
                     "maxOSVersion": "17.0"
                 },
                 {
-                    "version": "2.6.6",
+                    "version": "2.6",
                     "date": "",
                     "localizedDescription": "'Developer Mode' is no longer required. Now you can access 'iCloud Drive' from TrollFools.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.6-6/TrollFools_2.6-6.tipa",
@@ -485,7 +485,7 @@
                     "maxOSVersion": "17.0"
                 },
                 {
-                    "version": "2.5.3",
+                    "version": "2.5",
                     "date": "",
                     "localizedDescription": "'Developer Mode' is no longer required. Now you can access 'iCloud Drive' from TrollFools.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.5-3/TrollFools_2.5-3.tipa",
@@ -494,7 +494,7 @@
                     "maxOSVersion": "17.0"
                 },
                 {
-                    "version": "2.5.2",
+                    "version": "2.5",
                     "date": "",
                     "localizedDescription": "Added advanced options for weak references and main executable processing.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.5-2/TrollFools_2.5-2.tipa",
@@ -503,7 +503,7 @@
                     "maxOSVersion": "17.0"
                 },
                 {
-                    "version": "2.4.2",
+                    "version": "2.4",
                     "date": "",
                     "localizedDescription": "Long press app to lock or unlock its version. Rebuild icon cache in TrollStore to apply changes.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.4-2/TrollFools_2.4-2.tipa",
@@ -512,7 +512,7 @@
                     "maxOSVersion": "17.0"
                 },
                 {
-                    "version": "2.4.1",
+                    "version": "2.4",
                     "date": "",
                     "localizedDescription": "Observe app installation events and reload app list. Add context menu for apps and plug-ins.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.4-1/TrollFools_2.4-1.tipa",
@@ -521,7 +521,7 @@
                     "maxOSVersion": "17.0"
                 },
                 {
-                    "version": "2.3.5",
+                    "version": "2.3",
                     "date": "",
                     "localizedDescription": "Improved animation, support for Calculator and MobileMail, added FLEX and TouchVis plug-ins.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-5/TrollFools_2.3-5.tipa",
@@ -530,7 +530,7 @@
                     "maxOSVersion": "17.0"
                 },
                 {
-                    "version": "2.3.2",
+                    "version": "2.3",
                     "date": "",
                     "localizedDescription": "Support for TrollStore applications and removable system applications.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-2/TrollFools_2.3-2.tipa",
@@ -539,7 +539,7 @@
                     "maxOSVersion": "17.0"
                 },
                 {
-                    "version": "2.1.6",
+                    "version": "2.1",
                     "date": "",
                     "localizedDescription": "Reduced package size. Use install_name_tool from Darwin CC Tools.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.1-6/TrollFools_2.1-6.tipa",
@@ -548,7 +548,7 @@
                     "maxOSVersion": "17.0"
                 },
                 {
-                    "version": "1.3.9",
+                    "version": "1.3",
                     "date": "",
                     "localizedDescription": "App icon updates. Fix ct_bypass error code 255. Fix app crashes for some tweaks.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.3-9/TrollFools_1.3-9.tipa",
@@ -557,7 +557,7 @@
                     "maxOSVersion": "17.0"
                 },
                 {
-                    "version": "1.2.6",
+                    "version": "1.2",
                     "date": "",
                     "localizedDescription": "Hides libswift from tweaks list.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.2-6/TrollFools_1.2-6.tipa",
@@ -566,7 +566,7 @@
                     "maxOSVersion": "17.0"
                 },
                 {
-                    "version": "1.1.4",
+                    "version": "1.1",
                     "date": "",
                     "localizedDescription": "Initial version.",
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.1-4/TrollFools_1.1-4.tipa",
