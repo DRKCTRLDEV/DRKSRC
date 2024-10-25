@@ -694,7 +694,7 @@
                     "version": "4.0",
                     "date": "",
                     "localizedDescription": "Updated Filza for TrollStore (No URL Scheme version)(Recommended). Supported line numbers for TextEditor, Fixed laggy Apps Manager, Added xina jailbreak (rootless) environment variables, Now support dpkg, Fixed text editor line number issue",
-                    "downloadURL": "https://tigisoftware.com/download/Filza_NoURLScheme_4.0.2.ipa",
+                    "downloadURL": "https://tigisoftware.com/download/Filza_NoURLScheme_4.0.0.ipa",
                     "size": 10000000,
                     "minOSVersion": "14.0",
                     "maxOSVersion": "17.0"
