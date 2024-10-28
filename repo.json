@@ -858,6 +858,45 @@
                     "maxOSVersion": "17.0"
                 }
             ]
+        },
+        {
+            "name": "FridaCodeManager",
+            "bundleIdentifier": "com.frida.codemanager",
+            "developerName": "FridaKitten",
+            "subtitle": "Efficient Code Management Tool",
+            "localizedDescription": "FridaCodeManager offers robust project management for developers, with features for file organization, error handling, and seamless exports. Now supporting .sproj imports, it ensures organized workflow and project accessibility.",
+            "iconURL": "https://github.com/fridakitten/FridaCodeManager/blob/3706ca83c0f327787e24c1086d3116d71fb78c1c/Blueprint/FridaCodeManager.app/AppIcon.png",
+            "category": "utilities",
+            "screenshotURLs": []
+            "versions": [
+                {
+                    "version": "1.6",
+                    "date": "",
+                    "localizedDescription": "Improved access control, multithreading, popup animations, and project repair options.",
+                    "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.6/FridaCodeManager-stock-alpha.ipa",
+                    "size": 1234567,
+                    "minOSVersion": "15.0",
+                    "maxOSVersion": "17.0"
+                },
+                {
+                    "version": "1.6 TS",
+                    "date": "",
+                    "localizedDescription": "Enhanced performance for TrollStore with improved file handling, animation updates, and multithreading support.",
+                    "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa",
+                    "size": 1234567,
+                    "minOSVersion": "15.0",
+                    "maxOSVersion": "17.0"
+                },
+                {
+                    "version": "1.5.5 TS",
+                    "date": "",
+                    "localizedDescription": "Added arm64e support, bug fixes, and SDK improvements. C/C++/ObjC/ObjC++ support for TrollStore.",
+                    "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.5.5/FridaCodeManager.tipa",
+                    "size": 1234567,
+                    "minOSVersion": "15.0",
+                    "maxOSVersion": "17.0"
+                }
+            ]
         }
     ]
 }
