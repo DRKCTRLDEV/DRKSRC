@@ -875,8 +875,8 @@
                     "localizedDescription": "Improved access control, multithreading, popup animations, and project repair options.",
                     "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.6/FridaCodeManager-stock-alpha.ipa",
                     "size": 1234567,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
+                    "minOSVersion": "17.0",
+                    "maxOSVersion": "18.0"
                 },
                 {
                     "version": "1.6 TS",
