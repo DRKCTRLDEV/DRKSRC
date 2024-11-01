@@ -871,28 +871,19 @@
                 {
                     "version": "1.6",
                     "date": "",
-                    "localizedDescription": "Improved access control, multithreading, popup animations, and project repair options.",
-                    "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.6/FridaCodeManager-stock-alpha.ipa",
-                    "size": 1234567,
-                    "minOSVersion": "17.0",
-                    "maxOSVersion": "18.0"
-                },
-                {
-                    "version": "1.6 TS",
-                    "date": "",
                     "localizedDescription": "Enhanced performance for TrollStore with improved file handling, animation updates, and multithreading support.",
                     "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa",
                     "size": 1234567,
-                    "minOSVersion": "15.0",
+                    "minOSVersion": "16.0",
                     "maxOSVersion": "17.0"
                 },
                 {
-                    "version": "1.5.5 TS",
+                    "version": "1.5.5",
                     "date": "",
                     "localizedDescription": "Added arm64e support, bug fixes, and SDK improvements. C/C++/ObjC/ObjC++ support for TrollStore.",
                     "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.5.5/FridaCodeManager.tipa",
                     "size": 1234567,
-                    "minOSVersion": "15.0",
+                    "minOSVersion": "16.0",
                     "maxOSVersion": "17.0"
                 }
             ]
