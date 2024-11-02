@@ -874,7 +874,7 @@
                     "localizedDescription": "Enhanced performance for TrollStore with improved file handling, animation updates, and multithreading support.",
                     "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa",
                     "size": 70600,
-                    "minOSVersion": "16.0",
+                    "minOSVersion": "15.0",
                     "maxOSVersion": "17.0"
                 },
                 {
@@ -883,7 +883,7 @@
                     "localizedDescription": "Added arm64e support, bug fixes, and SDK improvements. C/C++/ObjC/ObjC++ support for TrollStore.",
                     "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.5.5/FridaCodeManager.tipa",
                     "size": 103000,
-                    "minOSVersion": "16.0",
+                    "minOSVersion": "15.0",
                     "maxOSVersion": "17.0"
                 }
             ]
