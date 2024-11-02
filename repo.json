@@ -5,7 +5,7 @@
     "featuredApps": [
         "live.cclerc.geranium",
         "com.roothide.Bootstrap",
-        "com.lessica.trollfools",
+        "wiki.qaq.TrollFools",
         "com.kdt.livecontainer"
     ],
     "apps": [
@@ -303,7 +303,7 @@
         },
         {
             "name": "TrollFools14",
-            "bundleIdentifier": "com.lessica.trollfools14",
+            "bundleIdentifier": "wiki.qaq.TrollFools",
             "developerName": "Lessica",
             "subtitle": "Tweak Injection Tool for TrollStore (iOS 14)",
             "localizedDescription": "TrollFools14 is a powerful utility for TrollStore users on iOS 14, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more, specifically optimized for iOS 14.",
@@ -436,7 +436,7 @@
         },
         {
             "name": "TrollFools",
-            "bundleIdentifier": "com.lessica.trollfools",
+            "bundleIdentifier": "wiki.qaq.TrollFools",
             "developerName": "Lessica",
             "subtitle": "Tweak Injection Tool for TrollStore (iOS 15+)",
             "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
@@ -861,7 +861,7 @@
         },
         {
             "name": "FridaCodeManager",
-            "bundleIdentifier": "com.frida.codemanager",
+            "bundleIdentifier": "com.sparklechan.swifty",
             "developerName": "FridaKitten",
             "subtitle": "Efficient Code Management Tool",
             "localizedDescription": "FridaCodeManager offers robust project management for developers, with features for file organization, error handling, and seamless exports. Now supporting .sproj imports, it ensures organized workflow and project accessibility.",
