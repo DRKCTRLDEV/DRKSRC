@@ -858,6 +858,36 @@
                     "maxOSVersion": "17.0"
                 }
             ]
+        },
+        {
+            "name": "FridaCodeManager",
+            "bundleIdentifier": "com.sparklechan.swifty",
+            "developerName": "fridakitten",
+            "subtitle": "Advanced Frida Code Management Tool",
+            "localizedDescription": "FridaCodeManager is a comprehensive tool for managing and organizing Frida code projects. Features include permission management, project repair capabilities, app/project exports, multithreading support for folder navigation, file grouping, and an enhanced user interface with smooth animations.",
+            "iconURL": "https://raw.githubusercontent.com/fridakitten/FridaCodeManager/main/Blueprint/FridaCodeManager.app/AppIcon.png",
+            "category": "utilities",
+            "screenshotURLs": [],
+            "versions": [
+                {
+                    "version": "1.6",
+                    "date": "",
+                    "localizedDescription": "Major update featuring refined permissions, project repair capabilities, improved exports, multithreading support, file grouping, and enhanced UI animations. Fixed issues with corrupted projects, app icons, and profile picture loading.",
+                    "downloadURL": "https://github.com/YOURREPO/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa",
+                    "size": 70557696,
+                    "minOSVersion": "15.0",
+                    "maxOSVersion": "17.0"
+                },
+                {
+                    "version": "1.5.5",
+                    "date": "",
+                    "localizedDescription": "Added arm64e support. App improvements: Switched to ZipArchive, fixed SDK downloads and Home Tab typo. SeansBuild fixes: Resolved application opening issues with TrollStore helper and build system execution.",
+                    "downloadURL": "https://github.com/YOURREPO/FridaCodeManager/releases/download/v1.5.5/FridaCodeManager.tipa",
+                    "size": 108003328,
+                    "minOSVersion": "15.0",
+                    "maxOSVersion": "17.0"
+                }
+            ]
         }
     ]
 }
