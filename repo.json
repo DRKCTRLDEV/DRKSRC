@@ -5,7 +5,7 @@
     "featuredApps": [
         "live.cclerc.geranium",
         "com.roothide.Bootstrap",
-        "com.lessica.trollfools",
+        "wiki.qaq.TrollFools",
         "com.kdt.livecontainer"
     ],
     "apps": [
@@ -75,7 +75,7 @@
                     "version": "1.0.3",
                     "date": "",
                     "localizedDescription": "Fixed language picker issues.",
-                    "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.3/Geranium.tipa",
+                    "downloadURL": "https:// github.com/c22dev/Geranium/releases/download/1.0.3/Geranium.tipa",
                     "size": 5944934,
                     "minOSVersion": "15.0",
                     "maxOSVersion": "17.0"
@@ -303,7 +303,7 @@
         },
         {
             "name": "TrollFools14",
-            "bundleIdentifier": "com.lessica.trollfools14",
+            "bundleIdentifier": "wiki.qaq.TrollFools",
             "developerName": "Lessica",
             "subtitle": "Tweak Injection Tool for TrollStore (iOS 14)",
             "localizedDescription": "TrollFools14 is a powerful utility for TrollStore users on iOS 14, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more, specifically optimized for iOS 14.",
@@ -319,7 +319,7 @@
                     "version": "2.8",
                     "date": "2023-10-20",
                     "localizedDescription": "New: Receive and inject .dylib files from share sheets. Fixed: In-box document renaming, removed ads, prevented crashes.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-15/TrollFools14_2.8-15.tipa",
+                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-15/TrollFools14 _2.8-15.tipa",
                     "size": 5431603,
                     "minOSVersion": "14.0",
                     "maxOSVersion": "14.8"
@@ -403,7 +403,7 @@
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-2/TrollFools14_2.3-2.tipa",
                     "size": 5120000,
                     "minOSVersion": "14.0",
-                    "maxOSVersion": "14.8"
+                    "maxOSVersion": "14. 8"
                 },
                 {
                     "version": "2.1",
@@ -436,7 +436,7 @@
         },
         {
             "name": "TrollFools",
-            "bundleIdentifier": "com.lessica.trollfools",
+            "bundleIdentifier": "wiki.qaq.TrollFools",
             "developerName": "Lessica",
             "subtitle": "Tweak Injection Tool for TrollStore (iOS 15+)",
             "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
@@ -479,7 +479,7 @@
                     "version": "2.6",
                     "date": "",
                     "localizedDescription": "'Developer Mode' is no longer required. Now you can access 'iCloud Drive' from TrollFools.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.6-6/TrollFools_2.6-6.tipa",
+                    "downloadURL": "https://github.com/Lessica/TrollFools /releases/download/v2.6-6/TrollFools_2.6-6.tipa",
                     "size": 3230000,
                     "minOSVersion": "15.0",
                     "maxOSVersion": "17.0"
@@ -563,7 +563,7 @@
                     "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.2-6/TrollFools_1.2-6.tipa",
                     "size": 26304512,
                     "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
+                    " maxOSVersion": "17.0"
                 },
                 {
                     "version": "1.1",
@@ -631,7 +631,7 @@
                     "version": "1.0",
                     "date": "",
                     "localizedDescription": "First Release of AppIndex. Features include app viewing, sorting, searching, detailed info display, backup/restore functionality, and .ipa export.",
-                    "downloadURL": "https://github.com/NSAntoine/AppIndex/releases/download/1.0/AppIndexTrollStore.tipa",
+                    "downloadURL": "https://github.com/NSAntoine/App Index/releases/download/1.0/AppIndexTrollStore.tipa",
                     "size": 871424,
                     "minOSVersion": "14.0",
                     "maxOSVersion": "17.0"
@@ -691,10 +691,10 @@
             ],
             "versions": [
                 {
-                    "version": "4.0",
+                    " version": "4.0",
                     "date": "",
                     "localizedDescription": "Updated Filza for TrollStore (No URL Scheme version)(Recommended). Supported line numbers for TextEditor, Fixed laggy Apps Manager, Added xina jailbreak (rootless) environment variables, Now support dpkg, Fixed text editor line number issue",
-                    "downloadURL": "https://tigisoftware.com/download/Filza_NoURLScheme_4.0.2.ipa",
+                    "downloadURL": "https://tigisoftware.com/download/Filza_NoURLScheme_4.0.0.ipa",
                     "size": 10000000,
                     "minOSVersion": "14.0",
                     "maxOSVersion": "17.0"
@@ -765,7 +765,7 @@
             "iconURL": "https://raw.githubusercontent.com/khanhduytran0/CAPerfHUD/main/CAPerfHUDModule/Resources/SettingsIcon.png",
             "category": "utilities",
             "screenshotURLs": [
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/CAPerfHUD/IMG_1675.png",
+                "https://raw.githubusercontent.com/DRKCTRL/ DRKSRC/main/screenshots/CAPerfHUD/IMG_1675.png",
                 "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/CAPerfHUD/IMG_1676.png",
                 "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/CAPerfHUD/IMG_1677.png",
                 "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/CAPerfHUD/IMG_1678.png",
