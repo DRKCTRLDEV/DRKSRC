@@ -1,3 +1,3 @@
-<div style="text-align: center; text-decoration: underline; font-weight: bold; font-size: 36px;">
+<p align="center" style="font-weight: bold; text-decoration: underline;">
   ON HOLD
-</div>
+</p>
