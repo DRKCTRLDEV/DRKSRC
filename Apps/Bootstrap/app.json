@@ -1,79 +1,73 @@
 {
+  "repository": [
+    "https://github.com/roothide/Bootstrap"
+  ],
   "name": "Bootstrap",
   "bundleIdentifier": "com.roothide.Bootstrap",
   "developerName": "roothide",
   "subtitle": "Jailbreak Bootstrap Tool",
-  "category": "utilities",
-  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/icon.jpg",
   "localizedDescription": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications.",
-  "versions": [
-    {
-      "version": "1.3.2",
-      "date": "2025-01-09",
-      "build": "",
-      "size": "54595581",
-      "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.3.2/Bootstrap.tipa"
-    },
-    {
-      "version": "1.3",
-      "date": "2024-11-18",
-      "build": "",
-      "size": "54202306",
-      "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.3/Bootstrap.tipa"
-    },
-    {
-      "version": "1.2.9",
-      "date": "2024-11-11",
-      "build": "",
-      "size": "54202235",
-      "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.9/Bootstrap.tipa"
-    },
-    {
-      "version": "1.2.8",
-      "date": "2024-10-05",
-      "build": "",
-      "size": "54508536",
-      "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.8/Bootstrap.tipa"
-    },
-    {
-      "version": "1.2.6",
-      "date": "2024-09-11",
-      "build": "",
-      "size": "54497160",
-      "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.6/Bootstrap.tipa"
-    },
-    {
-      "version": "1.2.1",
-      "date": "2024-02-05",
-      "build": "",
-      "size": "54521377",
-      "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.1/Bootstrap.tipa"
-    },
-    {
-      "version": "1.1.1",
-      "date": "2024-01-31",
-      "build": "",
-      "size": "54499627",
-      "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.1.1/Bootstrap.tipa"
-    },
-    {
-      "version": "1.1",
-      "date": "2024-01-22",
-      "build": "",
-      "size": "54500569",
-      "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.1/Bootstrap.tipa"
-    },
-    {
-      "version": "1.0",
-      "date": "2024-01-17",
-      "build": "",
-      "size": "54494881",
-      "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.0/Bootstrap.tipa"
-    }
-  ],
+  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/icon.png",
+  "category": "utilities",
   "screenshotURLs": [
     "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/screenshots/IMG_1.png",
     "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/screenshots/IMG_2.png",
     "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/screenshots/IMG_3.png"
+  ],
+  "versions": [
+    {
+      "version": "1.3.2",
+      "date": "2025-01-09",
+      "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.3.2/Bootstrap.tipa",
+      "size": 54595581
+    },
+    {
+      "version": "1.3",
+      "date": "2024-11-18",
+      "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.3/Bootstrap.tipa",
+      "size": 54202306
+    },
+    {
+      "version": "1.2.9",
+      "date": "2024-11-11",
+      "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.9/Bootstrap.tipa",
+      "size": 54202235
+    },
+    {
+      "version": "1.2.8",
+      "date": "2024-10-05",
+      "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.8/Bootstrap.tipa",
+      "size": 54508536
+    },
+    {
+      "version": "1.2.6",
+      "date": "2024-09-11",
+      "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.6/Bootstrap.tipa",
+      "size": 54497160
+    },
+    {
+      "version": "1.2.1",
+      "date": "2024-02-05",
+      "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.1/Bootstrap.tipa",
+      "size": 54521377
+    },
+    {
+      "version": "1.1.1",
+      "date": "2024-01-31",
+      "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.1.1/Bootstrap.tipa",
+      "size": 54499627
+    },
+    {
+      "version": "1.1",
+      "date": "2024-01-22",
+      "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.1/Bootstrap.tipa",
+      "size": 54500569
+    },
+    {
+      "version": "1.0",
+      "date": "2024-01-17",
+      "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.0/Bootstrap.tipa",
+      "size": 54494881
+    }
   ]
 }

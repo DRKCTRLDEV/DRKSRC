@@ -1,11 +1,21 @@
 {
+  "repository": [
+    "https://github.com/BomberFish/AppCommander",
+    "https://github.com/BomberFish/AppCommander-legacy"
+  ],
   "name": "AppCommander",
   "bundleIdentifier": "ca.bomberfish.AppCommander",
   "developerName": "BomberFish, f1shy-dev",
   "subtitle": "Swiss Army Knife for iPhone Apps (iOS 14.0-17.0)",
-  "category": "utilities",
-  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/icon.jpg",
   "localizedDescription": "AppCommander is a powerful iOS utility for app management and system customization. Features include App Manager, Home Screen sorting, and system tweaks. Supports iOS 14.0-17.0.",
+  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/icon.png",
+  "category": "Utilities",
+  "screenshotURLs": [
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_1.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_2.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_3.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_4.png"
+  ],
   "versions": [
     {
       "version": "2.0.0-p1",
@@ -35,11 +45,5 @@
       "size": "5435252",
       "downloadURL": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v0.1-beta.3/AppCommander.0.1.Beta.3.ipa"
     }
-  ],
-  "screenshotURLs": [
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_1.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_2.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_3.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_4.png"
   ]
 }
