@@ -1,0 +1,29 @@
+{
+  "repository": [
+    "https://github.com/NSAntoine/Santander",
+    "https://github.com/DRKCTRL/Santander"
+  ],
+  "name": "Santander",
+  "bundleIdentifier": "com.nsantoine.santander",
+  "developerName": "NSAntoine",
+  "subtitle": "Enhanced File Manager for iOS",
+  "localizedDescription": "Santander aims to enhance the experience of a file manager on an iOS device, using modern and familiar UI alongside new APIs. Note: The project is still in beta, and there are still quite a lot of bugs to fix & enhancements to make.",
+  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Santander/icon.jpg",
+  "category": "utilities",
+  "screenshotURLs": [],
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "2024-10-11",
+      "downloadURL": "https://github.com/DRKCTRL/Santander/releases/download/1.0/SantanderTS.tipa",
+      "size": 5331159
+    },
+    {
+      "version": "1.0",
+      "date": "2024-10-11",
+      "build": "",
+      "size": 4575378,
+      "downloadURL": "https://github.com/DRKCTRL/Santander/releases/download/1.0/Santander.ipa"
+    }
+  ]
+}

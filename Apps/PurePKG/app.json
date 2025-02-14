@@ -1,0 +1,358 @@
+{
+  "repository": [
+    "https://github.com/Lrdsnow/PurePKG"
+  ],
+  "name": "PurePKG",
+  "bundleIdentifier": "uwu.lrdsnow.purepkg",
+  "developerName": "Lrdsnow",
+  "subtitle": "The Purest Jailbreak Package Manager",
+  "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+.",
+  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/icon.jpg",
+  "category": "utilities",
+  "screenshotURLs": [
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_1.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_2.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_3.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_4.png"
+  ],
+  "versions": [
+    {
+      "version": "2.0.2",
+      "date": "2024-07-24",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/PurePKG.tipa",
+      "size": 6637698
+    },
+    {
+      "version": "2.0.2",
+      "date": "2024-07-24",
+      "build": "",
+      "size": 6637698,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/PurePKGDemo.ipa"
+    },
+    {
+      "version": "2.0.1",
+      "date": "2024-06-23",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/PurePKG.tipa",
+      "size": 9394403
+    },
+    {
+      "version": "2.0.1",
+      "date": "2024-06-23",
+      "build": "",
+      "size": 9394403,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/PurePKGDemo.ipa"
+    },
+    {
+      "version": "2.0",
+      "date": "2024-06-21",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/PurePKG.tipa",
+      "size": 6627862
+    },
+    {
+      "version": "2.0",
+      "date": "2024-06-21",
+      "build": "",
+      "size": 6627862,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/PurePKGDemo.ipa"
+    },
+    {
+      "version": "1.7",
+      "date": "2024-06-15",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.7/PurePKG.tipa",
+      "size": 8067336
+    },
+    {
+      "version": "1.7",
+      "date": "2024-06-15",
+      "build": "",
+      "size": 8067336,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.7/PurePKGDemo.ipa"
+    },
+    {
+      "version": "1.6",
+      "date": "2024-06-03",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.6/PurePKG.tipa",
+      "size": 8499956
+    },
+    {
+      "version": "1.6",
+      "date": "2024-06-03",
+      "build": "",
+      "size": 8499956,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.6/PurePKGDemo.ipa"
+    },
+    {
+      "version": "1.5.1",
+      "date": "2024-06-03",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5.1/PurePKG.tipa",
+      "size": 6399029
+    },
+    {
+      "version": "1.5.1",
+      "date": "2024-06-03",
+      "build": "",
+      "size": 6399029,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5.1/PurePKGDemo.ipa"
+    },
+    {
+      "version": "1.5",
+      "date": "2024-04-22",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5/PurePKG.tipa",
+      "size": 6763487
+    },
+    {
+      "version": "1.5",
+      "date": "2024-04-22",
+      "build": "",
+      "size": 6763487,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5/PurePKGDemo.ipa"
+    },
+    {
+      "version": "1.4",
+      "date": "2024-04-13",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.4/PurePKG.tipa",
+      "size": 21980135
+    },
+    {
+      "version": "1.4",
+      "date": "2024-04-13",
+      "build": "",
+      "size": 21980135,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.4/PurePKGDemo.ipa"
+    },
+    {
+      "version": "1.4",
+      "date": "2024-04-13",
+      "build": "",
+      "size": 5737942,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.4/PurePKGDemo_visionOS.ipa"
+    },
+    {
+      "version": "1.4",
+      "date": "2024-04-13",
+      "build": "",
+      "size": 19436030,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.4/PurePKGDemo_watchOS.ipa"
+    },
+    {
+      "version": "1.3",
+      "date": "2024-04-11",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.3/PurePKG.tipa",
+      "size": 21949811
+    },
+    {
+      "version": "1.3",
+      "date": "2024-04-11",
+      "build": "",
+      "size": 21949811,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.3/PurePKGDemo.ipa"
+    },
+    {
+      "version": "1.3",
+      "date": "2024-04-11",
+      "build": "",
+      "size": 166,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.3/PurePKGDemo_visionOS.ipa"
+    },
+    {
+      "version": "1.3",
+      "date": "2024-04-11",
+      "build": "",
+      "size": 19381174,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.3/PurePKGDemo_watchOS.ipa"
+    },
+    {
+      "version": "1.2",
+      "date": "2024-04-06",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.2/PurePKG.tipa",
+      "size": 16998348
+    },
+    {
+      "version": "1.2",
+      "date": "2024-04-06",
+      "build": "",
+      "size": 16998348,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.2/PurePKGDemo.ipa"
+    },
+    {
+      "version": "1.2",
+      "date": "2024-04-06",
+      "build": "",
+      "size": 4095997,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.2/PurePKGDemo_watchOS.ipa"
+    },
+    {
+      "version": "1.1",
+      "date": "2024-04-04",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.1/PurePKG.tipa",
+      "size": 20127625
+    },
+    {
+      "version": "1.1",
+      "date": "2024-04-04",
+      "build": "",
+      "size": 20127625,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.1/PurePKGDemo.ipa"
+    },
+    {
+      "version": "1.1",
+      "date": "2024-04-04",
+      "build": "",
+      "size": 166,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.1/PurePKGDemo_visionOS.ipa"
+    },
+    {
+      "version": "1.1",
+      "date": "2024-04-04",
+      "build": "",
+      "size": 13774810,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.1/PurePKGDemo_watchOS.ipa"
+    },
+    {
+      "version": "1.0",
+      "date": "2024-04-03",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0/PurePKG.tipa",
+      "size": 17556191
+    },
+    {
+      "version": "1.0",
+      "date": "2024-04-03",
+      "build": "",
+      "size": 17556191,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0/PurePKGDemo.ipa"
+    },
+    {
+      "version": "1.0",
+      "date": "2024-04-03",
+      "build": "",
+      "size": 166,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0/PurePKGDemo_visionOS.ipa"
+    },
+    {
+      "version": "1.0",
+      "date": "2024-04-03",
+      "build": "",
+      "size": 13544212,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0/PurePKGDemo_watchOS.ipa"
+    },
+    {
+      "version": "1.0b8",
+      "date": "2024-03-30",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b8/PurePKG.tipa",
+      "size": 17523589
+    },
+    {
+      "version": "1.0b8",
+      "date": "2024-03-30",
+      "build": "",
+      "size": 17523589,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b8/PurePKGDemo.ipa"
+    },
+    {
+      "version": "1.0b8",
+      "date": "2024-03-30",
+      "build": "",
+      "size": 166,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b8/PurePKGDemo_visionOS.ipa"
+    },
+    {
+      "version": "1.0b8",
+      "date": "2024-03-30",
+      "build": "",
+      "size": 13518557,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b8/PurePKGDemo_watchOS.ipa"
+    },
+    {
+      "version": "1.0b7",
+      "date": "2024-03-29",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b7/PurePKG.tipa",
+      "size": 17212346
+    },
+    {
+      "version": "1.0b7",
+      "date": "2024-03-29",
+      "build": "",
+      "size": 17212346,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b7/PurePKGDemo.ipa"
+    },
+    {
+      "version": "1.0b7",
+      "date": "2024-03-29",
+      "build": "",
+      "size": 12590571,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b7/PurePKGDemo_visionOS.ipa"
+    },
+    {
+      "version": "1.0b7",
+      "date": "2024-03-29",
+      "build": "",
+      "size": 14895267,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b7/PurePKGDemo_watchOS.ipa"
+    },
+    {
+      "version": "1.0b6",
+      "date": "2024-03-28",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b6/PurePKG.tipa",
+      "size": 17212353
+    },
+    {
+      "version": "1.0b6",
+      "date": "2024-03-28",
+      "build": "",
+      "size": 17212353,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b6/PurePKGDemo.ipa"
+    },
+    {
+      "version": "1.0b5",
+      "date": "2024-03-28",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b5/PurePKG.tipa",
+      "size": 17179779
+    },
+    {
+      "version": "1.0b5",
+      "date": "2024-03-28",
+      "build": "",
+      "size": 17179779,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b5/PurePKGDemo.ipa"
+    },
+    {
+      "version": "1.0b4",
+      "date": "2024-03-27",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b4/PurePKG.tipa",
+      "size": 24189138
+    },
+    {
+      "version": "1.0b4",
+      "date": "2024-03-27",
+      "build": "",
+      "size": 24189138,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b4/PurePKGDemo.ipa"
+    },
+    {
+      "version": "1.0b3",
+      "date": "2024-03-27",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b3/PurePKG.tipa",
+      "size": 24187222
+    },
+    {
+      "version": "1.0b3",
+      "date": "2024-03-27",
+      "build": "",
+      "size": 24187222,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b3/PurePKGDemo.ipa"
+    },
+    {
+      "version": "1.0b2",
+      "date": "2024-02-18",
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b2/PurePKG.tipa",
+      "size": 24149395
+    },
+    {
+      "version": "1.0b2",
+      "date": "2024-02-18",
+      "build": "",
+      "size": 24031082,
+      "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b2/PurePKGDemo.ipa"
+    }
+  ]
+}

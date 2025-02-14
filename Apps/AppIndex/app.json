@@ -1,0 +1,25 @@
+{
+  "name": "AppIndex",
+  "bundleIdentifier": "com.serena.AppIndex",
+  "developerName": "NSAntoine, justtryingthingsout",
+  "subtitle": "Modern Applications Manager for iOS",
+  "category": "utilities",
+  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/icon.jpg",
+  "localizedDescription": "AppIndex is a new, modern App Explorer/Manager app for iOS. It allows users to view, sort, search, and manage applications on their device. Features include viewing extensive app info, backing up and restoring apps, exporting as .ipa files, and more. AppIndex provides detailed information about each app, including bundle identifier, type, download date, version, SDK version, iTunes metadata, size, status, entitlements, URL schemes, and more.",
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "2023-04-04",
+      "build": "",
+      "size": "871661",
+      "downloadURL": "https://github.com/NSAntoine/AppIndex/releases/download/1.0/AppIndexTrollStore.tipa"
+    }
+  ],
+  "screenshotURLs": [
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_1.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_2.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_3.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_4.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_5.png"
+  ]
+}

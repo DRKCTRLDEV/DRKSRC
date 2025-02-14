@@ -1,0 +1,26 @@
+{
+  "repository": [
+    "https://github.com/khanhduytran0/FrontBoardAppLauncher",
+    "https://github.com/DRKCTRL/FrontBoardAppLauncher"
+  ],
+  "name": "FrontBoardAppLauncher",
+  "bundleIdentifier": "com.kdt.frontboardapplauncher",
+  "developerName": "khanhduytran0",
+  "subtitle": "Launch Apps via FrontBoard",
+  "localizedDescription": "FrontBoardAppLauncher is a utility that allows you to launch apps using FrontBoard on iOS devices. It provides a simple interface to interact with the FrontBoard framework for app management.",
+  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/assets/NOICON.png",
+  "category": "utilities",
+  "screenshotURLs": [
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_1.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_2.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_3.png"
+  ],
+  "versions": [
+    {
+      "version": "1.3.0",
+      "date": "2024-11-17",
+      "downloadURL": "https://github.com/DRKCTRL/FrontBoardAppLauncher/releases/download/1.3.0/FrontBoardAppLauncher.tipa",
+      "size": 27533
+    }
+  ]
+}

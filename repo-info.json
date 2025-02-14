@@ -1,0 +1,12 @@
+{
+  "name": "DRKSRC",
+  "identifier": "src.drk.dev",
+  "subtitle": "Your Fav Source...",
+  "description": "DRKSRC: A curated collection of the community's most essential and popular iOS apps and utilities",
+  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/assets/Icon.png",
+  "headerURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/assets/Header.png",
+  "website": "https://github.com/DRKCTRL/DRKSRC",
+  "tintColor": "#d68ace",
+  "featuredApps": [],
+  "apps": []
+}

@@ -1,898 +1,1926 @@
 {
-    "name": "DRKSRC",
-    "subtitle": "Your Fav Source...",
-    "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/DRKSRC.png",
-    "featuredApps": [
-        "live.cclerc.geranium",
-        "com.roothide.Bootstrap",
-        "wiki.qaq.TrollFools",
-        "com.kdt.livecontainer"
-    ],
-    "apps": [
+  "name": "DRKSRC",
+  "identifier": "src.drk.dev",
+  "subtitle": "Your Fav Source...",
+  "description": "DRKSRC: A curated collection of the community's most essential and popular iOS apps and utilities",
+  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/assets/Icon.png",
+  "headerURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/assets/Header.png",
+  "website": "https://github.com/DRKCTRL/DRKSRC",
+  "tintColor": "#d68ace",
+  "featuredApps": [],
+  "apps": [
+    {
+      "name": "AppCommander",
+      "bundleIdentifier": "ca.bomberfish.AppCommander",
+      "developerName": "BomberFish, f1shy-dev",
+      "subtitle": "Swiss Army Knife for iPhone Apps (iOS 14.0-17.0)",
+      "category": "utilities",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/icon.jpg",
+      "localizedDescription": "AppCommander is a powerful iOS utility for app management and system customization. Features include App Manager, Home Screen sorting, and system tweaks. Supports iOS 14.0-17.0.",
+      "versions": [
         {
-            "name": "Geranium",
-            "bundleIdentifier": "live.cclerc.geranium",
-            "developerName": "c22dev, BomberFish, Fiore, Sourcelocation, haxi0",
-            "subtitle": "LocSim, Cleaner & Utility for TrollStore",
-            "localizedDescription": "Geranium is a powerful utility for TrollStore users on iOS 15+. Features include location simulation, device cleaning, daemon management, ScreenTime disabling, and device supervision. Supports multiple languages and offers an intuitive interface for enhancing your iOS experience.",
-            "iconURL": "https://raw.githubusercontent.com/c22dev/Geranium/main/Geranium/Assets.xcassets/AppIcon.appiconset/geranium.png",
-            "category": "utilities",
-            "screenshotURLs": [
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Geranium/IMG_1612.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Geranium/IMG_1613.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Geranium/IMG_1614.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Geranium/IMG_1615.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Geranium/IMG_1616.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Geranium/IMG_1617.png"
-            ],
-            "versions": [
-                {
-                    "version": "1.1.3",
-                    "date": "",
-                    "localizedDescription": "Bug fixes and improvements. Fixed iOS 15 textfield issues and bookmark-related problems.",
-                    "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1.3/Geranium.tipa",
-                    "size": 6103654,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "1.1.2",
-                    "date": "",
-                    "localizedDescription": "New cleaner options, bug fixes for ScreenTime re-enabler and LocSim map.",
-                    "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1.2/Geranium.tipa",
-                    "size": 6165504,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "1.1.1",
-                    "date": "",
-                    "localizedDescription": "New view for iOS 15, custom location input, fixed notification issues.",
-                    "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1.1/Geranium.tipa",
-                    "size": 6133760,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "1.1.0",
-                    "date": "",
-                    "localizedDescription": "ByeTime updates, daemon manager fixes, cleaner improvements, new settings options.",
-                    "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1/Geranium.tipa",
-                    "size": 6029312,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "1.0.4",
-                    "date": "",
-                    "localizedDescription": "Fixed language picker issues and daemon applying.",
-                    "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.4/Geranium.tipa",
-                    "size": 5944934,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "1.0.3",
-                    "date": "",
-                    "localizedDescription": "Fixed language picker issues.",
-                    "downloadURL": "https:// github.com/c22dev/Geranium/releases/download/1.0.3/Geranium.tipa",
-                    "size": 5944934,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "1.0.2",
-                    "date": "",
-                    "localizedDescription": "Fixed language picker display issues.",
-                    "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.2/Geranium.tipa",
-                    "size": 5944934,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "1.0.1",
-                    "date": "",
-                    "localizedDescription": "Added language picker.",
-                    "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.1/Geranium.tipa",
-                    "size": 5944934,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "1.0.0",
-                    "date": "",
-                    "localizedDescription": "Initial release.",
-                    "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0/Geranium.tipa",
-                    "size": 5934080,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                }
-            ]
+          "version": "2.0.0-p1",
+          "date": "2023-12-25",
+          "build": "",
+          "size": "2756390",
+          "downloadURL": "https://github.com/BomberFish/AppCommander/releases/download/v2.0.0-p1/AppCommander.tipa"
         },
         {
-            "name": "TrollBox (Deprecated)",
-            "bundleIdentifier": "live.cclerc.trollbox",
-            "developerName": "c22dev",
-            "subtitle": "AIO TrollStore Tool",
-            "localizedDescription": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium.",
-            "iconURL": "https://raw.githubusercontent.com/c22dev/TrollBox/main/TrollBox/Assets.xcassets/AppIcon.appiconset/Untitled.png",
-            "category": "utilities",
-            "screenshotURLs": [
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/TrollBox/IMG_1630.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/TrollBox/IMG_1631.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/TrollBox/IMG_1632.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/TrollBox/IMG_1633.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/TrollBox/IMG_1634.png"
-            ],
-            "versions": [
-                {
-                    "version": "0.2",
-                    "date": "",
-                    "localizedDescription": "Improved LocSim picker, added TrollStore 2 support. Last release before deprecation.",
-                    "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.2/TrollBox.tipa",
-                    "size": 26632601,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "16.0"
-                },
-                {
-                    "version": "0.1",
-                    "date": "",
-                    "localizedDescription": "Added iOS 16 support, ScreenTime disabler, DirtyCow tools, region restrictions remover. Various bug fixes.",
-                    "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.1/TrollBox.tipa",
-                    "size": 14364262,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "16.0"
-                },
-                {
-                    "version": "0.0.9",
-                    "date": "",
-                    "localizedDescription": "Added custom fonts, dock settings, iOS System Version Changer, and credits. Various bug fixes.",
-                    "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.9/TrollBox.tipa",
-                    "size": 13631488,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "15.0"
-                },
-                {
-                    "version": "0.0.8",
-                    "date": "",
-                    "localizedDescription": "Added Lock Screen Footnote, iOS System Font Changer, No Shutter Sound, and more. Fixed UI issues with iOS 14/15.",
-                    "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.8/TrollBox.tipa",
-                    "size": 12476416,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "15.0"
-                },
-                {
-                    "version": "0.0.7",
-                    "date": "",
-                    "localizedDescription": "Added Badge Color Changer and Show Mute in control center. Fixed various issues.",
-                    "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.7/TrollBox.tipa",
-                    "size": 8053063,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "15.0"
-                },
-                {
-                    "version": "0.0.6",
-                    "date": "",
-                    "localizedDescription": "Fixed Assets and Gestures.",
-                    "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.6/TrollBox.tipa",
-                    "size": 3512320,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "15.0"
-                },
-                {
-                    "version": "0.0.5",
-                    "date": "",
-                    "localizedDescription": "Added AirSpammer. UI fixes.",
-                    "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.5/TrollBox.tipa",
-                    "size": 4529848,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "15.0"
-                },
-                {
-                    "version": "0.0.4",
-                    "date": "",
-                    "localizedDescription": "LocSim working, custom Apple Pay Images added. Fixed UI and various bugs.",
-                    "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.4/TrollBox.tipa",
-                    "size": 3145728,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "15.0"
-                },
-                {
-                    "version": "0.0.3",
-                    "date": "",
-                    "localizedDescription": "Fixed entitlements and icon for passcode theming. Added WallSetter. Fixed global bugs.",
-                    "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.3/TrollBox.tipa",
-                    "size": 3019898,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "15.0"
-                },
-                {
-                    "version": "0.0.2",
-                    "date": "",
-                    "localizedDescription": "Added Passcode Theme. Removed AirSpammer. Added option to Disable lock after respringing and Disable supervising.",
-                    "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.2/TrollBox.tipa",
-                    "size": 2946433,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "15.0"
-                },
-                {
-                    "version": "0.0.1",
-                    "date": "",
-                    "localizedDescription": "Initial alpha release. Limited functionality.",
-                    "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.1/TrollBox.tipa",
-                    "size": 2872934,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "15.0"
-                }
-            ]
+          "version": "1.0.0",
+          "date": "2023-07-12",
+          "build": "",
+          "size": "16030736",
+          "downloadURL": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v1.0.0/AppCommander_v1.0.0.ipa"
         },
         {
-            "name": "Bootstrap",
-            "bundleIdentifier": "com.roothide.Bootstrap",
-            "developerName": "roothide",
-            "subtitle": "Jailbreak Bootstrap Tool",
-            "localizedDescription": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications.",
-            "iconURL": "https://github.com/roothide/Bootstrap/raw/main/Bootstrap/Assets.xcassets/AppIcon.appiconset/icon-60@3x.png",
-            "category": "utilities",
-            "screenshotURLs": [
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Bootstrap/IMG_1641.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Bootstrap/IMG_1642.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Bootstrap/IMG_1643.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Bootstrap/IMG_1644.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Bootstrap/IMG_1645.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Bootstrap/IMG_1646.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Bootstrap/IMG_1647.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Bootstrap/IMG_1648.png"
-            ],
-            "versions": [
-                {
-                    "version": "1.2.8",
-                    "date": "",
-                    "localizedDescription": "Fixed orphan processes forking, interpose for arm64e processes, and prevented broken apps from breaking bootstrapping. Various other improvements and fixes.",
-                    "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.8/Bootstrap.tipa",
-                    "size": 54525952,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "1.2.6",
-                    "date": "",
-                    "localizedDescription": "Added URL Schemes option, fixed battery drain issues, improved stability, and updated built-in Sileo version.",
-                    "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.6/Bootstrap.tipa",
-                    "size": 54525952,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "1.2.1",
-                    "date": "",
-                    "localizedDescription": "Fixed home screen bug, device overheating issues, and Sileo crashes. Improved stability and compatibility.",
-                    "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.1/Bootstrap.tipa",
-                    "size": 54525952,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "1.1.1",
-                    "date": "",
-                    "localizedDescription": "Fixed preferences settings app redirection, improved localization, and cleaned unused code.",
-                    "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.1.1/Bootstrap.tipa",
-                    "size": 54525952,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "1.1",
-                    "date": "",
-                    "localizedDescription": "Fixed notification and app plugin loading issues. Optimized localization.",
-                    "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.1/Bootstrap.tipa",
-                    "size": 54525952,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "1.0",
-                    "date": "",
-                    "localizedDescription": "Initial release with SwiftUI design, new icon, multiple localized languages, and bug fixes.",
-                    "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.0/Bootstrap.tipa",
-                    "size": 54525952,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "17.0"
-                }
-            ]
+          "version": "1.0.0_publicbeta1",
+          "date": "2023-07-01",
+          "build": "",
+          "size": "15941020",
+          "downloadURL": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v1.0.0_publicbeta1/AppCommander-v1.0.0_publicbeta1.ipa"
         },
         {
-            "name": "TrollFools14",
-            "bundleIdentifier": "wiki.qaq.TrollFools",
-            "developerName": "Lessica",
-            "subtitle": "Tweak Injection Tool for TrollStore (iOS 14)",
-            "localizedDescription": "TrollFools14 is a powerful utility for TrollStore users on iOS 14, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more, specifically optimized for iOS 14.",
-            "iconURL": "https://raw.githubusercontent.com/Lessica/TrollFools/main/TrollFools/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
-            "category": "utilities",
-            "screenshotURLs": [
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/TrollFools/IMG_1627.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/TrollFools/IMG_1628.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/TrollFools/IMG_1629.png"
-            ],
-            "versions": [
-                {
-                    "version": "2.8",
-                    "date": "2023-10-20",
-                    "localizedDescription": "New: Receive and inject .dylib files from share sheets. Fixed: In-box document renaming, removed ads, prevented crashes.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-15/TrollFools14 _2.8-15.tipa",
-                    "size": 5431603,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "14.8"
-                },
-                {
-                    "version": "2.7",
-                    "date": "",
-                    "localizedDescription": "Bug fixes and Vietnamese language support.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.7-9/TrollFools14_2.7-9.tipa",
-                    "size": 5300000,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "14.8"
-                },
-                {
-                    "version": "2.6",
-                    "date": "",
-                    "localizedDescription": "Bug fixes and Vietnamese language support.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.6-8/TrollFools14_2.6-8.tipa",
-                    "size": 5300000,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "14.8"
-                },
-                {
-                    "version": "2.6",
-                    "date": "",
-                    "localizedDescription": "'Developer Mode' is no longer required. Now you can access 'iCloud Drive' from TrollFools14.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.6-6/TrollFools14_2.6-6.tipa",
-                    "size": 5300000,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "14.8"
-                },
-                {
-                    "version": "2.5",
-                    "date": "",
-                    "localizedDescription": "'Developer Mode' is no longer required. Now you can access 'iCloud Drive' from TrollFools14.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.5-3/TrollFools14_2.5-3.tipa",
-                    "size": 5300000,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "14.8"
-                },
-                {
-                    "version": "2.5",
-                    "date": "",
-                    "localizedDescription": "Added advanced options for weak references and main executable processing.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.5-2/TrollFools14_2.5-2.tipa",
-                    "size": 5290000,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "14.8"
-                },
-                {
-                    "version": "2.4",
-                    "date": "",
-                    "localizedDescription": "Long press app to lock or unlock its version. Rebuild icon cache in TrollStore to apply changes.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.4-2/TrollFools14_2.4-2.tipa",
-                    "size": 5280000,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "14.8"
-                },
-                {
-                    "version": "2.4",
-                    "date": "",
-                    "localizedDescription": "Observe app installation events and reload app list. Add context menu for apps and plug-ins.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.4-1/TrollFools14_2.4-1.tipa",
-                    "size": 5130000,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "14.8"
-                },
-                {
-                    "version": "2.3",
-                    "date": "",
-                    "localizedDescription": "Improved animation, support for Calculator and MobileMail, added FLEX and TouchVis plug-ins.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-5/TrollFools14_2.3-5.tipa",
-                    "size": 5130000,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "14.8"
-                },
-                {
-                    "version": "2.3",
-                    "date": "",
-                    "localizedDescription": "Support for TrollStore applications and removable system applications.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-2/TrollFools14_2.3-2.tipa",
-                    "size": 5120000,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "14. 8"
-                },
-                {
-                    "version": "2.1",
-                    "date": "",
-                    "localizedDescription": "Reduced package size. Use install_name_tool from Darwin CC Tools. Note: This version doesn't support search functionality.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.1-6/TrollFools14_2.1-6.fix3.tipa",
-                    "size": 5020000,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "14.8"
-                },
-                {
-                    "version": "1.3",
-                    "date": "",
-                    "localizedDescription": "App icon updates. Fix ct_bypass error code 255. Fix app crashes for some tweaks.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.3-9/TrollFools14_1.3-9.tipa",
-                    "size": 43827200,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "14.8"
-                },
-                {
-                    "version": "1.2",
-                    "date": "",
-                    "localizedDescription": "Initial iOS 14 support. Hides libswift from tweaks list.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.2-6/TrollFools14_1.2-6.tipa",
-                    "size": 41723904,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "14.8"
-                }
-            ]
-        },
-        {
-            "name": "TrollFools",
-            "bundleIdentifier": "wiki.qaq.TrollFools",
-            "developerName": "Lessica",
-            "subtitle": "Tweak Injection Tool for TrollStore (iOS 15+)",
-            "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
-            "iconURL": "https://raw.githubusercontent.com/Lessica/TrollFools/main/TrollFools/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
-            "category": "utilities",
-            "screenshotURLs": [
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/TrollFools/IMG_1627.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/TrollFools/IMG_1628.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/TrollFools/IMG_1629.png"
-            ],
-            "versions": [
-                {
-                    "version": "2.8",
-                    "date": "2023-10-20",
-                    "localizedDescription": "New: Receive and inject .dylib files from share sheets. Fixed: In-box document renaming, removed ads, prevented crashes.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-15/TrollFools_2.8-15.tipa",
-                    "size": 3303014,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "2.7",
-                    "date": "",
-                    "localizedDescription": "Bug fixes: Now applications without a short version string will be displayed in the list. The auto-correction for the app search has been disabled. Added Vietnamese language support.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.7-9/TrollFools_2.7-9.tipa",
-                    "size": 3230000,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "2.6",
-                    "date": "",
-                    "localizedDescription": "Bug fixes: Now applications without a short version string will be displayed in the list. Added Vietnamese language support.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.6-8/TrollFools_2.6-8.tipa",
-                    "size": 3230000,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "2.6",
-                    "date": "",
-                    "localizedDescription": "'Developer Mode' is no longer required. Now you can access 'iCloud Drive' from TrollFools.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools /releases/download/v2.6-6/TrollFools_2.6-6.tipa",
-                    "size": 3230000,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "2.5",
-                    "date": "",
-                    "localizedDescription": "'Developer Mode' is no longer required. Now you can access 'iCloud Drive' from TrollFools.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.5-3/TrollFools_2.5-3.tipa",
-                    "size": 3230000,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "2.5",
-                    "date": "",
-                    "localizedDescription": "Added advanced options for weak references and main executable processing.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.5-2/TrollFools_2.5-2.tipa",
-                    "size": 3230000,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "2.4",
-                    "date": "",
-                    "localizedDescription": "Long press app to lock or unlock its version. Rebuild icon cache in TrollStore to apply changes.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.4-2/TrollFools_2.4-2.tipa",
-                    "size": 3230000,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "2.4",
-                    "date": "",
-                    "localizedDescription": "Observe app installation events and reload app list. Add context menu for apps and plug-ins.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.4-1/TrollFools_2.4-1.tipa",
-                    "size": 3230000,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "2.3",
-                    "date": "",
-                    "localizedDescription": "Improved animation, support for Calculator and MobileMail, added FLEX and TouchVis plug-ins.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-5/TrollFools_2.3-5.tipa",
-                    "size": 3230000,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "2.3",
-                    "date": "",
-                    "localizedDescription": "Support for TrollStore applications and removable system applications.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-2/TrollFools_2.3-2.tipa",
-                    "size": 3230000,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "2.1",
-                    "date": "",
-                    "localizedDescription": "Reduced package size. Use install_name_tool from Darwin CC Tools.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.1-6/TrollFools_2.1-6.tipa",
-                    "size": 3000000,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "1.3",
-                    "date": "",
-                    "localizedDescription": "App icon updates. Fix ct_bypass error code 255. Fix app crashes for some tweaks.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.3-9/TrollFools_1.3-9.tipa",
-                    "size": 28096512,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "1.2",
-                    "date": "",
-                    "localizedDescription": "Hides libswift from tweaks list.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.2-6/TrollFools_1.2-6.tipa",
-                    "size": 26304512,
-                    "minOSVersion": "15.0",
-                    " maxOSVersion": "17.0"
-                },
-                {
-                    "version": "1.1",
-                    "date": "",
-                    "localizedDescription": "Initial version.",
-                    "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.1-4/TrollFools_1.1-4.tipa",
-                    "size": 26304512,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                }
-            ]
-        },
-        {
-            "name": "NXBoot",
-            "bundleIdentifier": "com.mologie.NXBoot",
-            "developerName": "mologie",
-            "subtitle": "Nintendo Switch Payload Injector",
-            "localizedDescription": "NXBoot is a powerful utility for Nintendo Switch enthusiasts, allowing users to inject custom payloads into their Switch consoles. It supports various firmware versions and offers an intuitive interface for managing and launching payloads.",
-            "iconURL": "https://raw.githubusercontent.com/mologie/nxboot/master/NXBoot/Assets.xcassets/AppIcon.appiconset/nxboot_icon.png",
-            "category": "utilities",
-            "screenshotURLs": [
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/NXBoot/IMG_1623.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/NXBoot/IMG_1624.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/NXBoot/IMG_1625.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/NXBoot/IMG_1626.png"
-            ],
-            "versions": [
-                {
-                    "version": "0.3.2",
-                    "date": "",
-                    "localizedDescription": "Bugfix update: fixed AppCenter feature toggles in settings, and added auto-disable for AppCenter.",
-                    "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa",
-                    "size": 6543210,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "0.3.1",
-                    "date": "",
-                    "localizedDescription": "Major update: TrollStore 2 support, iOS 14-17 compatibility, UI overhaul with new payload editor, improved import via share sheet. Removed coreboot/CBFS support.",
-                    "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.1/NXBoot_0.3.1-1.tipa",
-                    "size": 6543210,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "17.0"
-                }
-            ]
-        },
-        {
-            "name": "AppIndex",
-            "bundleIdentifier": "com.serena.AppIndex",
-            "developerName": "NSAntoine, justtryingthingsout",
-            "subtitle": "Modern Applications Manager for iOS",
-            "localizedDescription": "AppIndex is a new, modern App Explorer/Manager app for iOS. It allows users to view, sort, search, and manage applications on their device. Features include viewing extensive app info, backing up and restoring apps, exporting as .ipa files, and more. AppIndex provides detailed information about each app, including bundle identifier, type, download date, version, SDK version, iTunes metadata, size, status, entitlements, URL schemes, and more.",
-            "iconURL": "https://raw.githubusercontent.com/NSAntoine/AppIndex/main/AppIndex/Assets.xcassets/AppIcon.appiconset/Icon%403x.png",
-            "category": "utilities",
-            "screenshotURLs": [
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/AppIndex/IMG_1618.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/AppIndex/IMG_1619.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/AppIndex/IMG_1620.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/AppIndex/IMG_1621.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/AppIndex/IMG_1622.png"
-            ],
-            "versions": [
-                {
-                    "version": "1.0",
-                    "date": "",
-                    "localizedDescription": "First Release of AppIndex. Features include app viewing, sorting, searching, detailed info display, backup/restore functionality, and .ipa export.",
-                    "downloadURL": "https://github.com/NSAntoine/App Index/releases/download/1.0/AppIndexTrollStore.tipa",
-                    "size": 871424,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "17.0"
-                }
-            ]
-        },
-        {
-            "name": "AppCommander",
-            "bundleIdentifier": "ca.bomberfish.AppCommander",
-            "developerName": "BomberFish, f1shy-dev",
-            "subtitle": "Swiss Army Knife for iPhone Apps (iOS 15.0-17.0)",
-            "localizedDescription": "AppCommander is a powerful iOS utility for app management and system customization. Features include App Manager, Home Screen sorting, and system tweaks. Supports iOS 15.0-17.0.",
-            "iconURL": "https://raw.githubusercontent.com/BomberFish/AppCommander-legacy/main/AppCommander/Assets.xcassets/AppIcon.appiconset/appcommander%20v3.png",
-            "category": "utilities",
-            "screenshotURLs": [
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/AppCommander/IMG_1635.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/AppCommander/IMG_1636.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/AppCommander/IMG_1637.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/AppCommander/IMG_1640.png"
-            ],
-            "versions": [
-                {
-                    "version": "2.0.0",
-                    "date": "",
-                    "localizedDescription": "Early preview of AppCommander v2 (TS). Completely rebuilt from the ground up. Features: Listing and opening apps. Missing: Backups, data management, IPA export. Requires TrollStore. WARNING: Untested preview release, use at your own risk.",
-                    "downloadURL": "https://github.com/BomberFish/AppCommander/releases/download/v2.0.0-p1/AppCommander.tipa",
-                    "size": 20000000,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "1.0.0",
-                    "date": "",
-                    "localizedDescription": "Final release of AppCommander (MDC). Compatibility: iOS 15.5-15.7.1 and 16.0-16.1.2 supported. iOS 15.0-15.4.1, 15.7.2+, and 16.2+ not supported. Note: This app is now deprecated and will no longer be maintained.",
-                    "downloadURL": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v1.0.0/AppCommander_v1.0.0.ipa",
-                    "size": 16042598,
-                    "minOSVersion": "15.5",
-                    "maxOSVersion": "16.1.2"
-                }
-            ]
-        },
-        {
-            "name": "Filza",
-            "bundleIdentifier": "com.tigisoftware.Filza000",
-            "developerName": "TIGI Software",
-            "subtitle": "Powerful File Manager for iOS",
-            "localizedDescription": "Filza is a comprehensive file manager for iOS devices. It offers features like file/folder exploration, powerful file viewers including media player and office document support, file sharing capabilities, terminal access, music library management, package installation, and cloud service integration.",
-            "iconURL": "https://cdn-app-icon.pgyer.com/5/0/2/9/a/5029a61935f82670b7fa89c3df623551?x-oss-process=image/resize,m_lfit,h_256,w_256/format,jpg",
-            "category": "utilities",
-            "screenshotURLs": [
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Filza/IMG_1650.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Filza/IMG_1651.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Filza/IMG_1652.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Filza/IMG_1653.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Filza/IMG_1654.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/Filza/IMG_1655.png"
-            ],
-            "versions": [
-                {
-                    " version": "4.0",
-                    "date": "",
-                    "localizedDescription": "Updated Filza for TrollStore (No URL Scheme version)(Recommended). Supported line numbers for TextEditor, Fixed laggy Apps Manager, Added xina jailbreak (rootless) environment variables, Now support dpkg, Fixed text editor line number issue",
-                    "downloadURL": "https://tigisoftware.com/download/Filza_NoURLScheme_4.0.0.ipa",
-                    "size": 10000000,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "3.9.8",
-                    "date": "",
-                    "localizedDescription": "Fixed zip/unzip issue on /var/containers/...",
-                    "downloadURL": "https://tigisoftware.com/download/Filza_NoURLScheme_3.9.8.ipa",
-                    "size": 10000000,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "17.0"
-                }
-            ]
-        },
-        {
-            "name": "SantanderTS",
-            "bundleIdentifier": "com.nsantoine.santander",
-            "developerName": "NSAntoine",
-            "subtitle": "Enhanced File Manager for iOS",
-            "localizedDescription": "Santander aims to enhance the experience of a file manager on an iOS device, using modern and familiar UI alongside new APIs. Note: The project is still in beta, and there are still quite a lot of bugs to fix & enhancements to make.",
-            "iconURL": "https://raw.githubusercontent.com/NSAntoine/Santander/main/Santander/Assets.xcassets/AppIcon.appiconset/100.png",
-            "category": "utilities",
-            "screenshotURLs": [],
-            "versions": [
-                {
-                    "version": "1.0",
-                    "date": "",
-                    "localizedDescription": "Initial release of Santander (TS)(IOS14-16). Features modern UI and enhanced file management capabilities.",
-                    "downloadURL": "https://github.com/DRKCTRL/Santander/releases/download/1.0/SantanderTS.tipa",
-                    "size": 5326438,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "16.0"
-                }
-            ]
-        },
-        {
-            "name": "FrontBoardAppLauncher",
-            "bundleIdentifier": "com.kdt.frontboardapplauncher",
-            "developerName": "khanhduytran0",
-            "subtitle": "Launch Apps via FrontBoard",
-            "localizedDescription": "FrontBoardAppLauncher is a utility that allows you to launch apps using FrontBoard on iOS devices. It provides a simple interface to interact with the FrontBoard framework for app management.",
-            "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/NOICON.png",
-            "category": "utilities",
-            "screenshotURLs": [
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/FrontBoardAppLauncher/IMG_1672.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/FrontBoardAppLauncher/IMG_1673.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/FrontBoardAppLauncher/IMG_1674.png"
-            ],
-            "versions": [
-                {
-                    "version": "1.3",
-                    "date": "",
-                    "localizedDescription": "Initial release of FrontBoardAppLauncher.",
-                    "downloadURL": "https://github.com/DRKCTRL/FrontBoardAppLauncher/releases/download/1.0/FrontBoardAppLauncher.tipa",
-                    "size": 27545,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                }
-            ]
-        },
-        {
-            "name": "CAPerfHUD",
-            "bundleIdentifier": "com.kdt.CAPerfHUD",
-            "developerName": "khanhduytran0",
-            "subtitle": "System-wide performance HUD for iOS 14+",
-            "localizedDescription": "CAPerfHUD enables a system-wide performance HUD for iOS 14 and above. It requires TrollStore to function. The app allows users to monitor various system performance metrics in real-time. Note that some measurements like frequencies and power consumption may not work, and changes last until backboard restarts (respring).",
-            "iconURL": "https://raw.githubusercontent.com/khanhduytran0/CAPerfHUD/main/CAPerfHUDModule/Resources/SettingsIcon.png",
-            "category": "utilities",
-            "screenshotURLs": [
-                "https://raw.githubusercontent.com/DRKCTRL/ DRKSRC/main/screenshots/CAPerfHUD/IMG_1675.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/CAPerfHUD/IMG_1676.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/CAPerfHUD/IMG_1677.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/CAPerfHUD/IMG_1678.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/CAPerfHUD/IMG_1679.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/CAPerfHUD/IMG_1680.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/CAPerfHUD/IMG_1681.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/CAPerfHUD/IMG_1682.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/CAPerfHUD/IMG_1683.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/CAPerfHUD/IMG_1684.png"
-            ],
-            "versions": [
-                {
-                    "version": "1.0.0",
-                    "date": "",
-                    "localizedDescription": "First stable release. Minor code refactoring for improved readability and maintainability.",
-                    "downloadURL": "https://github.com/DRKCTRL/CAPerfHUD/releases/download/1.0/CAPerfHUD.tipa",
-                    "size": 11571,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "0.0.1",
-                    "date": "",
-                    "localizedDescription": "Initial release of CAPerfHUD. Features system-wide performance monitoring for iOS 14+. Note: arm64e slice removed due to PAC issue.",
-                    "downloadURL": "https://github.com/khanhduytran0/CAPerfHUD/releases/download/0.0.1/com.kdt.caperfhud_0.0.1.ipa",
-                    "size": 11264,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "17.0"
-                }
-            ]
-        },
-        {
-            "name": "LiveContainer",
-            "bundleIdentifier": "com.kdt.LiveContainer",
-            "developerName": "khanhduytran0",
-            "subtitle": "Run iOS apps without installing",
-            "localizedDescription": "LiveContainer allows you to run iOS apps without actually installing them. It bypasses the 10 app limit of free developer accounts, enables multiple versions of an app, and supports multiple data containers. With JIT, codesigning is bypassed entirely. Features include unlimited app installation, tweak support, and instant app switching.",
-            "iconURL": "https://raw.githubusercontent.com/khanhduytran0/LiveContainer/main/Resources/AppIcon60x60.png",
-            "category": "utilities",
-            "screenshotURLs": [
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/LiveContainer/IMG_1667.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/LiveContainer/IMG_1668.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/LiveContainer/IMG_1669.png",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/LiveContainer/IMG_1670.png"
-            ],
-            "versions": [
-                {
-                    "version": "3.0.0",
-                    "date": "",
-                    "localizedDescription": "Major update: Complete SwiftUI rewrite with support for multiple LiveContainers. Improved user interface and enhanced functionality for running multiple app instances simultaneously.",
-                    "downloadURL": "",
-                    "size": 907264,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "2.1.2",
-                    "date": "",
-                    "localizedDescription": "Feature: AltStore support (untested). Bug fixes: JIT-less setup certificate issue, settings switches, app black screen, temporary file creation.",
-                    "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.2/com.kdt.livecontainer_2.1.2.ipa",
-                    "size": 194560,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "2.1.1",
-                    "date": "",
-                    "localizedDescription": "Bug fix: Addressed code signature invalid issue. Users need to Renew JIT-less certificate after updating.",
-                    "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.1/com.kdt.livecontainer_2.1.1.ipa",
-                    "size": 195584,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "2.1",
-                    "date": "",
-                    "localizedDescription": "New features: Add app shortcuts to Home Screen, tweak injection for JIT-less. Bug fixes and improved app compatibility.",
-                    "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1/com.kdt.livecontainer_2.1.ipa",
-                    "size": 191488,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "2.0",
-                    "date": "",
-                    "localizedDescription": "Pre-release featuring JIT-less mode. Known issues with app compatibility and certificate finding.",
-                    "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.0-pre/com.kdt.livecontainer_2.0.ipa",
-                    "size": 103424,
-                    "minOSVersion": "14.0",
-                    "maxOSVersion": "17.0"
-                }
-            ]
-        },
-        {
-            "name": "FridaCodeManager",
-            "bundleIdentifier": "com.sparklechan.swifty",
-            "developerName": "fridakitten",
-            "subtitle": "Advanced Frida Code Management Tool",
-            "localizedDescription": "FridaCodeManager is a comprehensive tool for managing and organizing Frida code projects. Features include permission management, project repair capabilities, app/project exports, multithreading support for folder navigation, file grouping, and an enhanced user interface with smooth animations.",
-            "iconURL": "https://raw.githubusercontent.com/fridakitten/FridaCodeManager/main/Blueprint/FridaCodeManager.app/AppIcon.png",
-            "category": "utilities",
-            "screenshotURLs": [
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/FridaCodeManager/IMG_1792.PNG",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/FridaCodeManager/IMG_1793.PNG",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/FridaCodeManager/IMG_1794.PNG",
-                "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/screenshots/FridaCodeManager/IMG_1795.PNG"
-            ],
-            "versions": [
-                {
-                    "version": "1.6",
-                    "date": "",
-                    "localizedDescription": "Major update featuring refined permissions, project repair capabilities, improved exports, multithreading support, file grouping, and enhanced UI animations. Fixed issues with corrupted projects, app icons, and profile picture loading.",
-                    "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa",
-                    "size": 70557696,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                },
-                {
-                    "version": "1.5.5",
-                    "date": "",
-                    "localizedDescription": "Added arm64e support. App improvements: Switched to ZipArchive, fixed SDK downloads and Home Tab typo. SeansBuild fixes: Resolved application opening issues with TrollStore helper and build system execution.",
-                    "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.5.5/FridaCodeManager.tipa",
-                    "size": 108003328,
-                    "minOSVersion": "15.0",
-                    "maxOSVersion": "17.0"
-                }
-            ]
+          "version": "0.1-beta.3",
+          "date": "2023-04-13",
+          "build": "",
+          "size": "5435252",
+          "downloadURL": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v0.1-beta.3/AppCommander.0.1.Beta.3.ipa"
         }
-    ]
+      ],
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_4.png"
+      ]
+    },
+    {
+      "name": "AppIndex",
+      "bundleIdentifier": "com.serena.AppIndex",
+      "developerName": "NSAntoine, justtryingthingsout",
+      "subtitle": "Modern Applications Manager for iOS",
+      "category": "utilities",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/icon.jpg",
+      "localizedDescription": "AppIndex is a new, modern App Explorer/Manager app for iOS. It allows users to view, sort, search, and manage applications on their device. Features include viewing extensive app info, backing up and restoring apps, exporting as .ipa files, and more. AppIndex provides detailed information about each app, including bundle identifier, type, download date, version, SDK version, iTunes metadata, size, status, entitlements, URL schemes, and more.",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2023-04-04",
+          "build": "",
+          "size": "871661",
+          "downloadURL": "https://github.com/NSAntoine/AppIndex/releases/download/1.0/AppIndexTrollStore.tipa"
+        }
+      ],
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_5.png"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "bundleIdentifier": "com.roothide.Bootstrap",
+      "developerName": "roothide",
+      "subtitle": "Jailbreak Bootstrap Tool",
+      "category": "utilities",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/icon.jpg",
+      "localizedDescription": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications.",
+      "versions": [
+        {
+          "version": "1.3.2",
+          "date": "2025-01-09",
+          "build": "",
+          "size": "54595581",
+          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.3.2/Bootstrap.tipa"
+        },
+        {
+          "version": "1.3",
+          "date": "2024-11-18",
+          "build": "",
+          "size": "54202306",
+          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.3/Bootstrap.tipa"
+        },
+        {
+          "version": "1.2.9",
+          "date": "2024-11-11",
+          "build": "",
+          "size": "54202235",
+          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.9/Bootstrap.tipa"
+        },
+        {
+          "version": "1.2.8",
+          "date": "2024-10-05",
+          "build": "",
+          "size": "54508536",
+          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.8/Bootstrap.tipa"
+        },
+        {
+          "version": "1.2.6",
+          "date": "2024-09-11",
+          "build": "",
+          "size": "54497160",
+          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.6/Bootstrap.tipa"
+        },
+        {
+          "version": "1.2.1",
+          "date": "2024-02-05",
+          "build": "",
+          "size": "54521377",
+          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.1/Bootstrap.tipa"
+        },
+        {
+          "version": "1.1.1",
+          "date": "2024-01-31",
+          "build": "",
+          "size": "54499627",
+          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.1.1/Bootstrap.tipa"
+        },
+        {
+          "version": "1.1",
+          "date": "2024-01-22",
+          "build": "",
+          "size": "54500569",
+          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.1/Bootstrap.tipa"
+        },
+        {
+          "version": "1.0",
+          "date": "2024-01-17",
+          "build": "",
+          "size": "54494881",
+          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.0/Bootstrap.tipa"
+        }
+      ],
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/screenshots/IMG_3.png"
+      ]
+    },
+    {
+      "name": "CAPerfHUD",
+      "bundleIdentifier": "com.kdt.CAPerfHUD",
+      "developerName": "khanhduytran0",
+      "subtitle": "System-wide performance HUD for iOS 14+",
+      "localizedDescription": "CAPerfHUD enables a system-wide performance HUD for iOS 14 and above. It requires TrollStore to function. The app allows users to monitor various system performance metrics in real-time. Note that some measurements like frequencies and power consumption may not work, and changes last until backboard restarts (respring).",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/icon.jpg",
+      "category": "utilities",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/screenshots/IMG_1.png"
+      ],
+      "versions": [
+        {
+          "version": "0.0.1",
+          "date": "2023-05-21",
+          "downloadURL": "https://github.com/khanhduytran0/CAPerfHUD/releases/download/0.0.1/com.kdt.caperfhud_0.0.1.ipa",
+          "size": 11320
+        }
+      ]
+    },
+    {
+      "name": "Cowabunga",
+      "bundleIdentifier": "com.leminlimez.cowabunga",
+      "developerName": "leminlimez",
+      "subtitle": "A Jailed Toolbox for iOS",
+      "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/icon.jpg",
+      "category": "utilities",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_5.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_6.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_7.png"
+      ],
+      "versions": [
+        {
+          "version": "10.3.2",
+          "date": "2023-05-29",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.2/Cowabunga.ipa",
+          "size": 16288960
+        },
+        {
+          "version": "10.3.1",
+          "date": "2023-05-29",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.1/Cowabunga.ipa",
+          "size": 16288883
+        },
+        {
+          "version": "10.3.0",
+          "date": "2023-05-29",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.0/Cowabunga.ipa",
+          "size": 16285936
+        },
+        {
+          "version": "10.2.0",
+          "date": "2023-05-12",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.2.0/Cowabunga.ipa",
+          "size": 16280833
+        },
+        {
+          "version": "10.1.1",
+          "date": "2023-03-30",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.1.1/Cowabunga.ipa",
+          "size": 21605355
+        },
+        {
+          "version": "10.1.0",
+          "date": "2023-03-28",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.1.0/Cowabunga.ipa",
+          "size": 21595880
+        },
+        {
+          "version": "10.0.3",
+          "date": "2023-03-25",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.3/Cowabunga.ipa",
+          "size": 21557626
+        },
+        {
+          "version": "10.0.2",
+          "date": "2023-03-25",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.2/Cowabunga.ipa",
+          "size": 21557066
+        },
+        {
+          "version": "10.0.1",
+          "date": "2023-03-24",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.1/Cowabunga.ipa",
+          "size": 21557390
+        },
+        {
+          "version": "10.0.0",
+          "date": "2023-03-23",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.0/Cowabunga.ipa",
+          "size": 21556671
+        },
+        {
+          "version": "8.1.4",
+          "date": "2023-03-15",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.4/Cowabunga.ipa",
+          "size": 21867855
+        },
+        {
+          "version": "8.1.3",
+          "date": "2023-03-13",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.3/Cowabunga.ipa",
+          "size": 21862959
+        },
+        {
+          "version": "8.1.2",
+          "date": "2023-03-06",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.2/Cowabunga.ipa",
+          "size": 21849343
+        },
+        {
+          "version": "8.1.1",
+          "date": "2023-02-28",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.1/Cowabunga.ipa",
+          "size": 21849921
+        },
+        {
+          "version": "8.1.0",
+          "date": "2023-02-26",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.0/Cowabunga.ipa",
+          "size": 21796707
+        },
+        {
+          "version": "8.0.5",
+          "date": "2023-02-20",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.5/Cowabunga.ipa",
+          "size": 20553183
+        },
+        {
+          "version": "8.0.4",
+          "date": "2023-02-19",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.4/Cowabunga.ipa",
+          "size": 20564509
+        },
+        {
+          "version": "8.0.3",
+          "date": "2023-02-14",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.3/Cowabunga.ipa",
+          "size": 13709675
+        },
+        {
+          "version": "8.0.2",
+          "date": "2023-02-13",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.2/Cowabunga.ipa",
+          "size": 13707992
+        },
+        {
+          "version": "8.0.1",
+          "date": "2023-02-12",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.1/Cowabunga.ipa",
+          "size": 12238315
+        },
+        {
+          "version": "8.0.0",
+          "date": "2023-02-12",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.0/Cowabunga.ipa",
+          "size": 12238281
+        },
+        {
+          "version": "7.0.4",
+          "date": "2023-02-02",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v7.0.4/Cowabunga.ipa",
+          "size": 10796661
+        },
+        {
+          "version": "7.0.3",
+          "date": "2023-02-02",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v7.0.3/Cowabunga.ipa",
+          "size": 10795562
+        },
+        {
+          "version": "7.0.2",
+          "date": "2023-01-29",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v7.0.2/Cowabunga.ipa",
+          "size": 10793528
+        },
+        {
+          "version": "7.0.1",
+          "date": "2023-01-28",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v7.0.1/Cowabunga.ipa",
+          "size": 10790553
+        },
+        {
+          "version": "7.0.0",
+          "date": "2023-01-27",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v7.0.0/Cowabunga.ipa",
+          "size": 10792784
+        },
+        {
+          "version": "6.1.4",
+          "date": "2023-01-26",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v6.1.4/Cowabunga.ipa",
+          "size": 9773062
+        },
+        {
+          "version": "6.1.3",
+          "date": "2023-01-25",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v6.1.3/Cowabunga.ipa",
+          "size": 9786344
+        },
+        {
+          "version": "6.1.2",
+          "date": "2023-01-24",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v6.1.2/Cowabunga.ipa",
+          "size": 9780903
+        },
+        {
+          "version": "6.1.1",
+          "date": "2023-01-24",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v6.1.1/Cowabunga.ipa",
+          "size": 9762101
+        }
+      ]
+    },
+    {
+      "name": "Filza",
+      "bundleIdentifier": "com.tigisoftware.Filza",
+      "developerName": "TIGI Software",
+      "subtitle": "Powerful File Manager for iOS",
+      "localizedDescription": "Filza is a comprehensive file manager for iOS devices. It offers features like file/folder exploration, powerful file viewers including media player and office document support, file sharing capabilities, terminal access, music library management, package installation, and cloud service integration.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/icon.jpg",
+      "category": "utilities",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_5.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_6.png"
+      ],
+      "versions": []
+    },
+    {
+      "name": "FridaCodeManager",
+      "bundleIdentifier": "com.sparklechan.swifty",
+      "developerName": "fridakitten",
+      "subtitle": "Advanced Frida Code Management Tool",
+      "localizedDescription": "FridaCodeManager is a comprehensive tool for managing and organizing Frida code projects. Features include permission management, project repair capabilities, app/project exports, multithreading support for folder navigation, file grouping, and an enhanced user interface with smooth animations.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/icon.jpg",
+      "category": "utilities",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_4.png"
+      ],
+      "versions": [
+        {
+          "version": "1.6",
+          "date": "2024-10-22",
+          "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa",
+          "size": 70613655
+        },
+        {
+          "version": "1.6",
+          "date": "2024-10-22",
+          "build": "",
+          "size": 66806491,
+          "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.6/FridaCodeManager-stock-alpha.ipa"
+        },
+        {
+          "version": "1.5.5",
+          "date": "2024-10-14",
+          "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.5.5/FridaCodeManager.tipa",
+          "size": 108290634
+        }
+      ]
+    },
+    {
+      "name": "FrontBoardAppLauncher",
+      "bundleIdentifier": "com.kdt.frontboardapplauncher",
+      "developerName": "khanhduytran0",
+      "subtitle": "Launch Apps via FrontBoard",
+      "localizedDescription": "FrontBoardAppLauncher is a utility that allows you to launch apps using FrontBoard on iOS devices. It provides a simple interface to interact with the FrontBoard framework for app management.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/assets/NOICON.png",
+      "category": "utilities",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_3.png"
+      ],
+      "versions": [
+        {
+          "version": "1.3.0",
+          "date": "2024-11-17",
+          "downloadURL": "https://github.com/DRKCTRL/FrontBoardAppLauncher/releases/download/1.3.0/FrontBoardAppLauncher.tipa",
+          "size": 27533
+        }
+      ]
+    },
+    {
+      "name": "Geranium",
+      "bundleIdentifier": "live.cclerc.geranium",
+      "developerName": "c22dev, BomberFish, Fiore, Sourcelocation, haxi0",
+      "subtitle": "LocSim, Cleaner & Utility for TrollStore",
+      "localizedDescription": "Geranium is a powerful utility for TrollStore users on iOS 15+. Features include location simulation, device cleaning, daemon management, ScreenTime disabling, and device supervision. Supports multiple languages and offers an intuitive interface for enhancing your iOS experience.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/icon.jpg",
+      "category": "utilities",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_5.png"
+      ],
+      "versions": [
+        {
+          "version": "1.1.3",
+          "date": "2024-09-15",
+          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1.3/Geranium.tipa",
+          "size": 6100320
+        },
+        {
+          "version": "1.1.2",
+          "date": "2024-02-22",
+          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1.2/Geranium.tipa",
+          "size": 6161855
+        },
+        {
+          "version": "1.1.1",
+          "date": "2024-02-07",
+          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1.1/Geranium.tipa",
+          "size": 6135248
+        },
+        {
+          "version": "1.1",
+          "date": "2024-01-18",
+          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1/Geranium.tipa",
+          "size": 6032621
+        },
+        {
+          "version": "1.0.4",
+          "date": "2024-01-15",
+          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.4/Geranium.tipa",
+          "size": 5945760
+        },
+        {
+          "version": "1.0.3",
+          "date": "2024-01-15",
+          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.3/Geranium.tipa",
+          "size": 5945286
+        },
+        {
+          "version": "1.0.2",
+          "date": "2024-01-15",
+          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.2/Geranium.tipa",
+          "size": 5943936
+        },
+        {
+          "version": "1.0.1",
+          "date": "2024-01-14",
+          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.1/Geranium.tipa",
+          "size": 5942092
+        },
+        {
+          "version": "1.0",
+          "date": "2024-01-14",
+          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0/Geranium.tipa",
+          "size": 5930930
+        }
+      ]
+    },
+    {
+      "name": "LiveContainer",
+      "bundleIdentifier": "com.kdt.LiveContainer",
+      "developerName": "khanhduytran0",
+      "subtitle": "Run iOS apps without installing",
+      "localizedDescription": "LiveContainer allows you to run iOS apps without actually installing them. It bypasses the 10 app limit of free developer accounts, enables multiple versions of an app, and supports multiple data containers. With JIT, codesigning is bypassed entirely. Features include unlimited app installation, tweak support, and instant app switching.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/icon.jpg",
+      "category": "utilities",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_4.png"
+      ],
+      "versions": [
+        {
+          "version": "3.2.0",
+          "date": "2025-01-15",
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.2.0/com.kdt.livecontainer_3.2.0.ipa",
+          "size": 2962233
+        },
+        {
+          "version": "3.1.0",
+          "date": "2024-12-16",
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.1.0/com.kdt.livecontainer_3.1.0.ipa",
+          "size": 2899038
+        },
+        {
+          "version": "3.0.0",
+          "date": "2024-12-16",
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.0.0/com.kdt.livecontainer_3.0.0.ipa",
+          "size": 905495
+        },
+        {
+          "version": "2.1.2",
+          "date": "2024-08-15",
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.2/com.kdt.livecontainer_2.1.2.ipa",
+          "size": 194586
+        },
+        {
+          "version": "2.1.1",
+          "date": "2024-08-08",
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.1/com.kdt.livecontainer_2.1.1.ipa",
+          "size": 195840
+        },
+        {
+          "version": "2.1",
+          "date": "2024-08-07",
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1/com.kdt.livecontainer_2.1.ipa",
+          "size": 191991
+        },
+        {
+          "version": "2.0-pre",
+          "date": "2024-04-22",
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.0-pre/com.kdt.livecontainer_2.0.ipa",
+          "size": 103293
+        },
+        {
+          "version": "1.0",
+          "date": "2023-07-17",
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/1.0/com.kdt.livecontainer.ipa",
+          "size": 31173
+        }
+      ]
+    },
+    {
+      "name": "Nugget",
+      "bundleIdentifier": "",
+      "developerName": "leminlimez",
+      "subtitle": "iOS 16.0-18.1b4 Device Unlock Tool",
+      "localizedDescription": "Unlock your device's full potential on iOS 16.0 through 18.1 beta 4, with partial support for iOS 18.1 beta 5-6. Note: Does not work on iOS 18.1 beta 7 or newer - use PC version instead. Requires .mobiledevicepairing file and wireguard. Uses sparserestore exploit to write to files outside intended restore location, like mobilegestalt. CAUTION: Back up your data before using. Developer not responsible for bootloops or other issues.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Nugget/icon.png",
+      "category": "utilities",
+      "screenshotURLs": [],
+      "versions": [
+        {
+          "version": "2.0.1",
+          "date": "2024-12-01",
+          "downloadURL": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v2.0.1/Nugget.ipa",
+          "size": 7676570
+        },
+        {
+          "version": "2.0",
+          "date": "2024-10-17",
+          "downloadURL": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v2.0/Nugget.ipa",
+          "size": 7675473
+        },
+        {
+          "version": "1.0.1",
+          "date": "2024-09-23",
+          "downloadURL": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v1.0.1/Nugget.ipa",
+          "size": 7742363
+        },
+        {
+          "version": "1.0",
+          "date": "2024-09-22",
+          "downloadURL": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v1.0/Nugget.ipa",
+          "size": 7741677
+        }
+      ]
+    },
+    {
+      "name": "NXBoot",
+      "bundleIdentifier": "com.mologie.NXBoot",
+      "developerName": "mologie",
+      "subtitle": "Nintendo Switch Payload Injector",
+      "localizedDescription": "NXBoot is a powerful utility for Nintendo Switch enthusiasts, allowing users to inject custom payloads into their Switch consoles. It supports various firmware versions and offers an intuitive interface for managing and launching payloads.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/icon.jpg",
+      "category": "utilities",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_3.png"
+      ],
+      "versions": [
+        {
+          "version": "0.3.2",
+          "date": "2024-08-31",
+          "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa",
+          "size": 1045270
+        },
+        {
+          "version": "0.3.1",
+          "date": "2024-08-30",
+          "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.1/NXBoot_0.3.1-1.tipa",
+          "size": 1043645
+        }
+      ]
+    },
+    {
+      "name": "PureKFD",
+      "bundleIdentifier": "uwu.lrdsnow.purekfdiOS",
+      "developerName": "Lrdsnow",
+      "subtitle": "The Purest iOS Toolbox",
+      "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/icon.jpg",
+      "category": "utilities",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_4.png"
+      ],
+      "versions": [
+        {
+          "version": "6b1",
+          "date": "2024-09-14",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.ipa",
+          "size": 10692355
+        },
+        {
+          "version": "6b1",
+          "date": "2024-09-14",
+          "build": "",
+          "size": 3150038,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.noSparse.ipa"
+        },
+        {
+          "version": "6b1",
+          "date": "2024-09-14",
+          "build": "",
+          "size": 3191275,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.noSparse.ts.ipa"
+        },
+        {
+          "version": "6.0rc3",
+          "date": "2024-09-21",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc3/PureKFD.ipa",
+          "size": 10019622
+        },
+        {
+          "version": "6.0rc2",
+          "date": "2024-09-21",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc2/PureKFD.ipa",
+          "size": 10840489
+        },
+        {
+          "version": "6.0rc",
+          "date": "2024-09-20",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc/PureKFD.ipa",
+          "size": 9987366
+        },
+        {
+          "version": "6.0b5",
+          "date": "2024-09-19",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b5/PureKFD.ipa",
+          "size": 9948089
+        },
+        {
+          "version": "6.0b4",
+          "date": "2024-09-16",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b4/PureKFD.ipa",
+          "size": 9963979
+        },
+        {
+          "version": "6.0b3",
+          "date": "2024-09-15",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b3/PureKFD.ipa",
+          "size": 10725713
+        },
+        {
+          "version": "6.0b2",
+          "date": "2024-09-14",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b2/PureKFD.ipa",
+          "size": 9867756
+        },
+        {
+          "version": "6.0.2",
+          "date": "2024-11-23",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.ipa",
+          "size": 10806164
+        },
+        {
+          "version": "6.0.2",
+          "date": "2024-11-23",
+          "build": "",
+          "size": 3932657,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.noSparse.ipa"
+        },
+        {
+          "version": "6.0.2",
+          "date": "2024-11-23",
+          "build": "",
+          "size": 4042969,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.noSparse.ts.ipa"
+        },
+        {
+          "version": "6.0.1",
+          "date": "2024-09-29",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.ipa",
+          "size": 10882263
+        },
+        {
+          "version": "6.0.1",
+          "date": "2024-09-29",
+          "build": "",
+          "size": 4005315,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.noSparse.ipa"
+        },
+        {
+          "version": "6.0.1",
+          "date": "2024-09-29",
+          "build": "",
+          "size": 4047225,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.noSparse.ts.ipa"
+        },
+        {
+          "version": "6.0",
+          "date": "2024-09-22",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.ipa",
+          "size": 10025476
+        },
+        {
+          "version": "6.0",
+          "date": "2024-09-22",
+          "build": "",
+          "size": 3150038,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.noSparse.ipa"
+        },
+        {
+          "version": "6.0",
+          "date": "2024-09-22",
+          "build": "",
+          "size": 3191275,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.noSparse.ts.ipa"
+        },
+        {
+          "version": "5.2.1",
+          "date": "2024-07-30",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.2.1/purekfd.ipa",
+          "size": 24374136
+        },
+        {
+          "version": "5.2",
+          "date": "2024-02-08",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.2/purekfd.ipa",
+          "size": 47591689
+        },
+        {
+          "version": "5.1",
+          "date": "2024-01-18",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.1/PureKFD.ipa",
+          "size": 24524098
+        },
+        {
+          "version": "5.0beta_landa",
+          "date": "2024-01-01",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0beta_landa/purekfd.ipa",
+          "size": 22856454
+        },
+        {
+          "version": "5.0betaOSS",
+          "date": "2024-01-07",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0betaOSS/purekfd.ipa",
+          "size": 21365065
+        },
+        {
+          "version": "5.0beta",
+          "date": "2023-12-30",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0beta/purekfd.ipa",
+          "size": 43115933
+        },
+        {
+          "version": "5.0",
+          "date": "2024-01-08",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0/purekfd.ipa",
+          "size": 46623713
+        },
+        {
+          "version": "4.6",
+          "date": "2023-12-11",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.6/purekfd.ipa",
+          "size": 33681766
+        },
+        {
+          "version": "4.5",
+          "date": "2023-12-09",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.5/purekfd.ipa",
+          "size": 15861998
+        },
+        {
+          "version": "4.4",
+          "date": "2023-12-08",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.4/purekfd.ipa",
+          "size": 28123389
+        },
+        {
+          "version": "4.3",
+          "date": "2023-12-07",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.3/purekfd.ipa",
+          "size": 28115297
+        },
+        {
+          "version": "4.2",
+          "date": "2023-12-06",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.2/PureKFDTrollStore.tipa",
+          "size": 28111895
+        },
+        {
+          "version": "4.2",
+          "date": "2023-12-06",
+          "build": "",
+          "size": 28068025,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.2/PureKFD.ipa"
+        },
+        {
+          "version": "4.1",
+          "date": "2023-10-09",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.1/PureKFD.ipa",
+          "size": 29190358
+        },
+        {
+          "version": "4.0",
+          "date": "2023-10-01",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.0/PureKFD.ipa",
+          "size": 27842739
+        },
+        {
+          "version": "3.5",
+          "date": "2023-09-03",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.5/PureKFD.ipa",
+          "size": 3040538
+        },
+        {
+          "version": "3.4",
+          "date": "2023-08-29",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.4/PureKFD.ipa",
+          "size": 2213036
+        },
+        {
+          "version": "3.2",
+          "date": "2023-08-25",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.2/PureKFD.ipa",
+          "size": 1669727
+        },
+        {
+          "version": "3.2",
+          "date": "2023-08-25",
+          "build": "",
+          "size": 2197260,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.2/PureKFD_IOSurface.ipa"
+        },
+        {
+          "version": "3.1",
+          "date": "2023-08-25",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.1/PureKFD.ipa",
+          "size": 1864118
+        },
+        {
+          "version": "3.1",
+          "date": "2023-08-25",
+          "build": "",
+          "size": 2197260,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.1/PureKFD_IOSurface.ipa"
+        },
+        {
+          "version": "3.0",
+          "date": "2023-08-24",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.0/PureKFD.ipa",
+          "size": 1636661
+        }
+      ]
+    },
+    {
+      "name": "PurePKG",
+      "bundleIdentifier": "uwu.lrdsnow.purepkg",
+      "developerName": "Lrdsnow",
+      "subtitle": "The Purest Jailbreak Package Manager",
+      "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/icon.jpg",
+      "category": "utilities",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_4.png"
+      ],
+      "versions": [
+        {
+          "version": "2.0.2",
+          "date": "2024-07-24",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/PurePKG.tipa",
+          "size": 6637698
+        },
+        {
+          "version": "2.0.2",
+          "date": "2024-07-24",
+          "build": "",
+          "size": 6637698,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/PurePKGDemo.ipa"
+        },
+        {
+          "version": "2.0.1",
+          "date": "2024-06-23",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/PurePKG.tipa",
+          "size": 9394403
+        },
+        {
+          "version": "2.0.1",
+          "date": "2024-06-23",
+          "build": "",
+          "size": 9394403,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/PurePKGDemo.ipa"
+        },
+        {
+          "version": "2.0",
+          "date": "2024-06-21",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/PurePKG.tipa",
+          "size": 6627862
+        },
+        {
+          "version": "2.0",
+          "date": "2024-06-21",
+          "build": "",
+          "size": 6627862,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/PurePKGDemo.ipa"
+        },
+        {
+          "version": "1.7",
+          "date": "2024-06-15",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.7/PurePKG.tipa",
+          "size": 8067336
+        },
+        {
+          "version": "1.7",
+          "date": "2024-06-15",
+          "build": "",
+          "size": 8067336,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.7/PurePKGDemo.ipa"
+        },
+        {
+          "version": "1.6",
+          "date": "2024-06-03",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.6/PurePKG.tipa",
+          "size": 8499956
+        },
+        {
+          "version": "1.6",
+          "date": "2024-06-03",
+          "build": "",
+          "size": 8499956,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.6/PurePKGDemo.ipa"
+        },
+        {
+          "version": "1.5.1",
+          "date": "2024-06-03",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5.1/PurePKG.tipa",
+          "size": 6399029
+        },
+        {
+          "version": "1.5.1",
+          "date": "2024-06-03",
+          "build": "",
+          "size": 6399029,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5.1/PurePKGDemo.ipa"
+        },
+        {
+          "version": "1.5",
+          "date": "2024-04-22",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5/PurePKG.tipa",
+          "size": 6763487
+        },
+        {
+          "version": "1.5",
+          "date": "2024-04-22",
+          "build": "",
+          "size": 6763487,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5/PurePKGDemo.ipa"
+        },
+        {
+          "version": "1.4",
+          "date": "2024-04-13",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.4/PurePKG.tipa",
+          "size": 21980135
+        },
+        {
+          "version": "1.4",
+          "date": "2024-04-13",
+          "build": "",
+          "size": 21980135,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.4/PurePKGDemo.ipa"
+        },
+        {
+          "version": "1.4",
+          "date": "2024-04-13",
+          "build": "",
+          "size": 5737942,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.4/PurePKGDemo_visionOS.ipa"
+        },
+        {
+          "version": "1.4",
+          "date": "2024-04-13",
+          "build": "",
+          "size": 19436030,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.4/PurePKGDemo_watchOS.ipa"
+        },
+        {
+          "version": "1.3",
+          "date": "2024-04-11",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.3/PurePKG.tipa",
+          "size": 21949811
+        },
+        {
+          "version": "1.3",
+          "date": "2024-04-11",
+          "build": "",
+          "size": 21949811,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.3/PurePKGDemo.ipa"
+        },
+        {
+          "version": "1.3",
+          "date": "2024-04-11",
+          "build": "",
+          "size": 166,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.3/PurePKGDemo_visionOS.ipa"
+        },
+        {
+          "version": "1.3",
+          "date": "2024-04-11",
+          "build": "",
+          "size": 19381174,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.3/PurePKGDemo_watchOS.ipa"
+        },
+        {
+          "version": "1.2",
+          "date": "2024-04-06",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.2/PurePKG.tipa",
+          "size": 16998348
+        },
+        {
+          "version": "1.2",
+          "date": "2024-04-06",
+          "build": "",
+          "size": 16998348,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.2/PurePKGDemo.ipa"
+        },
+        {
+          "version": "1.2",
+          "date": "2024-04-06",
+          "build": "",
+          "size": 4095997,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.2/PurePKGDemo_watchOS.ipa"
+        },
+        {
+          "version": "1.1",
+          "date": "2024-04-04",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.1/PurePKG.tipa",
+          "size": 20127625
+        },
+        {
+          "version": "1.1",
+          "date": "2024-04-04",
+          "build": "",
+          "size": 20127625,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.1/PurePKGDemo.ipa"
+        },
+        {
+          "version": "1.1",
+          "date": "2024-04-04",
+          "build": "",
+          "size": 166,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.1/PurePKGDemo_visionOS.ipa"
+        },
+        {
+          "version": "1.1",
+          "date": "2024-04-04",
+          "build": "",
+          "size": 13774810,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.1/PurePKGDemo_watchOS.ipa"
+        },
+        {
+          "version": "1.0",
+          "date": "2024-04-03",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0/PurePKG.tipa",
+          "size": 17556191
+        },
+        {
+          "version": "1.0",
+          "date": "2024-04-03",
+          "build": "",
+          "size": 17556191,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0/PurePKGDemo.ipa"
+        },
+        {
+          "version": "1.0",
+          "date": "2024-04-03",
+          "build": "",
+          "size": 166,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0/PurePKGDemo_visionOS.ipa"
+        },
+        {
+          "version": "1.0",
+          "date": "2024-04-03",
+          "build": "",
+          "size": 13544212,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0/PurePKGDemo_watchOS.ipa"
+        },
+        {
+          "version": "1.0b8",
+          "date": "2024-03-30",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b8/PurePKG.tipa",
+          "size": 17523589
+        },
+        {
+          "version": "1.0b8",
+          "date": "2024-03-30",
+          "build": "",
+          "size": 17523589,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b8/PurePKGDemo.ipa"
+        },
+        {
+          "version": "1.0b8",
+          "date": "2024-03-30",
+          "build": "",
+          "size": 166,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b8/PurePKGDemo_visionOS.ipa"
+        },
+        {
+          "version": "1.0b8",
+          "date": "2024-03-30",
+          "build": "",
+          "size": 13518557,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b8/PurePKGDemo_watchOS.ipa"
+        },
+        {
+          "version": "1.0b7",
+          "date": "2024-03-29",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b7/PurePKG.tipa",
+          "size": 17212346
+        },
+        {
+          "version": "1.0b7",
+          "date": "2024-03-29",
+          "build": "",
+          "size": 17212346,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b7/PurePKGDemo.ipa"
+        },
+        {
+          "version": "1.0b7",
+          "date": "2024-03-29",
+          "build": "",
+          "size": 12590571,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b7/PurePKGDemo_visionOS.ipa"
+        },
+        {
+          "version": "1.0b7",
+          "date": "2024-03-29",
+          "build": "",
+          "size": 14895267,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b7/PurePKGDemo_watchOS.ipa"
+        },
+        {
+          "version": "1.0b6",
+          "date": "2024-03-28",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b6/PurePKG.tipa",
+          "size": 17212353
+        },
+        {
+          "version": "1.0b6",
+          "date": "2024-03-28",
+          "build": "",
+          "size": 17212353,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b6/PurePKGDemo.ipa"
+        },
+        {
+          "version": "1.0b5",
+          "date": "2024-03-28",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b5/PurePKG.tipa",
+          "size": 17179779
+        },
+        {
+          "version": "1.0b5",
+          "date": "2024-03-28",
+          "build": "",
+          "size": 17179779,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b5/PurePKGDemo.ipa"
+        },
+        {
+          "version": "1.0b4",
+          "date": "2024-03-27",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b4/PurePKG.tipa",
+          "size": 24189138
+        },
+        {
+          "version": "1.0b4",
+          "date": "2024-03-27",
+          "build": "",
+          "size": 24189138,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b4/PurePKGDemo.ipa"
+        },
+        {
+          "version": "1.0b3",
+          "date": "2024-03-27",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b3/PurePKG.tipa",
+          "size": 24187222
+        },
+        {
+          "version": "1.0b3",
+          "date": "2024-03-27",
+          "build": "",
+          "size": 24187222,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b3/PurePKGDemo.ipa"
+        },
+        {
+          "version": "1.0b2",
+          "date": "2024-02-18",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b2/PurePKG.tipa",
+          "size": 24149395
+        },
+        {
+          "version": "1.0b2",
+          "date": "2024-02-18",
+          "build": "",
+          "size": 24031082,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b2/PurePKGDemo.ipa"
+        }
+      ]
+    },
+    {
+      "name": "Santander",
+      "bundleIdentifier": "com.nsantoine.santander",
+      "developerName": "NSAntoine",
+      "subtitle": "Enhanced File Manager for iOS",
+      "localizedDescription": "Santander aims to enhance the experience of a file manager on an iOS device, using modern and familiar UI alongside new APIs. Note: The project is still in beta, and there are still quite a lot of bugs to fix & enhancements to make.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Santander/icon.jpg",
+      "category": "utilities",
+      "screenshotURLs": [],
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2024-10-11",
+          "downloadURL": "https://github.com/DRKCTRL/Santander/releases/download/1.0/SantanderTS.tipa",
+          "size": 5331159
+        },
+        {
+          "version": "1.0",
+          "date": "2024-10-11",
+          "build": "",
+          "size": 4575378,
+          "downloadURL": "https://github.com/DRKCTRL/Santander/releases/download/1.0/Santander.ipa"
+        }
+      ]
+    },
+    {
+      "name": "TrollBox",
+      "bundleIdentifier": "live.cclerc.trollbox",
+      "developerName": "c22dev",
+      "subtitle": "AIO TrollStore Tool",
+      "localizedDescription": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/icon.jpg",
+      "category": "utilities",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_5.png"
+      ],
+      "versions": [
+        {
+          "version": "0.2",
+          "date": "2023-11-28",
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.2/TrollBox.tipa",
+          "size": 26633972
+        },
+        {
+          "version": "0.1",
+          "date": "2023-01-29",
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.1/TrollBox.tipa",
+          "size": 14327984
+        },
+        {
+          "version": "0.1",
+          "date": "2023-01-29",
+          "build": "",
+          "size": 14113886,
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.1/TrollBox16.ipa"
+        },
+        {
+          "version": "0.0.9",
+          "date": "2023-01-20",
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.9/TrollBox.tipa",
+          "size": 13673796
+        },
+        {
+          "version": "0.0.8",
+          "date": "2022-12-28",
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.8/TrollBox.tipa",
+          "size": 12497643
+        },
+        {
+          "version": "0.0.7",
+          "date": "2022-12-27",
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.7/TrollBox.tipa",
+          "size": 8050755
+        },
+        {
+          "version": "0.0.6",
+          "date": "2022-12-23",
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.6/TrollBox.tipa",
+          "size": 3510461
+        },
+        {
+          "version": "0.0.5",
+          "date": "2022-12-23",
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.5/TrollBox.tipa",
+          "size": 4532634
+        },
+        {
+          "version": "0.0.4",
+          "date": "2022-12-22",
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.4/TrollBox.tipa",
+          "size": 3141208
+        },
+        {
+          "version": "0.0.3",
+          "date": "2022-12-21",
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.3/TrollBox.tipa",
+          "size": 3016450
+        },
+        {
+          "version": "0.0.2",
+          "date": "2022-12-20",
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.2/TrollBox.tipa",
+          "size": 2945488
+        },
+        {
+          "version": "0.0.1",
+          "date": "2022-12-19",
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.1/TrollBox.tipa",
+          "size": 2878138
+        }
+      ]
+    },
+    {
+      "name": "TrollFools(Huami1314)",
+      "bundleIdentifier": "com.huami.TrollFools",
+      "developerName": "huami1314",
+      "subtitle": "Tweak Injection Tool for TrollStore (iOS 15+)",
+      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/icon.jpg",
+      "category": "utilities",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_4.png"
+      ],
+      "versions": [
+        {
+          "version": "2.9-21",
+          "date": "2025-01-11",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-21/TrollFools14_2.9-21%40huamidev.tipa",
+          "size": 14241843
+        },
+        {
+          "version": "2.9-21",
+          "date": "2025-01-11",
+          "build": "",
+          "size": 6423780,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-21/TrollFools_2.9-21%40huamidev.tipa"
+        },
+        {
+          "version": "2.9-20",
+          "date": "2025-01-10",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-20/TrollFools14_2.9-20_huami.tipa",
+          "size": 14255921
+        },
+        {
+          "version": "2.9-20",
+          "date": "2025-01-10",
+          "build": "",
+          "size": 6434885,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-20/TrollFools_2.9-20_huami.tipa"
+        },
+        {
+          "version": "2.8-18",
+          "date": "2025-01-10",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-18/TrollFools14_2.8-18_huami.tipa",
+          "size": 12618066
+        },
+        {
+          "version": "2.8-18",
+          "date": "2025-01-10",
+          "build": "",
+          "size": 5457739,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-18/TrollFools_2.8-18_huami.tipa"
+        },
+        {
+          "version": "2.8-17",
+          "date": "2025-01-09",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-17/TrollFools14_2.8-17_huami.tipa",
+          "size": 12619164
+        },
+        {
+          "version": "2.8-17",
+          "date": "2025-01-09",
+          "build": "",
+          "size": 5455363,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-17/TrollFools_2.8-17_huami.tipa"
+        },
+        {
+          "version": "2.7-9",
+          "date": "2024-09-28",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-9/TrollFools14_2.7.9.huami.tipa",
+          "size": 7637881
+        },
+        {
+          "version": "2.7-9",
+          "date": "2024-09-28",
+          "build": "",
+          "size": 4792620,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-9/TrollFools_2.7.9.huami.tipa"
+        },
+        {
+          "version": "2.7-11",
+          "date": "2024-09-29",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-11/TrollFools14_2.7.11.huami.tipa",
+          "size": 8055831
+        },
+        {
+          "version": "2.7-11",
+          "date": "2024-09-29",
+          "build": "",
+          "size": 5171573,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-11/TrollFools_2.7.11.huami.tipa"
+        },
+        {
+          "version": "2.7-10",
+          "date": "2024-09-29",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-10/TrollFools14_2.7.10.huami.tipa",
+          "size": 8055743
+        },
+        {
+          "version": "2.7-10",
+          "date": "2024-09-29",
+          "build": "",
+          "size": 5171491,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-10/TrollFools_2.7.10.huami.tipa"
+        },
+        {
+          "version": "2.7",
+          "date": "2024-09-15",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7/TrollFools14_2.7.huami.tipa",
+          "size": 7605474
+        },
+        {
+          "version": "2.7",
+          "date": "2024-09-15",
+          "build": "",
+          "size": 4772134,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7/TrollFools_2.7.huami.tipa"
+        },
+        {
+          "version": "2.6-8",
+          "date": "2024-09-14",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.6-8/TrollFools14_2.6-8.huami.tipa",
+          "size": 7578051
+        },
+        {
+          "version": "2.6-8",
+          "date": "2024-09-14",
+          "build": "",
+          "size": 4754561,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.6-8/TrollFools_2.6-8.huami.tipa"
+        },
+        {
+          "version": "2.5-2_1",
+          "date": "2024-07-28",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.5-2_1/TrollFools14_2.5-2_huami.tipa",
+          "size": 7520247
+        },
+        {
+          "version": "2.5-2_1",
+          "date": "2024-07-28",
+          "build": "",
+          "size": 4709367,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.5-2_1/TrollFools_2.5-2_huami.tipa"
+        },
+        {
+          "version": "2.4-3",
+          "date": "2024-09-15",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.4-3/TrollFools14_2.4-3_huami.tipa",
+          "size": 7300809
+        },
+        {
+          "version": "2.4-3",
+          "date": "2024-09-15",
+          "build": "",
+          "size": 4544074,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.4-3/TrollFools_2.4-3_huami.tipa"
+        },
+        {
+          "version": "2.11-25",
+          "date": "2025-01-17",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25%40huamidev.tipa",
+          "size": 14408490
+        },
+        {
+          "version": "2.11-25",
+          "date": "2025-01-17",
+          "build": "",
+          "size": 6534606,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.11-25/TrollFools_2.11-25%40huamidev.tipa"
+        },
+        {
+          "version": "2.10-23",
+          "date": "2025-01-14",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23%40huamidev.tipa",
+          "size": 14405939
+        },
+        {
+          "version": "2.10-23",
+          "date": "2025-01-14",
+          "build": "",
+          "size": 6524034,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-23/TrollFools_2.10-23%40huamidev.tipa"
+        },
+        {
+          "version": "2.10-22",
+          "date": "2025-01-14",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22%40huamidev.tipa",
+          "size": 14406268
+        },
+        {
+          "version": "2.10-22",
+          "date": "2025-01-14",
+          "build": "",
+          "size": 6524499,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-22/TrollFools_2.10-22%40huamidev.tipa"
+        }
+      ]
+    },
+    {
+      "name": "TrollFools(Lessica)",
+      "bundleIdentifier": "wiki.qaq.TrollFools",
+      "developerName": "Lessica",
+      "subtitle": "Tweak Injection Tool for TrollStore (iOS 15+)",
+      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/icon.jpg",
+      "category": "utilities",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_3.png"
+      ],
+      "versions": [
+        {
+          "version": "2.11-25",
+          "date": "2025-01-17",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25.tipa",
+          "size": 5699241
+        },
+        {
+          "version": "2.11-25",
+          "date": "2025-01-17",
+          "build": "",
+          "size": 3487386,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools_2.11-25.tipa"
+        },
+        {
+          "version": "2.10-23",
+          "date": "2025-01-14",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23.tipa",
+          "size": 5698258
+        },
+        {
+          "version": "2.10-23",
+          "date": "2025-01-14",
+          "build": "",
+          "size": 3487141,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools_2.10-23.tipa"
+        },
+        {
+          "version": "2.10-22",
+          "date": "2025-01-14",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22.tipa",
+          "size": 5698269
+        },
+        {
+          "version": "2.10-22",
+          "date": "2025-01-14",
+          "build": "",
+          "size": 3486354,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-22/TrollFools_2.10-22.tipa"
+        },
+        {
+          "version": "2.9-21",
+          "date": "2025-01-11",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-21/TrollFools14_2.9-21.tipa",
+          "size": 5666166
+        },
+        {
+          "version": "2.9-21",
+          "date": "2025-01-11",
+          "build": "",
+          "size": 3466422,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-21/TrollFools_2.9-21.tipa"
+        },
+        {
+          "version": "2.9-20",
+          "date": "2025-01-10",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-20/TrollFools14_2.9-20.tipa",
+          "size": 5664942
+        },
+        {
+          "version": "2.9-20",
+          "date": "2025-01-10",
+          "build": "",
+          "size": 3466040,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-20/TrollFools_2.9-20.tipa"
+        },
+        {
+          "version": "2.8-16",
+          "date": "2024-12-24",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-16/TrollFools14_2.8-16.tipa",
+          "size": 5434190
+        },
+        {
+          "version": "2.8-16",
+          "date": "2024-12-24",
+          "build": "",
+          "size": 3305897,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-16/TrollFools_2.8-16.tipa"
+        },
+        {
+          "version": "2.8-15",
+          "date": "2024-10-20",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-15/TrollFools14_2.8-15.tipa",
+          "size": 5431116
+        },
+        {
+          "version": "2.8-15",
+          "date": "2024-10-20",
+          "build": "",
+          "size": 3304212,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-15/TrollFools_2.8-15.tipa"
+        },
+        {
+          "version": "2.7-9",
+          "date": "2024-09-25",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.7-9/TrollFools14_2.7-9.tipa",
+          "size": 5552787
+        },
+        {
+          "version": "2.7-9",
+          "date": "2024-09-25",
+          "build": "",
+          "size": 3383295,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.7-9/TrollFools_2.7-9.tipa"
+        },
+        {
+          "version": "2.6-8",
+          "date": "2024-09-11",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.6-8/TrollFools14_2.6-8.tipa",
+          "size": 5552722
+        },
+        {
+          "version": "2.6-8",
+          "date": "2024-09-11",
+          "build": "",
+          "size": 3383703,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.6-8/TrollFools_2.6-8.tipa"
+        },
+        {
+          "version": "2.6-6",
+          "date": "2024-08-18",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.6-6/TrollFools14_2.6-6.tipa",
+          "size": 5552703
+        },
+        {
+          "version": "2.6-6",
+          "date": "2024-08-18",
+          "build": "",
+          "size": 3383397,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.6-6/TrollFools_2.6-6.tipa"
+        },
+        {
+          "version": "2.5-3",
+          "date": "2024-08-18",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.5-3/TrollFools14_2.5-3.tipa",
+          "size": 5552707
+        },
+        {
+          "version": "2.5-3",
+          "date": "2024-08-18",
+          "build": "",
+          "size": 3383534,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.5-3/TrollFools_2.5-3.tipa"
+        },
+        {
+          "version": "2.5-2",
+          "date": "2024-07-28",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.5-2/TrollFools14_2.5-2.tipa",
+          "size": 5544275
+        },
+        {
+          "version": "2.5-2",
+          "date": "2024-07-28",
+          "build": "",
+          "size": 3376019,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.5-2/TrollFools_2.5-2.tipa"
+        },
+        {
+          "version": "2.4-2",
+          "date": "2024-07-27",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.4-2/TrollFools14_2.4-2.tipa",
+          "size": 5537797
+        },
+        {
+          "version": "2.4-2",
+          "date": "2024-07-27",
+          "build": "",
+          "size": 3371615,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.4-2/TrollFools_2.4-2.tipa"
+        },
+        {
+          "version": "2.4-1",
+          "date": "2024-07-24",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.4-1/TrollFools14_2.4-1.tipa",
+          "size": 5384144
+        },
+        {
+          "version": "2.4-1",
+          "date": "2024-07-24",
+          "build": "",
+          "size": 3247279,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.4-1/TrollFools_2.4-1.tipa"
+        },
+        {
+          "version": "2.3-5",
+          "date": "2024-07-23",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-5/TrollFools14_2.3-5.tipa",
+          "size": 5377866
+        },
+        {
+          "version": "2.3-5",
+          "date": "2024-07-23",
+          "build": "",
+          "size": 3242975,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-5/TrollFools_2.3-5.tipa"
+        },
+        {
+          "version": "2.3-2",
+          "date": "2024-07-22",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-2/TrollFools14_2.3-2.tipa",
+          "size": 5370676
+        },
+        {
+          "version": "2.3-2",
+          "date": "2024-07-22",
+          "build": "",
+          "size": 3239279,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-2/TrollFools_2.3-2.tipa"
+        },
+        {
+          "version": "2.1-6",
+          "date": "2024-07-22",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.1-6/TrollFools14_2.1-6.fix3.tipa",
+          "size": 5263057
+        },
+        {
+          "version": "2.1-6",
+          "date": "2024-07-22",
+          "build": "",
+          "size": 3141310,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.1-6/TrollFools_2.1-6.tipa"
+        },
+        {
+          "version": "2.0-2",
+          "date": "2024-07-21",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.0-2/TrollFools_2.0-2.tipa",
+          "size": 28248614
+        },
+        {
+          "version": "1.3-9",
+          "date": "2024-07-20",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.3-9/TrollFools14_1.3-9.tipa",
+          "size": 43791119
+        },
+        {
+          "version": "1.3-9",
+          "date": "2024-07-20",
+          "build": "",
+          "size": 28077538,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.3-9/TrollFools_1.3-9.tipa"
+        },
+        {
+          "version": "1.2-6",
+          "date": "2024-07-20",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.2-6/TrollFools14_1.2-6.tipa",
+          "size": 41736673
+        },
+        {
+          "version": "1.2-6",
+          "date": "2024-07-20",
+          "build": "",
+          "size": 26317618,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.2-6/TrollFools_1.2-6.tipa"
+        },
+        {
+          "version": "1.1-4",
+          "date": "2024-07-20",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.1-4/TrollFools_1.1-4.tipa",
+          "size": 26318078
+        }
+      ]
+    },
+    {
+      "name": "TrollInstallerX",
+      "bundleIdentifier": "com.huami.TrollFools",
+      "developerName": "huami1314",
+      "subtitle": "Universal TrollStore Installer",
+      "localizedDescription": "TrollInstallerX is a fast and reliable universal TrollStore installer supporting iOS 14.0 - 16.6.1 on both arm64 and arm64e devices. It offers two installation methods: direct installation using kfd exploit and dmaFail PPL bypass for most devices, and indirect installation for A15/A16/M2 devices on iOS 16.5.1 and iOS 16.6-16.6.1. Both methods allow installing the TrollStore persistence helper to maintain System registration status.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollInstallerX/icon.jpg",
+      "category": "utilities",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_4.png"
+      ],
+      "versions": [
+        {
+          "version": "1.0.3",
+          "date": "2024-09-12",
+          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX-20D50.ipa",
+          "size": 27098183
+        },
+        {
+          "version": "1.0.3",
+          "date": "2024-09-12",
+          "build": "",
+          "size": 6889214,
+          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX.ipa"
+        },
+        {
+          "version": "1.0.2",
+          "date": "2024-04-08",
+          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.2/TrollInstallerX.ipa",
+          "size": 6888282
+        },
+        {
+          "version": "1.0.1",
+          "date": "2024-04-06",
+          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.1/TrollInstallerX.ipa",
+          "size": 6888465
+        },
+        {
+          "version": "1.0.0",
+          "date": "2024-04-04",
+          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.0/TrollInstallerX.ipa",
+          "size": 6885899
+        }
+      ]
+    }
+  ]
 }

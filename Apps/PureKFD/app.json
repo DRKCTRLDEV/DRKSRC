@@ -1,0 +1,277 @@
+{
+  "repository": [
+    "https://github.com/Lrdsnow/PureKFD"
+  ],
+  "name": "PureKFD",
+  "bundleIdentifier": "uwu.lrdsnow.purekfdiOS",
+  "developerName": "Lrdsnow",
+  "subtitle": "The Purest iOS Toolbox",
+  "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface.",
+  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/icon.jpg",
+  "category": "utilities",
+  "screenshotURLs": [
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_1.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_2.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_3.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_4.png"
+  ],
+  "versions": [
+    {
+      "version": "6b1",
+      "date": "2024-09-14",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.ipa",
+      "size": 10692355
+    },
+    {
+      "version": "6b1",
+      "date": "2024-09-14",
+      "build": "",
+      "size": 3150038,
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.noSparse.ipa"
+    },
+    {
+      "version": "6b1",
+      "date": "2024-09-14",
+      "build": "",
+      "size": 3191275,
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.noSparse.ts.ipa"
+    },
+    {
+      "version": "6.0rc3",
+      "date": "2024-09-21",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc3/PureKFD.ipa",
+      "size": 10019622
+    },
+    {
+      "version": "6.0rc2",
+      "date": "2024-09-21",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc2/PureKFD.ipa",
+      "size": 10840489
+    },
+    {
+      "version": "6.0rc",
+      "date": "2024-09-20",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc/PureKFD.ipa",
+      "size": 9987366
+    },
+    {
+      "version": "6.0b5",
+      "date": "2024-09-19",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b5/PureKFD.ipa",
+      "size": 9948089
+    },
+    {
+      "version": "6.0b4",
+      "date": "2024-09-16",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b4/PureKFD.ipa",
+      "size": 9963979
+    },
+    {
+      "version": "6.0b3",
+      "date": "2024-09-15",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b3/PureKFD.ipa",
+      "size": 10725713
+    },
+    {
+      "version": "6.0b2",
+      "date": "2024-09-14",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b2/PureKFD.ipa",
+      "size": 9867756
+    },
+    {
+      "version": "6.0.2",
+      "date": "2024-11-23",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.ipa",
+      "size": 10806164
+    },
+    {
+      "version": "6.0.2",
+      "date": "2024-11-23",
+      "build": "",
+      "size": 3932657,
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.noSparse.ipa"
+    },
+    {
+      "version": "6.0.2",
+      "date": "2024-11-23",
+      "build": "",
+      "size": 4042969,
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.noSparse.ts.ipa"
+    },
+    {
+      "version": "6.0.1",
+      "date": "2024-09-29",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.ipa",
+      "size": 10882263
+    },
+    {
+      "version": "6.0.1",
+      "date": "2024-09-29",
+      "build": "",
+      "size": 4005315,
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.noSparse.ipa"
+    },
+    {
+      "version": "6.0.1",
+      "date": "2024-09-29",
+      "build": "",
+      "size": 4047225,
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.noSparse.ts.ipa"
+    },
+    {
+      "version": "6.0",
+      "date": "2024-09-22",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.ipa",
+      "size": 10025476
+    },
+    {
+      "version": "6.0",
+      "date": "2024-09-22",
+      "build": "",
+      "size": 3150038,
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.noSparse.ipa"
+    },
+    {
+      "version": "6.0",
+      "date": "2024-09-22",
+      "build": "",
+      "size": 3191275,
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.noSparse.ts.ipa"
+    },
+    {
+      "version": "5.2.1",
+      "date": "2024-07-30",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.2.1/purekfd.ipa",
+      "size": 24374136
+    },
+    {
+      "version": "5.2",
+      "date": "2024-02-08",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.2/purekfd.ipa",
+      "size": 47591689
+    },
+    {
+      "version": "5.1",
+      "date": "2024-01-18",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.1/PureKFD.ipa",
+      "size": 24524098
+    },
+    {
+      "version": "5.0beta_landa",
+      "date": "2024-01-01",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0beta_landa/purekfd.ipa",
+      "size": 22856454
+    },
+    {
+      "version": "5.0betaOSS",
+      "date": "2024-01-07",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0betaOSS/purekfd.ipa",
+      "size": 21365065
+    },
+    {
+      "version": "5.0beta",
+      "date": "2023-12-30",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0beta/purekfd.ipa",
+      "size": 43115933
+    },
+    {
+      "version": "5.0",
+      "date": "2024-01-08",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0/purekfd.ipa",
+      "size": 46623713
+    },
+    {
+      "version": "4.6",
+      "date": "2023-12-11",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.6/purekfd.ipa",
+      "size": 33681766
+    },
+    {
+      "version": "4.5",
+      "date": "2023-12-09",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.5/purekfd.ipa",
+      "size": 15861998
+    },
+    {
+      "version": "4.4",
+      "date": "2023-12-08",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.4/purekfd.ipa",
+      "size": 28123389
+    },
+    {
+      "version": "4.3",
+      "date": "2023-12-07",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.3/purekfd.ipa",
+      "size": 28115297
+    },
+    {
+      "version": "4.2",
+      "date": "2023-12-06",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.2/PureKFDTrollStore.tipa",
+      "size": 28111895
+    },
+    {
+      "version": "4.2",
+      "date": "2023-12-06",
+      "build": "",
+      "size": 28068025,
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.2/PureKFD.ipa"
+    },
+    {
+      "version": "4.1",
+      "date": "2023-10-09",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.1/PureKFD.ipa",
+      "size": 29190358
+    },
+    {
+      "version": "4.0",
+      "date": "2023-10-01",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.0/PureKFD.ipa",
+      "size": 27842739
+    },
+    {
+      "version": "3.5",
+      "date": "2023-09-03",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.5/PureKFD.ipa",
+      "size": 3040538
+    },
+    {
+      "version": "3.4",
+      "date": "2023-08-29",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.4/PureKFD.ipa",
+      "size": 2213036
+    },
+    {
+      "version": "3.2",
+      "date": "2023-08-25",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.2/PureKFD.ipa",
+      "size": 1669727
+    },
+    {
+      "version": "3.2",
+      "date": "2023-08-25",
+      "build": "",
+      "size": 2197260,
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.2/PureKFD_IOSurface.ipa"
+    },
+    {
+      "version": "3.1",
+      "date": "2023-08-25",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.1/PureKFD.ipa",
+      "size": 1864118
+    },
+    {
+      "version": "3.1",
+      "date": "2023-08-25",
+      "build": "",
+      "size": 2197260,
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.1/PureKFD_IOSurface.ipa"
+    },
+    {
+      "version": "3.0",
+      "date": "2023-08-24",
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.0/PureKFD.ipa",
+      "size": 1636661
+    }
+  ]
+}
