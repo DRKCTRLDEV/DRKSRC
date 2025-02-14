@@ -1,7 +1,7 @@
 # DRKSRC
 
 <div align="center">
-  <img src="assets/Icon.png" alt="DRKSRC Logo" width="120" style="border-radius: 10px;"/>
+  <img src="assets/DRKSRC.png" alt="DRKSRC Logo" width="120" style="border-radius: 10px;"/>
   <h3>Your Fav Source for iOS Apps</h3>
 </div>
 
