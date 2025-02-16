@@ -79,7 +79,7 @@ class RepoUpdater:
             app_data = self.load_json_file(os.path.join(self.apps_dir, app_name, 'app.json'))
             if not app_data:
                 return {"success": False, "message": "Failed to load app data"}
-                
+            
             repos = app_data.get("repository", [])
             if not repos:
                 return {"success": False, "message": "No GitHub repository found"}
@@ -92,7 +92,7 @@ class RepoUpdater:
             for repo_url in repos:
                 if "github.com" not in repo_url:
                     continue
-                    
+                
                 parts = repo_url.rstrip('/').split('/')
                 owner, repo = parts[-2], parts[-1]
                 
@@ -112,8 +112,10 @@ class RepoUpdater:
                 for release in response.json():
                     for asset in release.get('assets', []):
                         if asset['name'].lower().endswith(('.ipa', '.tipa')):
+                            # Directly use the version string from the release
+                            version_str = release['tag_name']  # Keep the version as is
                             version_info = {
-                                "version": release['tag_name'].lstrip('v'),
+                                "version": version_str,  # Use the raw version string
                                 "date": release['published_at'].split('T')[0],
                                 "size": asset['size'],
                                 "downloadURL": asset['browser_download_url'],
@@ -125,35 +127,29 @@ class RepoUpdater:
                                 new_versions.append(version_info)
                                 existing_urls.add(version_info["downloadURL"])
 
-            if new_versions:
-                latest_version = new_versions[0]
-                if latest_version.get("downloadURL"):
-                    app_json_path = os.path.join(self.apps_dir, app_name, 'app.json')
-                    if not update_app_permissions(app_json_path, latest_version["downloadURL"]):
-                        self.logger.error(f"Failed to update permissions for {app_name}")
+                if new_versions:
+                    latest_version = new_versions[0]
+                    if latest_version.get("downloadURL"):
+                        app_json_path = os.path.join(self.apps_dir, app_name, 'app.json')
+                        if not update_app_permissions(app_json_path, latest_version["downloadURL"]):
+                            self.logger.error(f"Failed to update permissions for {app_name}")
 
-                all_versions = existing_versions + new_versions
-                all_versions.sort(key=lambda x: version.parse(x['version']), reverse=True)
-                app_data["versions"] = all_versions[:5]
-                
-                if self.save_json_file(os.path.join(self.apps_dir, app_name, 'app.json'), app_data):
-                    return {
-                        "success": True,
-                        "message": f"Added {len(new_versions)} new version(s), pruned to 5 most recent",
-                        "data": {"new_versions": new_versions}
-                    }
+                    all_versions = existing_versions + new_versions
+                    all_versions.sort(key=lambda x: x['version'], reverse=True)  # Sort by raw version string
+                    app_data["versions"] = all_versions[:5]
+                    
+                    if self.save_json_file(os.path.join(self.apps_dir, app_name, 'app.json'), app_data):
+                        return {
+                            "success": True,
+                            "message": f"Added {len(new_versions)} new version(s), pruned to 5 most recent",
+                            "data": {"new_versions": new_versions}
+                        }
             
-            elif len(existing_versions) > 5:
-                existing_versions.sort(key=lambda x: version.parse(x['version']), reverse=True)
-                app_data["versions"] = existing_versions[:5]
-                if self.save_json_file(os.path.join(self.apps_dir, app_name, 'app.json'), app_data):
-                    return {
-                        "success": True,
-                        "message": "Pruned to 5 most recent versions",
-                        "data": {}
-                    }
-
             return {"success": True, "message": "No new versions found"}
+            
+        except Exception as e:
+            self.logger.error(f"Error updating versions for {app_name}: {str(e)}")
+            return {"success": False, "message": str(e)}
             
         except Exception as e:
             self.logger.error(f"Error updating versions for {app_name}: {str(e)}")
