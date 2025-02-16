@@ -202,8 +202,8 @@ class RepoUpdater:
                 "subtitle": repo_info.get("subtitle"),
                 "iconURL": repo_info.get("iconURL"),
                 "website": repo_info.get("website"),
-                "sourceURL": repo_info.get("sourceURL", ""),
-                "tintColor": repo_info.get("tintColor", "").lstrip("#"),
+                "sourceURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/altstore.json",
+                "tintColor": repo_info.get("tintColor", "").lstrip("#"),  # Remove # for AltStore
                 "featuredApps": featured_apps,
                 "crypto": repo_info.get("crypto", {}),
                 "apps": [
@@ -234,6 +234,7 @@ class RepoUpdater:
                 "iconURL": repo_info.get("iconURL"),
                 "headerURL": repo_info.get("headerURL"),
                 "website": repo_info.get("website"),
+                "tintColor": repo_info.get("tintColor"),  # Keep original format with #
                 "featuredApps": featured_apps,
                 "apps": [
                     {
@@ -243,20 +244,25 @@ class RepoUpdater:
                         "subtitle": app.get("subtitle", ""),
                         "localizedDescription": app.get("localizedDescription", ""),
                         "iconURL": app.get("iconURL", ""),
+                        "tintColor": repo_info.get("tintColor"),  # Keep original format with #
                         "screenshotURLs": app.get("screenshotURLs", []),
                         "versions": [
                             {
                                 "version": ver.get("version", ""),
                                 "date": ver.get("date", ""),
-                                "localizedDescription": ver.get("localizedDescription", ""),
+                                "localizedDescription": app.get("localizedDescription", ""),
                                 "downloadURL": ver.get("downloadURL", ""),
-                                "size": ver.get("size", 0)
+                                "size": ver.get("size", 0),
+                                "minOSVersion": "14.0",
+                                "maxOSVersion": "17.0"
                             }
                             for ver in app.get("versions", [])
-                        ]
+                        ],
+                        "appPermissions": {}
                     }
                     for app in apps
-                ]
+                ],
+                "news": []
             }
             self.save_json_file(os.path.join(self.base_dir, 'trollapps.json'), trollapps_data)
 
@@ -302,8 +308,8 @@ class RepoUpdater:
                 "subtitle": repo_info.get("subtitle"),
                 "iconURL": repo_info.get("iconURL"),
                 "website": repo_info.get("website"),
-                "sourceURL": repo_info.get("sourceURL", ""),
-                "tintColor": repo_info.get("tintColor", "").lstrip("#"),
+                "sourceURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/esign.json",
+                "tintColor": repo_info.get("tintColor", "").lstrip("#"),  # Remove # for ESign
                 "featuredApps": featured_apps,
                 "apps": [
                     {
@@ -315,7 +321,7 @@ class RepoUpdater:
                         "downloadURL": app.get("versions", [{}])[0].get("downloadURL", "") if app.get("versions") else "",
                         "localizedDescription": app.get("localizedDescription", ""),
                         "iconURL": app.get("iconURL", ""),
-                        "tintColor": repo_info.get("tintColor", "").lstrip("#"),
+                        "tintColor": repo_info.get("tintColor", "").lstrip("#"),  # Remove # for ESign
                         "size": app.get("versions", [{}])[0].get("size", 0) if app.get("versions") else 0,
                         "screenshotURLs": app.get("screenshotURLs", [])
                     }
