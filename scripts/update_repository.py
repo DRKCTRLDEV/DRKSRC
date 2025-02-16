@@ -207,12 +207,11 @@ class RepoUpdater:
     def _generate_altstore_format(self, repo_info: Dict, apps: List, featured_apps: List) -> Dict:
         """Generate altstore.json format"""
         return {
-            "name": repo_info.get("name", "AltStore"),
-            "identifier": repo_info.get("identifier", "com.rileytestut.AltStore"),
-            "subtitle": repo_info.get("subtitle", "A home for apps that push the boundaries of iOS."),
-            "description": repo_info.get("description", "This is the default source for AltStore. You can add additional sources to manage what apps appear in AltStore.\n\nFor more info, check out our FAQ: https://faq.altstore.io/patreon/beta-access/sources"),
-            "website": repo_info.get("website", "https://altstore.io"),
-            "patreonURL": repo_info.get("patreonURL", "https://www.patreon.com/rileyshane"),
+            "name": repo_info.get("name"),
+            "identifier": repo_info.get("identifier"),
+            "subtitle": repo_info.get("subtitle"),
+            "description": repo_info.get("description"),
+            "website": repo_info.get("website"),
             "apps": [self._create_app_entry(app) for app in apps],
             "featuredApps": featured_apps
         }
@@ -221,6 +220,7 @@ class RepoUpdater:
         """Generate TrollApps format"""
         return {
             "name": repo_info.get("name"),
+            "identifier": repo_info.get("identifier"),
             "subtitle": repo_info.get("subtitle"),
             "description": repo_info.get("description"),
             "iconURL": repo_info.get("iconURL"),
