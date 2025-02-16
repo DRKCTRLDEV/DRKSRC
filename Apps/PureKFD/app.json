@@ -46,5 +46,12 @@
       "size": 10840489,
       "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc2/PureKFD.ipa"
     }
-  ]
+  ],
+  "appPermissions": {
+    "privacy": {
+      "AppleMusic": "unsandbox",
+      "DocumentsFolder": "PureKFD uses the documents folder to store App Data"
+    },
+    "entitlements": []
+  }
 }
