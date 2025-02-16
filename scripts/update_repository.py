@@ -9,6 +9,7 @@ from packaging import version
 from datetime import datetime
 import random
 import subprocess
+from extract_permissions import update_app_permissions
 
 def setup_logging():
     """Set up logging configuration"""
@@ -95,9 +96,8 @@ class RepoUpdater:
                 parts = repo_url.rstrip('/').split('/')
                 owner, repo = parts[-2], parts[-1]
                 
-                # Add headers with token if available
                 headers = {}
-                if repo_token := os.environ.get('REPO_TOKEN'):  # Changed from GITHUB_TOKEN
+                if repo_token := os.environ.get('REPO_TOKEN'):
                     headers['Authorization'] = f'token {repo_token}'
                 
                 response = requests.get(
@@ -106,8 +106,9 @@ class RepoUpdater:
                     timeout=10
                 )
                 if response.status_code != 200:
+                    self.logger.error(f"Failed to fetch releases for {repo_url}: {response.status_code}")
                     continue
-                    
+                
                 for release in response.json():
                     for asset in release.get('assets', []):
                         if asset['name'].lower().endswith(('.ipa', '.tipa')):
@@ -125,14 +126,14 @@ class RepoUpdater:
                                 existing_urls.add(version_info["downloadURL"])
 
             if new_versions:
-                # Get all versions and sort them
+                latest_version = new_versions[0]
+                if latest_version.get("downloadURL"):
+                    app_json_path = os.path.join(self.apps_dir, app_name, 'app.json')
+                    if not update_app_permissions(app_json_path, latest_version["downloadURL"]):
+                        self.logger.error(f"Failed to update permissions for {app_name}")
+
                 all_versions = existing_versions + new_versions
-                try:
-                    all_versions.sort(key=lambda x: version.parse(x['version']), reverse=True)
-                except:
-                    all_versions.sort(key=lambda x: x['version'], reverse=True)
-                
-                # Keep only the 5 most recent versions
+                all_versions.sort(key=lambda x: version.parse(x['version']), reverse=True)
                 app_data["versions"] = all_versions[:5]
                 
                 if self.save_json_file(os.path.join(self.apps_dir, app_name, 'app.json'), app_data):
@@ -142,13 +143,8 @@ class RepoUpdater:
                         "data": {"new_versions": new_versions}
                     }
             
-            # If there are more than 5 existing versions but no new ones, still prune
             elif len(existing_versions) > 5:
-                try:
-                    existing_versions.sort(key=lambda x: version.parse(x['version']), reverse=True)
-                except:
-                    existing_versions.sort(key=lambda x: x['version'], reverse=True)
-                
+                existing_versions.sort(key=lambda x: version.parse(x['version']), reverse=True)
                 app_data["versions"] = existing_versions[:5]
                 if self.save_json_file(os.path.join(self.apps_dir, app_name, 'app.json'), app_data):
                     return {
@@ -160,6 +156,7 @@ class RepoUpdater:
             return {"success": True, "message": "No new versions found"}
             
         except Exception as e:
+            self.logger.error(f"Error updating versions for {app_name}: {str(e)}")
             return {"success": False, "message": str(e)}
 
     def compile_all_formats(self) -> Dict[str, Any]:
