@@ -277,12 +277,7 @@
       "localizedDescription": "TrollInstallerX is a fast and reliable universal TrollStore installer supporting iOS 14.0 - 16.6.1 on both arm64 and arm64e devices. It offers two installation methods: direct installation using kfd exploit and dmaFail PPL bypass for most devices, and indirect installation for A15/A16/M2 devices on iOS 16.5.1 and iOS 16.6-16.6.1. Both methods allow installing the TrollStore persistence helper to maintain System registration status.",
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollInstallerX/icon.jpg",
       "tintColor": "#d68ace",
-      "screenshotURLs": [
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_2.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_3.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_4.png"
-      ],
+      "screenshotURLs": [],
       "versions": [
         {
           "version": "1.0.3",
@@ -468,7 +463,8 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_2.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_3.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_4.png"
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_5.png"
       ],
       "versions": [
         {
@@ -557,7 +553,9 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_2.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_3.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_4.png"
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_5.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_6.png"
       ],
       "versions": [],
       "appPermissions": {}
@@ -574,7 +572,8 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_2.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_3.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_4.png"
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_5.png"
       ],
       "versions": [
         {
@@ -686,7 +685,10 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_2.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_3.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_4.png"
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_5.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_6.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_7.png"
       ],
       "versions": [
         {
@@ -749,7 +751,8 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_2.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_3.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_4.png"
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_5.png"
       ],
       "versions": [
         {

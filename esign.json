@@ -109,12 +109,7 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollInstallerX/icon.jpg",
       "tintColor": "d68ace",
       "size": 27098183,
-      "screenshotURLs": [
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_2.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_3.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_4.png"
-      ]
+      "screenshotURLs": []
     },
     {
       "name": "PurePKG",
