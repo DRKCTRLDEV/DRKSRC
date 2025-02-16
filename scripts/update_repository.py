@@ -217,10 +217,7 @@ class RepoUpdater:
                         "localizedDescription": app.get("localizedDescription", ""),
                         "iconURL": app.get("iconURL", ""),
                         "screenshotURLs": app.get("screenshotURLs", []),
-                        "versions": app.get("versions", []),
-                        "appPermissions": {},
-                        "minOSVersion": "14.0",
-                        "maxOSVersion": "17.0"
+                        "versions": app.get("versions", [])
                     }
                     for app in apps
                 ]
