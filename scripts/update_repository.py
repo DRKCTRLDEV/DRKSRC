@@ -167,22 +167,16 @@ class RepoUpdater:
     def compile_all_formats(self) -> Dict[str, Any]:
         """Compile repository into all supported formats"""
         try:
+            # Load repository information
             repo_info = self.load_json_file(os.path.join(self.base_dir, 'repo-info.json'))
             if not repo_info:
                 return {"success": False, "message": "Could not load repo-info.json"}
 
-            # Base data preparation
+            # Prepare featured apps and load app data
             featured_apps = self.get_weekly_featured_apps()
-            apps = []
-            for app_name in os.listdir(self.apps_dir):
-                if not os.path.isdir(os.path.join(self.apps_dir, app_name)):
-                    continue
-                    
-                if app_data := self.load_json_file(os.path.join(self.apps_dir, app_name, 'app.json')):
-                    app_data.pop('repository', None)  # Remove repository from app data
-                    apps.append(app_data)
+            apps = self._load_all_apps()
 
-            # Generate formats
+            # Generate and save all formats
             formats = {
                 'altstore.json': self._generate_altstore_format,
                 'trollapps.json': self._generate_trollapps_format,
@@ -190,7 +184,6 @@ class RepoUpdater:
                 'esign.json': self._generate_esign_format
             }
 
-            # Save all formats
             for filename, generator in formats.items():
                 data = generator(repo_info, apps, featured_apps)
                 if not self.save_json_file(os.path.join(self.base_dir, filename), data):
@@ -201,22 +194,27 @@ class RepoUpdater:
         except Exception as e:
             return {"success": False, "message": str(e)}
 
+    def _load_all_apps(self) -> List[Dict[str, Any]]:
+        """Load all app data from the Apps directory"""
+        apps = []
+        for app_name in os.listdir(self.apps_dir):
+            app_path = os.path.join(self.apps_dir, app_name)
+            if os.path.isdir(app_path):
+                if app_data := self.load_json_file(os.path.join(app_path, 'app.json')):
+                    apps.append(app_data)
+        return apps
+
     def _generate_altstore_format(self, repo_info: Dict, apps: List, featured_apps: List) -> Dict:
-        """Generate AltStore format"""
+        """Generate altstore.json format"""
         return {
-            "name": repo_info.get("name"),
-            "identifier": repo_info.get("identifier"),
-            "subtitle": repo_info.get("subtitle"),
-            "iconURL": repo_info.get("iconURL"),
-            "website": repo_info.get("website"),
-            "sourceURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/altstore.json",
-            "tintColor": repo_info.get("tintColor", "").lstrip("#"),
-            "featuredApps": featured_apps,
-            "crypto": repo_info.get("crypto", {}),
-            "apps": [
-                self._convert_app_to_single_version(app, repo_info, strip_tint=True)
-                for app in apps if app.get("versions")
-            ]
+            "name": repo_info.get("name", "AltStore"),
+            "identifier": repo_info.get("identifier", "com.rileytestut.AltStore"),
+            "subtitle": repo_info.get("subtitle", "A home for apps that push the boundaries of iOS."),
+            "description": repo_info.get("description", "This is the default source for AltStore. You can add additional sources to manage what apps appear in AltStore.\n\nFor more info, check out our FAQ: https://faq.altstore.io/patreon/beta-access/sources"),
+            "website": repo_info.get("website", "https://altstore.io"),
+            "patreonURL": repo_info.get("patreonURL", "https://www.patreon.com/rileyshane"),
+            "apps": [self._create_app_entry(app) for app in apps],
+            "featuredApps": featured_apps
         }
 
     def _generate_trollapps_format(self, repo_info: Dict, apps: List, featured_apps: List) -> Dict:
@@ -228,34 +226,9 @@ class RepoUpdater:
             "iconURL": repo_info.get("iconURL"),
             "headerURL": repo_info.get("headerURL"),
             "website": repo_info.get("website"),
-            "tintColor": repo_info.get("tintColor"),  # Keep original format with #
+            "tintColor": repo_info.get("tintColor"),
             "featuredApps": featured_apps,
-            "apps": [
-                {
-                    "name": app.get("name", ""),
-                    "bundleIdentifier": app.get("bundleIdentifier", ""),
-                    "developerName": app.get("developerName", ""),
-                    "subtitle": app.get("subtitle", ""),
-                    "localizedDescription": app.get("localizedDescription", ""),
-                    "iconURL": app.get("iconURL", ""),
-                    "tintColor": repo_info.get("tintColor"),  # Keep original format with #
-                    "screenshotURLs": app.get("screenshotURLs", []),
-                    "versions": [
-                        {
-                            "version": ver.get("version", ""),
-                            "date": ver.get("date", ""),
-                            "localizedDescription": app.get("localizedDescription", ""),
-                            "downloadURL": ver.get("downloadURL", ""),
-                            "size": ver.get("size", 0),
-                            "minOSVersion": "14.0",
-                            "maxOSVersion": "17.0"
-                        }
-                        for ver in app.get("versions", [])
-                    ],
-                    "appPermissions": {}
-                }
-                for app in apps
-            ],
+            "apps": [self._create_trollapps_app_entry(app) for app in apps],
             "news": []
         }
 
@@ -272,24 +245,8 @@ class RepoUpdater:
             "Other": []
         }
 
-        # Map apps to Scarlet format
         for app in apps:
-            scarlet_app = {
-                "name": app.get("name", ""),
-                "version": app.get("versions", [{}])[0].get("version", "") if app.get("versions") else "",
-                "icon": app.get("iconURL", ""),
-                "down": app.get("versions", [{}])[0].get("downloadURL", "") if app.get("versions") else "",
-                "category": app.get("category", "Other"),
-                "banner": repo_info.get("headerURL", ""),
-                "description": app.get("localizedDescription", ""),
-                "bundleID": app.get("bundleIdentifier", ""),
-                "contact": {
-                    "web": repo_info.get("website", "")
-                },
-                "screenshots": app.get("screenshotURLs", [])
-            }
-            
-            # Add app to appropriate category
+            scarlet_app = self._create_scarlet_app_entry(app, repo_info)
             category = "Tweaked" if app.get("category") == "utilities" else "Other"
             scarlet_data[category].append(scarlet_app)
 
@@ -304,21 +261,95 @@ class RepoUpdater:
             "iconURL": repo_info.get("iconURL"),
             "website": repo_info.get("website"),
             "sourceURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/esign.json",
-            "tintColor": repo_info.get("tintColor", "").lstrip("#"),  # Remove # for ESign
+            "tintColor": repo_info.get("tintColor", "").lstrip("#"),
             "featuredApps": featured_apps,
-            "apps": [
-                self._convert_app_to_single_version(app, repo_info, strip_tint=True)
-                for app in apps if app.get("versions")
-            ]
+            "apps": [self._convert_app_to_single_version(app, repo_info) for app in apps if app.get("versions")]
         }
 
-    def _convert_app_to_single_version(self, app: Dict, repo_info: Dict, strip_tint: bool = False) -> Dict:
+    def _create_app_entry(self, app: Dict) -> Dict:
+        """Create an app entry for altstore.json format"""
+        app_entry = {
+            "name": app.get("name"),
+            "bundleIdentifier": app.get("bundleIdentifier"),
+            "developerName": app.get("developerName"),
+            "versions": []
+        }
+
+        for version in app.get("versions", []):
+            version_entry = {
+                "version": version.get("version"),
+                "date": version.get("date"),
+                "localizedDescription": version.get("localizedDescription"),
+                "downloadURL": version.get("downloadURL"),
+                "size": version.get("size"),
+                "sha256": version.get("sha256"),
+                "minOSVersion": version.get("minOSVersion")
+            }
+            app_entry["versions"].append(version_entry)
+
+        if app_entry["versions"]:
+            latest_version = app_entry["versions"][0]
+            app_entry.update({
+                "version": latest_version["version"],
+                "versionDate": latest_version["date"],
+                "versionDescription": latest_version["localizedDescription"],
+                "downloadURL": latest_version["downloadURL"],
+                "localizedDescription": app.get("localizedDescription"),
+                "iconURL": app.get("iconURL"),
+                "tintColor": app.get("tintColor"),
+                "size": latest_version.get("size"),
+                "category": app.get("category"),
+                "appPermissions": app.get("appPermissions", {})
+            })
+
+        return app_entry
+
+    def _create_trollapps_app_entry(self, app: Dict) -> Dict:
+        """Create an app entry for TrollApps format"""
+        return {
+            "name": app.get("name", ""),
+            "bundleIdentifier": app.get("bundleIdentifier", ""),
+            "developerName": app.get("developerName", ""),
+            "subtitle": app.get("subtitle", ""),
+            "localizedDescription": app.get("localizedDescription", ""),
+            "iconURL": app.get("iconURL", ""),
+            "tintColor": app.get("tintColor", ""),
+            "screenshotURLs": app.get("screenshotURLs", []),
+            "versions": [
+                {
+                    "version": ver.get("version", ""),
+                    "date": ver.get("date", ""),
+                    "localizedDescription": app.get("localizedDescription", ""),
+                    "downloadURL": ver.get("downloadURL", ""),
+                    "size": ver.get("size", 0),
+                    "minOSVersion": "14.0",
+                    "maxOSVersion": "17.0"
+                }
+                for ver in app.get("versions", [])
+            ],
+            "appPermissions": {}
+        }
+
+    def _create_scarlet_app_entry(self, app: Dict, repo_info: Dict) -> Dict:
+        """Create an app entry for Scarlet format"""
+        return {
+            "name": app.get("name", ""),
+            "version": app.get("versions", [{}])[0].get("version", "") if app.get("versions") else "",
+            "icon": app.get("iconURL", ""),
+            "down": app.get("versions", [{}])[0].get("downloadURL", "") if app.get("versions") else "",
+            "category": app.get("category", "Other"),
+            "banner": repo_info.get("headerURL", ""),
+            "description": app.get("localizedDescription", ""),
+            "bundleID": app.get("bundleIdentifier", ""),
+            "contact": {
+                "web": repo_info.get("website", "")
+            },
+            "screenshots": app.get("screenshotURLs", [])
+        }
+
+    def _convert_app_to_single_version(self, app: Dict, repo_info: Dict) -> Dict:
         """Convert multi-version app to single version format"""
         latest_version = app.get("versions", [{}])[0] if app.get("versions") else {}
-        tint_color = repo_info.get("tintColor", "")
-        if strip_tint:
-            tint_color = tint_color.lstrip("#")
-            
         return {
             "name": app.get("name", ""),
             "bundleIdentifier": app.get("bundleIdentifier", ""),
@@ -328,7 +359,7 @@ class RepoUpdater:
             "downloadURL": latest_version.get("downloadURL", ""),
             "localizedDescription": app.get("localizedDescription", ""),
             "iconURL": app.get("iconURL", ""),
-            "tintColor": tint_color,
+            "tintColor": repo_info.get("tintColor", "").lstrip("#"),
             "size": latest_version.get("size", 0),
             "screenshotURLs": app.get("screenshotURLs", [])
         }
