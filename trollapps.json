@@ -1,5 +1,6 @@
 {
   "name": "DRKSRC",
+  "identifier": "src.drk.dev",
   "subtitle": "Your Fav Source...",
   "description": "DRKSRC: A curated collection of the community's most essential and popular iOS apps and utilities",
   "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/assets/DRKSRC.png",
