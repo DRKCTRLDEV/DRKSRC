@@ -135,6 +135,11 @@ class RepoUpdater:
                             if version_info["downloadURL"] not in existing_urls:
                                 new_versions.append(version_info)
                                 existing_urls.add(version_info["downloadURL"])
+                            
+                            # Update app permissions for the new version
+                            if not update_app_permissions(os.path.join(self.apps_dir, app_name, 'app.json'), version_info["downloadURL"]):
+                                self.logger.error(f"Failed to update permissions for {app_name} with version {release_version}")
+                            
                             break  # Exit after adding the first valid asset
 
                 if new_versions:

@@ -3,9 +3,9 @@ import plistlib
 import zipfile
 import tempfile
 import os
-import shutil
 import json
-from typing import Dict, Any, List
+import requests
+from typing import Dict, Any
 
 def extract_app_permissions(ipa_path: str) -> Dict[str, Any]:
     """Extract permissions from IPA/TIPA file"""
@@ -66,9 +66,6 @@ def update_app_permissions(app_json_path: str, ipa_url: str) -> bool:
     """Update app.json with extracted permissions"""
     try:
         # Download IPA/TIPA file
-        import requests
-        import tempfile
-        
         with tempfile.NamedTemporaryFile(suffix='.ipa') as temp_file:
             response = requests.get(ipa_url, stream=True)
             if response.status_code == 200:
@@ -79,6 +76,7 @@ def update_app_permissions(app_json_path: str, ipa_url: str) -> bool:
                 # Extract permissions
                 permissions = extract_app_permissions(temp_file.name)
                 if "error" in permissions:
+                    print(f"Error extracting permissions: {permissions['error']}")
                     return False
                 
                 # Update app.json
@@ -90,8 +88,10 @@ def update_app_permissions(app_json_path: str, ipa_url: str) -> bool:
                     
                     with open(app_json_path, 'w') as f:
                         json.dump(app_data, f, indent=2)
+                    print(f"Updated appPermissions for {app_json_path}")
                     return True
                     
+        print("Failed to download IPA/TIPA file or app.json does not exist.")
         return False
         
     except Exception as e:
