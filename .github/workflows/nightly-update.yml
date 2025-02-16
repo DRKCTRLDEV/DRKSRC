@@ -46,6 +46,37 @@ jobs:
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
-          git commit -m "🤖 Automated repository update"
+          # Get the list of modified apps
+          MODIFIED_FILES=$(git diff --staged --name-only)
+          
+          # Build commit message
+          COMMIT_MSG="🤖 Repository Update\n\n"
+          
+          # Check for app updates
+          APP_UPDATES=$(echo "$MODIFIED_FILES" | grep "Apps/.*app.json" || true)
+          if [ ! -z "$APP_UPDATES" ]; then
+            COMMIT_MSG+="Updated apps:\n"
+            while IFS= read -r file; do
+              APP_NAME=$(echo "$file" | sed 's/Apps\/\(.*\)\/app.json/\1/')
+              NEW_VERSION=$(git diff --staged "$file" | grep '+"version":' | head -n 1 | sed 's/.*"version": "\(.*\)",/\1/')
+              if [ ! -z "$NEW_VERSION" ]; then
+                COMMIT_MSG+="- $APP_NAME ($NEW_VERSION)\n"
+              else
+                COMMIT_MSG+="- $APP_NAME\n"
+              fi
+            done <<< "$APP_UPDATES"
+          fi
+          
+          # Check for repository format updates
+          REPO_UPDATES=$(echo "$MODIFIED_FILES" | grep -E "repo\.json|scarlet\.json|trollapps\.json|altstore\.json" || true)
+          if [ ! -z "$REPO_UPDATES" ]; then
+            COMMIT_MSG+="\nUpdated repository formats:\n"
+            while IFS= read -r file; do
+              FORMAT=$(basename "$file" .json)
+              COMMIT_MSG+="- $FORMAT\n"
+            done <<< "$REPO_UPDATES"
+          fi
+          
+          git commit -m "$(echo -e "$COMMIT_MSG")"
           git push
         fi
