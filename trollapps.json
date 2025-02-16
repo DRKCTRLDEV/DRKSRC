@@ -47,10 +47,7 @@
           "size": 108290634,
           "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.5.5/FridaCodeManager.tipa"
         }
-      ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      ]
     },
     {
       "name": "Santander",
@@ -73,10 +70,7 @@
           "size": 4575378,
           "downloadURL": "https://github.com/DRKCTRL/Santander/releases/download/1.0/Santander.ipa"
         }
-      ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      ]
     },
     {
       "name": "AppCommander",
@@ -122,10 +116,7 @@
           "size": 5435252,
           "downloadURL": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v0.1-beta.3/AppCommander.0.1.Beta.3.ipa"
         }
-      ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      ]
     },
     {
       "name": "TrollFools(Lessica)",
@@ -380,10 +371,7 @@
           "size": 26318078,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.1-4/TrollFools_1.1-4.tipa"
         }
-      ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      ]
     },
     {
       "name": "PureKFD",
@@ -645,10 +633,7 @@
           "size": 1636661,
           "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.0/PureKFD.ipa"
         }
-      ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      ]
     },
     {
       "name": "TrollInstallerX",
@@ -694,10 +679,7 @@
           "size": 6885899,
           "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.0/TrollInstallerX.ipa"
         }
-      ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      ]
     },
     {
       "name": "PurePKG",
@@ -1019,10 +1001,7 @@
           "size": 24031082,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b2/PurePKGDemo.ipa"
         }
-      ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      ]
     },
     {
       "name": "NXBoot",
@@ -1049,10 +1028,7 @@
           "size": 1043645,
           "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.1/NXBoot_0.3.1-1.tipa"
         }
-      ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      ]
     },
     {
       "name": "FrontBoardAppLauncher",
@@ -1073,10 +1049,7 @@
           "size": 27533,
           "downloadURL": "https://github.com/DRKCTRL/FrontBoardAppLauncher/releases/download/1.3.0/FrontBoardAppLauncher.tipa"
         }
-      ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      ]
     },
     {
       "name": "AppIndex",
@@ -1099,10 +1072,7 @@
           "size": 871661,
           "downloadURL": "https://github.com/NSAntoine/AppIndex/releases/download/1.0/AppIndexTrollStore.tipa"
         }
-      ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      ]
     },
     {
       "name": "Bootstrap",
@@ -1171,10 +1141,7 @@
           "size": 54494881,
           "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.0/Bootstrap.tipa"
         }
-      ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      ]
     },
     {
       "name": "Filza",
@@ -1191,10 +1158,7 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_5.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_6.png"
       ],
-      "versions": [],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      "versions": []
     },
     {
       "name": "Geranium",
@@ -1265,10 +1229,7 @@
           "size": 5930930,
           "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0/Geranium.tipa"
         }
-      ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      ]
     },
     {
       "name": "Nugget",
@@ -1303,10 +1264,7 @@
           "size": 7741677,
           "downloadURL": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v1.0/Nugget.ipa"
         }
-      ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      ]
     },
     {
       "name": "Cowabunga",
@@ -1505,10 +1463,7 @@
           "size": 9762101,
           "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v6.1.1/Cowabunga.ipa"
         }
-      ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      ]
     },
     {
       "name": "TrollBox",
@@ -1597,10 +1552,7 @@
           "size": 2878138,
           "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.1/TrollBox.tipa"
         }
-      ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      ]
     },
     {
       "name": "LiveContainer",
@@ -1664,10 +1616,7 @@
           "size": 31173,
           "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/1.0/com.kdt.livecontainer.ipa"
         }
-      ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      ]
     },
     {
       "name": "TrollFools(Huami1314)",
@@ -1863,10 +1812,7 @@
           "size": 6524499,
           "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-22/TrollFools_2.10-22%40huamidev.tipa"
         }
-      ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      ]
     },
     {
       "name": "CAPerfHUD",
@@ -1885,10 +1831,7 @@
           "size": 11320,
           "downloadURL": "https://github.com/khanhduytran0/CAPerfHUD/releases/download/0.0.1/com.kdt.caperfhud_0.0.1.ipa"
         }
-      ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
+      ]
     }
   ]
 }
