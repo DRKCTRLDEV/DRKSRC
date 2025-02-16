@@ -41,5 +41,11 @@
       "size": 6885899,
       "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.0/TrollInstallerX.ipa"
     }
-  ]
+  ],
+  "appPermissions": {
+    "privacy": {
+      "AppleMusic": "Unsandboxing with MacDirtyCow"
+    },
+    "entitlements": []
+  }
 }

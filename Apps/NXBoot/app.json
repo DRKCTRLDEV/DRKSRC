@@ -27,5 +27,9 @@
       "size": 1043645,
       "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.1/NXBoot_0.3.1-1.tipa"
     }
-  ]
+  ],
+  "appPermissions": {
+    "privacy": {},
+    "entitlements": []
+  }
 }

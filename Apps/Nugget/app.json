@@ -35,5 +35,9 @@
       "size": 7741677,
       "downloadURL": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v1.0/Nugget.ipa"
     }
-  ]
+  ],
+  "appPermissions": {
+    "privacy": {},
+    "entitlements": []
+  }
 }

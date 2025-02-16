@@ -34,5 +34,9 @@
       "size": 108290634,
       "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.5.5/FridaCodeManager.tipa"
     }
-  ]
+  ],
+  "appPermissions": {
+    "privacy": {},
+    "entitlements": []
+  }
 }

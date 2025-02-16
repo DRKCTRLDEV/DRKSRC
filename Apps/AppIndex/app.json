@@ -23,5 +23,9 @@
       "size": 871661,
       "downloadURL": "https://github.com/NSAntoine/AppIndex/releases/download/1.0/AppIndexTrollStore.tipa"
     }
-  ]
+  ],
+  "appPermissions": {
+    "privacy": {},
+    "entitlements": []
+  }
 }

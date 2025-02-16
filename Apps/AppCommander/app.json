@@ -47,5 +47,11 @@
       "size": 5435252,
       "downloadURL": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v0.1-beta.3/AppCommander.0.1.Beta.3.ipa"
     }
-  ]
+  ],
+  "appPermissions": {
+    "privacy": {
+      "AppleMusic": "Grant full disk access. Required for app functionality."
+    },
+    "entitlements": []
+  }
 }

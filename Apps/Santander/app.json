@@ -24,5 +24,11 @@
       "size": 4575378,
       "downloadURL": "https://github.com/DRKCTRL/Santander/releases/download/1.0/Santander.ipa"
     }
-  ]
+  ],
+  "appPermissions": {
+    "privacy": {
+      "PhotoLibraryAdd": "To save the selected image to the camera roll."
+    },
+    "entitlements": []
+  }
 }

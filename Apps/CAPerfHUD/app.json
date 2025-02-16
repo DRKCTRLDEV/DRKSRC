@@ -19,5 +19,9 @@
       "size": 11320,
       "downloadURL": "https://github.com/khanhduytran0/CAPerfHUD/releases/download/0.0.1/com.kdt.caperfhud_0.0.1.ipa"
     }
-  ]
+  ],
+  "appPermissions": {
+    "privacy": {},
+    "entitlements": []
+  }
 }
