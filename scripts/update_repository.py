@@ -125,6 +125,7 @@ class RepoUpdater:
                                 existing_urls.add(version_info["downloadURL"])
 
             if new_versions:
+                # Get all versions and sort them
                 all_versions = existing_versions + new_versions
                 try:
                     all_versions.sort(key=lambda x: version.parse(x['version']), reverse=True)
@@ -132,16 +133,30 @@ class RepoUpdater:
                     all_versions.sort(key=lambda x: x['version'], reverse=True)
                 
                 # Keep only the 5 most recent versions
-                all_versions = all_versions[:5]
+                app_data["versions"] = all_versions[:5]
                 
-                app_data["versions"] = all_versions
                 if self.save_json_file(os.path.join(self.apps_dir, app_name, 'app.json'), app_data):
                     return {
                         "success": True,
-                        "message": f"Added {len(new_versions)} new version(s), keeping 5 most recent",
+                        "message": f"Added {len(new_versions)} new version(s), pruned to 5 most recent",
                         "data": {"new_versions": new_versions}
                     }
             
+            # If there are more than 5 existing versions but no new ones, still prune
+            elif len(existing_versions) > 5:
+                try:
+                    existing_versions.sort(key=lambda x: version.parse(x['version']), reverse=True)
+                except:
+                    existing_versions.sort(key=lambda x: x['version'], reverse=True)
+                
+                app_data["versions"] = existing_versions[:5]
+                if self.save_json_file(os.path.join(self.apps_dir, app_name, 'app.json'), app_data):
+                    return {
+                        "success": True,
+                        "message": "Pruned to 5 most recent versions",
+                        "data": {}
+                    }
+
             return {"success": True, "message": "No new versions found"}
             
         except Exception as e:
