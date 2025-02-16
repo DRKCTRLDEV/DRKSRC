@@ -26,7 +26,7 @@
       <img src="https://img.shields.io/badge/Add%20to%20TrollApps-%20blue?style=for-the-badge&color=B85CFD" alt="Add to TrollApps">
     </a>
     <a href="https://fwuf.in/#/scarlet://add?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/repo.json">
-      <img src="https://img.shields.io/badge/Add%20to%20TrollApps-%20blue?style=for-the-badge&color=B85CFD" alt="Add to TrollApps">
+      <img src="https://img.shields.io/badge/Add%20to%20TrollApps-%20blue?style=for-the-badge&color=B85CFD" alt="Add to Scarlet">
     </a>
     <a href="https://s0n1c.ca/altlist/">
       <img src="https://img.shields.io/badge/Use%20on%20AltList-%20black?style=for-the-badge&color=0f7c7f" alt="Use on AltList">
