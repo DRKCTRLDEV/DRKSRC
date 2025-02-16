@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import sys
 import json
 import os
 import logging
@@ -94,8 +95,14 @@ class RepoUpdater:
                 parts = repo_url.rstrip('/').split('/')
                 owner, repo = parts[-2], parts[-1]
                 
+                # Add headers with token if available
+                headers = {}
+                if repo_token := os.environ.get('REPO_TOKEN'):  # Changed from GITHUB_TOKEN
+                    headers['Authorization'] = f'token {repo_token}'
+                
                 response = requests.get(
                     f"https://api.github.com/repos/{owner}/{repo}/releases",
+                    headers=headers,
                     timeout=10
                 )
                 if response.status_code != 200:
@@ -134,6 +141,113 @@ class RepoUpdater:
             
             return {"success": True, "message": "No new versions found"}
             
+        except Exception as e:
+            return {"success": False, "message": str(e)}
+
+    def compile_all_formats(self) -> Dict[str, Any]:
+        """Compile standard repo.json plus all alt formats"""
+        try:
+            repo_info = self.load_json_file(os.path.join(self.base_dir, 'repo-info.json'))
+            if not repo_info:
+                return {"success": False, "message": "Could not load repo-info.json"}
+
+            # Get weekly featured apps
+            featured_apps = self.get_weekly_featured_apps()
+
+            # Compile apps list
+            apps = []
+            for app_name in os.listdir(self.apps_dir):
+                app_dir = os.path.join(self.apps_dir, app_name)
+                if not os.path.isdir(app_dir):
+                    continue
+
+                if app_data := self.load_json_file(os.path.join(app_dir, 'app.json')):
+                    repo_app_data = app_data.copy()
+                    repo_app_data.pop('repository', None)  # Remove from public data
+                    apps.append(repo_app_data)
+
+            # Base repository data with featured apps
+            base_repo_data = {
+                **repo_info,
+                "featuredApps": featured_apps,  # Add featured apps
+                "apps": apps,
+                "news": []
+            }
+
+            # Save standard repo.json
+            self.save_json_file(os.path.join(self.base_dir, 'repo.json'), base_repo_data)
+
+            # Save Scarlet format
+            scarlet_data = {
+                "META": {
+                    "repoName": repo_info.get("name", "DRKSRC"),
+                    "repoIcon": repo_info.get("iconURL", "")
+                },
+                "Games": [],
+                "Tweaked": [],
+                "Jailbreaks": [],
+                "Emulators": [],
+                "Other": []
+            }
+            for app in apps:
+                # Map to Scarlet categories...
+                category = "Other"  # Default fallback 
+                scarlet_app = {
+                    "name": app.get("name", ""),
+                    "version": app.get("versions", [{}])[0].get("version", "") if app.get("versions") else "",
+                    "down": app.get("versions", [{}])[0].get("downloadURL", "") if app.get("versions") else "",
+                    "description": app.get("localizedDescription", ""),
+                    "bundleID": app.get("bundleIdentifier", ""),
+                    "icon": app.get("iconURL", ""),
+                    "screenshots": app.get("screenshotURLs", [])
+                }
+                scarlet_data[category].append(scarlet_app)
+            self.save_json_file(os.path.join(self.base_dir, 'scarlet.json'), scarlet_data)
+
+            # Save TrollApps format with featured apps
+            trollapps_data = {
+                **repo_info,
+                "featuredApps": featured_apps,  # Add featured apps
+                "apps": [
+                    {
+                        "name": app.get("name", ""),
+                        "bundleIdentifier": app.get("bundleIdentifier", ""),
+                        "developerName": app.get("developerName", ""),
+                        "subtitle": app.get("subtitle", ""),
+                        "localizedDescription": app.get("localizedDescription", ""),
+                        "iconURL": app.get("iconURL", ""),
+                        "screenshotURLs": app.get("screenshotURLs", []),
+                        "versions": app.get("versions", []),
+                        "appPermissions": {},
+                        "minOSVersion": "14.0",
+                        "maxOSVersion": "17.0"
+                    }
+                    for app in apps
+                ]
+            }
+            self.save_json_file(os.path.join(self.base_dir, 'trollapps.json'), trollapps_data)
+
+            # Save AltStore format with featured apps
+            altstore_data = {
+                **repo_info,
+                "featuredApps": featured_apps,  # Add featured apps
+                "apps": [
+                    {
+                        **app,
+                        "appPermissions": {
+                            "entitlements": app.get("entitlements", []),
+                            "privacy": app.get("privacy", {})
+                        },
+                        "minOSVersion": "14.0",
+                        "maxOSVersion": "17.0"
+                    }
+                    for app in apps
+                ]
+            }
+            self.save_json_file(os.path.join(self.base_dir, 'altstore.json'), altstore_data)
+
+            return {"success": True, "message": "All repository formats compiled successfully"}
+
         except Exception as e:
             return {"success": False, "message": str(e)}
 
@@ -193,10 +307,10 @@ def main():
         if failed:
             logger.warning(f"Failed to update {len(failed)} apps")
         
-        # Compile repository
-        result = repo.compile_repository()
+        # Compile all repository formats
+        result = repo.compile_all_formats()
         if not result["success"]:
-            raise Exception(f"Failed to compile repository: {result['message']}")
+            raise Exception(f"Failed to compile repositories: {result['message']}")
         
         logger.info("Repository update completed successfully")
         return 0

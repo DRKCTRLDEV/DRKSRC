@@ -19,50 +19,50 @@
     {
       "version": "3.2.0",
       "date": "2025-01-15",
-      "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.2.0/com.kdt.livecontainer_3.2.0.ipa",
-      "size": 2962233
+      "size": 2962233,
+      "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.2.0/com.kdt.livecontainer_3.2.0.ipa"
     },
     {
       "version": "3.1.0",
       "date": "2024-12-16",
-      "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.1.0/com.kdt.livecontainer_3.1.0.ipa",
-      "size": 2899038
+      "size": 2899038,
+      "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.1.0/com.kdt.livecontainer_3.1.0.ipa"
     },
     {
       "version": "3.0.0",
       "date": "2024-12-16",
-      "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.0.0/com.kdt.livecontainer_3.0.0.ipa",
-      "size": 905495
+      "size": 905495,
+      "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.0.0/com.kdt.livecontainer_3.0.0.ipa"
     },
     {
       "version": "2.1.2",
       "date": "2024-08-15",
-      "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.2/com.kdt.livecontainer_2.1.2.ipa",
-      "size": 194586
+      "size": 194586,
+      "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.2/com.kdt.livecontainer_2.1.2.ipa"
     },
     {
       "version": "2.1.1",
       "date": "2024-08-08",
-      "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.1/com.kdt.livecontainer_2.1.1.ipa",
-      "size": 195840
+      "size": 195840,
+      "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.1/com.kdt.livecontainer_2.1.1.ipa"
     },
     {
       "version": "2.1",
       "date": "2024-08-07",
-      "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1/com.kdt.livecontainer_2.1.ipa",
-      "size": 191991
+      "size": 191991,
+      "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1/com.kdt.livecontainer_2.1.ipa"
     },
     {
       "version": "2.0-pre",
       "date": "2024-04-22",
-      "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.0-pre/com.kdt.livecontainer_2.0.ipa",
-      "size": 103293
+      "size": 103293,
+      "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.0-pre/com.kdt.livecontainer_2.0.ipa"
     },
     {
       "version": "1.0",
       "date": "2023-07-17",
-      "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/1.0/com.kdt.livecontainer.ipa",
-      "size": 31173
+      "size": 31173,
+      "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/1.0/com.kdt.livecontainer.ipa"
     }
   ]
 }

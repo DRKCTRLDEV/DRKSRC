@@ -15,13 +15,12 @@
     {
       "version": "1.0",
       "date": "2024-10-11",
-      "downloadURL": "https://github.com/DRKCTRL/Santander/releases/download/1.0/SantanderTS.tipa",
-      "size": 5331159
+      "size": 5331159,
+      "downloadURL": "https://github.com/DRKCTRL/Santander/releases/download/1.0/SantanderTS.tipa"
     },
     {
       "version": "1.0",
       "date": "2024-10-11",
-      "build": "",
       "size": 4575378,
       "downloadURL": "https://github.com/DRKCTRL/Santander/releases/download/1.0/Santander.ipa"
     }

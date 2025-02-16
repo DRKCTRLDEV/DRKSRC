@@ -7,13 +7,7 @@
   "headerURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/assets/Header.png",
   "website": "https://github.com/DRKCTRL/DRKSRC",
   "tintColor": "#d68ace",
-  "featuredApps": [
-    "com.leminlimez.cowabunga",
-    "com.serena.AppIndex",
-    "uwu.lrdsnow.purepkg",
-    "com.leemin.nugget",
-    "com.roothide.Bootstrap"
-  ],
+  "featuredApps": [],
   "apps": [
     {
       "name": "AppCommander",
@@ -21,8 +15,8 @@
       "developerName": "BomberFish, f1shy-dev",
       "subtitle": "Swiss Army Knife for iPhone Apps (iOS 14.0-17.0)",
       "localizedDescription": "AppCommander is a powerful iOS utility for app management and system customization. Features include App Manager, Home Screen sorting, and system tweaks. Supports iOS 14.0-17.0.",
-      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/icon.jpg",
-      "category": "Utilities",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/icon.png",
+      "category": "utilities",
       "screenshotURLs": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_2.png",
@@ -33,7 +27,6 @@
         {
           "version": "2.0.0-p1",
           "date": "2023-12-25",
-          "build": "",
           "size": 2756390,
           "downloadURL": "https://github.com/BomberFish/AppCommander/releases/download/v2.0.0-p1/AppCommander.tipa",
           "minOSVersion": "14.0",
@@ -43,7 +36,6 @@
         {
           "version": "1.0.0",
           "date": "2023-07-12",
-          "build": "",
           "size": 16030736,
           "downloadURL": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v1.0.0/AppCommander_v1.0.0.ipa",
           "minOSVersion": "14.0",
@@ -53,7 +45,6 @@
         {
           "version": "1.0.0_publicbeta1",
           "date": "2023-07-01",
-          "build": "",
           "size": 15941020,
           "downloadURL": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v1.0.0_publicbeta1/AppCommander-v1.0.0_publicbeta1.ipa",
           "minOSVersion": "14.0",
@@ -63,7 +54,6 @@
         {
           "version": "0.1-beta.3",
           "date": "2023-04-13",
-          "build": "",
           "size": 5435252,
           "downloadURL": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v0.1-beta.3/AppCommander.0.1.Beta.3.ipa",
           "minOSVersion": "14.0",
@@ -81,7 +71,7 @@
       "developerName": "NSAntoine, justtryingthingsout",
       "subtitle": "Modern Applications Manager for iOS",
       "localizedDescription": "AppIndex is a new, modern App Explorer/Manager app for iOS. It allows users to view, sort, search, and manage applications on their device. Features include viewing extensive app info, backing up and restoring apps, exporting as .ipa files, and more. AppIndex provides detailed information about each app, including bundle identifier, type, download date, version, SDK version, iTunes metadata, size, status, entitlements, URL schemes, and more.",
-      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/icon.jpg",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/icon.png",
       "category": "utilities",
       "screenshotURLs": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_1.png",
@@ -94,8 +84,8 @@
         {
           "version": "1.0",
           "date": "2023-04-04",
-          "downloadURL": "https://github.com/NSAntoine/AppIndex/releases/download/1.0/AppIndexTrollStore.tipa",
           "size": 871661,
+          "downloadURL": "https://github.com/NSAntoine/AppIndex/releases/download/1.0/AppIndexTrollStore.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "AppIndex is a new, modern App Explorer/Manager app for iOS. It allows users to view, sort, search, and manage applications on their device. Features include viewing extensive app info, backing up and restoring apps, exporting as .ipa files, and more. AppIndex provides detailed information about each app, including bundle identifier, type, download date, version, SDK version, iTunes metadata, size, status, entitlements, URL schemes, and more."
@@ -111,7 +101,7 @@
       "developerName": "roothide",
       "subtitle": "Jailbreak Bootstrap Tool",
       "localizedDescription": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications.",
-      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/icon.jpg",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/icon.png",
       "category": "utilities",
       "screenshotURLs": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/screenshots/IMG_1.png",
@@ -122,8 +112,8 @@
         {
           "version": "1.3.2",
           "date": "2025-01-09",
-          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.3.2/Bootstrap.tipa",
           "size": 54595581,
+          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.3.2/Bootstrap.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications."
@@ -131,8 +121,8 @@
         {
           "version": "1.3",
           "date": "2024-11-18",
-          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.3/Bootstrap.tipa",
           "size": 54202306,
+          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.3/Bootstrap.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications."
@@ -140,8 +130,8 @@
         {
           "version": "1.2.9",
           "date": "2024-11-11",
-          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.9/Bootstrap.tipa",
           "size": 54202235,
+          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.9/Bootstrap.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications."
@@ -149,8 +139,8 @@
         {
           "version": "1.2.8",
           "date": "2024-10-05",
-          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.8/Bootstrap.tipa",
           "size": 54508536,
+          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.8/Bootstrap.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications."
@@ -158,8 +148,8 @@
         {
           "version": "1.2.6",
           "date": "2024-09-11",
-          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.6/Bootstrap.tipa",
           "size": 54497160,
+          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.6/Bootstrap.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications."
@@ -167,8 +157,8 @@
         {
           "version": "1.2.1",
           "date": "2024-02-05",
-          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.1/Bootstrap.tipa",
           "size": 54521377,
+          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.1/Bootstrap.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications."
@@ -176,8 +166,8 @@
         {
           "version": "1.1.1",
           "date": "2024-01-31",
-          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.1.1/Bootstrap.tipa",
           "size": 54499627,
+          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.1.1/Bootstrap.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications."
@@ -185,8 +175,8 @@
         {
           "version": "1.1",
           "date": "2024-01-22",
-          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.1/Bootstrap.tipa",
           "size": 54500569,
+          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.1/Bootstrap.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications."
@@ -194,8 +184,8 @@
         {
           "version": "1.0",
           "date": "2024-01-17",
-          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.0/Bootstrap.tipa",
           "size": 54494881,
+          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.0/Bootstrap.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications."
@@ -211,7 +201,7 @@
       "developerName": "khanhduytran0",
       "subtitle": "System-wide performance HUD for iOS 14+",
       "localizedDescription": "CAPerfHUD enables a system-wide performance HUD for iOS 14 and above. It requires TrollStore to function. The app allows users to monitor various system performance metrics in real-time. Note that some measurements like frequencies and power consumption may not work, and changes last until backboard restarts (respring).",
-      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/icon.jpg",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/icon.png",
       "category": "utilities",
       "screenshotURLs": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/screenshots/IMG_1.png"
@@ -220,8 +210,8 @@
         {
           "version": "0.0.1",
           "date": "2023-05-21",
-          "downloadURL": "https://github.com/khanhduytran0/CAPerfHUD/releases/download/0.0.1/com.kdt.caperfhud_0.0.1.ipa",
           "size": 11320,
+          "downloadURL": "https://github.com/khanhduytran0/CAPerfHUD/releases/download/0.0.1/com.kdt.caperfhud_0.0.1.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "CAPerfHUD enables a system-wide performance HUD for iOS 14 and above. It requires TrollStore to function. The app allows users to monitor various system performance metrics in real-time. Note that some measurements like frequencies and power consumption may not work, and changes last until backboard restarts (respring)."
@@ -252,8 +242,8 @@
         {
           "version": "10.3.2",
           "date": "2023-05-29",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.2/Cowabunga.ipa",
           "size": 16288960,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.2/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -261,8 +251,8 @@
         {
           "version": "10.3.1",
           "date": "2023-05-29",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.1/Cowabunga.ipa",
           "size": 16288883,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.1/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -270,8 +260,8 @@
         {
           "version": "10.3.0",
           "date": "2023-05-29",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.0/Cowabunga.ipa",
           "size": 16285936,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.0/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -279,8 +269,8 @@
         {
           "version": "10.2.0",
           "date": "2023-05-12",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.2.0/Cowabunga.ipa",
           "size": 16280833,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.2.0/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -288,8 +278,8 @@
         {
           "version": "10.1.1",
           "date": "2023-03-30",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.1.1/Cowabunga.ipa",
           "size": 21605355,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.1.1/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -297,8 +287,8 @@
         {
           "version": "10.1.0",
           "date": "2023-03-28",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.1.0/Cowabunga.ipa",
           "size": 21595880,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.1.0/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -306,8 +296,8 @@
         {
           "version": "10.0.3",
           "date": "2023-03-25",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.3/Cowabunga.ipa",
           "size": 21557626,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.3/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -315,8 +305,8 @@
         {
           "version": "10.0.2",
           "date": "2023-03-25",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.2/Cowabunga.ipa",
           "size": 21557066,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.2/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -324,8 +314,8 @@
         {
           "version": "10.0.1",
           "date": "2023-03-24",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.1/Cowabunga.ipa",
           "size": 21557390,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.1/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -333,8 +323,8 @@
         {
           "version": "10.0.0",
           "date": "2023-03-23",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.0/Cowabunga.ipa",
           "size": 21556671,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.0/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -342,8 +332,8 @@
         {
           "version": "8.1.4",
           "date": "2023-03-15",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.4/Cowabunga.ipa",
           "size": 21867855,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.4/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -351,8 +341,8 @@
         {
           "version": "8.1.3",
           "date": "2023-03-13",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.3/Cowabunga.ipa",
           "size": 21862959,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.3/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -360,8 +350,8 @@
         {
           "version": "8.1.2",
           "date": "2023-03-06",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.2/Cowabunga.ipa",
           "size": 21849343,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.2/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -369,8 +359,8 @@
         {
           "version": "8.1.1",
           "date": "2023-02-28",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.1/Cowabunga.ipa",
           "size": 21849921,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.1/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -378,8 +368,8 @@
         {
           "version": "8.1.0",
           "date": "2023-02-26",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.0/Cowabunga.ipa",
           "size": 21796707,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.0/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -387,8 +377,8 @@
         {
           "version": "8.0.5",
           "date": "2023-02-20",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.5/Cowabunga.ipa",
           "size": 20553183,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.5/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -396,8 +386,8 @@
         {
           "version": "8.0.4",
           "date": "2023-02-19",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.4/Cowabunga.ipa",
           "size": 20564509,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.4/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -405,8 +395,8 @@
         {
           "version": "8.0.3",
           "date": "2023-02-14",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.3/Cowabunga.ipa",
           "size": 13709675,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.3/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -414,8 +404,8 @@
         {
           "version": "8.0.2",
           "date": "2023-02-13",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.2/Cowabunga.ipa",
           "size": 13707992,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.2/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -423,8 +413,8 @@
         {
           "version": "8.0.1",
           "date": "2023-02-12",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.1/Cowabunga.ipa",
           "size": 12238315,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.1/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -432,8 +422,8 @@
         {
           "version": "8.0.0",
           "date": "2023-02-12",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.0/Cowabunga.ipa",
           "size": 12238281,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.0/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -441,8 +431,8 @@
         {
           "version": "7.0.4",
           "date": "2023-02-02",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v7.0.4/Cowabunga.ipa",
           "size": 10796661,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v7.0.4/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -450,8 +440,8 @@
         {
           "version": "7.0.3",
           "date": "2023-02-02",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v7.0.3/Cowabunga.ipa",
           "size": 10795562,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v7.0.3/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -459,8 +449,8 @@
         {
           "version": "7.0.2",
           "date": "2023-01-29",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v7.0.2/Cowabunga.ipa",
           "size": 10793528,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v7.0.2/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -468,8 +458,8 @@
         {
           "version": "7.0.1",
           "date": "2023-01-28",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v7.0.1/Cowabunga.ipa",
           "size": 10790553,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v7.0.1/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -477,8 +467,8 @@
         {
           "version": "7.0.0",
           "date": "2023-01-27",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v7.0.0/Cowabunga.ipa",
           "size": 10792784,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v7.0.0/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -486,8 +476,8 @@
         {
           "version": "6.1.4",
           "date": "2023-01-26",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v6.1.4/Cowabunga.ipa",
           "size": 9773062,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v6.1.4/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -495,8 +485,8 @@
         {
           "version": "6.1.3",
           "date": "2023-01-25",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v6.1.3/Cowabunga.ipa",
           "size": 9786344,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v6.1.3/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -504,8 +494,8 @@
         {
           "version": "6.1.2",
           "date": "2023-01-24",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v6.1.2/Cowabunga.ipa",
           "size": 9780903,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v6.1.2/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -513,8 +503,8 @@
         {
           "version": "6.1.1",
           "date": "2023-01-24",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v6.1.1/Cowabunga.ipa",
           "size": 9762101,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v6.1.1/Cowabunga.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1."
@@ -563,8 +553,8 @@
         {
           "version": "1.6",
           "date": "2024-10-22",
-          "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa",
           "size": 70613655,
+          "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "FridaCodeManager is a comprehensive tool for managing and organizing Frida code projects. Features include permission management, project repair capabilities, app/project exports, multithreading support for folder navigation, file grouping, and an enhanced user interface with smooth animations."
@@ -572,7 +562,6 @@
         {
           "version": "1.6",
           "date": "2024-10-22",
-          "build": "",
           "size": 66806491,
           "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.6/FridaCodeManager-stock-alpha.ipa",
           "minOSVersion": "14.0",
@@ -582,8 +571,8 @@
         {
           "version": "1.5.5",
           "date": "2024-10-14",
-          "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.5.5/FridaCodeManager.tipa",
           "size": 108290634,
+          "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.5.5/FridaCodeManager.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "FridaCodeManager is a comprehensive tool for managing and organizing Frida code projects. Features include permission management, project repair capabilities, app/project exports, multithreading support for folder navigation, file grouping, and an enhanced user interface with smooth animations."
@@ -610,8 +599,8 @@
         {
           "version": "1.3.0",
           "date": "2024-11-17",
-          "downloadURL": "https://github.com/DRKCTRL/FrontBoardAppLauncher/releases/download/1.3.0/FrontBoardAppLauncher.tipa",
           "size": 27533,
+          "downloadURL": "https://github.com/DRKCTRL/FrontBoardAppLauncher/releases/download/1.3.0/FrontBoardAppLauncher.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "FrontBoardAppLauncher is a utility that allows you to launch apps using FrontBoard on iOS devices. It provides a simple interface to interact with the FrontBoard framework for app management."
@@ -640,8 +629,8 @@
         {
           "version": "1.1.3",
           "date": "2024-09-15",
-          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1.3/Geranium.tipa",
           "size": 6100320,
+          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1.3/Geranium.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Geranium is a powerful utility for TrollStore users on iOS 15+. Features include location simulation, device cleaning, daemon management, ScreenTime disabling, and device supervision. Supports multiple languages and offers an intuitive interface for enhancing your iOS experience."
@@ -649,8 +638,8 @@
         {
           "version": "1.1.2",
           "date": "2024-02-22",
-          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1.2/Geranium.tipa",
           "size": 6161855,
+          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1.2/Geranium.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Geranium is a powerful utility for TrollStore users on iOS 15+. Features include location simulation, device cleaning, daemon management, ScreenTime disabling, and device supervision. Supports multiple languages and offers an intuitive interface for enhancing your iOS experience."
@@ -658,8 +647,8 @@
         {
           "version": "1.1.1",
           "date": "2024-02-07",
-          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1.1/Geranium.tipa",
           "size": 6135248,
+          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1.1/Geranium.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Geranium is a powerful utility for TrollStore users on iOS 15+. Features include location simulation, device cleaning, daemon management, ScreenTime disabling, and device supervision. Supports multiple languages and offers an intuitive interface for enhancing your iOS experience."
@@ -667,8 +656,8 @@
         {
           "version": "1.1",
           "date": "2024-01-18",
-          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1/Geranium.tipa",
           "size": 6032621,
+          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1/Geranium.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Geranium is a powerful utility for TrollStore users on iOS 15+. Features include location simulation, device cleaning, daemon management, ScreenTime disabling, and device supervision. Supports multiple languages and offers an intuitive interface for enhancing your iOS experience."
@@ -676,8 +665,8 @@
         {
           "version": "1.0.4",
           "date": "2024-01-15",
-          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.4/Geranium.tipa",
           "size": 5945760,
+          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.4/Geranium.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Geranium is a powerful utility for TrollStore users on iOS 15+. Features include location simulation, device cleaning, daemon management, ScreenTime disabling, and device supervision. Supports multiple languages and offers an intuitive interface for enhancing your iOS experience."
@@ -685,8 +674,8 @@
         {
           "version": "1.0.3",
           "date": "2024-01-15",
-          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.3/Geranium.tipa",
           "size": 5945286,
+          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.3/Geranium.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Geranium is a powerful utility for TrollStore users on iOS 15+. Features include location simulation, device cleaning, daemon management, ScreenTime disabling, and device supervision. Supports multiple languages and offers an intuitive interface for enhancing your iOS experience."
@@ -694,8 +683,8 @@
         {
           "version": "1.0.2",
           "date": "2024-01-15",
-          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.2/Geranium.tipa",
           "size": 5943936,
+          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.2/Geranium.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Geranium is a powerful utility for TrollStore users on iOS 15+. Features include location simulation, device cleaning, daemon management, ScreenTime disabling, and device supervision. Supports multiple languages and offers an intuitive interface for enhancing your iOS experience."
@@ -703,8 +692,8 @@
         {
           "version": "1.0.1",
           "date": "2024-01-14",
-          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.1/Geranium.tipa",
           "size": 5942092,
+          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.1/Geranium.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Geranium is a powerful utility for TrollStore users on iOS 15+. Features include location simulation, device cleaning, daemon management, ScreenTime disabling, and device supervision. Supports multiple languages and offers an intuitive interface for enhancing your iOS experience."
@@ -712,8 +701,8 @@
         {
           "version": "1.0",
           "date": "2024-01-14",
-          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0/Geranium.tipa",
           "size": 5930930,
+          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0/Geranium.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Geranium is a powerful utility for TrollStore users on iOS 15+. Features include location simulation, device cleaning, daemon management, ScreenTime disabling, and device supervision. Supports multiple languages and offers an intuitive interface for enhancing your iOS experience."
@@ -741,8 +730,8 @@
         {
           "version": "3.2.0",
           "date": "2025-01-15",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.2.0/com.kdt.livecontainer_3.2.0.ipa",
           "size": 2962233,
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.2.0/com.kdt.livecontainer_3.2.0.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "LiveContainer allows you to run iOS apps without actually installing them. It bypasses the 10 app limit of free developer accounts, enables multiple versions of an app, and supports multiple data containers. With JIT, codesigning is bypassed entirely. Features include unlimited app installation, tweak support, and instant app switching."
@@ -750,8 +739,8 @@
         {
           "version": "3.1.0",
           "date": "2024-12-16",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.1.0/com.kdt.livecontainer_3.1.0.ipa",
           "size": 2899038,
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.1.0/com.kdt.livecontainer_3.1.0.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "LiveContainer allows you to run iOS apps without actually installing them. It bypasses the 10 app limit of free developer accounts, enables multiple versions of an app, and supports multiple data containers. With JIT, codesigning is bypassed entirely. Features include unlimited app installation, tweak support, and instant app switching."
@@ -759,8 +748,8 @@
         {
           "version": "3.0.0",
           "date": "2024-12-16",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.0.0/com.kdt.livecontainer_3.0.0.ipa",
           "size": 905495,
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.0.0/com.kdt.livecontainer_3.0.0.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "LiveContainer allows you to run iOS apps without actually installing them. It bypasses the 10 app limit of free developer accounts, enables multiple versions of an app, and supports multiple data containers. With JIT, codesigning is bypassed entirely. Features include unlimited app installation, tweak support, and instant app switching."
@@ -768,8 +757,8 @@
         {
           "version": "2.1.2",
           "date": "2024-08-15",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.2/com.kdt.livecontainer_2.1.2.ipa",
           "size": 194586,
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.2/com.kdt.livecontainer_2.1.2.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "LiveContainer allows you to run iOS apps without actually installing them. It bypasses the 10 app limit of free developer accounts, enables multiple versions of an app, and supports multiple data containers. With JIT, codesigning is bypassed entirely. Features include unlimited app installation, tweak support, and instant app switching."
@@ -777,8 +766,8 @@
         {
           "version": "2.1.1",
           "date": "2024-08-08",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.1/com.kdt.livecontainer_2.1.1.ipa",
           "size": 195840,
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.1/com.kdt.livecontainer_2.1.1.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "LiveContainer allows you to run iOS apps without actually installing them. It bypasses the 10 app limit of free developer accounts, enables multiple versions of an app, and supports multiple data containers. With JIT, codesigning is bypassed entirely. Features include unlimited app installation, tweak support, and instant app switching."
@@ -786,8 +775,8 @@
         {
           "version": "2.1",
           "date": "2024-08-07",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1/com.kdt.livecontainer_2.1.ipa",
           "size": 191991,
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1/com.kdt.livecontainer_2.1.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "LiveContainer allows you to run iOS apps without actually installing them. It bypasses the 10 app limit of free developer accounts, enables multiple versions of an app, and supports multiple data containers. With JIT, codesigning is bypassed entirely. Features include unlimited app installation, tweak support, and instant app switching."
@@ -795,8 +784,8 @@
         {
           "version": "2.0-pre",
           "date": "2024-04-22",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.0-pre/com.kdt.livecontainer_2.0.ipa",
           "size": 103293,
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.0-pre/com.kdt.livecontainer_2.0.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "LiveContainer allows you to run iOS apps without actually installing them. It bypasses the 10 app limit of free developer accounts, enables multiple versions of an app, and supports multiple data containers. With JIT, codesigning is bypassed entirely. Features include unlimited app installation, tweak support, and instant app switching."
@@ -804,8 +793,8 @@
         {
           "version": "1.0",
           "date": "2023-07-17",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/1.0/com.kdt.livecontainer.ipa",
           "size": 31173,
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/1.0/com.kdt.livecontainer.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "LiveContainer allows you to run iOS apps without actually installing them. It bypasses the 10 app limit of free developer accounts, enables multiple versions of an app, and supports multiple data containers. With JIT, codesigning is bypassed entirely. Features include unlimited app installation, tweak support, and instant app switching."
@@ -817,18 +806,17 @@
     },
     {
       "name": "Nugget",
-      "bundleIdentifier": "com.leemin.nugget",
+      "bundleIdentifier": "",
       "developerName": "leminlimez",
       "subtitle": "iOS 16.0-18.1b4 Device Unlock Tool",
       "localizedDescription": "Unlock your device's full potential on iOS 16.0 through 18.1 beta 4, with partial support for iOS 18.1 beta 5-6. Note: Does not work on iOS 18.1 beta 7 or newer - use PC version instead. Requires .mobiledevicepairing file and wireguard. Uses sparserestore exploit to write to files outside intended restore location, like mobilegestalt. CAUTION: Back up your data before using. Developer not responsible for bootloops or other issues.",
-      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Nugget/icon.jpg",
-      "category": "Utilities",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Nugget/icon.png",
+      "category": "utilities",
       "screenshotURLs": [],
       "versions": [
         {
           "version": "2.0.1",
           "date": "2024-12-01",
-          "build": "",
           "size": 7676570,
           "downloadURL": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v2.0.1/Nugget.ipa",
           "minOSVersion": "14.0",
@@ -838,7 +826,6 @@
         {
           "version": "2.0",
           "date": "2024-10-17",
-          "build": "",
           "size": 7675473,
           "downloadURL": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v2.0/Nugget.ipa",
           "minOSVersion": "14.0",
@@ -848,7 +835,6 @@
         {
           "version": "1.0.1",
           "date": "2024-09-23",
-          "build": "",
           "size": 7742363,
           "downloadURL": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v1.0.1/Nugget.ipa",
           "minOSVersion": "14.0",
@@ -858,7 +844,6 @@
         {
           "version": "1.0",
           "date": "2024-09-22",
-          "build": "",
           "size": 7741677,
           "downloadURL": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v1.0/Nugget.ipa",
           "minOSVersion": "14.0",
@@ -887,8 +872,8 @@
         {
           "version": "0.3.2",
           "date": "2024-08-31",
-          "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa",
           "size": 1045270,
+          "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "NXBoot is a powerful utility for Nintendo Switch enthusiasts, allowing users to inject custom payloads into their Switch consoles. It supports various firmware versions and offers an intuitive interface for managing and launching payloads."
@@ -896,8 +881,8 @@
         {
           "version": "0.3.1",
           "date": "2024-08-30",
-          "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.1/NXBoot_0.3.1-1.tipa",
           "size": 1043645,
+          "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.1/NXBoot_0.3.1-1.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "NXBoot is a powerful utility for Nintendo Switch enthusiasts, allowing users to inject custom payloads into their Switch consoles. It supports various firmware versions and offers an intuitive interface for managing and launching payloads."
@@ -925,8 +910,8 @@
         {
           "version": "6b1",
           "date": "2024-09-14",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.ipa",
           "size": 10692355,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -934,7 +919,6 @@
         {
           "version": "6b1",
           "date": "2024-09-14",
-          "build": "",
           "size": 3150038,
           "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.noSparse.ipa",
           "minOSVersion": "14.0",
@@ -944,7 +928,6 @@
         {
           "version": "6b1",
           "date": "2024-09-14",
-          "build": "",
           "size": 3191275,
           "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.noSparse.ts.ipa",
           "minOSVersion": "14.0",
@@ -954,8 +937,8 @@
         {
           "version": "6.0rc3",
           "date": "2024-09-21",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc3/PureKFD.ipa",
           "size": 10019622,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc3/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -963,8 +946,8 @@
         {
           "version": "6.0rc2",
           "date": "2024-09-21",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc2/PureKFD.ipa",
           "size": 10840489,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc2/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -972,8 +955,8 @@
         {
           "version": "6.0rc",
           "date": "2024-09-20",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc/PureKFD.ipa",
           "size": 9987366,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -981,8 +964,8 @@
         {
           "version": "6.0b5",
           "date": "2024-09-19",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b5/PureKFD.ipa",
           "size": 9948089,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b5/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -990,8 +973,8 @@
         {
           "version": "6.0b4",
           "date": "2024-09-16",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b4/PureKFD.ipa",
           "size": 9963979,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b4/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -999,8 +982,8 @@
         {
           "version": "6.0b3",
           "date": "2024-09-15",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b3/PureKFD.ipa",
           "size": 10725713,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b3/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1008,8 +991,8 @@
         {
           "version": "6.0b2",
           "date": "2024-09-14",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b2/PureKFD.ipa",
           "size": 9867756,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b2/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1017,8 +1000,8 @@
         {
           "version": "6.0.2",
           "date": "2024-11-23",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.ipa",
           "size": 10806164,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1026,7 +1009,6 @@
         {
           "version": "6.0.2",
           "date": "2024-11-23",
-          "build": "",
           "size": 3932657,
           "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.noSparse.ipa",
           "minOSVersion": "14.0",
@@ -1036,7 +1018,6 @@
         {
           "version": "6.0.2",
           "date": "2024-11-23",
-          "build": "",
           "size": 4042969,
           "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.noSparse.ts.ipa",
           "minOSVersion": "14.0",
@@ -1046,8 +1027,8 @@
         {
           "version": "6.0.1",
           "date": "2024-09-29",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.ipa",
           "size": 10882263,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1055,7 +1036,6 @@
         {
           "version": "6.0.1",
           "date": "2024-09-29",
-          "build": "",
           "size": 4005315,
           "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.noSparse.ipa",
           "minOSVersion": "14.0",
@@ -1065,7 +1045,6 @@
         {
           "version": "6.0.1",
           "date": "2024-09-29",
-          "build": "",
           "size": 4047225,
           "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.noSparse.ts.ipa",
           "minOSVersion": "14.0",
@@ -1075,8 +1054,8 @@
         {
           "version": "6.0",
           "date": "2024-09-22",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.ipa",
           "size": 10025476,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1084,7 +1063,6 @@
         {
           "version": "6.0",
           "date": "2024-09-22",
-          "build": "",
           "size": 3150038,
           "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.noSparse.ipa",
           "minOSVersion": "14.0",
@@ -1094,7 +1072,6 @@
         {
           "version": "6.0",
           "date": "2024-09-22",
-          "build": "",
           "size": 3191275,
           "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.noSparse.ts.ipa",
           "minOSVersion": "14.0",
@@ -1104,8 +1081,8 @@
         {
           "version": "5.2.1",
           "date": "2024-07-30",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.2.1/purekfd.ipa",
           "size": 24374136,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.2.1/purekfd.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1113,8 +1090,8 @@
         {
           "version": "5.2",
           "date": "2024-02-08",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.2/purekfd.ipa",
           "size": 47591689,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.2/purekfd.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1122,8 +1099,8 @@
         {
           "version": "5.1",
           "date": "2024-01-18",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.1/PureKFD.ipa",
           "size": 24524098,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.1/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1131,8 +1108,8 @@
         {
           "version": "5.0beta_landa",
           "date": "2024-01-01",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0beta_landa/purekfd.ipa",
           "size": 22856454,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0beta_landa/purekfd.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1140,8 +1117,8 @@
         {
           "version": "5.0betaOSS",
           "date": "2024-01-07",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0betaOSS/purekfd.ipa",
           "size": 21365065,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0betaOSS/purekfd.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1149,8 +1126,8 @@
         {
           "version": "5.0beta",
           "date": "2023-12-30",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0beta/purekfd.ipa",
           "size": 43115933,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0beta/purekfd.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1158,8 +1135,8 @@
         {
           "version": "5.0",
           "date": "2024-01-08",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0/purekfd.ipa",
           "size": 46623713,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0/purekfd.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1167,8 +1144,8 @@
         {
           "version": "4.6",
           "date": "2023-12-11",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.6/purekfd.ipa",
           "size": 33681766,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.6/purekfd.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1176,8 +1153,8 @@
         {
           "version": "4.5",
           "date": "2023-12-09",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.5/purekfd.ipa",
           "size": 15861998,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.5/purekfd.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1185,8 +1162,8 @@
         {
           "version": "4.4",
           "date": "2023-12-08",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.4/purekfd.ipa",
           "size": 28123389,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.4/purekfd.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1194,8 +1171,8 @@
         {
           "version": "4.3",
           "date": "2023-12-07",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.3/purekfd.ipa",
           "size": 28115297,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.3/purekfd.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1203,8 +1180,8 @@
         {
           "version": "4.2",
           "date": "2023-12-06",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.2/PureKFDTrollStore.tipa",
           "size": 28111895,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.2/PureKFDTrollStore.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1212,7 +1189,6 @@
         {
           "version": "4.2",
           "date": "2023-12-06",
-          "build": "",
           "size": 28068025,
           "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.2/PureKFD.ipa",
           "minOSVersion": "14.0",
@@ -1222,8 +1198,8 @@
         {
           "version": "4.1",
           "date": "2023-10-09",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.1/PureKFD.ipa",
           "size": 29190358,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.1/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1231,8 +1207,8 @@
         {
           "version": "4.0",
           "date": "2023-10-01",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.0/PureKFD.ipa",
           "size": 27842739,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.0/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1240,8 +1216,8 @@
         {
           "version": "3.5",
           "date": "2023-09-03",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.5/PureKFD.ipa",
           "size": 3040538,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.5/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1249,8 +1225,8 @@
         {
           "version": "3.4",
           "date": "2023-08-29",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.4/PureKFD.ipa",
           "size": 2213036,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.4/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1258,8 +1234,8 @@
         {
           "version": "3.2",
           "date": "2023-08-25",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.2/PureKFD.ipa",
           "size": 1669727,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.2/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1267,7 +1243,6 @@
         {
           "version": "3.2",
           "date": "2023-08-25",
-          "build": "",
           "size": 2197260,
           "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.2/PureKFD_IOSurface.ipa",
           "minOSVersion": "14.0",
@@ -1277,8 +1252,8 @@
         {
           "version": "3.1",
           "date": "2023-08-25",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.1/PureKFD.ipa",
           "size": 1864118,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.1/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1286,7 +1261,6 @@
         {
           "version": "3.1",
           "date": "2023-08-25",
-          "build": "",
           "size": 2197260,
           "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.1/PureKFD_IOSurface.ipa",
           "minOSVersion": "14.0",
@@ -1296,8 +1270,8 @@
         {
           "version": "3.0",
           "date": "2023-08-24",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.0/PureKFD.ipa",
           "size": 1636661,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/3.0/PureKFD.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
@@ -1325,8 +1299,8 @@
         {
           "version": "2.0.2",
           "date": "2024-07-24",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/PurePKG.tipa",
           "size": 6637698,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1334,7 +1308,6 @@
         {
           "version": "2.0.2",
           "date": "2024-07-24",
-          "build": "",
           "size": 6637698,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1344,8 +1317,8 @@
         {
           "version": "2.0.1",
           "date": "2024-06-23",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/PurePKG.tipa",
           "size": 9394403,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1353,7 +1326,6 @@
         {
           "version": "2.0.1",
           "date": "2024-06-23",
-          "build": "",
           "size": 9394403,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1363,8 +1335,8 @@
         {
           "version": "2.0",
           "date": "2024-06-21",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/PurePKG.tipa",
           "size": 6627862,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1372,7 +1344,6 @@
         {
           "version": "2.0",
           "date": "2024-06-21",
-          "build": "",
           "size": 6627862,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1382,8 +1353,8 @@
         {
           "version": "1.7",
           "date": "2024-06-15",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.7/PurePKG.tipa",
           "size": 8067336,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.7/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1391,7 +1362,6 @@
         {
           "version": "1.7",
           "date": "2024-06-15",
-          "build": "",
           "size": 8067336,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.7/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1401,8 +1371,8 @@
         {
           "version": "1.6",
           "date": "2024-06-03",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.6/PurePKG.tipa",
           "size": 8499956,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.6/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1410,7 +1380,6 @@
         {
           "version": "1.6",
           "date": "2024-06-03",
-          "build": "",
           "size": 8499956,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.6/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1420,8 +1389,8 @@
         {
           "version": "1.5.1",
           "date": "2024-06-03",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5.1/PurePKG.tipa",
           "size": 6399029,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5.1/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1429,7 +1398,6 @@
         {
           "version": "1.5.1",
           "date": "2024-06-03",
-          "build": "",
           "size": 6399029,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5.1/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1439,8 +1407,8 @@
         {
           "version": "1.5",
           "date": "2024-04-22",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5/PurePKG.tipa",
           "size": 6763487,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1448,7 +1416,6 @@
         {
           "version": "1.5",
           "date": "2024-04-22",
-          "build": "",
           "size": 6763487,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1458,8 +1425,8 @@
         {
           "version": "1.4",
           "date": "2024-04-13",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.4/PurePKG.tipa",
           "size": 21980135,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.4/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1467,7 +1434,6 @@
         {
           "version": "1.4",
           "date": "2024-04-13",
-          "build": "",
           "size": 21980135,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.4/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1477,7 +1443,6 @@
         {
           "version": "1.4",
           "date": "2024-04-13",
-          "build": "",
           "size": 5737942,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.4/PurePKGDemo_visionOS.ipa",
           "minOSVersion": "14.0",
@@ -1487,7 +1452,6 @@
         {
           "version": "1.4",
           "date": "2024-04-13",
-          "build": "",
           "size": 19436030,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.4/PurePKGDemo_watchOS.ipa",
           "minOSVersion": "14.0",
@@ -1497,8 +1461,8 @@
         {
           "version": "1.3",
           "date": "2024-04-11",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.3/PurePKG.tipa",
           "size": 21949811,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.3/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1506,7 +1470,6 @@
         {
           "version": "1.3",
           "date": "2024-04-11",
-          "build": "",
           "size": 21949811,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.3/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1516,7 +1479,6 @@
         {
           "version": "1.3",
           "date": "2024-04-11",
-          "build": "",
           "size": 166,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.3/PurePKGDemo_visionOS.ipa",
           "minOSVersion": "14.0",
@@ -1526,7 +1488,6 @@
         {
           "version": "1.3",
           "date": "2024-04-11",
-          "build": "",
           "size": 19381174,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.3/PurePKGDemo_watchOS.ipa",
           "minOSVersion": "14.0",
@@ -1536,8 +1497,8 @@
         {
           "version": "1.2",
           "date": "2024-04-06",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.2/PurePKG.tipa",
           "size": 16998348,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.2/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1545,7 +1506,6 @@
         {
           "version": "1.2",
           "date": "2024-04-06",
-          "build": "",
           "size": 16998348,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.2/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1555,7 +1515,6 @@
         {
           "version": "1.2",
           "date": "2024-04-06",
-          "build": "",
           "size": 4095997,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.2/PurePKGDemo_watchOS.ipa",
           "minOSVersion": "14.0",
@@ -1565,8 +1524,8 @@
         {
           "version": "1.1",
           "date": "2024-04-04",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.1/PurePKG.tipa",
           "size": 20127625,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.1/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1574,7 +1533,6 @@
         {
           "version": "1.1",
           "date": "2024-04-04",
-          "build": "",
           "size": 20127625,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.1/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1584,7 +1542,6 @@
         {
           "version": "1.1",
           "date": "2024-04-04",
-          "build": "",
           "size": 166,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.1/PurePKGDemo_visionOS.ipa",
           "minOSVersion": "14.0",
@@ -1594,7 +1551,6 @@
         {
           "version": "1.1",
           "date": "2024-04-04",
-          "build": "",
           "size": 13774810,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.1/PurePKGDemo_watchOS.ipa",
           "minOSVersion": "14.0",
@@ -1604,8 +1560,8 @@
         {
           "version": "1.0",
           "date": "2024-04-03",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0/PurePKG.tipa",
           "size": 17556191,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1613,7 +1569,6 @@
         {
           "version": "1.0",
           "date": "2024-04-03",
-          "build": "",
           "size": 17556191,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1623,7 +1578,6 @@
         {
           "version": "1.0",
           "date": "2024-04-03",
-          "build": "",
           "size": 166,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0/PurePKGDemo_visionOS.ipa",
           "minOSVersion": "14.0",
@@ -1633,7 +1587,6 @@
         {
           "version": "1.0",
           "date": "2024-04-03",
-          "build": "",
           "size": 13544212,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0/PurePKGDemo_watchOS.ipa",
           "minOSVersion": "14.0",
@@ -1643,8 +1596,8 @@
         {
           "version": "1.0b8",
           "date": "2024-03-30",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b8/PurePKG.tipa",
           "size": 17523589,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b8/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1652,7 +1605,6 @@
         {
           "version": "1.0b8",
           "date": "2024-03-30",
-          "build": "",
           "size": 17523589,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b8/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1662,7 +1614,6 @@
         {
           "version": "1.0b8",
           "date": "2024-03-30",
-          "build": "",
           "size": 166,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b8/PurePKGDemo_visionOS.ipa",
           "minOSVersion": "14.0",
@@ -1672,7 +1623,6 @@
         {
           "version": "1.0b8",
           "date": "2024-03-30",
-          "build": "",
           "size": 13518557,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b8/PurePKGDemo_watchOS.ipa",
           "minOSVersion": "14.0",
@@ -1682,8 +1632,8 @@
         {
           "version": "1.0b7",
           "date": "2024-03-29",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b7/PurePKG.tipa",
           "size": 17212346,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b7/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1691,7 +1641,6 @@
         {
           "version": "1.0b7",
           "date": "2024-03-29",
-          "build": "",
           "size": 17212346,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b7/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1701,7 +1650,6 @@
         {
           "version": "1.0b7",
           "date": "2024-03-29",
-          "build": "",
           "size": 12590571,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b7/PurePKGDemo_visionOS.ipa",
           "minOSVersion": "14.0",
@@ -1711,7 +1659,6 @@
         {
           "version": "1.0b7",
           "date": "2024-03-29",
-          "build": "",
           "size": 14895267,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b7/PurePKGDemo_watchOS.ipa",
           "minOSVersion": "14.0",
@@ -1721,8 +1668,8 @@
         {
           "version": "1.0b6",
           "date": "2024-03-28",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b6/PurePKG.tipa",
           "size": 17212353,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b6/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1730,7 +1677,6 @@
         {
           "version": "1.0b6",
           "date": "2024-03-28",
-          "build": "",
           "size": 17212353,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b6/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1740,8 +1686,8 @@
         {
           "version": "1.0b5",
           "date": "2024-03-28",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b5/PurePKG.tipa",
           "size": 17179779,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b5/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1749,7 +1695,6 @@
         {
           "version": "1.0b5",
           "date": "2024-03-28",
-          "build": "",
           "size": 17179779,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b5/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1759,8 +1704,8 @@
         {
           "version": "1.0b4",
           "date": "2024-03-27",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b4/PurePKG.tipa",
           "size": 24189138,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b4/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1768,7 +1713,6 @@
         {
           "version": "1.0b4",
           "date": "2024-03-27",
-          "build": "",
           "size": 24189138,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b4/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1778,8 +1722,8 @@
         {
           "version": "1.0b3",
           "date": "2024-03-27",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b3/PurePKG.tipa",
           "size": 24187222,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b3/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1787,7 +1731,6 @@
         {
           "version": "1.0b3",
           "date": "2024-03-27",
-          "build": "",
           "size": 24187222,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b3/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1797,8 +1740,8 @@
         {
           "version": "1.0b2",
           "date": "2024-02-18",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b2/PurePKG.tipa",
           "size": 24149395,
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b2/PurePKG.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+."
@@ -1806,7 +1749,6 @@
         {
           "version": "1.0b2",
           "date": "2024-02-18",
-          "build": "",
           "size": 24031082,
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.0b2/PurePKGDemo.ipa",
           "minOSVersion": "14.0",
@@ -1831,8 +1773,8 @@
         {
           "version": "1.0",
           "date": "2024-10-11",
-          "downloadURL": "https://github.com/DRKCTRL/Santander/releases/download/1.0/SantanderTS.tipa",
           "size": 5331159,
+          "downloadURL": "https://github.com/DRKCTRL/Santander/releases/download/1.0/SantanderTS.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "Santander aims to enhance the experience of a file manager on an iOS device, using modern and familiar UI alongside new APIs. Note: The project is still in beta, and there are still quite a lot of bugs to fix & enhancements to make."
@@ -1840,7 +1782,6 @@
         {
           "version": "1.0",
           "date": "2024-10-11",
-          "build": "",
           "size": 4575378,
           "downloadURL": "https://github.com/DRKCTRL/Santander/releases/download/1.0/Santander.ipa",
           "minOSVersion": "14.0",
@@ -1848,20 +1789,6 @@
           "localizedDescription": "Santander aims to enhance the experience of a file manager on an iOS device, using modern and familiar UI alongside new APIs. Note: The project is still in beta, and there are still quite a lot of bugs to fix & enhancements to make."
         }
       ],
-      "appPermissions": {},
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0"
-    },
-    {
-      "name": "TestApp",
-      "bundleIdentifier": "com.example.testapp",
-      "developerName": "Test Developer",
-      "subtitle": "Updated Subtitle",
-      "localizedDescription": "",
-      "iconURL": "",
-      "category": "",
-      "screenshotURLs": [],
-      "versions": [],
       "appPermissions": {},
       "minOSVersion": "14.0",
       "maxOSVersion": "17.0"
@@ -1885,8 +1812,8 @@
         {
           "version": "0.2",
           "date": "2023-11-28",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.2/TrollBox.tipa",
           "size": 26633972,
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.2/TrollBox.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium."
@@ -1894,8 +1821,8 @@
         {
           "version": "0.1",
           "date": "2023-01-29",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.1/TrollBox.tipa",
           "size": 14327984,
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.1/TrollBox.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium."
@@ -1903,7 +1830,6 @@
         {
           "version": "0.1",
           "date": "2023-01-29",
-          "build": "",
           "size": 14113886,
           "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.1/TrollBox16.ipa",
           "minOSVersion": "14.0",
@@ -1913,8 +1839,8 @@
         {
           "version": "0.0.9",
           "date": "2023-01-20",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.9/TrollBox.tipa",
           "size": 13673796,
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.9/TrollBox.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium."
@@ -1922,8 +1848,8 @@
         {
           "version": "0.0.8",
           "date": "2022-12-28",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.8/TrollBox.tipa",
           "size": 12497643,
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.8/TrollBox.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium."
@@ -1931,8 +1857,8 @@
         {
           "version": "0.0.7",
           "date": "2022-12-27",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.7/TrollBox.tipa",
           "size": 8050755,
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.7/TrollBox.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium."
@@ -1940,8 +1866,8 @@
         {
           "version": "0.0.6",
           "date": "2022-12-23",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.6/TrollBox.tipa",
           "size": 3510461,
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.6/TrollBox.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium."
@@ -1949,8 +1875,8 @@
         {
           "version": "0.0.5",
           "date": "2022-12-23",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.5/TrollBox.tipa",
           "size": 4532634,
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.5/TrollBox.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium."
@@ -1958,8 +1884,8 @@
         {
           "version": "0.0.4",
           "date": "2022-12-22",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.4/TrollBox.tipa",
           "size": 3141208,
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.4/TrollBox.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium."
@@ -1967,8 +1893,8 @@
         {
           "version": "0.0.3",
           "date": "2022-12-21",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.3/TrollBox.tipa",
           "size": 3016450,
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.3/TrollBox.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium."
@@ -1976,8 +1902,8 @@
         {
           "version": "0.0.2",
           "date": "2022-12-20",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.2/TrollBox.tipa",
           "size": 2945488,
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.2/TrollBox.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium."
@@ -1985,8 +1911,8 @@
         {
           "version": "0.0.1",
           "date": "2022-12-19",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.1/TrollBox.tipa",
           "size": 2878138,
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.1/TrollBox.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium."
@@ -2005,17 +1931,17 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/icon.jpg",
       "category": "utilities",
       "screenshotURLs": [
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_2.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_3.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_4.png"
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_4.png"
       ],
       "versions": [
         {
           "version": "2.9-21",
           "date": "2025-01-11",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-21/TrollFools14_2.9-21%40huamidev.tipa",
           "size": 14241843,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-21/TrollFools14_2.9-21%40huamidev.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2023,7 +1949,6 @@
         {
           "version": "2.9-21",
           "date": "2025-01-11",
-          "build": "",
           "size": 6423780,
           "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-21/TrollFools_2.9-21%40huamidev.tipa",
           "minOSVersion": "14.0",
@@ -2033,8 +1958,8 @@
         {
           "version": "2.9-20",
           "date": "2025-01-10",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-20/TrollFools14_2.9-20_huami.tipa",
           "size": 14255921,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-20/TrollFools14_2.9-20_huami.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2042,7 +1967,6 @@
         {
           "version": "2.9-20",
           "date": "2025-01-10",
-          "build": "",
           "size": 6434885,
           "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-20/TrollFools_2.9-20_huami.tipa",
           "minOSVersion": "14.0",
@@ -2052,8 +1976,8 @@
         {
           "version": "2.8-18",
           "date": "2025-01-10",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-18/TrollFools14_2.8-18_huami.tipa",
           "size": 12618066,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-18/TrollFools14_2.8-18_huami.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2061,7 +1985,6 @@
         {
           "version": "2.8-18",
           "date": "2025-01-10",
-          "build": "",
           "size": 5457739,
           "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-18/TrollFools_2.8-18_huami.tipa",
           "minOSVersion": "14.0",
@@ -2071,8 +1994,8 @@
         {
           "version": "2.8-17",
           "date": "2025-01-09",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-17/TrollFools14_2.8-17_huami.tipa",
           "size": 12619164,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-17/TrollFools14_2.8-17_huami.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2080,7 +2003,6 @@
         {
           "version": "2.8-17",
           "date": "2025-01-09",
-          "build": "",
           "size": 5455363,
           "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-17/TrollFools_2.8-17_huami.tipa",
           "minOSVersion": "14.0",
@@ -2090,8 +2012,8 @@
         {
           "version": "2.7-9",
           "date": "2024-09-28",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-9/TrollFools14_2.7.9.huami.tipa",
           "size": 7637881,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-9/TrollFools14_2.7.9.huami.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2099,7 +2021,6 @@
         {
           "version": "2.7-9",
           "date": "2024-09-28",
-          "build": "",
           "size": 4792620,
           "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-9/TrollFools_2.7.9.huami.tipa",
           "minOSVersion": "14.0",
@@ -2109,8 +2030,8 @@
         {
           "version": "2.7-11",
           "date": "2024-09-29",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-11/TrollFools14_2.7.11.huami.tipa",
           "size": 8055831,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-11/TrollFools14_2.7.11.huami.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2118,7 +2039,6 @@
         {
           "version": "2.7-11",
           "date": "2024-09-29",
-          "build": "",
           "size": 5171573,
           "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-11/TrollFools_2.7.11.huami.tipa",
           "minOSVersion": "14.0",
@@ -2128,8 +2048,8 @@
         {
           "version": "2.7-10",
           "date": "2024-09-29",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-10/TrollFools14_2.7.10.huami.tipa",
           "size": 8055743,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-10/TrollFools14_2.7.10.huami.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2137,7 +2057,6 @@
         {
           "version": "2.7-10",
           "date": "2024-09-29",
-          "build": "",
           "size": 5171491,
           "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-10/TrollFools_2.7.10.huami.tipa",
           "minOSVersion": "14.0",
@@ -2147,8 +2066,8 @@
         {
           "version": "2.7",
           "date": "2024-09-15",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7/TrollFools14_2.7.huami.tipa",
           "size": 7605474,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7/TrollFools14_2.7.huami.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2156,7 +2075,6 @@
         {
           "version": "2.7",
           "date": "2024-09-15",
-          "build": "",
           "size": 4772134,
           "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7/TrollFools_2.7.huami.tipa",
           "minOSVersion": "14.0",
@@ -2166,8 +2084,8 @@
         {
           "version": "2.6-8",
           "date": "2024-09-14",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.6-8/TrollFools14_2.6-8.huami.tipa",
           "size": 7578051,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.6-8/TrollFools14_2.6-8.huami.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2175,7 +2093,6 @@
         {
           "version": "2.6-8",
           "date": "2024-09-14",
-          "build": "",
           "size": 4754561,
           "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.6-8/TrollFools_2.6-8.huami.tipa",
           "minOSVersion": "14.0",
@@ -2185,8 +2102,8 @@
         {
           "version": "2.5-2_1",
           "date": "2024-07-28",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.5-2_1/TrollFools14_2.5-2_huami.tipa",
           "size": 7520247,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.5-2_1/TrollFools14_2.5-2_huami.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2194,7 +2111,6 @@
         {
           "version": "2.5-2_1",
           "date": "2024-07-28",
-          "build": "",
           "size": 4709367,
           "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.5-2_1/TrollFools_2.5-2_huami.tipa",
           "minOSVersion": "14.0",
@@ -2204,8 +2120,8 @@
         {
           "version": "2.4-3",
           "date": "2024-09-15",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.4-3/TrollFools14_2.4-3_huami.tipa",
           "size": 7300809,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.4-3/TrollFools14_2.4-3_huami.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2213,7 +2129,6 @@
         {
           "version": "2.4-3",
           "date": "2024-09-15",
-          "build": "",
           "size": 4544074,
           "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.4-3/TrollFools_2.4-3_huami.tipa",
           "minOSVersion": "14.0",
@@ -2221,10 +2136,19 @@
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
         },
         {
-          "version": "2.11-25",
-          "date": "2025-01-17",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25%40huamidev.tipa",
-          "size": 14408490,
+          "version": "2.11-28",
+          "date": "2025-02-15",
+          "size": 14433792,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.11-28/TrollFools14_2.11-28%40huamidev.tipa",
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0",
+          "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
+        },
+        {
+          "version": "2.11-28",
+          "date": "2025-02-15",
+          "size": 6542574,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.11-28/TrollFools_2.11-28%40huamidev.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2232,7 +2156,15 @@
         {
           "version": "2.11-25",
           "date": "2025-01-17",
-          "build": "",
+          "size": 14408490,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25%40huamidev.tipa",
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0",
+          "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
+        },
+        {
+          "version": "2.11-25",
+          "date": "2025-01-17",
           "size": 6534606,
           "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.11-25/TrollFools_2.11-25%40huamidev.tipa",
           "minOSVersion": "14.0",
@@ -2242,8 +2174,8 @@
         {
           "version": "2.10-23",
           "date": "2025-01-14",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23%40huamidev.tipa",
           "size": 14405939,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23%40huamidev.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2251,7 +2183,6 @@
         {
           "version": "2.10-23",
           "date": "2025-01-14",
-          "build": "",
           "size": 6524034,
           "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-23/TrollFools_2.10-23%40huamidev.tipa",
           "minOSVersion": "14.0",
@@ -2261,8 +2192,8 @@
         {
           "version": "2.10-22",
           "date": "2025-01-14",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22%40huamidev.tipa",
           "size": 14406268,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22%40huamidev.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2270,7 +2201,6 @@
         {
           "version": "2.10-22",
           "date": "2025-01-14",
-          "build": "",
           "size": 6524499,
           "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-22/TrollFools_2.10-22%40huamidev.tipa",
           "minOSVersion": "14.0",
@@ -2291,16 +2221,16 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/icon.jpg",
       "category": "utilities",
       "screenshotURLs": [
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_2.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools/screenshots/IMG_3.png"
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_3.png"
       ],
       "versions": [
         {
           "version": "2.11-25",
           "date": "2025-01-17",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25.tipa",
           "size": 5699241,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2308,7 +2238,6 @@
         {
           "version": "2.11-25",
           "date": "2025-01-17",
-          "build": "",
           "size": 3487386,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools_2.11-25.tipa",
           "minOSVersion": "14.0",
@@ -2318,8 +2247,8 @@
         {
           "version": "2.10-23",
           "date": "2025-01-14",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23.tipa",
           "size": 5698258,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2327,7 +2256,6 @@
         {
           "version": "2.10-23",
           "date": "2025-01-14",
-          "build": "",
           "size": 3487141,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools_2.10-23.tipa",
           "minOSVersion": "14.0",
@@ -2337,8 +2265,8 @@
         {
           "version": "2.10-22",
           "date": "2025-01-14",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22.tipa",
           "size": 5698269,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2346,7 +2274,6 @@
         {
           "version": "2.10-22",
           "date": "2025-01-14",
-          "build": "",
           "size": 3486354,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-22/TrollFools_2.10-22.tipa",
           "minOSVersion": "14.0",
@@ -2356,8 +2283,8 @@
         {
           "version": "2.9-21",
           "date": "2025-01-11",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-21/TrollFools14_2.9-21.tipa",
           "size": 5666166,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-21/TrollFools14_2.9-21.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2365,7 +2292,6 @@
         {
           "version": "2.9-21",
           "date": "2025-01-11",
-          "build": "",
           "size": 3466422,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-21/TrollFools_2.9-21.tipa",
           "minOSVersion": "14.0",
@@ -2375,8 +2301,8 @@
         {
           "version": "2.9-20",
           "date": "2025-01-10",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-20/TrollFools14_2.9-20.tipa",
           "size": 5664942,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-20/TrollFools14_2.9-20.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2384,7 +2310,6 @@
         {
           "version": "2.9-20",
           "date": "2025-01-10",
-          "build": "",
           "size": 3466040,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-20/TrollFools_2.9-20.tipa",
           "minOSVersion": "14.0",
@@ -2394,8 +2319,8 @@
         {
           "version": "2.8-16",
           "date": "2024-12-24",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-16/TrollFools14_2.8-16.tipa",
           "size": 5434190,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-16/TrollFools14_2.8-16.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2403,7 +2328,6 @@
         {
           "version": "2.8-16",
           "date": "2024-12-24",
-          "build": "",
           "size": 3305897,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-16/TrollFools_2.8-16.tipa",
           "minOSVersion": "14.0",
@@ -2413,8 +2337,8 @@
         {
           "version": "2.8-15",
           "date": "2024-10-20",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-15/TrollFools14_2.8-15.tipa",
           "size": 5431116,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-15/TrollFools14_2.8-15.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2422,7 +2346,6 @@
         {
           "version": "2.8-15",
           "date": "2024-10-20",
-          "build": "",
           "size": 3304212,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-15/TrollFools_2.8-15.tipa",
           "minOSVersion": "14.0",
@@ -2432,8 +2355,8 @@
         {
           "version": "2.7-9",
           "date": "2024-09-25",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.7-9/TrollFools14_2.7-9.tipa",
           "size": 5552787,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.7-9/TrollFools14_2.7-9.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2441,7 +2364,6 @@
         {
           "version": "2.7-9",
           "date": "2024-09-25",
-          "build": "",
           "size": 3383295,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.7-9/TrollFools_2.7-9.tipa",
           "minOSVersion": "14.0",
@@ -2451,8 +2373,8 @@
         {
           "version": "2.6-8",
           "date": "2024-09-11",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.6-8/TrollFools14_2.6-8.tipa",
           "size": 5552722,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.6-8/TrollFools14_2.6-8.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2460,7 +2382,6 @@
         {
           "version": "2.6-8",
           "date": "2024-09-11",
-          "build": "",
           "size": 3383703,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.6-8/TrollFools_2.6-8.tipa",
           "minOSVersion": "14.0",
@@ -2470,8 +2391,8 @@
         {
           "version": "2.6-6",
           "date": "2024-08-18",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.6-6/TrollFools14_2.6-6.tipa",
           "size": 5552703,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.6-6/TrollFools14_2.6-6.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2479,7 +2400,6 @@
         {
           "version": "2.6-6",
           "date": "2024-08-18",
-          "build": "",
           "size": 3383397,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.6-6/TrollFools_2.6-6.tipa",
           "minOSVersion": "14.0",
@@ -2489,8 +2409,8 @@
         {
           "version": "2.5-3",
           "date": "2024-08-18",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.5-3/TrollFools14_2.5-3.tipa",
           "size": 5552707,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.5-3/TrollFools14_2.5-3.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2498,7 +2418,6 @@
         {
           "version": "2.5-3",
           "date": "2024-08-18",
-          "build": "",
           "size": 3383534,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.5-3/TrollFools_2.5-3.tipa",
           "minOSVersion": "14.0",
@@ -2508,8 +2427,8 @@
         {
           "version": "2.5-2",
           "date": "2024-07-28",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.5-2/TrollFools14_2.5-2.tipa",
           "size": 5544275,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.5-2/TrollFools14_2.5-2.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2517,7 +2436,6 @@
         {
           "version": "2.5-2",
           "date": "2024-07-28",
-          "build": "",
           "size": 3376019,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.5-2/TrollFools_2.5-2.tipa",
           "minOSVersion": "14.0",
@@ -2527,8 +2445,8 @@
         {
           "version": "2.4-2",
           "date": "2024-07-27",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.4-2/TrollFools14_2.4-2.tipa",
           "size": 5537797,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.4-2/TrollFools14_2.4-2.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2536,7 +2454,6 @@
         {
           "version": "2.4-2",
           "date": "2024-07-27",
-          "build": "",
           "size": 3371615,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.4-2/TrollFools_2.4-2.tipa",
           "minOSVersion": "14.0",
@@ -2546,8 +2463,8 @@
         {
           "version": "2.4-1",
           "date": "2024-07-24",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.4-1/TrollFools14_2.4-1.tipa",
           "size": 5384144,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.4-1/TrollFools14_2.4-1.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2555,7 +2472,6 @@
         {
           "version": "2.4-1",
           "date": "2024-07-24",
-          "build": "",
           "size": 3247279,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.4-1/TrollFools_2.4-1.tipa",
           "minOSVersion": "14.0",
@@ -2565,8 +2481,8 @@
         {
           "version": "2.3-5",
           "date": "2024-07-23",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-5/TrollFools14_2.3-5.tipa",
           "size": 5377866,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-5/TrollFools14_2.3-5.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2574,7 +2490,6 @@
         {
           "version": "2.3-5",
           "date": "2024-07-23",
-          "build": "",
           "size": 3242975,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-5/TrollFools_2.3-5.tipa",
           "minOSVersion": "14.0",
@@ -2584,8 +2499,8 @@
         {
           "version": "2.3-2",
           "date": "2024-07-22",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-2/TrollFools14_2.3-2.tipa",
           "size": 5370676,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-2/TrollFools14_2.3-2.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2593,7 +2508,6 @@
         {
           "version": "2.3-2",
           "date": "2024-07-22",
-          "build": "",
           "size": 3239279,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.3-2/TrollFools_2.3-2.tipa",
           "minOSVersion": "14.0",
@@ -2603,8 +2517,8 @@
         {
           "version": "2.1-6",
           "date": "2024-07-22",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.1-6/TrollFools14_2.1-6.fix3.tipa",
           "size": 5263057,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.1-6/TrollFools14_2.1-6.fix3.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2612,7 +2526,6 @@
         {
           "version": "2.1-6",
           "date": "2024-07-22",
-          "build": "",
           "size": 3141310,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.1-6/TrollFools_2.1-6.tipa",
           "minOSVersion": "14.0",
@@ -2622,8 +2535,8 @@
         {
           "version": "2.0-2",
           "date": "2024-07-21",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.0-2/TrollFools_2.0-2.tipa",
           "size": 28248614,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.0-2/TrollFools_2.0-2.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2631,8 +2544,8 @@
         {
           "version": "1.3-9",
           "date": "2024-07-20",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.3-9/TrollFools14_1.3-9.tipa",
           "size": 43791119,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.3-9/TrollFools14_1.3-9.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2640,7 +2553,6 @@
         {
           "version": "1.3-9",
           "date": "2024-07-20",
-          "build": "",
           "size": 28077538,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.3-9/TrollFools_1.3-9.tipa",
           "minOSVersion": "14.0",
@@ -2650,8 +2562,8 @@
         {
           "version": "1.2-6",
           "date": "2024-07-20",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.2-6/TrollFools14_1.2-6.tipa",
           "size": 41736673,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.2-6/TrollFools14_1.2-6.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2659,7 +2571,6 @@
         {
           "version": "1.2-6",
           "date": "2024-07-20",
-          "build": "",
           "size": 26317618,
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.2-6/TrollFools_1.2-6.tipa",
           "minOSVersion": "14.0",
@@ -2669,8 +2580,8 @@
         {
           "version": "1.1-4",
           "date": "2024-07-20",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.1-4/TrollFools_1.1-4.tipa",
           "size": 26318078,
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v1.1-4/TrollFools_1.1-4.tipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
@@ -2698,8 +2609,8 @@
         {
           "version": "1.0.3",
           "date": "2024-09-12",
-          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX-20D50.ipa",
           "size": 27098183,
+          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX-20D50.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollInstallerX is a fast and reliable universal TrollStore installer supporting iOS 14.0 - 16.6.1 on both arm64 and arm64e devices. It offers two installation methods: direct installation using kfd exploit and dmaFail PPL bypass for most devices, and indirect installation for A15/A16/M2 devices on iOS 16.5.1 and iOS 16.6-16.6.1. Both methods allow installing the TrollStore persistence helper to maintain System registration status."
@@ -2707,7 +2618,6 @@
         {
           "version": "1.0.3",
           "date": "2024-09-12",
-          "build": "",
           "size": 6889214,
           "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX.ipa",
           "minOSVersion": "14.0",
@@ -2717,8 +2627,8 @@
         {
           "version": "1.0.2",
           "date": "2024-04-08",
-          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.2/TrollInstallerX.ipa",
           "size": 6888282,
+          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.2/TrollInstallerX.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollInstallerX is a fast and reliable universal TrollStore installer supporting iOS 14.0 - 16.6.1 on both arm64 and arm64e devices. It offers two installation methods: direct installation using kfd exploit and dmaFail PPL bypass for most devices, and indirect installation for A15/A16/M2 devices on iOS 16.5.1 and iOS 16.6-16.6.1. Both methods allow installing the TrollStore persistence helper to maintain System registration status."
@@ -2726,8 +2636,8 @@
         {
           "version": "1.0.1",
           "date": "2024-04-06",
-          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.1/TrollInstallerX.ipa",
           "size": 6888465,
+          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.1/TrollInstallerX.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollInstallerX is a fast and reliable universal TrollStore installer supporting iOS 14.0 - 16.6.1 on both arm64 and arm64e devices. It offers two installation methods: direct installation using kfd exploit and dmaFail PPL bypass for most devices, and indirect installation for A15/A16/M2 devices on iOS 16.5.1 and iOS 16.6-16.6.1. Both methods allow installing the TrollStore persistence helper to maintain System registration status."
@@ -2735,8 +2645,8 @@
         {
           "version": "1.0.0",
           "date": "2024-04-04",
-          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.0/TrollInstallerX.ipa",
           "size": 6885899,
+          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.0/TrollInstallerX.ipa",
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0",
           "localizedDescription": "TrollInstallerX is a fast and reliable universal TrollStore installer supporting iOS 14.0 - 16.6.1 on both arm64 and arm64e devices. It offers two installation methods: direct installation using kfd exploit and dmaFail PPL bypass for most devices, and indirect installation for A15/A16/M2 devices on iOS 16.5.1 and iOS 16.6-16.6.1. Both methods allow installing the TrollStore persistence helper to maintain System registration status."

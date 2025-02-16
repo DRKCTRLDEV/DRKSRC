@@ -19,33 +19,32 @@
     {
       "version": "1.0.3",
       "date": "2024-09-12",
-      "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX-20D50.ipa",
-      "size": 27098183
+      "size": 27098183,
+      "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX-20D50.ipa"
     },
     {
       "version": "1.0.3",
       "date": "2024-09-12",
-      "build": "",
       "size": 6889214,
       "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX.ipa"
     },
     {
       "version": "1.0.2",
       "date": "2024-04-08",
-      "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.2/TrollInstallerX.ipa",
-      "size": 6888282
+      "size": 6888282,
+      "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.2/TrollInstallerX.ipa"
     },
     {
       "version": "1.0.1",
       "date": "2024-04-06",
-      "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.1/TrollInstallerX.ipa",
-      "size": 6888465
+      "size": 6888465,
+      "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.1/TrollInstallerX.ipa"
     },
     {
       "version": "1.0.0",
       "date": "2024-04-04",
-      "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.0/TrollInstallerX.ipa",
-      "size": 6885899
+      "size": 6885899,
+      "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.0/TrollInstallerX.ipa"
     }
   ]
 }

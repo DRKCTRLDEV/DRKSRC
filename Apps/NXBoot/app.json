@@ -18,14 +18,14 @@
     {
       "version": "0.3.2",
       "date": "2024-08-31",
-      "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa",
-      "size": 1045270
+      "size": 1045270,
+      "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa"
     },
     {
       "version": "0.3.1",
       "date": "2024-08-30",
-      "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.1/NXBoot_0.3.1-1.tipa",
-      "size": 1043645
+      "size": 1043645,
+      "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.1/NXBoot_0.3.1-1.tipa"
     }
   ]
 }

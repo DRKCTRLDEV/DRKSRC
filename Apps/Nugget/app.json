@@ -3,40 +3,36 @@
     "https://github.com/leminlimez/Nugget-Mobile"
   ],
   "name": "Nugget",
-  "bundleIdentifier": "com.leemin.nugget",
+  "bundleIdentifier": "",
   "developerName": "leminlimez",
   "subtitle": "iOS 16.0-18.1b4 Device Unlock Tool",
   "localizedDescription": "Unlock your device's full potential on iOS 16.0 through 18.1 beta 4, with partial support for iOS 18.1 beta 5-6. Note: Does not work on iOS 18.1 beta 7 or newer - use PC version instead. Requires .mobiledevicepairing file and wireguard. Uses sparserestore exploit to write to files outside intended restore location, like mobilegestalt. CAUTION: Back up your data before using. Developer not responsible for bootloops or other issues.",
-  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Nugget/icon.jpg",
-  "category": "Utilities",
+  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Nugget/icon.png",
+  "category": "utilities",
   "screenshotURLs": [],
   "versions": [
     {
       "version": "2.0.1",
       "date": "2024-12-01",
-      "build": "",
-      "size": "7676570",
+      "size": 7676570,
       "downloadURL": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v2.0.1/Nugget.ipa"
     },
     {
       "version": "2.0",
       "date": "2024-10-17",
-      "build": "",
-      "size": "7675473",
+      "size": 7675473,
       "downloadURL": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v2.0/Nugget.ipa"
     },
     {
       "version": "1.0.1",
       "date": "2024-09-23",
-      "build": "",
-      "size": "7742363",
+      "size": 7742363,
       "downloadURL": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v1.0.1/Nugget.ipa"
     },
     {
       "version": "1.0",
       "date": "2024-09-22",
-      "build": "",
-      "size": "7741677",
+      "size": 7741677,
       "downloadURL": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v1.0/Nugget.ipa"
     }
   ]
