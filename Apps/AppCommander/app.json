@@ -18,10 +18,28 @@
   ],
   "versions": [
     {
+      "version": "2.0.0-p1",
+      "date": "2023-12-25",
+      "size": 2756390,
+      "downloadURL": "https://github.com/BomberFish/AppCommander/releases/download/v2.0.0-p1/AppCommander.tipa",
+      "minOSVersion": "14.0",
+      "maxOSVersion": "17.0",
+      "localizedDescription": "AppCommander is a powerful iOS utility for app management and system customization. Features include App Manager, Home Screen sorting, and system tweaks. Supports iOS 14.0-17.0."
+    },
+    {
       "version": "1.0.0_publicbeta1",
       "date": "2023-07-01",
       "size": 15941020,
       "downloadURL": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v1.0.0_publicbeta1/AppCommander-v1.0.0_publicbeta1.ipa"
+    },
+    {
+      "version": "1.0.0",
+      "date": "2023-07-12",
+      "size": 16030736,
+      "downloadURL": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v1.0.0/AppCommander_v1.0.0.ipa",
+      "minOSVersion": "14.0",
+      "maxOSVersion": "17.0",
+      "localizedDescription": "AppCommander is a powerful iOS utility for app management and system customization. Features include App Manager, Home Screen sorting, and system tweaks. Supports iOS 14.0-17.0."
     },
     {
       "version": "0.1-beta.3",
