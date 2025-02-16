@@ -159,6 +159,33 @@
       ],
       "versions": [
         {
+          "version": "v2.11-25",
+          "date": "2025-01-17",
+          "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25.tipa",
+          "size": 5699241,
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0"
+        },
+        {
+          "version": "v2.10-23",
+          "date": "2025-01-14",
+          "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23.tipa",
+          "size": 5698258,
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0"
+        },
+        {
+          "version": "v2.10-22",
+          "date": "2025-01-14",
+          "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22.tipa",
+          "size": 5698269,
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0"
+        },
+        {
           "version": "v2.9-21",
           "date": "2025-01-11",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
@@ -173,33 +200,6 @@
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-21/TrollFools_2.9-21.tipa",
           "size": 3466422,
-          "minOSVersion": "14.0",
-          "maxOSVersion": "17.0"
-        },
-        {
-          "version": "v2.9-20",
-          "date": "2025-01-10",
-          "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-20/TrollFools14_2.9-20.tipa",
-          "size": 5664942,
-          "minOSVersion": "14.0",
-          "maxOSVersion": "17.0"
-        },
-        {
-          "version": "v2.9-20",
-          "date": "2025-01-10",
-          "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-20/TrollFools_2.9-20.tipa",
-          "size": 3466040,
-          "minOSVersion": "14.0",
-          "maxOSVersion": "17.0"
-        },
-        {
-          "version": "v2.8-16",
-          "date": "2024-12-24",
-          "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-16/TrollFools14_2.8-16.tipa",
-          "size": 5434190,
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0"
         }
@@ -222,29 +222,29 @@
       ],
       "versions": [
         {
-          "version": "6b1",
-          "date": "2024-09-14",
+          "version": "6.0.2",
+          "date": "2024-11-23",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface.",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.ipa",
-          "size": 10692355,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.ipa",
+          "size": 10806164,
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0"
         },
         {
-          "version": "6b1",
-          "date": "2024-09-14",
+          "version": "6.0.1",
+          "date": "2024-09-29",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface.",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.noSparse.ipa",
-          "size": 3150038,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.ipa",
+          "size": 10882263,
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0"
         },
         {
-          "version": "6b1",
-          "date": "2024-09-14",
+          "version": "6.0",
+          "date": "2024-09-22",
           "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface.",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.noSparse.ts.ipa",
-          "size": 3191275,
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.ipa",
+          "size": 10025476,
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0"
         },
@@ -692,47 +692,47 @@
       ],
       "versions": [
         {
-          "version": "v8.1.4",
-          "date": "2023-03-15",
+          "version": "v10.3.2",
+          "date": "2023-05-29",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1.",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.4/Cowabunga.ipa",
-          "size": 21867855,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.2/Cowabunga.ipa",
+          "size": 16288960,
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0"
         },
         {
-          "version": "v8.1.3",
-          "date": "2023-03-13",
+          "version": "v10.3.1",
+          "date": "2023-05-29",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1.",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.3/Cowabunga.ipa",
-          "size": 21862959,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.1/Cowabunga.ipa",
+          "size": 16288883,
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0"
         },
         {
-          "version": "v8.1.2",
-          "date": "2023-03-06",
+          "version": "v10.3.0",
+          "date": "2023-05-29",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1.",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.2/Cowabunga.ipa",
-          "size": 21849343,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.0/Cowabunga.ipa",
+          "size": 16285936,
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0"
         },
         {
-          "version": "v8.1.1",
-          "date": "2023-02-28",
+          "version": "v10.2.0",
+          "date": "2023-05-12",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1.",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.1/Cowabunga.ipa",
-          "size": 21849921,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.2.0/Cowabunga.ipa",
+          "size": 16280833,
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0"
         },
         {
-          "version": "v8.1.0",
-          "date": "2023-02-26",
+          "version": "v10.1.1",
+          "date": "2023-03-30",
           "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1.",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.0/Cowabunga.ipa",
-          "size": 21796707,
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.1.1/Cowabunga.ipa",
+          "size": 21605355,
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0"
         }
@@ -882,47 +882,47 @@
       ],
       "versions": [
         {
-          "version": "v2.8-18",
-          "date": "2025-01-10",
+          "version": "v2.11-28",
+          "date": "2025-02-15",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-18/TrollFools_2.8-18_huami.tipa",
-          "size": 5457739,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.11-28/TrollFools14_2.11-28%40huamidev.tipa",
+          "size": 14433792,
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0"
         },
         {
-          "version": "v2.8-17",
-          "date": "2025-01-09",
+          "version": "v2.11-25",
+          "date": "2025-01-17",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-17/TrollFools14_2.8-17_huami.tipa",
-          "size": 12619164,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25%40huamidev.tipa",
+          "size": 14408490,
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0"
         },
         {
-          "version": "v2.8-17",
-          "date": "2025-01-09",
+          "version": "v2.10-23",
+          "date": "2025-01-14",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-17/TrollFools_2.8-17_huami.tipa",
-          "size": 5455363,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23%40huamidev.tipa",
+          "size": 14405939,
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0"
         },
         {
-          "version": "v2.7-9",
-          "date": "2024-09-28",
+          "version": "v2.10-22",
+          "date": "2025-01-14",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-9/TrollFools14_2.7.9.huami.tipa",
-          "size": 7637881,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22%40huamidev.tipa",
+          "size": 14406268,
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0"
         },
         {
-          "version": "v2.7-9",
-          "date": "2024-09-28",
+          "version": "v2.9-21",
+          "date": "2025-01-11",
           "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-9/TrollFools_2.7.9.huami.tipa",
-          "size": 4792620,
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-21/TrollFools14_2.9-21%40huamidev.tipa",
+          "size": 14241843,
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0"
         }

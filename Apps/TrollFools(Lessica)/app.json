@@ -16,6 +16,33 @@
   ],
   "versions": [
     {
+      "version": "v2.11-25",
+      "date": "2025-01-17",
+      "size": 5699241,
+      "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25.tipa",
+      "minOSVersion": "14.0",
+      "maxOSVersion": "17.0",
+      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
+    },
+    {
+      "version": "v2.10-23",
+      "date": "2025-01-14",
+      "size": 5698258,
+      "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23.tipa",
+      "minOSVersion": "14.0",
+      "maxOSVersion": "17.0",
+      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
+    },
+    {
+      "version": "v2.10-22",
+      "date": "2025-01-14",
+      "size": 5698269,
+      "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22.tipa",
+      "minOSVersion": "14.0",
+      "maxOSVersion": "17.0",
+      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
+    },
+    {
       "version": "v2.9-21",
       "date": "2025-01-11",
       "size": 5666166,
@@ -29,33 +56,6 @@
       "date": "2025-01-11",
       "size": 3466422,
       "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-21/TrollFools_2.9-21.tipa",
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0",
-      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
-    },
-    {
-      "version": "v2.9-20",
-      "date": "2025-01-10",
-      "size": 5664942,
-      "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-20/TrollFools14_2.9-20.tipa",
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0",
-      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
-    },
-    {
-      "version": "v2.9-20",
-      "date": "2025-01-10",
-      "size": 3466040,
-      "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-20/TrollFools_2.9-20.tipa",
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0",
-      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
-    },
-    {
-      "version": "v2.8-16",
-      "date": "2024-12-24",
-      "size": 5434190,
-      "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-16/TrollFools14_2.8-16.tipa",
       "minOSVersion": "14.0",
       "maxOSVersion": "17.0",
       "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."

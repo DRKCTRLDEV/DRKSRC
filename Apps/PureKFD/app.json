@@ -17,22 +17,31 @@
   ],
   "versions": [
     {
-      "version": "6b1",
-      "date": "2024-09-14",
-      "size": 10692355,
-      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.ipa"
+      "version": "6.0.2",
+      "date": "2024-11-23",
+      "size": 10806164,
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.ipa",
+      "minOSVersion": "14.0",
+      "maxOSVersion": "17.0",
+      "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
     },
     {
-      "version": "6b1",
-      "date": "2024-09-14",
-      "size": 3150038,
-      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.noSparse.ipa"
+      "version": "6.0.1",
+      "date": "2024-09-29",
+      "size": 10882263,
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.ipa",
+      "minOSVersion": "14.0",
+      "maxOSVersion": "17.0",
+      "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
     },
     {
-      "version": "6b1",
-      "date": "2024-09-14",
-      "size": 3191275,
-      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.noSparse.ts.ipa"
+      "version": "6.0",
+      "date": "2024-09-22",
+      "size": 10025476,
+      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.ipa",
+      "minOSVersion": "14.0",
+      "maxOSVersion": "17.0",
+      "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
     },
     {
       "version": "6.0rc3",
