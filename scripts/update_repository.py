@@ -88,6 +88,7 @@ class RepoUpdater:
             new_versions = []
             existing_versions = app_data.get("versions", [])
             existing_urls = {v.get("downloadURL", "") for v in existing_versions}
+            unique_versions = set()  # To track unique version strings
             
             for repo_url in repos:
                 if "github.com" not in repo_url:
@@ -110,13 +111,21 @@ class RepoUpdater:
                     continue
                 
                 for release in response.json():
+                    # Track if we've added a version for this release
+                    release_version = release['tag_name']  # Use the raw version string
+                    release_date = release['published_at']  # Get the release date
+                    if release_version in unique_versions:
+                        continue  # Skip if we've already added this version
+                    
+                    # Add the version to the set to track uniqueness
+                    unique_versions.add(release_version)
+                    
+                    # Find the first valid asset (ipa/tipa)
                     for asset in release.get('assets', []):
                         if asset['name'].lower().endswith(('.ipa', '.tipa')):
-                            # Directly use the version string from the release
-                            version_str = release['tag_name']  # Keep the version as is
                             version_info = {
-                                "version": version_str,  # Use the raw version string
-                                "date": release['published_at'].split('T')[0],
+                                "version": release_version,  # Use the raw version string
+                                "date": release_date.split('T')[0],  # Store the date in YYYY-MM-DD format
                                 "size": asset['size'],
                                 "downloadURL": asset['browser_download_url'],
                                 "minOSVersion": "14.0",
@@ -126,18 +135,17 @@ class RepoUpdater:
                             if version_info["downloadURL"] not in existing_urls:
                                 new_versions.append(version_info)
                                 existing_urls.add(version_info["downloadURL"])
+                            break  # Exit after adding the first valid asset
 
                 if new_versions:
-                    latest_version = new_versions[0]
-                    if latest_version.get("downloadURL"):
-                        app_json_path = os.path.join(self.apps_dir, app_name, 'app.json')
-                        if not update_app_permissions(app_json_path, latest_version["downloadURL"]):
-                            self.logger.error(f"Failed to update permissions for {app_name}")
-
+                    # Sort all versions by date (latest first)
                     all_versions = existing_versions + new_versions
-                    all_versions.sort(key=lambda x: x['version'], reverse=True)  # Sort by raw version string
+                    all_versions.sort(key=lambda x: x['date'], reverse=True)  # Sort by date
+                    
+                    # Keep only the latest 5 versions
                     app_data["versions"] = all_versions[:5]
                     
+                    # Save the updated app_data
                     if self.save_json_file(os.path.join(self.apps_dir, app_name, 'app.json'), app_data):
                         return {
                             "success": True,
@@ -146,10 +154,6 @@ class RepoUpdater:
                         }
             
             return {"success": True, "message": "No new versions found"}
-            
-        except Exception as e:
-            self.logger.error(f"Error updating versions for {app_name}: {str(e)}")
-            return {"success": False, "message": str(e)}
             
         except Exception as e:
             self.logger.error(f"Error updating versions for {app_name}: {str(e)}")
