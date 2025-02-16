@@ -177,9 +177,45 @@ class RepoUpdater:
             # Save standard repo.json
             self.save_json_file(os.path.join(self.base_dir, 'repo.json'), base_repo_data)
 
+            # Save AltStore format with featured apps
+            altstore_data = {
+                "name": repo_info.get("name"),
+                "identifier": repo_info.get("identifier"),
+                "subtitle": repo_info.get("subtitle"),
+                "iconURL": repo_info.get("iconURL"),
+                "website": repo_info.get("website"),
+                "sourceURL": repo_info.get("sourceURL", ""),
+                "tintColor": repo_info.get("tintColor", "").lstrip("#"),
+                "featuredApps": featured_apps,
+                "crypto": repo_info.get("crypto", {}),
+                "apps": [
+                    {
+                        "name": app.get("name", ""),
+                        "bundleIdentifier": app.get("bundleIdentifier", ""),
+                        "developerName": app.get("developerName", ""),
+                        "version": app.get("versions", [{}])[0].get("version", "") if app.get("versions") else "",
+                        "versionDate": app.get("versions", [{}])[0].get("date", "") if app.get("versions") else "",
+                        "downloadURL": app.get("versions", [{}])[0].get("downloadURL", "") if app.get("versions") else "",
+                        "localizedDescription": app.get("localizedDescription", ""),
+                        "iconURL": app.get("iconURL", ""),
+                        "tintColor": repo_info.get("tintColor", "").lstrip("#"),
+                        "size": app.get("versions", [{}])[0].get("size", 0) if app.get("versions") else 0,
+                        "screenshotURLs": app.get("screenshotURLs", [])
+                    }
+                    for app in apps
+                    if app.get("versions")  # Only include apps with versions
+                ]
+            }
+            self.save_json_file(os.path.join(self.base_dir, 'altstore.json'), altstore_data)
+
             # Save TrollApps format with featured apps
             trollapps_data = {
-                **repo_info,
+                "name": repo_info.get("name"),
+                "subtitle": repo_info.get("subtitle"),
+                "description": repo_info.get("description"),
+                "iconURL": repo_info.get("iconURL"),
+                "headerURL": repo_info.get("headerURL"),
+                "website": repo_info.get("website"),
                 "featuredApps": featured_apps,
                 "apps": [
                     {
@@ -190,31 +226,86 @@ class RepoUpdater:
                         "localizedDescription": app.get("localizedDescription", ""),
                         "iconURL": app.get("iconURL", ""),
                         "screenshotURLs": app.get("screenshotURLs", []),
-                        "versions": app.get("versions", [])
+                        "versions": [
+                            {
+                                "version": ver.get("version", ""),
+                                "date": ver.get("date", ""),
+                                "localizedDescription": ver.get("localizedDescription", ""),
+                                "downloadURL": ver.get("downloadURL", ""),
+                                "size": ver.get("size", 0)
+                            }
+                            for ver in app.get("versions", [])
+                        ]
                     }
                     for app in apps
                 ]
             }
             self.save_json_file(os.path.join(self.base_dir, 'trollapps.json'), trollapps_data)
 
-            # Save AltStore format with featured apps
-            altstore_data = {
-                **repo_info,
-                "featuredApps": featured_apps,  # Add featured apps
+            # Save Scarlet format
+            scarlet_data = {
+                "META": {
+                    "repoName": repo_info.get("name", "DRKSRC"),
+                    "repoIcon": repo_info.get("iconURL", "")
+                },
+                "Tweaked": [],
+                "Games": [],
+                "Emulators": [],
+                "Other": []
+            }
+
+            # Map apps to Scarlet format
+            for app in apps:
+                scarlet_app = {
+                    "name": app.get("name", ""),
+                    "version": app.get("versions", [{}])[0].get("version", "") if app.get("versions") else "",
+                    "icon": app.get("iconURL", ""),
+                    "down": app.get("versions", [{}])[0].get("downloadURL", "") if app.get("versions") else "",
+                    "category": app.get("category", "Other"),
+                    "banner": repo_info.get("headerURL", ""),
+                    "description": app.get("localizedDescription", ""),
+                    "bundleID": app.get("bundleIdentifier", ""),
+                    "contact": {
+                        "web": repo_info.get("website", "")
+                    },
+                    "screenshots": app.get("screenshotURLs", [])
+                }
+                
+                # Add app to appropriate category
+                category = "Tweaked" if app.get("category") == "utilities" else "Other"
+                scarlet_data[category].append(scarlet_app)
+
+            self.save_json_file(os.path.join(self.base_dir, 'scarlet.json'), scarlet_data)
+
+            # Save ESign format
+            esign_data = {
+                "name": repo_info.get("name"),
+                "identifier": repo_info.get("identifier"),
+                "subtitle": repo_info.get("subtitle"),
+                "iconURL": repo_info.get("iconURL"),
+                "website": repo_info.get("website"),
+                "sourceURL": repo_info.get("sourceURL", ""),
+                "tintColor": repo_info.get("tintColor", "").lstrip("#"),
+                "featuredApps": featured_apps,
                 "apps": [
                     {
-                        **app,
-                        "appPermissions": {
-                            "entitlements": app.get("entitlements", []),
-                            "privacy": app.get("privacy", {})
-                        },
-                        "minOSVersion": "14.0",
-                        "maxOSVersion": "17.0"
+                        "name": app.get("name", ""),
+                        "bundleIdentifier": app.get("bundleIdentifier", ""),
+                        "developerName": app.get("developerName", ""),
+                        "version": app.get("versions", [{}])[0].get("version", "") if app.get("versions") else "",
+                        "versionDate": app.get("versions", [{}])[0].get("date", "") if app.get("versions") else "",
+                        "downloadURL": app.get("versions", [{}])[0].get("downloadURL", "") if app.get("versions") else "",
+                        "localizedDescription": app.get("localizedDescription", ""),
+                        "iconURL": app.get("iconURL", ""),
+                        "tintColor": repo_info.get("tintColor", "").lstrip("#"),
+                        "size": app.get("versions", [{}])[0].get("size", 0) if app.get("versions") else 0,
+                        "screenshotURLs": app.get("screenshotURLs", [])
                     }
                     for app in apps
+                    if app.get("versions")  # Only include apps with versions
                 ]
             }
-            self.save_json_file(os.path.join(self.base_dir, 'altstore.json'), altstore_data)
+            self.save_json_file(os.path.join(self.base_dir, 'esign.json'), esign_data)
 
             return {"success": True, "message": "All repository formats compiled successfully"}
 
