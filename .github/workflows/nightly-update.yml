@@ -68,7 +68,7 @@ jobs:
           fi
           
           # Check for repository format updates
-          REPO_UPDATES=$(echo "$MODIFIED_FILES" | grep -E "repo\.json|scarlet\.json|trollapps\.json|altstore\.json" || true)
+          REPO_UPDATES=$(echo "$MODIFIED_FILES" | grep -E "repo\.json|trollapps\.json|altstore\.json" || true)
           if [ ! -z "$REPO_UPDATES" ]; then
             COMMIT_MSG+="\nUpdated repository formats:\n"
             while IFS= read -r file; do

@@ -177,37 +177,10 @@ class RepoUpdater:
             # Save standard repo.json
             self.save_json_file(os.path.join(self.base_dir, 'repo.json'), base_repo_data)
 
-            # Save Scarlet format
-            scarlet_data = {
-                "META": {
-                    "repoName": repo_info.get("name", "DRKSRC"),
-                    "repoIcon": repo_info.get("iconURL", "")
-                },
-                "Games": [],
-                "Tweaked": [],
-                "Jailbreaks": [],
-                "Emulators": [],
-                "Other": []
-            }
-            for app in apps:
-                # Map to Scarlet categories...
-                category = "Other"  # Default fallback 
-                scarlet_app = {
-                    "name": app.get("name", ""),
-                    "version": app.get("versions", [{}])[0].get("version", "") if app.get("versions") else "",
-                    "down": app.get("versions", [{}])[0].get("downloadURL", "") if app.get("versions") else "",
-                    "description": app.get("localizedDescription", ""),
-                    "bundleID": app.get("bundleIdentifier", ""),
-                    "icon": app.get("iconURL", ""),
-                    "screenshots": app.get("screenshotURLs", [])
-                }
-                scarlet_data[category].append(scarlet_app)
-            self.save_json_file(os.path.join(self.base_dir, 'scarlet.json'), scarlet_data)
-
             # Save TrollApps format with featured apps
             trollapps_data = {
                 **repo_info,
-                "featuredApps": featured_apps,  # Add featured apps
+                "featuredApps": featured_apps,
                 "apps": [
                     {
                         "name": app.get("name", ""),

@@ -16,13 +16,16 @@
   </p>
 
   <p style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-    <a href="https://fwuf.in/#/esign://addsource?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/repo.json">
+    <a href="https://fwuf.in/#/esign://addsource?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Trollapps.json">
       <img src="https://img.shields.io/badge/Add%20to%20ESign-%20blue?style=for-the-badge&color=1e90ff" alt="Add to ESign">
     </a>
     <a href="https://appdb.to/repos/import?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/repo.json">
       <img src="https://img.shields.io/badge/Add%20to%20Appdb-%20blue?style=for-the-badge&color=0048ba" alt="Add to Appdb">
     </a>
-    <a href="https://fwuf.in/#/trollapps://add?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/repo.json">
+    <a href="https://fwuf.in/#/trollapps://add?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/trollapps.json">
+      <img src="https://img.shields.io/badge/Add%20to%20TrollApps-%20blue?style=for-the-badge&color=B85CFD" alt="Add to TrollApps">
+    </a>
+    <a href="https://fwuf.in/#/scarlet://add?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/repo.json">
       <img src="https://img.shields.io/badge/Add%20to%20TrollApps-%20blue?style=for-the-badge&color=B85CFD" alt="Add to TrollApps">
     </a>
     <a href="https://s0n1c.ca/altlist/">
