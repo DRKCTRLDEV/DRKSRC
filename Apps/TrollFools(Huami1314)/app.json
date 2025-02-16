@@ -17,34 +17,49 @@
   ],
   "versions": [
     {
-      "version": "2.9-21",
-      "date": "2025-01-11",
-      "size": 14241843,
-      "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-21/TrollFools14_2.9-21%40huamidev.tipa"
-    },
-    {
-      "version": "2.9-21",
-      "date": "2025-01-11",
-      "size": 6423780,
-      "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-21/TrollFools_2.9-21%40huamidev.tipa"
-    },
-    {
-      "version": "2.9-20",
+      "version": "v2.8-18",
       "date": "2025-01-10",
-      "size": 14255921,
-      "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-20/TrollFools14_2.9-20_huami.tipa"
+      "size": 5457739,
+      "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-18/TrollFools_2.8-18_huami.tipa",
+      "minOSVersion": "14.0",
+      "maxOSVersion": "17.0",
+      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
     },
     {
-      "version": "2.9-20",
-      "date": "2025-01-10",
-      "size": 6434885,
-      "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-20/TrollFools_2.9-20_huami.tipa"
+      "version": "v2.8-17",
+      "date": "2025-01-09",
+      "size": 12619164,
+      "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-17/TrollFools14_2.8-17_huami.tipa",
+      "minOSVersion": "14.0",
+      "maxOSVersion": "17.0",
+      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
     },
     {
-      "version": "2.8-18",
-      "date": "2025-01-10",
-      "size": 12618066,
-      "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-18/TrollFools14_2.8-18_huami.tipa"
+      "version": "v2.8-17",
+      "date": "2025-01-09",
+      "size": 5455363,
+      "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-17/TrollFools_2.8-17_huami.tipa",
+      "minOSVersion": "14.0",
+      "maxOSVersion": "17.0",
+      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
+    },
+    {
+      "version": "v2.7-9",
+      "date": "2024-09-28",
+      "size": 7637881,
+      "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-9/TrollFools14_2.7.9.huami.tipa",
+      "minOSVersion": "14.0",
+      "maxOSVersion": "17.0",
+      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
+    },
+    {
+      "version": "v2.7-9",
+      "date": "2024-09-28",
+      "size": 4792620,
+      "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-9/TrollFools_2.7.9.huami.tipa",
+      "minOSVersion": "14.0",
+      "maxOSVersion": "17.0",
+      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
     }
   ],
   "appPermissions": {
