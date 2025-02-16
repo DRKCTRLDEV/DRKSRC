@@ -18,7 +18,7 @@ def setup_logging():
     )
 
 class RepoUpdater:
-    """Minimal repository manager for automated updates"""
+    """Repository manager for multiple format generation"""
     
     def __init__(self, base_dir: str = '.'):
         self.base_dir = os.path.abspath(base_dir)
@@ -163,210 +163,173 @@ class RepoUpdater:
             return {"success": False, "message": str(e)}
 
     def compile_all_formats(self) -> Dict[str, Any]:
-        """Compile standard repo.json plus all alt formats"""
+        """Compile repository into all supported formats"""
         try:
             repo_info = self.load_json_file(os.path.join(self.base_dir, 'repo-info.json'))
             if not repo_info:
                 return {"success": False, "message": "Could not load repo-info.json"}
 
-            # Get weekly featured apps
+            # Base data preparation
             featured_apps = self.get_weekly_featured_apps()
-
-            # Compile apps list
             apps = []
             for app_name in os.listdir(self.apps_dir):
-                app_dir = os.path.join(self.apps_dir, app_name)
-                if not os.path.isdir(app_dir):
+                if not os.path.isdir(os.path.join(self.apps_dir, app_name)):
                     continue
+                    
+                if app_data := self.load_json_file(os.path.join(self.apps_dir, app_name, 'app.json')):
+                    app_data.pop('repository', None)  # Remove repository from app data
+                    apps.append(app_data)
 
-                if app_data := self.load_json_file(os.path.join(app_dir, 'app.json')):
-                    repo_app_data = app_data.copy()
-                    repo_app_data.pop('repository', None)  # Remove from public data
-                    apps.append(repo_app_data)
-
-            # Base repository data with featured apps
-            base_repo_data = {
-                **repo_info,
-                "featuredApps": featured_apps,  # Add featured apps
-                "apps": apps,
-                "news": []
+            # Generate formats
+            formats = {
+                'altstore.json': self._generate_altstore_format,
+                'trollapps.json': self._generate_trollapps_format,
+                'scarlet.json': self._generate_scarlet_format,
+                'esign.json': self._generate_esign_format
             }
 
-            # Save standard repo.json
-            self.save_json_file(os.path.join(self.base_dir, 'repo.json'), base_repo_data)
-
-            # Save AltStore format with featured apps
-            altstore_data = {
-                "name": repo_info.get("name"),
-                "identifier": repo_info.get("identifier"),
-                "subtitle": repo_info.get("subtitle"),
-                "iconURL": repo_info.get("iconURL"),
-                "website": repo_info.get("website"),
-                "sourceURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/altstore.json",
-                "tintColor": repo_info.get("tintColor", "").lstrip("#"),  # Remove # for AltStore
-                "featuredApps": featured_apps,
-                "crypto": repo_info.get("crypto", {}),
-                "apps": [
-                    {
-                        "name": app.get("name", ""),
-                        "bundleIdentifier": app.get("bundleIdentifier", ""),
-                        "developerName": app.get("developerName", ""),
-                        "version": app.get("versions", [{}])[0].get("version", "") if app.get("versions") else "",
-                        "versionDate": app.get("versions", [{}])[0].get("date", "") if app.get("versions") else "",
-                        "downloadURL": app.get("versions", [{}])[0].get("downloadURL", "") if app.get("versions") else "",
-                        "localizedDescription": app.get("localizedDescription", ""),
-                        "iconURL": app.get("iconURL", ""),
-                        "tintColor": repo_info.get("tintColor", "").lstrip("#"),
-                        "size": app.get("versions", [{}])[0].get("size", 0) if app.get("versions") else 0,
-                        "screenshotURLs": app.get("screenshotURLs", [])
-                    }
-                    for app in apps
-                    if app.get("versions")  # Only include apps with versions
-                ]
-            }
-            self.save_json_file(os.path.join(self.base_dir, 'altstore.json'), altstore_data)
-
-            # Save TrollApps format with featured apps
-            trollapps_data = {
-                "name": repo_info.get("name"),
-                "subtitle": repo_info.get("subtitle"),
-                "description": repo_info.get("description"),
-                "iconURL": repo_info.get("iconURL"),
-                "headerURL": repo_info.get("headerURL"),
-                "website": repo_info.get("website"),
-                "tintColor": repo_info.get("tintColor"),  # Keep original format with #
-                "featuredApps": featured_apps,
-                "apps": [
-                    {
-                        "name": app.get("name", ""),
-                        "bundleIdentifier": app.get("bundleIdentifier", ""),
-                        "developerName": app.get("developerName", ""),
-                        "subtitle": app.get("subtitle", ""),
-                        "localizedDescription": app.get("localizedDescription", ""),
-                        "iconURL": app.get("iconURL", ""),
-                        "tintColor": repo_info.get("tintColor"),  # Keep original format with #
-                        "screenshotURLs": app.get("screenshotURLs", []),
-                        "versions": [
-                            {
-                                "version": ver.get("version", ""),
-                                "date": ver.get("date", ""),
-                                "localizedDescription": app.get("localizedDescription", ""),
-                                "downloadURL": ver.get("downloadURL", ""),
-                                "size": ver.get("size", 0),
-                                "minOSVersion": "14.0",
-                                "maxOSVersion": "17.0"
-                            }
-                            for ver in app.get("versions", [])
-                        ],
-                        "appPermissions": {}
-                    }
-                    for app in apps
-                ],
-                "news": []
-            }
-            self.save_json_file(os.path.join(self.base_dir, 'trollapps.json'), trollapps_data)
-
-            # Save Scarlet format
-            scarlet_data = {
-                "META": {
-                    "repoName": repo_info.get("name", "DRKSRC"),
-                    "repoIcon": repo_info.get("iconURL", "")
-                },
-                "Tweaked": [],
-                "Games": [],
-                "Emulators": [],
-                "Other": []
-            }
-
-            # Map apps to Scarlet format
-            for app in apps:
-                scarlet_app = {
-                    "name": app.get("name", ""),
-                    "version": app.get("versions", [{}])[0].get("version", "") if app.get("versions") else "",
-                    "icon": app.get("iconURL", ""),
-                    "down": app.get("versions", [{}])[0].get("downloadURL", "") if app.get("versions") else "",
-                    "category": app.get("category", "Other"),
-                    "banner": repo_info.get("headerURL", ""),
-                    "description": app.get("localizedDescription", ""),
-                    "bundleID": app.get("bundleIdentifier", ""),
-                    "contact": {
-                        "web": repo_info.get("website", "")
-                    },
-                    "screenshots": app.get("screenshotURLs", [])
-                }
-                
-                # Add app to appropriate category
-                category = "Tweaked" if app.get("category") == "utilities" else "Other"
-                scarlet_data[category].append(scarlet_app)
-
-            self.save_json_file(os.path.join(self.base_dir, 'scarlet.json'), scarlet_data)
-
-            # Save ESign format
-            esign_data = {
-                "name": repo_info.get("name"),
-                "identifier": repo_info.get("identifier"),
-                "subtitle": repo_info.get("subtitle"),
-                "iconURL": repo_info.get("iconURL"),
-                "website": repo_info.get("website"),
-                "sourceURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/esign.json",
-                "tintColor": repo_info.get("tintColor", "").lstrip("#"),  # Remove # for ESign
-                "featuredApps": featured_apps,
-                "apps": [
-                    {
-                        "name": app.get("name", ""),
-                        "bundleIdentifier": app.get("bundleIdentifier", ""),
-                        "developerName": app.get("developerName", ""),
-                        "version": app.get("versions", [{}])[0].get("version", "") if app.get("versions") else "",
-                        "versionDate": app.get("versions", [{}])[0].get("date", "") if app.get("versions") else "",
-                        "downloadURL": app.get("versions", [{}])[0].get("downloadURL", "") if app.get("versions") else "",
-                        "localizedDescription": app.get("localizedDescription", ""),
-                        "iconURL": app.get("iconURL", ""),
-                        "tintColor": repo_info.get("tintColor", "").lstrip("#"),  # Remove # for ESign
-                        "size": app.get("versions", [{}])[0].get("size", 0) if app.get("versions") else 0,
-                        "screenshotURLs": app.get("screenshotURLs", [])
-                    }
-                    for app in apps
-                    if app.get("versions")  # Only include apps with versions
-                ]
-            }
-            self.save_json_file(os.path.join(self.base_dir, 'esign.json'), esign_data)
+            # Save all formats
+            for filename, generator in formats.items():
+                data = generator(repo_info, apps, featured_apps)
+                if not self.save_json_file(os.path.join(self.base_dir, filename), data):
+                    return {"success": False, "message": f"Failed to save {filename}"}
 
             return {"success": True, "message": "All repository formats compiled successfully"}
 
         except Exception as e:
             return {"success": False, "message": str(e)}
 
-    def compile_repository(self) -> Dict[str, Any]:
-        """Compile all apps into repository file"""
-        try:
-            repo_info = self.load_json_file(os.path.join(self.base_dir, 'repo-info.json'))
-            if not repo_info:
-                return {"success": False, "message": "Could not load repo-info.json"}
+    def _generate_altstore_format(self, repo_info: Dict, apps: List, featured_apps: List) -> Dict:
+        """Generate AltStore format"""
+        return {
+            "name": repo_info.get("name"),
+            "identifier": repo_info.get("identifier"),
+            "subtitle": repo_info.get("subtitle"),
+            "iconURL": repo_info.get("iconURL"),
+            "website": repo_info.get("website"),
+            "sourceURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/altstore.json",
+            "tintColor": repo_info.get("tintColor", "").lstrip("#"),
+            "featuredApps": featured_apps,
+            "crypto": repo_info.get("crypto", {}),
+            "apps": [
+                self._convert_app_to_single_version(app, repo_info, strip_tint=True)
+                for app in apps if app.get("versions")
+            ]
+        }
 
-            apps = []
-            for app_name in os.listdir(self.apps_dir):
-                app_dir = os.path.join(self.apps_dir, app_name)
-                if not os.path.isdir(app_dir):
-                    continue
+    def _generate_trollapps_format(self, repo_info: Dict, apps: List, featured_apps: List) -> Dict:
+        """Generate TrollApps format"""
+        return {
+            "name": repo_info.get("name"),
+            "subtitle": repo_info.get("subtitle"),
+            "description": repo_info.get("description"),
+            "iconURL": repo_info.get("iconURL"),
+            "headerURL": repo_info.get("headerURL"),
+            "website": repo_info.get("website"),
+            "tintColor": repo_info.get("tintColor"),  # Keep original format with #
+            "featuredApps": featured_apps,
+            "apps": [
+                {
+                    "name": app.get("name", ""),
+                    "bundleIdentifier": app.get("bundleIdentifier", ""),
+                    "developerName": app.get("developerName", ""),
+                    "subtitle": app.get("subtitle", ""),
+                    "localizedDescription": app.get("localizedDescription", ""),
+                    "iconURL": app.get("iconURL", ""),
+                    "tintColor": repo_info.get("tintColor"),  # Keep original format with #
+                    "screenshotURLs": app.get("screenshotURLs", []),
+                    "versions": [
+                        {
+                            "version": ver.get("version", ""),
+                            "date": ver.get("date", ""),
+                            "localizedDescription": app.get("localizedDescription", ""),
+                            "downloadURL": ver.get("downloadURL", ""),
+                            "size": ver.get("size", 0),
+                            "minOSVersion": "14.0",
+                            "maxOSVersion": "17.0"
+                        }
+                        for ver in app.get("versions", [])
+                    ],
+                    "appPermissions": {}
+                }
+                for app in apps
+            ],
+            "news": []
+        }
 
-                if app_data := self.load_json_file(os.path.join(app_dir, 'app.json')):
-                    repo_app_data = app_data.copy()
-                    repo_app_data.pop('repository', None)
-                    apps.append(repo_app_data)
+    def _generate_scarlet_format(self, repo_info: Dict, apps: List, featured_apps: List) -> Dict:
+        """Generate Scarlet format"""
+        scarlet_data = {
+            "META": {
+                "repoName": repo_info.get("name", "DRKSRC"),
+                "repoIcon": repo_info.get("iconURL", "")
+            },
+            "Tweaked": [],
+            "Games": [],
+            "Emulators": [],
+            "Other": []
+        }
 
-            repo_data = {
-                **repo_info,
-                "featuredApps": self.get_weekly_featured_apps(),
-                "apps": apps,
-                "news": []
+        # Map apps to Scarlet format
+        for app in apps:
+            scarlet_app = {
+                "name": app.get("name", ""),
+                "version": app.get("versions", [{}])[0].get("version", "") if app.get("versions") else "",
+                "icon": app.get("iconURL", ""),
+                "down": app.get("versions", [{}])[0].get("downloadURL", "") if app.get("versions") else "",
+                "category": app.get("category", "Other"),
+                "banner": repo_info.get("headerURL", ""),
+                "description": app.get("localizedDescription", ""),
+                "bundleID": app.get("bundleIdentifier", ""),
+                "contact": {
+                    "web": repo_info.get("website", "")
+                },
+                "screenshots": app.get("screenshotURLs", [])
             }
             
-            if self.save_json_file(os.path.join(self.base_dir, 'repo.json'), repo_data):
-                return {"success": True, "message": "Repository compiled successfully"}
-            return {"success": False, "message": "Failed to save repo.json"}
+            # Add app to appropriate category
+            category = "Tweaked" if app.get("category") == "utilities" else "Other"
+            scarlet_data[category].append(scarlet_app)
+
+        return scarlet_data
+
+    def _generate_esign_format(self, repo_info: Dict, apps: List, featured_apps: List) -> Dict:
+        """Generate ESign format"""
+        return {
+            "name": repo_info.get("name"),
+            "identifier": repo_info.get("identifier"),
+            "subtitle": repo_info.get("subtitle"),
+            "iconURL": repo_info.get("iconURL"),
+            "website": repo_info.get("website"),
+            "sourceURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/esign.json",
+            "tintColor": repo_info.get("tintColor", "").lstrip("#"),  # Remove # for ESign
+            "featuredApps": featured_apps,
+            "apps": [
+                self._convert_app_to_single_version(app, repo_info, strip_tint=True)
+                for app in apps if app.get("versions")
+            ]
+        }
+
+    def _convert_app_to_single_version(self, app: Dict, repo_info: Dict, strip_tint: bool = False) -> Dict:
+        """Convert multi-version app to single version format"""
+        latest_version = app.get("versions", [{}])[0] if app.get("versions") else {}
+        tint_color = repo_info.get("tintColor", "")
+        if strip_tint:
+            tint_color = tint_color.lstrip("#")
             
-        except Exception as e:
-            return {"success": False, "message": str(e)}
+        return {
+            "name": app.get("name", ""),
+            "bundleIdentifier": app.get("bundleIdentifier", ""),
+            "developerName": app.get("developerName", ""),
+            "version": latest_version.get("version", ""),
+            "versionDate": latest_version.get("date", ""),
+            "downloadURL": latest_version.get("downloadURL", ""),
+            "localizedDescription": app.get("localizedDescription", ""),
+            "iconURL": app.get("iconURL", ""),
+            "tintColor": tint_color,
+            "size": latest_version.get("size", 0),
+            "screenshotURLs": app.get("screenshotURLs", [])
+        }
 
 def main():
     """Main function to update repository"""
@@ -378,7 +341,7 @@ def main():
         logger.info("Starting repository update")
         
         # Update app versions
-        updated = []
+        updated = []        
         failed = []
         for app in os.listdir(repo.apps_dir):
             if os.path.isdir(os.path.join(repo.apps_dir, app)):
@@ -399,7 +362,7 @@ def main():
         
         logger.info("Repository update completed successfully")
         return 0
-        
+
     except Exception as e:
         logger.error(f"Error updating repository: {str(e)}")
         return 1
