@@ -16,20 +16,17 @@
   </p>
 
   <p style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-    <a href="https://fwuf.in/#/esign://addsource?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/esign.json">
+    <a href="https://fwuf.in/#/esign://addsource?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/trollstore.json">
       <img src="https://img.shields.io/badge/Add%20to%20ESign-%20blue?style=for-the-badge&color=1e90ff" alt="Add to ESign">
     </a>
-    <a href="https://appdb.to/repos/import?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/altstore.json">
-      <img src="https://img.shields.io/badge/Add%20to%20Appdb-%20blue?style=for-the-badge&color=0048ba" alt="Add to Appdb">
+    <a href="https://fwuf.in/#/altstore://add?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/altstore.json">
+      <img src="https://img.shields.io/badge/Add%20to%20AltStore-%20blue?style=for-the-badge&color=0048ba" alt="Add to AltStore">
     </a>
     <a href="https://fwuf.in/#/trollapps://add?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/trollapps.json">
       <img src="https://img.shields.io/badge/Add%20to%20TrollApps-%20blue?style=for-the-badge&color=B85CFD" alt="Add to TrollApps">
     </a>
-    <a href="https://fwuf.in/#/scarlet://add?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/scarlet.json">
+    <a href="https://fwuf.in/#/scarlet://add?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/trollapps.json">
       <img src="https://img.shields.io/badge/Add%20to%20Scarlet-%20blue?style=for-the-badge&color=ff0000" alt="Add to Scarlet">
-    </a>
-    <a href="https://s0n1c.ca/altlist/">
-      <img src="https://img.shields.io/badge/Use%20on%20AltList-%20black?style=for-the-badge&color=0f7c7f" alt="Use on AltList">
     </a>
   </p>
 </div>
@@ -43,25 +40,6 @@ Welcome to DRKSRC! We've created a curated collection of the best iOS apps and u
 - 🔄 **Always Current**: Regular updates with the latest releases
 - 🛠️ **Reliable**: Focused on stable, well-maintained applications
 - 💪 **Community Tested**: Built on real user experience
-
-## 📲 Getting Started
-
-Adding DRKSRC to your setup is simple - just choose your preferred platform:
-
-  <p style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-    <a href="https://fwuf.in/#/esign://addsource?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/repo.json">
-      <img src="https://img.shields.io/badge/Add%20to%20ESign-%20blue?style=for-the-badge&color=1e90ff" alt="Add to ESign">
-    </a>
-    <a href="https://appdb.to/repos/import?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/repo.json">
-      <img src="https://img.shields.io/badge/Add%20to%20Appdb-%20blue?style=for-the-badge&color=0048ba" alt="Add to Appdb">
-    </a>
-    <a href="https://fwuf.in/#/trollapps://add?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/repo.json">
-      <img src="https://img.shields.io/badge/Add%20to%20TrollApps-%20blue?style=for-the-badge&color=B85CFD" alt="Add to TrollApps">
-    </a>
-    <a href="https://s0n1c.ca/altlist/">
-      <img src="https://img.shields.io/badge/Use%20on%20AltList-%20black?style=for-the-badge&color=0f7c7f" alt="Use on AltList">
-    </a>
-  </p>
 
 ## 🌟 Featured Applications
 
