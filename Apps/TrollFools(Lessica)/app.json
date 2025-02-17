@@ -1,64 +1,18 @@
 {
-  "repository": [
-    "https://github.com/Lessica/TrollFools"
-  ],
-  "name": "TrollFools(Lessica)",
-  "bundleIdentifier": "wiki.qaq.TrollFools",
-  "developerName": "Lessica",
-  "subtitle": "Tweak Injection Tool for TrollStore (iOS 15+)",
-  "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
-  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/icon.jpg",
-  "category": "utilities",
-  "screenshotURLs": [
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_1.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_2.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_3.png"
-  ],
-  "versions": [
-    {
-      "version": "v2.11-25",
-      "date": "2025-01-17",
-      "size": 5699241,
-      "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25.tipa",
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0",
-      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
-    },
-    {
-      "version": "v2.10-23",
-      "date": "2025-01-14",
-      "size": 5698258,
-      "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23.tipa",
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0",
-      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
-    },
-    {
-      "version": "v2.10-22",
-      "date": "2025-01-14",
-      "size": 5698269,
-      "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22.tipa",
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0",
-      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
-    },
-    {
-      "version": "v2.9-21",
-      "date": "2025-01-11",
-      "size": 5666166,
-      "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-21/TrollFools14_2.9-21.tipa",
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0",
-      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
-    },
-    {
-      "version": "v2.9-21",
-      "date": "2025-01-11",
-      "size": 3466422,
-      "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-21/TrollFools_2.9-21.tipa",
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0",
-      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more."
-    }
-  ]
+    "repository": [
+        "https://github.com/Lessica/TrollFools"
+    ],
+    "name": "TrollFools(Lessica)",
+    "bundleIdentifier": "wiki.qaq.TrollFools",
+    "developerName": "Lessica",
+    "subtitle": "Tweak Injection Tool for TrollStore (iOS 15+)",
+    "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
+    "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/icon.jpg",
+    "category": "utilities",
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_3.png"
+    ],
+    "versions": []
 }

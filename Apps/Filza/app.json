@@ -1,19 +1,19 @@
 {
-  "repository": [],
-  "name": "Filza",
-  "bundleIdentifier": "com.tigisoftware.Filza",
-  "developerName": "TIGI Software",
-  "subtitle": "Powerful File Manager for iOS",
-  "localizedDescription": "Filza is a comprehensive file manager for iOS devices. It offers features like file/folder exploration, powerful file viewers including media player and office document support, file sharing capabilities, terminal access, music library management, package installation, and cloud service integration.",
-  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/icon.jpg",
-  "category": "utilities",
-  "screenshotURLs": [
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_1.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_2.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_3.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_4.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_5.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_6.png"
-  ],
-  "versions": []
+    "repository": [],
+    "name": "Filza",
+    "bundleIdentifier": "com.tigisoftware.Filza",
+    "developerName": "TIGI Software",
+    "subtitle": "Powerful File Manager for iOS",
+    "localizedDescription": "Filza is a comprehensive file manager for iOS devices. It offers features like file/folder exploration, powerful file viewers including media player and office document support, file sharing capabilities, terminal access, music library management, package installation, and cloud service integration.",
+    "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/icon.jpg",
+    "category": "utilities",
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_5.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_6.png"
+    ],
+    "versions": []
 }

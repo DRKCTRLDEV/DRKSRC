@@ -1,35 +1,22 @@
 {
-  "repository": [
-    "https://github.com/mologie/nxboot"
-  ],
-  "name": "NXBoot",
-  "bundleIdentifier": "com.mologie.NXBoot",
-  "developerName": "mologie",
-  "subtitle": "Nintendo Switch Payload Injector",
-  "localizedDescription": "NXBoot is a powerful utility for Nintendo Switch enthusiasts, allowing users to inject custom payloads into their Switch consoles. It supports various firmware versions and offers an intuitive interface for managing and launching payloads.",
-  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/icon.jpg",
-  "category": "utilities",
-  "screenshotURLs": [
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_1.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_2.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_3.png"
-  ],
-  "versions": [
-    {
-      "version": "0.3.2",
-      "date": "2024-08-31",
-      "size": 1045270,
-      "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa"
-    },
-    {
-      "version": "0.3.1",
-      "date": "2024-08-30",
-      "size": 1043645,
-      "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.1/NXBoot_0.3.1-1.tipa"
+    "repository": [
+        "https://github.com/mologie/nxboot"
+    ],
+    "name": "NXBoot",
+    "bundleIdentifier": "com.mologie.NXBoot",
+    "developerName": "mologie",
+    "subtitle": "Nintendo Switch Payload Injector",
+    "localizedDescription": "NXBoot is a powerful utility for Nintendo Switch enthusiasts, allowing users to inject custom payloads into their Switch consoles. It supports various firmware versions and offers an intuitive interface for managing and launching payloads.",
+    "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/icon.jpg",
+    "category": "utilities",
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_3.png"
+    ],
+    "versions": [],
+    "appPermissions": {
+        "privacy": {},
+        "entitlements": []
     }
-  ],
-  "appPermissions": {
-    "privacy": {},
-    "entitlements": []
-  }
 }

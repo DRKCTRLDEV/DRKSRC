@@ -1,27 +1,20 @@
 {
-  "repository": [
-    "https://github.com/khanhduytran0/CAPerfHUD"
-  ],
-  "name": "CAPerfHUD",
-  "bundleIdentifier": "com.kdt.CAPerfHUD",
-  "developerName": "khanhduytran0",
-  "subtitle": "System-wide performance HUD for iOS 14+",
-  "localizedDescription": "CAPerfHUD enables a system-wide performance HUD for iOS 14 and above. It requires TrollStore to function. The app allows users to monitor various system performance metrics in real-time. Note that some measurements like frequencies and power consumption may not work, and changes last until backboard restarts (respring).",
-  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/icon.png",
-  "category": "utilities",
-  "screenshotURLs": [
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/screenshots/IMG_1.png"
-  ],
-  "versions": [
-    {
-      "version": "0.0.1",
-      "date": "2023-05-21",
-      "size": 11320,
-      "downloadURL": "https://github.com/khanhduytran0/CAPerfHUD/releases/download/0.0.1/com.kdt.caperfhud_0.0.1.ipa"
+    "repository": [
+        "https://github.com/khanhduytran0/CAPerfHUD"
+    ],
+    "name": "CAPerfHUD",
+    "bundleIdentifier": "com.kdt.CAPerfHUD",
+    "developerName": "khanhduytran0",
+    "subtitle": "System-wide performance HUD for iOS 14+",
+    "localizedDescription": "CAPerfHUD enables a system-wide performance HUD for iOS 14 and above. It requires TrollStore to function. The app allows users to monitor various system performance metrics in real-time. Note that some measurements like frequencies and power consumption may not work, and changes last until backboard restarts (respring).",
+    "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/icon.png",
+    "category": "utilities",
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/screenshots/IMG_1.png"
+    ],
+    "versions": [],
+    "appPermissions": {
+        "privacy": {},
+        "entitlements": []
     }
-  ],
-  "appPermissions": {
-    "privacy": {},
-    "entitlements": []
-  }
 }

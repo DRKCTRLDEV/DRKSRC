@@ -1,66 +1,26 @@
 {
-  "repository": [
-    "https://github.com/Lrdsnow/PureKFD"
-  ],
-  "name": "PureKFD",
-  "bundleIdentifier": "uwu.lrdsnow.purekfdiOS",
-  "developerName": "Lrdsnow",
-  "subtitle": "The Purest iOS Toolbox",
-  "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface.",
-  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/icon.jpg",
-  "category": "utilities",
-  "screenshotURLs": [
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_1.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_2.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_3.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_4.png"
-  ],
-  "versions": [
-    {
-      "version": "6.0.2",
-      "date": "2024-11-23",
-      "size": 10806164,
-      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.ipa",
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0",
-      "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
-    },
-    {
-      "version": "6.0.1",
-      "date": "2024-09-29",
-      "size": 10882263,
-      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.ipa",
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0",
-      "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
-    },
-    {
-      "version": "6.0",
-      "date": "2024-09-22",
-      "size": 10025476,
-      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.ipa",
-      "minOSVersion": "14.0",
-      "maxOSVersion": "17.0",
-      "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface."
-    },
-    {
-      "version": "6.0rc3",
-      "date": "2024-09-21",
-      "size": 10019622,
-      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc3/PureKFD.ipa"
-    },
-    {
-      "version": "6.0rc2",
-      "date": "2024-09-21",
-      "size": 10840489,
-      "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc2/PureKFD.ipa"
+    "repository": [
+        "https://github.com/Lrdsnow/PureKFD"
+    ],
+    "name": "PureKFD",
+    "bundleIdentifier": "uwu.lrdsnow.purekfdiOS",
+    "developerName": "Lrdsnow",
+    "subtitle": "The Purest iOS Toolbox",
+    "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface.",
+    "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/icon.jpg",
+    "category": "utilities",
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_4.png"
+    ],
+    "versions": [],
+    "appPermissions": {
+        "privacy": {
+            "AppleMusic": "unsandbox",
+            "DocumentsFolder": "PureKFD uses the documents folder to store App Data"
+        },
+        "entitlements": []
     }
-  ],
-  "appPermissions": {
-    "privacy": {
-      "AppleMusic": "unsandbox",
-      "DocumentsFolder": "PureKFD uses the documents folder to store App Data"
-    },
-    "entitlements": []
-  }
 }

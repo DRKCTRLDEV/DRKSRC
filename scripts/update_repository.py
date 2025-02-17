@@ -4,30 +4,31 @@ import json
 import os
 import logging
 import requests
-from typing import Dict, Any, List
-from packaging import version
+import plistlib
+import subprocess
+import tempfile
+from PIL import Image
+from pathlib import Path
+from urllib.parse import urlparse
+
+from typing import Dict, Any, List, Optional
 from datetime import datetime
 import random
-import subprocess
-from extract_permissions import update_app_permissions
+from collections import defaultdict
 
 def setup_logging():
-    """Set up logging configuration"""
     logging.basicConfig(
         level=logging.DEBUG,
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     )
 
-class RepoUpdater:
-    """Repository manager for multiple format generation"""
-    
+class RepoUpdater:    
     def __init__(self, base_dir: str = '.'):
         self.base_dir = os.path.abspath(base_dir)
         self.apps_dir = os.path.join(self.base_dir, 'Apps')
         self.logger = logging.getLogger(__name__)
     
-    def load_json_file(self, file_path: str) -> Dict[str, Any] | None:
-        """Load and parse a JSON file"""
+    def load_json_file(self, file_path: str) -> Optional[Dict[str, Any]]:
         try:
             if not os.path.exists(file_path):
                 return None
@@ -38,7 +39,6 @@ class RepoUpdater:
             return None
 
     def save_json_file(self, file_path: str, data: Dict[str, Any]) -> bool:
-        """Save data to a JSON file"""
         try:
             os.makedirs(os.path.dirname(file_path), exist_ok=True)
             with open(file_path, 'w', encoding='utf-8') as f:
@@ -48,33 +48,30 @@ class RepoUpdater:
             self.logger.error(f"Error writing {file_path}: {e}")
             return False
 
-    def get_weekly_featured_apps(self) -> List[str]:
-        """Get 5 random bundle IDs for featured apps section"""
+    def _load_apps_and_featured(self) -> tuple[List[Dict[str, Any]], List[str]]:
         try:
-            apps = [d for d in os.listdir(self.apps_dir) 
-                   if os.path.isdir(os.path.join(self.apps_dir, d))]
-            
-            # Get current week number for consistent selection
+            apps = []
+            bundle_ids = []
+            for app_name in os.listdir(self.apps_dir):
+                app_path = os.path.join(self.apps_dir, app_name)
+                if os.path.isdir(app_path):
+                    if app_data := self.load_json_file(os.path.join(app_path, 'app.json')):
+                        apps.append(app_data)
+                        if bundle_id := app_data.get("bundleIdentifier"):
+                            bundle_ids.append(bundle_id)
+
             current_week = datetime.now().isocalendar()[1]
             year = datetime.now().year
             random.seed(f"{year}-{current_week}")
-            
-            bundle_ids = []
-            for app_name in apps:
-                if app_data := self.load_json_file(os.path.join(self.apps_dir, app_name, 'app.json')):
-                    if bundle_id := app_data.get("bundleIdentifier"):
-                        bundle_ids.append(bundle_id)
-            
             featured = bundle_ids[:5] if len(bundle_ids) <= 5 else random.sample(bundle_ids, 5)
-            random.seed()  # Reset random seed
-            return featured
+            random.seed()
+            return apps, featured
             
         except Exception as e:
-            self.logger.error(f"Error getting featured apps: {str(e)}")
-            return []
+            self.logger.error(f"Error loading apps: {str(e)}")
+            return [], []
 
     def update_app_versions(self, app_name: str) -> Dict[str, Any]:
-        """Update an app's versions from GitHub"""
         try:
             app_data = self.load_json_file(os.path.join(self.apps_dir, app_name, 'app.json'))
             if not app_data:
@@ -88,7 +85,6 @@ class RepoUpdater:
             new_versions = []
             existing_versions = app_data.get("versions", [])
             existing_urls = {v.get("downloadURL", "") for v in existing_versions}
-            unique_versions = set()  # To track unique version strings
             
             for repo_url in repos:
                 if "github.com" not in repo_url:
@@ -111,52 +107,33 @@ class RepoUpdater:
                     continue
                 
                 for release in response.json():
-                    # Track if we've added a version for this release
-                    release_version = release['tag_name']  # Use the raw version string
-                    release_date = release['published_at']  # Get the release date
-                    if release_version in unique_versions:
-                        continue  # Skip if we've already added this version
+                    release_version = release['tag_name']
+                    release_date = release['published_at']
                     
-                    # Add the version to the set to track uniqueness
-                    unique_versions.add(release_version)
-                    
-                    # Find the first valid asset (ipa/tipa)
                     for asset in release.get('assets', []):
-                        if asset['name'].lower().endswith(('.ipa', '.tipa')):
+                        if asset['name'].lower().endswith(('.tipa', '.ipa')):
                             version_info = {
-                                "version": release_version,  # Use the raw version string
-                                "date": release_date.split('T')[0],  # Store the date in YYYY-MM-DD format
+                                "version": release_version,
+                                "date": release_date.split('T')[0],
                                 "size": asset['size'],
-                                "downloadURL": asset['browser_download_url'],
-                                "minOSVersion": "14.0",
-                                "maxOSVersion": "17.0",
-                                "localizedDescription": app_data.get("localizedDescription", "")
+                                "downloadURL": asset['browser_download_url']
                             }
+
                             if version_info["downloadURL"] not in existing_urls:
                                 new_versions.append(version_info)
                                 existing_urls.add(version_info["downloadURL"])
-                            
-                            # Update app permissions for the new version
-                            if not update_app_permissions(os.path.join(self.apps_dir, app_name, 'app.json'), version_info["downloadURL"]):
-                                self.logger.error(f"Failed to update permissions for {app_name} with version {release_version}")
-                            
-                            break  # Exit after adding the first valid asset
 
-                if new_versions:
-                    # Sort all versions by date (latest first)
-                    all_versions = existing_versions + new_versions
-                    all_versions.sort(key=lambda x: x['date'], reverse=True)  # Sort by date
-                    
-                    # Keep only the latest 5 versions
-                    app_data["versions"] = all_versions[:5]
-                    
-                    # Save the updated app_data
-                    if self.save_json_file(os.path.join(self.apps_dir, app_name, 'app.json'), app_data):
-                        return {
-                            "success": True,
-                            "message": f"Added {len(new_versions)} new version(s), pruned to 5 most recent",
-                            "data": {"new_versions": new_versions}
-                        }
+            if new_versions:
+                all_versions = existing_versions + new_versions
+                all_versions = self.remove_duplicate_versions(all_versions)
+                all_versions.sort(key=lambda x: x['date'], reverse=True)
+                app_data["versions"] = all_versions[:5]
+                if self.save_json_file(os.path.join(self.apps_dir, app_name, 'app.json'), app_data):
+                    return {
+                        "success": True,
+                        "message": f"Added {len(new_versions)} new version(s), pruned to 5 most recent",
+                        "data": {"new_versions": new_versions}
+                    }
             
             return {"success": True, "message": "No new versions found"}
             
@@ -164,24 +141,27 @@ class RepoUpdater:
             self.logger.error(f"Error updating versions for {app_name}: {str(e)}")
             return {"success": False, "message": str(e)}
 
+    def remove_duplicate_versions(self, versions: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        seen = set()
+        unique_versions = []
+        for version in versions:
+            version_key = (version.get("version"), version.get("downloadURL"))
+            if version_key not in seen:
+                seen.add(version_key)
+                unique_versions.append(version)
+        return unique_versions
+
     def compile_all_formats(self) -> Dict[str, Any]:
-        """Compile repository into all supported formats"""
         try:
-            # Load repository information
             repo_info = self.load_json_file(os.path.join(self.base_dir, 'repo-info.json'))
             if not repo_info:
                 return {"success": False, "message": "Could not load repo-info.json"}
 
-            # Prepare featured apps and load app data
-            featured_apps = self.get_weekly_featured_apps()
-            apps = self._load_all_apps()
+            apps, featured_apps = self._load_apps_and_featured()
 
-            # Generate and save all formats
             formats = {
-                'altstore.json': self._generate_altstore_format,
-                'trollapps.json': self._generate_trollapps_format,
-                'scarlet.json': self._generate_scarlet_format,
-                'esign.json': self._generate_esign_format
+                'altstore.json': lambda ri, a, fa: self._generate_repo_format(ri, a, fa, "altstore"),
+                'trollapps.json': lambda ri, a, fa: self._generate_repo_format(ri, a, fa, "trollapps")
             }
 
             for filename, generator in formats.items():
@@ -194,33 +174,10 @@ class RepoUpdater:
         except Exception as e:
             return {"success": False, "message": str(e)}
 
-    def _load_all_apps(self) -> List[Dict[str, Any]]:
-        """Load all app data from the Apps directory"""
-        apps = []
-        for app_name in os.listdir(self.apps_dir):
-            app_path = os.path.join(self.apps_dir, app_name)
-            if os.path.isdir(app_path):
-                if app_data := self.load_json_file(os.path.join(app_path, 'app.json')):
-                    apps.append(app_data)
-        return apps
-
-    def _generate_altstore_format(self, repo_info: Dict, apps: List, featured_apps: List) -> Dict:
-        """Generate altstore.json format"""
+    def _generate_repo_format(self, repo_info: Dict, apps: List, featured_apps: List, format_type: str) -> Dict:
+        app_entry_func = lambda app: self._create_app_entry(app, format_type)
         return {
             "name": repo_info.get("name"),
-            "identifier": repo_info.get("identifier"),
-            "subtitle": repo_info.get("subtitle"),
-            "description": repo_info.get("description"),
-            "website": repo_info.get("website"),
-            "apps": [self._create_app_entry(app) for app in apps],
-            "featuredApps": featured_apps
-        }
-
-    def _generate_trollapps_format(self, repo_info: Dict, apps: List, featured_apps: List) -> Dict:
-        """Generate TrollApps format"""
-        return {
-            "name": repo_info.get("name"),
-            "identifier": repo_info.get("identifier"),
             "subtitle": repo_info.get("subtitle"),
             "description": repo_info.get("description"),
             "iconURL": repo_info.get("iconURL"),
@@ -228,98 +185,23 @@ class RepoUpdater:
             "website": repo_info.get("website"),
             "tintColor": repo_info.get("tintColor"),
             "featuredApps": featured_apps,
-            "apps": [self._create_trollapps_app_entry(app) for app in apps],
-            "news": []
+            "apps": [app_entry_func(app) for app in apps]
         }
 
-    def _generate_scarlet_format(self, repo_info: Dict, apps: List, featured_apps: List) -> Dict:
-        """Generate Scarlet format"""
-        scarlet_data = {
-            "META": {
-                "repoName": repo_info.get("name", "DRKSRC"),
-                "repoIcon": repo_info.get("iconURL", "")
-            },
-            "Tweaked": [],
-            "Games": [],
-            "Emulators": [],
-            "Other": []
-        }
-
-        for app in apps:
-            scarlet_app = self._create_scarlet_app_entry(app, repo_info)
-            category = "Tweaked" if app.get("category") == "utilities" else "Other"
-            scarlet_data[category].append(scarlet_app)
-
-        return scarlet_data
-
-    def _generate_esign_format(self, repo_info: Dict, apps: List, featured_apps: List) -> Dict:
-        """Generate ESign format"""
+    def _create_app_entry(self, app: Dict, format_type: str) -> Dict:
         return {
-            "name": repo_info.get("name"),
-            "identifier": repo_info.get("identifier"),
-            "subtitle": repo_info.get("subtitle"),
-            "iconURL": repo_info.get("iconURL"),
-            "website": repo_info.get("website"),
-            "sourceURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/esign.json",
-            "tintColor": repo_info.get("tintColor", "").lstrip("#"),
-            "featuredApps": featured_apps,
-            "apps": [self._convert_app_to_single_version(app, repo_info) for app in apps if app.get("versions")]
-        }
-
-    def _create_app_entry(self, app: Dict) -> Dict:
-        """Create an app entry for altstore.json format"""
-        app_entry = {
             "name": app.get("name"),
             "bundleIdentifier": app.get("bundleIdentifier"),
             "developerName": app.get("developerName"),
-            "versions": []
-        }
-
-        for version in app.get("versions", []):
-            version_entry = {
-                "version": version.get("version"),
-                "date": version.get("date"),
-                "localizedDescription": version.get("localizedDescription"),
-                "downloadURL": version.get("downloadURL"),
-                "size": version.get("size"),
-                "sha256": version.get("sha256"),
-                "minOSVersion": version.get("minOSVersion")
-            }
-            app_entry["versions"].append(version_entry)
-
-        if app_entry["versions"]:
-            latest_version = app_entry["versions"][0]
-            app_entry.update({
-                "version": latest_version["version"],
-                "versionDate": latest_version["date"],
-                "versionDescription": latest_version["localizedDescription"],
-                "downloadURL": latest_version["downloadURL"],
-                "localizedDescription": app.get("localizedDescription"),
-                "iconURL": app.get("iconURL"),
-                "tintColor": app.get("tintColor"),
-                "size": latest_version.get("size"),
-                "category": app.get("category"),
-                "appPermissions": app.get("appPermissions", {})
-            })
-
-        return app_entry
-
-    def _create_trollapps_app_entry(self, app: Dict) -> Dict:
-        """Create an app entry for TrollApps format"""
-        return {
-            "name": app.get("name", ""),
-            "bundleIdentifier": app.get("bundleIdentifier", ""),
-            "developerName": app.get("developerName", ""),
-            "subtitle": app.get("subtitle", ""),
-            "localizedDescription": app.get("localizedDescription", ""),
-            "iconURL": app.get("iconURL", ""),
-            "tintColor": app.get("tintColor", ""),
-            "screenshotURLs": app.get("screenshotURLs", []),
+            "subtitle": app.get("subtitle"),
+            "localizedDescription": app.get("localizedDescription"),
+            "iconURL": app.get("iconURL"),
+            "category": app.get("category"),
+            "screenshots" if format_type == "altstore" else "screenshotURLs": app.get("screenshots", []),
             "versions": [
                 {
                     "version": ver.get("version", ""),
                     "date": ver.get("date", ""),
-                    "localizedDescription": app.get("localizedDescription", ""),
                     "downloadURL": ver.get("downloadURL", ""),
                     "size": ver.get("size", 0),
                     "minOSVersion": "14.0",
@@ -327,68 +209,196 @@ class RepoUpdater:
                 }
                 for ver in app.get("versions", [])
             ],
-            "appPermissions": {}
+            "appPermissions": app.get("appPermissions", {})
         }
 
-    def _create_scarlet_app_entry(self, app: Dict, repo_info: Dict) -> Dict:
-        """Create an app entry for Scarlet format"""
-        return {
-            "name": app.get("name", ""),
-            "version": app.get("versions", [{}])[0].get("version", "") if app.get("versions") else "",
-            "icon": app.get("iconURL", ""),
-            "down": app.get("versions", [{}])[0].get("downloadURL", "") if app.get("versions") else "",
-            "category": app.get("category", "Other"),
-            "banner": repo_info.get("headerURL", ""),
-            "description": app.get("localizedDescription", ""),
-            "bundleID": app.get("bundleIdentifier", ""),
-            "contact": {
-                "web": repo_info.get("website", "")
-            },
-            "screenshots": app.get("screenshotURLs", [])
-        }
+    def download_and_extract_app_info(self, app_name: str) -> Dict[str, Any]:
+        try:
+            app_data = self.load_json_file(os.path.join(self.apps_dir, app_name, 'app.json'))
+            if not app_data:
+                return {"success": False, "message": "Failed to load app data"}
 
-    def _convert_app_to_single_version(self, app: Dict, repo_info: Dict) -> Dict:
-        """Convert multi-version app to single version format"""
-        latest_version = app.get("versions", [{}])[0] if app.get("versions") else {}
-        return {
-            "name": app.get("name", ""),
-            "bundleIdentifier": app.get("bundleIdentifier", ""),
-            "developerName": app.get("developerName", ""),
-            "version": latest_version.get("version", ""),
-            "versionDate": latest_version.get("date", ""),
-            "downloadURL": latest_version.get("downloadURL", ""),
-            "localizedDescription": app.get("localizedDescription", ""),
-            "iconURL": app.get("iconURL", ""),
-            "tintColor": repo_info.get("tintColor", "").lstrip("#"),
-            "size": latest_version.get("size", 0),
-            "screenshotURLs": app.get("screenshotURLs", [])
-        }
+            versions = app_data.get("versions", [])
+            if not versions:
+                return {"success": False, "message": "No versions found"}
+
+            latest_version = versions[0]
+            download_url = latest_version.get("downloadURL")
+            if not download_url:
+                return {"success": False, "message": "No download URL found"}
+
+            with tempfile.TemporaryDirectory() as temp_dir:
+                temp_dir_path = Path(temp_dir)
+                ipa_path = temp_dir_path / f"{app_name}.ipa"
+                self.logger.info(f"Downloading {download_url} to {ipa_path}")
+                response = requests.get(download_url, stream=True, timeout=30)
+                if response.status_code != 200:
+                    return {"success": False, "message": f"Failed to download {download_url}"}
+                with open(ipa_path, 'wb') as f:
+                    for chunk in response.iter_content(chunk_size=8192):
+                        f.write(chunk)
+
+                self.logger.info(f"Extracting {ipa_path}")
+                subprocess.run(["unzip", "-q", str(ipa_path), "-d", str(temp_dir_path)], check=True)
+
+                payload_dir = temp_dir_path / "Payload"
+                app_bundle = next(payload_dir.glob("*.app"), None)
+                if not app_bundle:
+                    return {"success": False, "message": "No .app bundle found"}
+
+                info_plist_path = app_bundle / "Info.plist"
+                if not info_plist_path.exists():
+                    return {"success": False, "message": "Info.plist not found"}
+
+                with open(info_plist_path, 'rb') as f:
+                    info_plist = plistlib.load(f)
+
+                entitlements_path = app_bundle / "embedded.mobileprovision"
+                entitlements = {}
+                developer_name = None
+                if entitlements_path.exists():
+                    result = subprocess.run(
+                        ["security", "cms", "-D", "-i", entitlements_path],
+                        capture_output=True, text=True, check=True
+                    )
+                    entitlements_plist = plistlib.loads(result.stdout.encode())
+                    entitlements = entitlements_plist.get("Entitlements", {})
+                    developer_name = entitlements_plist.get("DeveloperName") or entitlements_plist.get("TeamName")
+
+                icon_path = self.extract_app_icon(app_bundle, app_name)
+                if icon_path:
+                    app_data["iconURL"] = f"Apps/{app_name}/icon.jpg"
+
+                privacy_info = {}
+                privacy_keys = [
+                    "NSContactsUsageDescription",
+                    "NSLocationUsageDescription",
+                    "NSMicrophoneUsageDescription",
+                    "NSCameraUsageDescription",
+                    "NSPhotoLibraryUsageDescription",
+                    "NSBluetoothAlwaysUsageDescription",
+                    "NSBluetoothPeripheralUsageDescription",
+                    "NSFaceIDUsageDescription",
+                    "NSMotionUsageDescription",
+                    "NSSpeechRecognitionUsageDescription",
+                    "NSHealthShareUsageDescription",
+                    "NSHealthUpdateUsageDescription",
+                    "NSAppleMusicUsageDescription",
+                    "NSRemindersUsageDescription",
+                    "NSCalendarsUsageDescription",
+                    "NSHomeKitUsageDescription",
+                    "NSLocalNetworkUsageDescription",
+                    "NSUserTrackingUsageDescription"
+                ]
+                for key in privacy_keys:
+                    if key in info_plist:
+                        privacy_info[key] = info_plist[key]
+
+                # Extract app category
+                category = info_plist.get("LSApplicationCategoryType")
+                if category:
+                    # Map the category to a human-readable format
+                    category_map = {
+                        "public.app-category.utilities": "Utilities",
+                        "public.app-category.games": "Games",
+                        "public.app-category.productivity": "Productivity",
+                        "public.app-category.social-networking": "Social Networking",
+                        "public.app-category.photo-video": "Photo & Video",
+                        "public.app-category.entertainment": "Entertainment",
+                        "public.app-category.health-fitness": "Health & Fitness",
+                        "public.app-category.education": "Education",
+                        "public.app-category.business": "Business",
+                        "public.app-category.music": "Music",
+                        "public.app-category.news": "News",
+                        "public.app-category.travel": "Travel",
+                        "public.app-category.finance": "Finance",
+                        "public.app-category.weather": "Weather",
+                        "public.app-category.shopping": "Shopping",
+                        "public.app-category.food-drink": "Food & Drink",
+                        "public.app-category.lifestyle": "Lifestyle",
+                        "public.app-category.sports": "Sports",
+                        "public.app-category.reference": "Reference",
+                        "public.app-category.medical": "Medical",
+                        "public.app-category.developer-tools": "Developer Tools",
+                        "public.app-category.books": "Books",
+                        "public.app-category.navigation": "Navigation",
+                        "public.app-category.magazines-newspapers": "Magazines & Newspapers",
+                        "public.app-category.kids": "Kids",
+                        "public.app-category.weather": "Weather",
+                        "public.app-category.other": "Other"
+                    }
+                    app_data["category"] = category_map.get(category, "Unknown")
+
+                app_data["bundleIdentifier"] = info_plist.get("CFBundleIdentifier")
+                app_data["name"] = info_plist.get("CFBundleName") or info_plist.get("CFBundleDisplayName")
+                app_data["version"] = info_plist.get("CFBundleShortVersionString")
+                app_data["minOSVersion"] = info_plist.get("MinimumOSVersion", "14.0")
+                app_data["maxOSVersion"] = info_plist.get("MaximumOSVersion", "17.0")
+                app_data["developerName"] = developer_name  # Add DeveloperName to app_data
+                app_data["appPermissions"] = {
+                    "entitlements": entitlements,
+                    "privacy": privacy_info
+                }
+
+                if self.save_json_file(os.path.join(self.apps_dir, app_name, 'app.json'), app_data):
+                    return {
+                        "success": True,
+                        "message": "App info updated successfully",
+                        "data": {
+                            "bundleIdentifier": app_data["bundleIdentifier"],
+                            "name": app_data["name"],
+                            "version": app_data["version"],
+                            "minOSVersion": app_data["minOSVersion"],
+                            "maxOSVersion": app_data["maxOSVersion"],
+                            "developerName": app_data["developerName"],  # Include DeveloperName in response
+                            "category": app_data["category"],  # Include Category in response
+                            "appPermissions": app_data["appPermissions"],
+                            "iconURL": app_data["iconURL"]
+                        }
+                    }
+
+            return {"success": False, "message": "Failed to update app info"}
+
+        except Exception as e:
+            self.logger.error(f"Error processing {app_name}: {str(e)}")
+            return {"success": False, "message": str(e)}
+
+    def extract_app_icon(self, app_bundle: Path, app_name: str) -> Optional[str]:
+        try:
+            icon_files = list(app_bundle.glob("AppIcon*.png"))
+            if not icon_files:
+                return None
+            icon_file = max(icon_files, key=lambda f: f.stat().st_size)
+            icon_path = os.path.join(self.apps_dir, app_name, "icon.jpg")
+            with Image.open(icon_file) as img:
+                img.convert("RGB").save(icon_path, "JPEG")
+
+            return icon_path
+        except Exception as e:
+            self.logger.error(f"Error extracting app icon: {str(e)}")
+            return None
 
 def main():
-    """Main function to update repository"""
     setup_logging()
     logger = logging.getLogger(__name__)
     
     try:
         repo = RepoUpdater()
         logger.info("Starting repository update")
-        
-        # Update app versions
         updated = []        
         failed = []
         for app in os.listdir(repo.apps_dir):
             if os.path.isdir(os.path.join(repo.apps_dir, app)):
-                result = repo.update_app_versions(app)
-                if result["success"] and result.get("data", {}).get("new_versions"):
+                result = repo.download_and_extract_app_info(app)
+                if result["success"]:
                     updated.append(app)
-                elif not result["success"]:
+                else:
                     failed.append(app)
         
-        logger.info(f"Updated versions for {len(updated)} apps")
+        logger.info(f"Updated info for {len(updated)} apps")
         if failed:
             logger.warning(f"Failed to update {len(failed)} apps")
         
-        # Compile all repository formats
         result = repo.compile_all_formats()
         if not result["success"]:
             raise Exception(f"Failed to compile repositories: {result['message']}")
