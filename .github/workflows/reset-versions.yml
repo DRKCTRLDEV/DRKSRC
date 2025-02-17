@@ -30,6 +30,10 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add Apps/  # Add changes in the Apps directory
-          git commit -m "Reset app versions [skip ci]"  # Commit with a message
-          git push
+          git add Apps/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Reset app versions [skip ci]"
+            git push
+          fi
