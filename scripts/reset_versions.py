@@ -21,13 +21,22 @@ class VersionResetter:
             app_json_path = os.path.join(app_path, 'app.json')
 
             if os.path.isdir(app_path) and os.path.isfile(app_json_path):
-                self.logger.info(f"Resetting versions for {app_name}...")
+                self.logger.info(f"Checking {app_name} for valid repository...")
                 self.reset_app_versions(app_json_path)
 
     def reset_app_versions(self, app_json_path: str):
         try:
             with open(app_json_path, 'r') as file:
                 app_data = json.load(file)
+
+            repository = app_data.get("repository")
+            if not repository:
+                self.logger.warning(f"Skipping {app_json_path}: No repository field found")
+                return
+
+            if not self.is_valid_repository(repository):
+                self.logger.warning(f"Skipping {app_json_path}: Invalid repository '{repository}'")
+                return
 
             app_data['versions'] = []
 
@@ -38,9 +47,14 @@ class VersionResetter:
         except Exception as e:
             self.logger.error(f"Error resetting versions for {app_json_path}: {str(e)}")
 
+    def is_valid_repository(self, repository: str) -> bool:
+        if not repository or not isinstance(repository, str):
+            return False
+        return repository.startswith("https://github.com/")
+
 if __name__ == "__main__":
-    current_directory = os.getcwd()
-    apps_directory = os.path.join(current_directory, "Apps")
+    current_directory = os.path.dirname(os.path.abspath(__file__))  
+    apps_directory = os.path.join(current_directory, "..", "Apps")
 
     version_resetter = VersionResetter(apps_directory)
     version_resetter.reset_versions()

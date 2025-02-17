@@ -6,7 +6,7 @@ import logging
 import requests
 import plistlib
 import subprocess
-import tempfile
+import tempfile  
 from PIL import Image
 from pathlib import Path
 from urllib.parse import urlparse
