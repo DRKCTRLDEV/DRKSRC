@@ -47,10 +47,16 @@ class VersionResetter:
         except Exception as e:
             self.logger.error(f"Error resetting versions for {app_json_path}: {str(e)}")
 
-    def is_valid_repository(self, repository: str) -> bool:
-        if not repository or not isinstance(repository, str):
+    def is_valid_repository(self, repository) -> bool:
+        if isinstance(repository, list):
+            return any(self._is_valid_github_url(url) for url in repository)
+        elif isinstance(repository, str):
+            return self._is_valid_github_url(repository)
+        else:
             return False
-        return repository.startswith("https://github.com/")
+
+    def _is_valid_github_url(self, url: str) -> bool:
+        return url.startswith("https://github.com/") or url.startswith("http://github.com/")
 
 if __name__ == "__main__":
     current_directory = os.path.dirname(os.path.abspath(__file__))  
