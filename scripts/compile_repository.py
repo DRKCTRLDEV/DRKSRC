@@ -218,11 +218,11 @@ def main():
     
     try:
         # Get the number of featured apps from command line arguments
-        featured_count = int(sys.argv[2]) if len(sys.argv) > 2 else 5
+        featured_count = int(sys.argv[1]) if len(sys.argv) > 1 else 5
         compiler = RepoCompiler(featured_count=featured_count)
         logger.info("Starting repo compilation")
         
-        target_format = sys.argv[1].lower() if len(sys.argv) > 1 else None
+        target_format = sys.argv[2].lower() if len(sys.argv) > 2 else None
         result = compiler.compile_repos(target_format)
         
         if not result["success"]:
