@@ -165,8 +165,8 @@ if __name__ == "__main__":
         sys.exit(1)
 
     action = sys.argv[1].lower()
-    targets = sys.argv[2].split(',') if len(sys.argv) > 2 else [None]
-    keep_versions = int(sys.argv[3]) if len(sys.argv) > 3 else 5
+    keep_versions = int(sys.argv[2]) if len(sys.argv) > 2 else 5
+    targets = sys.argv[3].split(',') if len(sys.argv) > 3 else [None]
 
     current_dir = os.path.dirname(os.path.abspath(__file__))
     apps_dir = os.path.join(current_dir, "..", "Apps")

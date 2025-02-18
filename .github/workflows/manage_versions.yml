@@ -50,11 +50,11 @@ jobs:
       run: |
         IFS=',' read -ra APPS <<< "${{ inputs.app_list }}"
         for app in "${APPS[@]}"; do
-          python3 scripts/manage_versions.py ${{ inputs.action }} "$app" $KEEP_VERSIONS
+          python3 scripts/manage_versions.py ${{ inputs.action }} $KEEP_VERSIONS "$app" 
         done
         
         if [ -z "${{ inputs.app_list }}" ]; then
-          python3 scripts/manage_versions.py ${{ inputs.action }} "" $KEEP_VERSIONS
+          python3 scripts/manage_versions.py ${{ inputs.action }} $KEEP_VERSIONS
         fi
     
     - name: Commit and push changes

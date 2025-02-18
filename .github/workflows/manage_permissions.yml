@@ -31,7 +31,7 @@ jobs:
         python-version: '3.10'
     
     - name: Install dependencies
-      run: pip install requests plistlib
+      run: pip install requests
     
     - name: Run permission management
       run: |
