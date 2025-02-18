@@ -38,6 +38,10 @@ jobs:
     - name: Upgrade pip
       run: |
         python -m pip install --upgrade pip
+
+    - name: Install dependencies
+      run: |
+        pip install requests
     
     - name: Run version management
       env:
