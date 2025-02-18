@@ -149,19 +149,13 @@ class VersionManager:
 
     def _deduplicate_versions(self, versions: List[Dict]) -> List[Dict]:
         seen = set()
-        unique = []
-        for v in versions:
-            key = (v['version'], v['url'])
-            if key not in seen:
-                seen.add(key)
-                unique.append(v)
-        return unique
+        return [v for v in versions if (v['version'], v['url']) not in seen and not seen.add((v['version'], v['url']))]
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     
     if len(sys.argv) < 2:
-        print("Usage: manage_versions.py <action> [app1,app2,...] [keep_versions]")
+        print("Usage: manage_versions.py <action>  [keep_versions] [app1,app2,...]")
         sys.exit(1)
 
     action = sys.argv[1].lower()
