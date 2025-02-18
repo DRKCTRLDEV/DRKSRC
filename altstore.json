@@ -11,12 +11,16 @@
     "live.cclerc.geranium",
     "com.kdt.LiveContainer",
     "com.leminlimez.cowabunga",
+<<<<<<< HEAD
     "com.mologie.NXBoot",
     "com.huami.TrollFools",
     "com.kdt.CAPerfHUD",
     "uwu.lrdsnow.purekfdiOS",
     "wiki.qaq.TrollFools",
     "ca.bomberfish.AppCommander"
+=======
+    "com.mologie.NXBoot"
+>>>>>>> 289a729ab52601870844a5d5f49ddd530732edb4
   ],
   "apps": [
     {
