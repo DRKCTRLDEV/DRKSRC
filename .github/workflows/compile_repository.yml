@@ -1,0 +1,45 @@
+name: Compile Repository (FAST)
+
+on:
+  workflow_dispatch:
+    inputs:
+      format:
+        description: 'Format to compile (altstore/trollapps/scarlet, leave empty for all)'
+        required: false
+        type: string
+      featured_count:
+        description: 'Number of featured apps (default is 5)'
+        required: false
+        type: number
+        default: 5
+
+jobs:
+  compile-repo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    
+    - name: Run compilation
+      run: |
+        if [ -n "${{ inputs.format }}" ]; then
+          python3 scripts/compile_repository.py "${{ inputs.format }}" "${{ inputs.featured_count }}"
+        else
+          python3 scripts/compile_repository.py "${{ inputs.featured_count }}"
+        fi
+    
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add *.json
+        git commit -m "chore: Update ${{ inputs.format || 'all' }} repository files" || echo "No changes to commit"
+        git push

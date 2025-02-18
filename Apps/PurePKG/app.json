@@ -1,19 +1,21 @@
 {
-    "repository": [
+    "gitURL/s": [
         "https://github.com/Lrdsnow/PurePKG"
     ],
     "name": "PurePKG",
-    "bundleIdentifier": "uwu.lrdsnow.purepkg",
-    "developerName": "Lrdsnow",
+    "bundleID": "uwu.lrdsnow.purepkg",
+    "devName": "Lrdsnow",
     "subtitle": "The Purest Jailbreak Package Manager",
-    "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+.",
-    "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/icon.jpg",
+    "description": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+.",
     "category": "utilities",
+    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/icon.jpg",
     "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_2.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_3.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_4.png"
     ],
-    "versions": []
+    "versions": [],
+    "scarletDebs": [],
+    "scarletBackup": true
 }

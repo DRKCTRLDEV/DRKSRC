@@ -1,23 +1,21 @@
 {
-    "repository": [
+    "gitURL/s": [
         "https://github.com/khanhduytran0/FrontBoardAppLauncher",
         "https://github.com/DRKCTRL/FrontBoardAppLauncher"
     ],
     "name": "FrontBoardAppLauncher",
-    "bundleIdentifier": "com.kdt.frontboardapplauncher",
-    "developerName": "khanhduytran0",
+    "bundleID": "com.kdt.frontboardapplauncher",
+    "devName": "khanhduytran0",
     "subtitle": "Launch Apps via FrontBoard",
-    "localizedDescription": "FrontBoardAppLauncher is a utility that allows you to launch apps using FrontBoard on iOS devices. It provides a simple interface to interact with the FrontBoard framework for app management.",
-    "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/assets/NOICON.png",
+    "description": "FrontBoardAppLauncher is a utility that allows you to launch apps using FrontBoard on iOS devices. It provides a simple interface to interact with the FrontBoard framework for app management.",
     "category": "utilities",
+    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/NOICON.png",
     "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_2.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_3.png"
     ],
     "versions": [],
-    "appPermissions": {
-        "privacy": {},
-        "entitlements": []
-    }
+    "scarletDebs": [],
+    "scarletBackup": true
 }

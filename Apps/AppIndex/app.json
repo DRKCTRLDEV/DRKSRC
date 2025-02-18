@@ -1,14 +1,14 @@
 {
-    "repository": [
+    "gitURL/s": [
         "https://github.com/NSAntoine/AppIndex"
     ],
     "name": "AppIndex",
-    "bundleIdentifier": "com.serena.AppIndex",
-    "developerName": "NSAntoine, justtryingthingsout",
+    "bundleID": "com.serena.AppIndex",
+    "devName": "NSAntoine, justtryingthingsout",
     "subtitle": "Modern Applications Manager for iOS",
-    "localizedDescription": "AppIndex is a new, modern App Explorer/Manager app for iOS. It allows users to view, sort, search, and manage applications on their device. Features include viewing extensive app info, backing up and restoring apps, exporting as .ipa files, and more. AppIndex provides detailed information about each app, including bundle identifier, type, download date, version, SDK version, iTunes metadata, size, status, entitlements, URL schemes, and more.",
-    "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/icon.png",
+    "description": "AppIndex is a new, modern App Explorer/Manager app for iOS. It allows users to view, sort, search, and manage applications on their device. Features include viewing extensive app info, backing up and restoring apps, exporting as .ipa files, and more. AppIndex provides detailed information about each app, including bundle identifier, type, download date, version, SDK version, iTunes metadata, size, status, entitlements, URL schemes, and more.",
     "category": "utilities",
+    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/icon.png",
     "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_2.png",
@@ -17,8 +17,6 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_5.png"
     ],
     "versions": [],
-    "appPermissions": {
-        "privacy": {},
-        "entitlements": []
-    }
+    "scarletDebs": [],
+    "scarletBackup": true
 }

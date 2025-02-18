@@ -1,14 +1,14 @@
 {
-    "repository": [
+    "gitURL/s": [
         "https://github.com/huami1314/TrollFools"
     ],
     "name": "TrollFools(Huami1314)",
-    "bundleIdentifier": "com.huami.TrollFools",
-    "developerName": "huami1314",
+    "bundleID": "com.huami.TrollFools",
+    "devName": "huami1314",
     "subtitle": "Tweak Injection Tool for TrollStore (iOS 15+)",
-    "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
-    "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/icon.jpg",
+    "description": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
     "category": "utilities",
+    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/icon.jpg",
     "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_2.png",
@@ -16,8 +16,6 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_4.png"
     ],
     "versions": [],
-    "appPermissions": {
-        "privacy": {},
-        "entitlements": []
-    }
+    "scarletDebs": [],
+    "scarletBackup": true
 }

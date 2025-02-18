@@ -1,14 +1,14 @@
 {
-    "repository": [
+    "gitURL/s": [
         "https://github.com/leminlimez/Cowabunga"
     ],
     "name": "Cowabunga",
-    "bundleIdentifier": "com.leminlimez.cowabunga",
-    "developerName": "leminlimez",
+    "bundleID": "com.leminlimez.cowabunga",
+    "devName": "leminlimez",
     "subtitle": "A Jailed Toolbox for iOS",
-    "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1.",
-    "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/icon.jpg",
+    "description": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1.",
     "category": "utilities",
+    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/icon.jpg",
     "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_2.png",
@@ -18,5 +18,7 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_6.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_7.png"
     ],
-    "versions": []
+    "versions": [],
+    "scarletDebs": [],
+    "scarletBackup": true
 }

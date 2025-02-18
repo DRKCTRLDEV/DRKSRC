@@ -1,14 +1,14 @@
 {
-    "repository": [
+    "gitURL/s": [
         "https://github.com/c22dev/TrollBox"
     ],
     "name": "TrollBox",
-    "bundleIdentifier": "live.cclerc.trollbox",
-    "developerName": "c22dev",
+    "bundleID": "live.cclerc.trollbox",
+    "devName": "c22dev",
     "subtitle": "AIO TrollStore Tool",
-    "localizedDescription": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium.",
-    "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/icon.jpg",
+    "description": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium.",
     "category": "utilities",
+    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/icon.jpg",
     "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_2.png",
@@ -16,5 +16,7 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_4.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_5.png"
     ],
-    "versions": []
+    "versions": [],
+    "scarletDebs": [],
+    "scarletBackup": true
 }

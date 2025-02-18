@@ -1,0 +1,53 @@
+name: Manage Permissions (SLOW)
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Action (update/remove)'
+        required: true
+        type: choice
+        options:
+          - update
+          - remove
+      app_list:
+        description: 'Comma-separated app names (leave empty for all)'
+        required: false
+        type: string
+
+jobs:
+  manage-permissions:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: pip install requests plistlib
+    
+    - name: Run permission management
+      run: |
+        IFS=',' read -ra APPS <<< "${{ inputs.app_list }}"
+        for app in "${APPS[@]}"; do
+          python3 scripts/manage_permissions.py ${{ inputs.action }} "$app"
+        done
+        
+        if [ -z "${{ inputs.app_list }}" ]; then
+          python3 scripts/manage_permissions.py ${{ inputs.action }}
+        fi
+    
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add Apps/
+        git commit -m "chore: Permissions ${{ inputs.action }} for ${{ inputs.app_list || 'all apps' }}" || echo "No changes to commit"
+        git push

@@ -1,18 +1,20 @@
 {
-    "repository": [
+    "gitURL/s": [
         "https://github.com/roothide/Bootstrap"
     ],
     "name": "Bootstrap",
-    "bundleIdentifier": "com.roothide.Bootstrap",
-    "developerName": "roothide",
+    "bundleID": "com.roothide.Bootstrap",
+    "devName": "roothide",
     "subtitle": "Jailbreak Bootstrap Tool",
-    "localizedDescription": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications.",
-    "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/icon.png",
+    "description": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications.",
     "category": "utilities",
+    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/icon.png",
     "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/screenshots/IMG_2.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/screenshots/IMG_3.png"
     ],
-    "versions": []
+    "versions": [],
+    "scarletDebs": [],
+    "scarletBackup": true
 }

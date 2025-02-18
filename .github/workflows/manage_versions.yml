@@ -1,0 +1,58 @@
+name: Manage Versions (FAST)
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Action (update/remove)'
+        required: true
+        type: choice
+        options:
+          - update
+          - remove
+      app_list:
+        description: 'Comma-separated app names (leave empty for all)'
+        required: false
+        type: string
+      keep_versions:
+        description: 'Number of versions to keep (update only)'
+        required: false
+        type: number
+        default: 5
+
+jobs:
+  manage-versions:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    
+    - name: Run version management
+      env:
+        REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        KEEP_VERSIONS: ${{ inputs.keep_versions }}
+      run: |
+        IFS=',' read -ra APPS <<< "${{ inputs.app_list }}"
+        for app in "${APPS[@]}"; do
+          python3 scripts/manage_versions.py ${{ inputs.action }} "$app" $KEEP_VERSIONS
+        done
+        
+        if [ -z "${{ inputs.app_list }}" ]; then
+          python3 scripts/manage_versions.py ${{ inputs.action }} "" $KEEP_VERSIONS
+        fi
+    
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add Apps/
+        git commit -m "chore: Version ${{ inputs.action }} (keep ${{ inputs.keep_versions }}) for ${{ inputs.app_list || 'all apps' }}" || echo "No changes to commit"
+        git push
