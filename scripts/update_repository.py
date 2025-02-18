@@ -89,6 +89,7 @@ class RepoUpdater:
             
             for repo_url in repos:
                 if "github.com" not in repo_url:
+                    self.logger.error(f"Invalid repository URL: {repo_url}")
                     continue
                 
                 parts = repo_url.rstrip('/').split('/')
@@ -103,7 +104,10 @@ class RepoUpdater:
                     headers=headers,
                     timeout=10
                 )
-                if response.status_code != 200:
+                if response.status_code == 404:
+                    self.logger.error(f"Repository not found: {repo_url}")
+                    continue
+                elif response.status_code != 200:
                     self.logger.error(f"Failed to fetch releases for {repo_url}: {response.status_code}")
                     continue
                 
@@ -139,7 +143,7 @@ class RepoUpdater:
             return {"success": True, "message": "No new versions found"}
             
         except Exception as e:
-            self.logger.error(f"Error updating versions for {app_name}: {str(e)}")
+            self.logger.error(f"Error updating versions for {app _name}: {str(e)}")
             return {"success": False, "message": str(e)}
 
     def remove_duplicate_versions(self, versions: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
@@ -234,6 +238,7 @@ class RepoUpdater:
                 self.logger.info(f"Downloading {download_url} to {ipa_path}")
                 response = requests.get(download_url, stream=True, timeout=30)
                 if response.status_code != 200:
+                    self.logger.error(f"Failed to download {download_url}: {response.status_code}")
                     return {"success": False, "message": f"Failed to download {download_url}"}
                 with open(ipa_path, 'wb') as f:
                     for chunk in response.iter_content(chunk_size=8192):
@@ -254,114 +259,50 @@ class RepoUpdater:
                 with open(info_plist_path, 'rb') as f:
                     info_plist = plistlib.load(f)
 
-                entitlements_path = app_bundle / "embedded.mobileprovision"
-                entitlements = {}
-                developer_name = None
-                if entitlements_path.exists():
-                    result = subprocess.run(
-                        ["security", "cms", "-D", "-i", entitlements_path],
-                        capture_output=True, text=True, check=True
-                    )
-                    entitlements_plist = plistlib.loads(result.stdout.encode())
-                    entitlements = entitlements_plist.get("Entitlements", {})
-                    developer_name = entitlements_plist.get("DeveloperName") or entitlements_plist.get("TeamName")
-
-                icon_path = self.extract_app_icon(app_bundle, app_name)
-                if icon_path:
-                    app_data["iconURL"] = f"Apps/{app_name}/icon.jpg"
-
-                privacy_info = {}
-                privacy_keys = [
-                    "NSContactsUsageDescription",
-                    "NSLocationUsageDescription",
-                    "NSMicrophoneUsageDescription",
-                    "NSCameraUsageDescription",
-                    "NSPhotoLibraryUsageDescription",
-                    "NSBluetoothAlwaysUsageDescription",
-                    "NSBluetoothPeripheralUsageDescription",
-                    "NSFaceIDUsageDescription",
-                    "NSMotionUsageDescription",
-                    "NSSpeechRecognitionUsageDescription",
-                    "NSHealthShareUsageDescription",
-                    "NSHealthUpdateUsageDescription",
-                    "NSAppleMusicUsageDescription",
-                    "NSRemindersUsageDescription",
-                    "NSCalendarsUsageDescription",
-                    "NSHomeKitUsageDescription",
-                    "NSLocalNetworkUsageDescription",
-                    "NSUserTrackingUsageDescription"
-                ]
-                for key in privacy_keys:
-                    if key in info_plist:
-                        privacy_info[key] = info_plist[key]
-
-                # Extract app category
-                category = info_plist.get("LSApplicationCategoryType")
-                if category:
-                    # Map the category to a human-readable format
-                    category_map = {
-                        "public.app-category.utilities": "Utilities",
-                        "public.app-category.games": "Games",
-                        "public.app-category.productivity": "Productivity",
-                        "public.app-category.social-networking": "Social Networking",
-                        "public.app-category.photo-video": "Photo & Video",
-                        "public.app-category.entertainment": "Entertainment",
-                        "public.app-category.health-fitness": "Health & Fitness",
-                        "public.app-category.education": "Education",
-                        "public.app-category.business": "Business",
-                        "public.app-category.music": "Music",
-                        "public.app-category.news": "News",
-                        "public.app-category.travel": "Travel",
-                        "public.app-category.finance": "Finance",
-                        "public.app-category.weather": "Weather",
-                        "public.app-category.shopping": "Shopping",
-                        "public.app-category.food-drink": "Food & Drink",
-                        "public.app-category.lifestyle": "Lifestyle",
-                        "public.app-category.sports": "Sports",
-                        "public.app-category.reference": "Reference",
-                        "public.app-category.medical": "Medical",
-                        "public.app-category.developer-tools": "Developer Tools",
-                        "public.app-category.books": "Books",
-                        "public.app-category.navigation": "Navigation",
-                        "public.app-category.magazines-newspapers": "Magazines & Newspapers",
-                        "public.app-category.kids": "Kids",
-                        "public.app-category.weather": "Weather",
-                        "public.app-category.other": "Other"
-                    }
-                    app_data["category"] = category_map.get(category, "Unknown")
-
-                app_data["bundleIdentifier"] = info_plist.get("CFBundleIdentifier")
-                app_data["name"] = info_plist.get("CFBundleName") or info_plist.get("CFBundleDisplayName")
-                app_data["version"] = info_plist.get("CFBundleShortVersionString")
-                app_data["minOSVersion"] = info_plist.get("MinimumOSVersion", "14.0")
-                app_data["maxOSVersion"] = info_plist.get("MaximumOSVersion", "17.0")
-                app_data["developerName"] = developer_name  # Add DeveloperName to app_data
-                app_data["appPermissions"] = {
-                    "entitlements": entitlements,
-                    "privacy": privacy_info
-                }
-
-                if self.save_json_file(os.path.join(self.apps_dir, app_name, 'app.json'), app_data):
-                    return {
-                        "success": True,
-                        "message": "App info updated successfully",
-                        "data": {
-                            "bundleIdentifier": app_data["bundleIdentifier"],
-                            "name": app_data["name"],
-                            "version": app_data["version"],
-                            "minOSVersion": app_data["minOSVersion"],
-                            "maxOSVersion": app_data["maxOSVersion"],
-                            "developerName": app_data["developerName"],  # Include DeveloperName in response
-                            "category": app_data["category"],  # Include Category in response
-                            "appPermissions": app_data["appPermissions"],
-                            "iconURL": app_data["iconURL"]
-                        }
-                    }
-
-            return {"success": False, "message": "Failed to update app info"}
+                # Call the new method to update app data
+                update_result = self.update_app_data(app_data, info_plist, app_bundle, app_name)
+                return update_result
 
         except Exception as e:
             self.logger.error(f"Error processing {app_name}: {str(e)}")
+            return {"success": False, "message": str(e)}
+
+    def update_app_data(self, app_data: Dict[str, Any], info_plist: Dict[str, Any], app_bundle: Path, app_name: str) -> Dict[str, Any]:
+        try:
+            # Extract app icon
+            icon_path = self.extract_app_icon(app_bundle, app_name)
+            if icon_path:
+                app_data["iconURL"] = f"Apps/{app_name}/icon.jpg"
+
+            # Update app data from Info.plist
+            app_data["bundleIdentifier"] = info_plist.get("CFBundleIdentifier")
+            app_data["name"] = info_plist.get("CFBundleName") or info_plist.get("CFBundleDisplayName")
+            app_data["version"] = info_plist.get("CFBundleShortVersionString")
+            app_data["minOSVersion"] = info_plist.get("MinimumOSVersion", "14.0")
+            app_data["maxOSVersion"] = info_plist.get("MaximumOSVersion", "17.0")
+            app_data["developerName"] = info_plist.get("CFBundleIdentifier")  # Update as needed
+            app_data["appPermissions"] = self.extract_app_permissions(info_plist)
+
+            # Save the updated app data
+            if self.save_json_file(os.path.join(self.apps_dir, app_name, 'app.json'), app_data):
+                return {
+                    "success": True,
+                    "message": "App info updated successfully",
+                    "data": {
+                        "bundleIdentifier": app_data["bundleIdentifier"],
+                        "name": app_data["name"],
+                        "version": app_data["version"],
+                        "minOSVersion": app_data["minOSVersion"],
+                        "maxOSVersion": app_data["maxOSVersion"],
+                        "developerName": app_data["developerName"],
+                        "iconURL": app_data["iconURL"]
+                    }
+                }
+
+            return {"success": False, "message": "Failed to save updated app info"}
+
+        except Exception as e:
+            self.logger.error(f"Error updating app data for {app_name}: {str(e)}")
             return {"success": False, "message": str(e)}
 
     def extract_app_icon(self, app_bundle: Path, app_name: str) -> Optional[str]:
