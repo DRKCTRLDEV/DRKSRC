@@ -2,7 +2,7 @@
 
 <div align="center">
   
-<img src="assets/DRKSRC.png" width="200" alt="DRKSRC Logo"/>
+<img src="static/assets/DRKSRC.png" width="200" alt="DRKSRC Logo"/>
 
 ### Quality iOS Apps, Made Simple 🎉
 
