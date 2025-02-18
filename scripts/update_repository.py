@@ -143,7 +143,7 @@ class RepoUpdater:
             return {"success": True, "message": "No new versions found"}
             
         except Exception as e:
-            self.logger.error(f"Error updating versions for {app _name}: {str(e)}")
+            self.logger.error(f"Error updating versions for {app_name}: {str(e)}")
             return {"success": False, "message": str(e)}
 
     def remove_duplicate_versions(self, versions: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
