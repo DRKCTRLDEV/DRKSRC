@@ -18,38 +18,7 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_6.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_7.png"
     ],
-    "versions": [
-        {
-            "version": "10.3.2",
-            "date": "2023-05-29",
-            "size": 16288960,
-            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.2/Cowabunga.ipa"
-        },
-        {
-            "version": "10.3.1",
-            "date": "2023-05-29",
-            "size": 16288883,
-            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.1/Cowabunga.ipa"
-        },
-        {
-            "version": "10.3.0",
-            "date": "2023-05-29",
-            "size": 16285936,
-            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.0/Cowabunga.ipa"
-        },
-        {
-            "version": "10.2.0",
-            "date": "2023-05-12",
-            "size": 16280833,
-            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.2.0/Cowabunga.ipa"
-        },
-        {
-            "version": "10.1.1",
-            "date": "2023-03-30",
-            "size": 21605355,
-            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.1.1/Cowabunga.ipa"
-        }
-    ],
+    "versions": [],
     "scarletDebs": [],
     "scarletBackup": true
 }
