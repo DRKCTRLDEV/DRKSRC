@@ -6,7 +6,7 @@ import logging
 import random
 from datetime import datetime
 from typing import Dict, List, Optional
-from collections import defaultdict  # Importing defaultdict
+from collections import defaultdict
 
 def configure_logging():
     logging.basicConfig(
@@ -67,7 +67,6 @@ class RepoCompiler:
             
             self.logger.info(f"Total apps loaded: {len(apps)}")
             
-            # Only log featured apps if the target format is not 'scarlet'
             if target_fmt != 'scarlet':
                 self.logger.info(f"Featured apps selected: {featured}")
             
@@ -83,7 +82,7 @@ class RepoCompiler:
             if not repo_config:
                 return {"success": False, "error": "Missing repo config"}
             
-            apps, featured = self._load_app_data(target_fmt)  # Pass target_fmt here
+            apps, featured = self._load_app_data(target_fmt)
             
             if not apps:
                 return {"success": False, "error": "No apps found to compile"}
@@ -102,8 +101,7 @@ class RepoCompiler:
             
             for fmt, (filename, formatter) in formats.items():
                 repo_data = formatter(repo_config, apps, featured)
-                # Count the total number of apps based on the input apps list
-                total_apps = len(apps)  # Count the number of apps directly from the input list
+                total_apps = len(apps)
                 self.logger.info(f"Saving {filename} with {total_apps} apps")
                 if not self.save_config(os.path.join(self.root_dir, filename), repo_data):
                     return {"success": False, "error": f"Failed saving {filename}"}
@@ -217,7 +215,6 @@ def main():
     logger = logging.getLogger(__name__)
     
     try:
-        # Get the number of featured apps from command line arguments
         featured_count = int(sys.argv[2]) if len(sys.argv) > 2 else 5
         compiler = RepoCompiler(featured_count=featured_count)
         logger.info("Starting repo compilation")

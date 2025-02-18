@@ -25,7 +25,7 @@
     <a href="https://fwuf.in/#/trollapps://add?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/trollapps.json">
       <img src="https://img.shields.io/badge/Add%20to%20TrollApps-%20blue?style=for-the-badge&color=B85CFD" alt="Add to TrollApps">
     </a>
-    <a href="https://fwuf.in/#/scarlet://add?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/trollapps.json">
+    <a href="https://fwuf.in/#/scarlet://repo=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/scarlet.json">
       <img src="https://img.shields.io/badge/Add%20to%20Scarlet-%20blue?style=for-the-badge&color=ff0000" alt="Add to Scarlet">
     </a>
   </p>

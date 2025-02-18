@@ -124,7 +124,7 @@ class VersionManager:
             json.dump(data, f, indent=4)
 
     def _valid_repo(self, repo) -> bool:
-        if not repo:  # Check if repo is None or empty
+        if not repo:
             self.logger.warning("No repository information provided.")
             return False
 
