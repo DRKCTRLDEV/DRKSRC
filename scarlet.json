@@ -1,7 +1,7 @@
 {
   "META": {
     "repoName": "DRKSRC",
-    "repoIcon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/assets/DRKSRC.png"
+    "repoIcon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/DRKSRC.png"
   },
   "utilities": [
     {
@@ -55,8 +55,8 @@
     },
     {
       "name": "TrollFools(Lessica)",
-      "version": "2.11-25",
-      "down": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25.tipa",
+      "version": "2.12-27",
+      "down": "https://github.com/Lessica/TrollFools/releases/download/v2.12-27/TrollFools14_2.12-27.tipa",
       "dev": "Lessica",
       "category": "utilities",
       "description": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",

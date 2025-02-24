@@ -2,16 +2,16 @@
   "name": "DRKSRC",
   "subtitle": "Your Fav Source...",
   "description": "DRKSRC: A curated collection of the community's most essential and popular iOS apps and utilities",
-  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/assets/DRKSRC.png",
-  "headerURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/assets/Header.png",
+  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/DRKSRC.png",
+  "headerURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/Header.png",
   "website": "https://github.com/DRKCTRL/DRKSRC",
   "tintColor": "#9966CC",
   "featuredApps": [
-    "com.huami.TrollFools",
-    "com.kdt.frontboardapplauncher",
-    "com.serena.AppIndex",
+    "com.sparklechan.swifty",
     "uwu.lrdsnow.purekfdiOS",
-    "com.tigisoftware.Filza"
+    "com.roothide.Bootstrap",
+    "com.kdt.frontboardapplauncher",
+    "live.cclerc.geranium"
   ],
   "apps": [
     {
@@ -41,6 +41,22 @@
           "version": "1.6",
           "date": "2024-10-22",
           "downloadURL": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa",
+          "size": 70613655,
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0"
+        },
+        {
+          "version": "1.6",
+          "date": "2024-10-22",
+          "downloadURL": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-stock-alpha.ipa",
+          "size": 66806491,
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0"
+        },
+        {
+          "version": "1.6",
+          "date": "2024-10-22",
+          "downloadURL": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa",
           "size": 70613655,
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0"
@@ -150,6 +166,22 @@
       ],
       "versions": [
         {
+          "version": "2.12-27",
+          "date": "2025-02-23",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.12-27/TrollFools14_2.12-27.tipa",
+          "size": 5783322,
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0"
+        },
+        {
+          "version": "2.12-27",
+          "date": "2025-02-23",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.12-27/TrollFools_2.12-27.tipa",
+          "size": 3541410,
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0"
+        },
+        {
           "version": "2.11-25",
           "date": "2025-01-17",
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25.tipa",
@@ -170,22 +202,6 @@
           "date": "2025-01-14",
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23.tipa",
           "size": 5698258,
-          "minOSVersion": "14.0",
-          "maxOSVersion": "17.0"
-        },
-        {
-          "version": "2.10-23",
-          "date": "2025-01-14",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools_2.10-23.tipa",
-          "size": 3487141,
-          "minOSVersion": "14.0",
-          "maxOSVersion": "17.0"
-        },
-        {
-          "version": "2.10-22",
-          "date": "2025-01-14",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22.tipa",
-          "size": 5698269,
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0"
         }
