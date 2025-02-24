@@ -21,7 +21,7 @@
       "date": "2024-07-24",
       "size": 13925062,
       "url": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/IPA/Filza_NoURLScheme_4.0.2.ipa"
-    },    
+    },
     {
       "version": "4.0.0",
       "date": "2023-01-10",
@@ -36,5 +36,12 @@
     }
   ],
   "scarletDebs": [],
-  "scarletBackup": true
+  "scarletBackup": true,
+  "permissions": {
+    "entitlements": {},
+    "privacy": {
+      "NSPhotoLibraryUsageDescription": "To save photos and videos to photo library.",
+      "NSFaceIDUsageDescription": "Filza uses Face ID to authenticate"
+    }
+  }
 }

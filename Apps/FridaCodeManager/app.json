@@ -1,52 +1,56 @@
 {
-    "gitURL/s": [
-        "https://github.com/fridakitten/FridaCodeManager"
-    ],
-    "name": "FridaCodeManager",
-    "bundleID": "com.sparklechan.swifty",
-    "devName": "fridakitten",
-    "subtitle": "Advanced Frida Code Management Tool",
-    "description": "FridaCodeManager is a comprehensive tool for managing and organizing Frida code projects. Features include permission management, project repair capabilities, app/project exports, multithreading support for folder navigation, file grouping, and an enhanced user interface with smooth animations.",
-    "category": "utilities",
-    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/icon.jpg",
-    "screenshots": [
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_2.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_3.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_4.png"
-    ],
-    "versions": [
-        {
-            "version": "1.6",
-            "date": "2024-10-22",
-            "size": 66806491,
-            "url": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.6/FridaCodeManager-stock-alpha.ipa"
-        },
-        {
-            "version": "1.6",
-            "date": "2024-10-22",
-            "size": 70613655,
-            "url": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa"
-        },
-        {
-            "version": "1.6",
-            "date": "2024-10-22",
-            "size": 66806491,
-            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-stock-alpha.ipa"
-        },
-        {
-            "version": "1.6",
-            "date": "2024-10-22",
-            "size": 70613655,
-            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa"
-        },
-        {
-            "version": "1.5.5",
-            "date": "2024-10-14",
-            "size": 108290634,
-            "url": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.5.5/FridaCodeManager.tipa"
-        }
-    ],
-    "scarletDebs": [],
-    "scarletBackup": true
+  "gitURL/s": [
+    "https://github.com/fridakitten/FridaCodeManager"
+  ],
+  "name": "FridaCodeManager",
+  "bundleID": "com.sparklechan.swifty",
+  "devName": "fridakitten",
+  "subtitle": "Advanced Frida Code Management Tool",
+  "description": "FridaCodeManager is a comprehensive tool for managing and organizing Frida code projects. Features include permission management, project repair capabilities, app/project exports, multithreading support for folder navigation, file grouping, and an enhanced user interface with smooth animations.",
+  "category": "utilities",
+  "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/icon.jpg",
+  "screenshots": [
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_1.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_2.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_3.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_4.png"
+  ],
+  "versions": [
+    {
+      "version": "1.6",
+      "date": "2024-10-22",
+      "size": 66806491,
+      "url": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.6/FridaCodeManager-stock-alpha.ipa"
+    },
+    {
+      "version": "1.6",
+      "date": "2024-10-22",
+      "size": 70613655,
+      "url": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa"
+    },
+    {
+      "version": "1.6",
+      "date": "2024-10-22",
+      "size": 66806491,
+      "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-stock-alpha.ipa"
+    },
+    {
+      "version": "1.6",
+      "date": "2024-10-22",
+      "size": 70613655,
+      "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa"
+    },
+    {
+      "version": "1.5.5",
+      "date": "2024-10-14",
+      "size": 108290634,
+      "url": "https://github.com/fridakitten/FridaCodeManager/releases/download/v1.5.5/FridaCodeManager.tipa"
+    }
+  ],
+  "scarletDebs": [],
+  "scarletBackup": true,
+  "permissions": {
+    "entitlements": {},
+    "privacy": {}
+  }
 }
