@@ -43,5 +43,6 @@
       "NSPhotoLibraryUsageDescription": "To save photos and videos to photo library.",
       "NSFaceIDUsageDescription": "Filza uses Face ID to authenticate"
     }
-  }
+  },
+  "bundleIdentifier": "com.tigisoftware.Filza000"
 }
