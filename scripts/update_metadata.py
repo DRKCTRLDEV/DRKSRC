@@ -55,7 +55,7 @@ class AppInfoExtractor:
                 return {"success": False, "message": "No versions found"}
 
             latest_version = versions[0]
-            url = latest_version.get("downloadURL")
+            url = latest_version.get("url")
             if not url:
                 return {"success": False, "message": "No download URL found"}
 
