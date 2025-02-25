@@ -55,8 +55,8 @@ class AppInfoExtractor:
                 return {"success": False, "message": "No versions found"}
 
             latest_version = versions[0]
-            download_url = latest_version.get("downloadURL")
-            if not download_url:
+            url = latest_version.get("downloadURL")
+            if not url:
                 return {"success": False, "message": "No download URL found"}
 
             with tempfile.TemporaryDirectory() as temp_dir:
@@ -64,8 +64,8 @@ class AppInfoExtractor:
                 ipa_path = temp_dir_path / f"{app_name}.ipa"
                 
                 # Download IPA
-                self.logger.info(f"Downloading {download_url}")
-                response = requests.get(download_url, stream=True, timeout=30)
+                self.logger.info(f"Downloading {url}")
+                response = requests.get(url, stream=True, timeout=30)
                 if response.status_code != 200:
                     return {"success": False, "message": f"Failed to download IPA (HTTP {response.status_code})"}
                 
@@ -99,7 +99,7 @@ class AppInfoExtractor:
                 # Extract icon
                 icon_path = self.extract_app_icon(app_bundle, app_name)
                 if icon_path:
-                    app_data["iconURL"] = f"Apps/{app_name}/icon.png"
+                    app_data["icon"] = f"Apps/{app_name}/icon.png"
 
                 # Update app metadata
                 self.update_app_metadata(app_data, info_plist)
@@ -112,7 +112,7 @@ class AppInfoExtractor:
                             "bundleIdentifier": app_data["bundleIdentifier"],
                             "name": app_data ["name"],
                             "version": app_data["version"],
-                            "iconURL": app_data.get("iconURL", "")
+                            "icon": app_data.get("icon", "")
                         }
                     }
 
