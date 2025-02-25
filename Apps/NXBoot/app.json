@@ -14,7 +14,20 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_2.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_3.png"
     ],
-    "versions": [],
+    "versions": [
+        {
+            "version": "0.3.2",
+            "date": "2024-08-31",
+            "size": 1045270,
+            "url": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa"
+        },
+        {
+            "version": "0.3.1",
+            "date": "2024-08-30",
+            "size": 1043645,
+            "url": "https://github.com/mologie/nxboot/releases/download/v0.3.1/NXBoot_0.3.1-1.tipa"
+        }
+    ],
     "scarletDebs": [],
     "scarletBackup": true,
     "permissions": {
