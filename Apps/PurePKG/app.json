@@ -8,45 +8,20 @@
     "subtitle": "The Purest Jailbreak Package Manager",
     "description": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+.",
     "category": "utilities",
-    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/icon.jpg",
+    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/icon.png",
     "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_2.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_3.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_4.png"
     ],
-    "versions": [
-        {
-            "version": "2.0.2",
-            "date": "2024-07-24",
-            "size": 6637698,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/PurePKG.tipa"
-        },
-        {
-            "version": "2.0.2",
-            "date": "2024-07-24",
-            "size": 6637698,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/PurePKGDemo.ipa"
-        },
-        {
-            "version": "2.0.1",
-            "date": "2024-06-23",
-            "size": 9394403,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/PurePKG.tipa"
-        },
-        {
-            "version": "2.0.1",
-            "date": "2024-06-23",
-            "size": 9394403,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/PurePKGDemo.ipa"
-        },
-        {
-            "version": "2.0",
-            "date": "2024-06-21",
-            "size": 6627862,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/PurePKG.tipa"
-        }
-    ],
+    "versions": [],
     "scarletDebs": [],
-    "scarletBackup": true
+    "scarletBackup": true,
+    "permissions": {
+        "entitlements": {},
+        "privacy": {
+            "NSFaceIDUsageDescription": "PurePKG uses Face ID to quickly authenticate purchases."
+        }
+    }
 }

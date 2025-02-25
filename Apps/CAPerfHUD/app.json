@@ -12,14 +12,11 @@
     "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/screenshots/IMG_1.png"
     ],
-    "versions": [
-        {
-            "version": "0.0.1",
-            "date": "2023-05-21",
-            "size": 11320,
-            "url": "https://github.com/khanhduytran0/CAPerfHUD/releases/download/0.0.1/com.kdt.caperfhud_0.0.1.ipa"
-        }
-    ],
+    "versions": [],
     "scarletDebs": [],
-    "scarletBackup": true
+    "scarletBackup": true,
+    "permissions": {
+        "entitlements": {},
+        "privacy": {}
+    }
 }

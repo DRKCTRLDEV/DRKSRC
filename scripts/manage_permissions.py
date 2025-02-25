@@ -72,14 +72,24 @@ class PermissionManager:
             return {"success": False, "message": "No valid IPA URL"}
 
         entitlements, privacy = self._extract_from_ipa(ipa_url)
-        
-        app_data['permissions'] = {
-            'entitlements': entitlements,
-            'privacy': privacy
-        }
 
-        with open(config_file, 'w') as f:
-            json.dump(app_data, f, indent=2)
+        # Initialize permissions if they don't exist
+        if 'permissions' not in app_data:
+            app_data['permissions'] = {
+                'entitlements': {},
+                'privacy': {}
+            }
+
+        # Merge permissions
+        app_data['permissions']['entitlements'].update(entitlements)
+        app_data['permissions']['privacy'].update(privacy)
+
+        try:
+            with open(config_file, 'w') as f:
+                json.dump(app_data, f, indent=2)
+        except Exception as e:
+            self.logger.error(f"Failed to write to {config_file}: {str(e)}")
+            return {"success": False, "message": f"Failed to write to {config_file}"}
 
         return {"success": True, "message": "Updated permissions"}
 
@@ -106,14 +116,14 @@ class PermissionManager:
     def _get_latest_ipa_url(self, app_data: Dict) -> Optional[str]:
         versions = app_data.get('versions', [])
         return versions[0].get('url') if versions else None
-
+    
     def _extract_from_ipa(self, ipa_url: str) -> Tuple[Dict, Dict]:
         with tempfile.TemporaryDirectory() as tmp_dir:
             tmp_path = Path(tmp_dir)
-            ipa_file = tmp_path / 'app.ipa'
+            file_to_extract = tmp_path / ('app.ipa' if ipa_url.endswith('.ipa') else 'app.tipa')
 
-            self._download_ipa(ipa_url, ipa_file)
-            self._extract_ipa(ipa_file, tmp_path)
+            self._download_ipa(ipa_url, file_to_extract)
+            self._extract_ipa(file_to_extract, tmp_path)
             
             app_bundle = self._find_app_bundle(tmp_path)
             return (
@@ -122,7 +132,7 @@ class PermissionManager:
             )
 
     def _download_ipa(self, url: str, dest: Path):
-        self.logger.debug(f"Downloading IPA from {url}")
+        self.logger.debug(f"Downloading IPA/TIPA from {url}")
         response = requests.get(url, stream=True, timeout=30)
         response.raise_for_status()
         
@@ -131,13 +141,13 @@ class PermissionManager:
                 f.write(chunk)
 
     def _extract_ipa(self, ipa_file: Path, dest_dir: Path):
-        self.logger.debug("Extracting IPA")
-        result = subprocess.run(
-            ['unzip', '-q', str(ipa_file), '-d', str(dest_dir)],
-            capture_output=True
-        )
-        if result.returncode != 0:
-            raise Exception(f"IPA extraction failed: {result.stderr.decode()}")
+        self.logger.debug("Extracting IPA/TIPA")
+        try:
+            import zipfile
+            with zipfile.ZipFile(ipa_file, 'r') as zip_ref:
+                zip_ref.extractall(dest_dir)
+        except Exception as e:
+            raise Exception(f"IPA/TIPA extraction failed: {str(e)}")
 
     def _find_app_bundle(self, tmp_path: Path) -> Path:
         payload = tmp_path / 'Payload'
@@ -193,6 +203,7 @@ class PermissionManager:
             'NSLocalNetworkUsageDescription',
             'NSUserTrackingUsageDescription'
         ]
+        
         return {k: plist.get(k) for k in privacy_keys if k in plist}
 
     def _log_summary(self, processed: List[str], failed: List[tuple]):

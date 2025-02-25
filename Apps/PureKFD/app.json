@@ -8,45 +8,20 @@
     "subtitle": "The Purest iOS Toolbox",
     "description": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface.",
     "category": "utilities",
-    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/icon.jpg",
+    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/icon.png",
     "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_2.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_3.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_4.png"
     ],
-    "versions": [
-        {
-            "version": "6.0.2",
-            "date": "2024-11-23",
-            "size": 10806164,
-            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.ipa"
-        },
-        {
-            "version": "6.0.2",
-            "date": "2024-11-23",
-            "size": 3932657,
-            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.noSparse.ipa"
-        },
-        {
-            "version": "6.0.2",
-            "date": "2024-11-23",
-            "size": 4042969,
-            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.noSparse.ts.ipa"
-        },
-        {
-            "version": "6.0.1",
-            "date": "2024-09-29",
-            "size": 10882263,
-            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.ipa"
-        },
-        {
-            "version": "6.0.1",
-            "date": "2024-09-29",
-            "size": 4005315,
-            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.noSparse.ipa"
-        }
-    ],
+    "versions": [],
     "scarletDebs": [],
-    "scarletBackup": true
+    "scarletBackup": true,
+    "permissions": {
+        "entitlements": {},
+        "privacy": {
+            "NSAppleMusicUsageDescription": "unsandbox"
+        }
+    }
 }

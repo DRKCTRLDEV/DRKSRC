@@ -6,7 +6,7 @@
   "subtitle": "Powerful File Manager for iOS",
   "description": "Filza is a comprehensive file manager for iOS devices. It offers features like file/folder exploration, powerful file viewers including media player and office document support, file sharing capabilities, terminal access, music library management, package installation, and cloud service integration.",
   "category": "utilities",
-  "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/icon.jpg",
+  "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/icon.png",
   "screenshots": [
     "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_1.png",
     "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_2.png",
@@ -21,7 +21,7 @@
       "date": "2024-07-24",
       "size": 13925062,
       "url": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/IPA/Filza_NoURLScheme_4.0.2.ipa"
-    },    
+    },
     {
       "version": "4.0.0",
       "date": "2023-01-10",
@@ -36,5 +36,12 @@
     }
   ],
   "scarletDebs": [],
-  "scarletBackup": true
+  "scarletBackup": true,
+  "permissions": {
+    "entitlements": {},
+    "privacy": {
+      "NSPhotoLibraryUsageDescription": "To save photos and videos to photo library.",
+      "NSFaceIDUsageDescription": "Filza uses Face ID to authenticate"
+    }
+  }
 }

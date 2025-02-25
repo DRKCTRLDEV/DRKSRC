@@ -14,6 +14,9 @@ def configure_logging():
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     )
 
+# Define the path to the no-icon.png file
+NO_ICON_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../static/assets/no-icon.png'))
+
 class RepoCompiler:
     def __init__(self, root_dir: str = '.', featured_count: int = 5):
         self.root_dir = os.path.abspath(root_dir)
@@ -106,56 +109,36 @@ class RepoCompiler:
                 total_apps = len(apps)  # Count the number of apps directly from the input list
                 self.logger.info(f"Saving {filename} with {total_apps} apps")
                 if not self.save_config(os.path.join(self.root_dir, filename), repo_data):
-                    return {"success": False, "error": f"Failed saving {filename}"}
+                    return {"success": False, "error": f"Failed to save {filename}"}
             
-            return {"success": True, "message": "Repos compiled"}
+            return {"success": True}
         
         except Exception as e:
             self.logger.error(f"Compilation error: {e}")
             return {"success": False, "error": str(e)}
-            
-    def _format_scarlet(self, config: Dict, apps: List[Dict], featured: List[str]) -> Dict:
-        categories = defaultdict(list)
-        
-        for app in apps:
-            category = app.get("category", "Uncategorized")
-            entry = self._create_scarlet_entry(app)
-            categories[category].append(entry)
-        
-        self.logger.info(f"Formatting scarlet data with {len(apps)} apps")
-        
+
+    def _format_altstore(self, repo_config: Dict, apps: List[Dict], featured: List[str]) -> Dict:
         return {
-            "META": {
-                "repoName": config.get("name"),
-                "repoIcon": config.get("iconURL")
-            },
-            **{category: entries for category, entries in categories.items()}
+            "repo": repo_config.get("name"),
+            "description": repo_config.get("description"),
+            "apps": [self._create_altstore_entry(app) for app in apps],
+            "featured": featured
         }
 
-    def _format_altstore(self, config: Dict, apps: List[Dict], featured: List[str]) -> Dict:
+    def _format_trollapps(self, repo_config: Dict, apps: List[Dict], featured: List[str]) -> Dict:
         return {
-            "name": config.get("name"),
-            "subtitle": config.get("subtitle"),
-            "description": config.get("description"),
-            "iconURL": config.get("iconURL"),
-            "headerURL": config.get("headerURL"),
-            "website": config.get("website"),
-            "tintColor": config.get("tintColor"),
-            "featuredApps": featured,
-            "apps": [self._create_altstore_entry(app) for app in apps]
+            "repo": repo_config.get("name"),
+            "description": repo_config.get("description"),
+            "apps": [self._create_trollapps_entry(app) for app in apps],
+            "featured": featured
         }
 
-    def _format_trollapps(self, config: Dict, apps: List[Dict], featured: List[str]) -> Dict:
+    def _format_scarlet(self, repo_config: Dict, apps: List[Dict], featured: List[str]) -> Dict:
         return {
-            "name": config.get("name"),
-            "subtitle": config.get("subtitle"),
-            "description": config.get("description"),
-            "iconURL": config.get("iconURL"),
-            "headerURL": config.get("headerURL"),
-            "website": config.get("website"),
-            "tintColor": config.get("tintColor"),
-            "featuredApps": featured,
-            "apps": [self._create_trollapps_entry(app) for app in apps]
+            "repo": repo_config.get("name"),
+            "description": repo_config.get("description"),
+            "apps": [self._create_scarlet_entry(app) for app in apps],
+            "featured": featured
         }
 
     def _create_altstore_entry(self, app: Dict) -> Dict:
@@ -165,7 +148,7 @@ class RepoCompiler:
             "developerName": app.get("devName"),
             "subtitle": app.get("subtitle"),
             "localizedDescription": app.get("description"),
-            "iconURL": app.get("icon"),
+            "iconURL": app.get("icon") if app.get("icon") else NO_ICON_PATH,  # Use no-icon.png if icon is empty
             "category": app.get("category"),
             "screenshots": app.get("screenshots", []),
             "versions": [self._format_version(v) for v in app.get("versions", [])],
@@ -179,7 +162,7 @@ class RepoCompiler:
             "developerName": app.get("devName"),
             "subtitle": app.get("subtitle"),
             "localizedDescription": app.get("description"),
-            "iconURL": app.get("icon"),
+            "iconURL": app.get("icon") if app.get("icon") else NO_ICON_PATH,  # Use no-icon.png if icon is empty
             "category": app.get("category"),
             "screenshotURLs": app.get("screenshots", []),
             "versions": [self._format_version(v) for v in app.get("versions", [])],
@@ -196,7 +179,7 @@ class RepoCompiler:
             "category": app.get("category", "Uncategorized"),
             "description": app.get("description"),
             "bundleID": app.get("bundleID"),
-            "icon": app.get("icon"),
+            "icon": app.get("icon") if app.get("icon") else NO_ICON_PATH,  # Use no-icon.png if icon is empty
             "screenshots": app.get("screenshots", []),
             "debs": app.get("scarletDebs", []),
             "enableBackup": app.get("scarletBackup", True)
@@ -205,35 +188,15 @@ class RepoCompiler:
     def _format_version(self, version: Dict) -> Dict:
         return {
             "version": version.get("version"),
-            "date": version.get("date"),
-            "downloadURL": version.get("url"),
-            "size": version.get("size", 0),
-            "minOSVersion": "14.0",
-            "maxOSVersion": "17.0"
+            "url": version.get("url"),
+            "changelog": version.get("changelog", "")
         }
 
-def main():
-    configure_logging()
-    logger = logging.getLogger(__name__)
-    
-    try:
-        # Get the number of featured apps from command line arguments
-        featured_count = int(sys.argv[1]) if len(sys.argv) > 1 else 5
-        compiler = RepoCompiler(featured_count=featured_count)
-        logger.info("Starting repo compilation")
-        
-        target_format = sys.argv[2].lower() if len(sys.argv) > 2 else None
-        result = compiler.compile_repos(target_format)
-        
-        if not result["success"]:
-            raise RuntimeError(result["error"])
-        
-        logger.info("Compilation completed")
-        return 0
-    
-    except Exception as e:
-        logger.error(f"Compilation failed: {e}")
-        return 1
-
 if __name__ == "__main__":
-    sys.exit(main())
+    configure_logging()
+    compiler = RepoCompiler()
+    result = compiler.compile_repos(target_fmt=sys.argv[1] if len(sys.argv) > 1 else None)
+    if not result.get("success"):
+        logging.error(f"Compilation failed: {result.get('error')}")
+        sys.exit(1)
+    logging.info("Compilation completed successfully.")

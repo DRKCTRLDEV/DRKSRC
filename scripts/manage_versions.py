@@ -3,8 +3,7 @@ import os
 import json
 import logging
 import requests
-from typing import Dict, List, Optional
-from datetime import datetime
+from typing import Dict, Optional
 
 class VersionManager:
     def __init__(self, apps_root: str):
@@ -35,44 +34,37 @@ class VersionManager:
                 self._remove_versions(app, config_path)
 
     def _valid_app_path(self, path: str, config: str, target: Optional[str]) -> bool:
-        return (os.path.isdir(path) and 
-                os.path.isfile(config) and 
-                (not target or os.path.basename(path) == target))
+        return os.path.isdir(path) and os.path.isfile(config) and (not target or os.path.basename(path) == target)
 
     def _update_versions(self, app: str, config: str):
-        try:
-            with open(config, 'r') as f:
-                data = json.load(f)
-            
-            if not self._valid_repo(data.get('gitURL/s')):
-                return
-
-            result = self._fetch_new_versions(data)
-            if not result['success']:
-                self.logger.error(f"Failed {app}: {result['message']}")
-                return
-
-            data['versions'] = result['versions']
-            self._save_config(config, data)
-            self.logger.info(f"Updated {app}: {result['message']}")
-
-        except Exception as e:
-            self.logger.error(f"Error updating {app}: {str(e)}")
+        self._process_versions(app, config, update=True)
 
     def _remove_versions(self, app: str, config: str):
+        self._process_versions(app, config, update=False)
+
+    def _process_versions(self, app: str, config: str, update: bool):
         try:
             with open(config, 'r') as f:
                 data = json.load(f)
-            
+
             if not self._valid_repo(data.get('gitURL/s')):
                 return
 
-            data['versions'] = []
+            if update:
+                result = self._fetch_new_versions(data)
+                if not result['success']:
+                    self.logger.error(f"Failed {app}: {result['message']}")
+                    return
+                data['versions'] = result['versions']
+                self.logger.info(f"Updated {app}: {result['message']}")
+            else:
+                data['versions'] = []
+                self.logger.info(f"Removed versions: {app}")
+
             self._save_config(config, data)
-            self.logger.info(f"Removed versions: {app}")
 
         except Exception as e:
-            self.logger.error(f"Error removing {app}: {str(e)}")
+            self.logger.error(f"Error processing {app}: {str(e)}")
 
     def _fetch_new_versions(self, data: Dict) -> Dict:
         repos = data.get('gitURL/s', [])
@@ -85,11 +77,11 @@ class VersionManager:
                 continue
 
             owner, repo_name = repo.rstrip('/').split('/')[-2:]
-            headers = {'Authorization': f'token {os.environ.get("REPO_TOKEN")}'} if os.environ.get("REPO_TOKEN") else {}
+            headers = {'Authorization': f'token {os.environ.get("REPO_TOKEN")}'}
 
             try:
                 response = requests.get(f'https://api.github.com/repos/{owner}/{repo_name}/releases', 
-                                      headers=headers, timeout=10)
+                                        headers=headers, timeout=10)
                 if response.status_code != 200:
                     continue
 
@@ -107,10 +99,8 @@ class VersionManager:
 
             except Exception as e:
                 self.logger.error(f"API error: {str(e)}")
-                continue
 
         versions = data.get('versions', []) + new_versions
-        versions = self._deduplicate_versions(versions)
         versions.sort(key=lambda x: x['date'], reverse=True)
         
         return {
@@ -128,34 +118,20 @@ class VersionManager:
             self.logger.warning("No repository information provided.")
             return False
 
-        if isinstance(repo, list):
-            if any(self._valid_gh_url(u) for u in repo):
-                return True
-            else:
-                self.logger.warning(f"Invalid GitHub URLs found: {repo}")
-                return False
-
-        if isinstance(repo, str):
-            if self._valid_gh_url(repo):
-                return True
-            else:
-                self.logger.warning(f"Invalid GitHub URL: {repo}")
-                return False
-
-        return False
+        repos = repo if isinstance(repo, list) else [repo]
+        valid = any(self._valid_gh_url(u) for u in repos)
+        if not valid:
+            self.logger.warning(f"Invalid GitHub URLs found: {repos}")
+        return valid
 
     def _valid_gh_url(self, url: str) -> bool:
         return url.startswith(("https://github.com/", "http://github.com/"))
-
-    def _deduplicate_versions(self, versions: List[Dict]) -> List[Dict]:
-        seen = set()
-        return [v for v in versions if (v['version'], v['url']) not in seen and not seen.add((v['version'], v['url']))]
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     
     if len(sys.argv) < 2:
-        print("Usage: manage_versions.py <action>  [keep_versions] [app1,app2,...]")
+        print("Usage: manage_versions.py <action> [keep_versions] [app1,app2,...]")
         sys.exit(1)
 
     action = sys.argv[1].lower()
