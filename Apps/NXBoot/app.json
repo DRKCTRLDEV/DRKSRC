@@ -1,44 +1,24 @@
 {
-  "gitURL/s": [
-    "https://github.com/mologie/nxboot"
-  ],
-  "name": "NXBoot",
-  "bundleID": "com.mologie.NXBoot",
-  "devName": "mologie",
-  "subtitle": "Nintendo Switch Payload Injector",
-  "description": "NXBoot is a powerful utility for Nintendo Switch enthusiasts, allowing users to inject custom payloads into their Switch consoles. It supports various firmware versions and offers an intuitive interface for managing and launching payloads.",
-  "category": "Utilities",
-  "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/icon.png",
-  "screenshots": [
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_1.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_2.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_3.png"
-  ],
-  "versions": [
-    {
-      "version": "0.3.2",
-      "date": "2024-08-31",
-      "size": 1045270,
-      "url": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa"
-    },
-    {
-      "version": "0.3.1",
-      "date": "2024-08-30",
-      "size": 1043645,
-      "url": "https://github.com/mologie/nxboot/releases/download/v0.3.1/NXBoot_0.3.1-1.tipa"
+    "gitURL/s": [
+        "https://github.com/mologie/nxboot"
+    ],
+    "name": "NXBoot",
+    "bundleID": "com.mologie.NXBoot",
+    "devName": "mologie",
+    "subtitle": "Nintendo Switch Payload Injector",
+    "description": "NXBoot is a powerful utility for Nintendo Switch enthusiasts, allowing users to inject custom payloads into their Switch consoles. It supports various firmware versions and offers an intuitive interface for managing and launching payloads.",
+    "category": "utilities",
+    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/icon.png",
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_3.png"
+    ],
+    "versions": [],
+    "scarletDebs": [],
+    "scarletBackup": true,
+    "permissions": {
+        "entitlements": {},
+        "privacy": {}
     }
-  ],
-  "scarletDebs": [],
-  "scarletBackup": true,
-  "permissions": {
-    "entitlements": {},
-    "privacy": {}
-  },
-  "bundleIdentifier": "com.mologie.NXBoot",
-  "version": "0.3.2",
-  "minOSVersion": "9.0",
-  "developerName": "com",
-  "appPermissions": {
-    "privacy": {}
-  }
 }
