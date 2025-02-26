@@ -15,7 +15,14 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_3.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_4.png"
     ],
-    "versions": [],
+    "versions": [
+        {
+            "version": "2.0",
+            "date": "2025-01-26",
+            "size": 3393002,
+            "url": "https://github.com/straight-tamago/UiharuX/releases/download/2.0/com.straight-tamago.uiharux-pro-2.0.tipa"
+        }
+    ],
     "scarletDebs": [],
     "scarletBackup": true,
     "permissions": {

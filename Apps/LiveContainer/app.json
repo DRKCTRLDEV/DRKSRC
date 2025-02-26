@@ -45,6 +45,24 @@
             "date": "2024-08-08",
             "size": 195840,
             "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.1/com.kdt.livecontainer_2.1.1.ipa"
+        },
+        {
+            "version": "2.1",
+            "date": "2024-08-07",
+            "size": 191991,
+            "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1/com.kdt.livecontainer_2.1.ipa"
+        },
+        {
+            "version": "2.0-pre",
+            "date": "2024-04-22",
+            "size": 103293,
+            "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.0-pre/com.kdt.livecontainer_2.0.ipa"
+        },
+        {
+            "version": "1.0",
+            "date": "2023-07-17",
+            "size": 31173,
+            "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/1.0/com.kdt.livecontainer.ipa"
         }
     ],
     "scarletDebs": [],
