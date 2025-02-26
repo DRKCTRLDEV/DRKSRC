@@ -1,7 +1,9 @@
 {
-  "repo": "DRKSRC",
-  "description": "DRKSRC: A curated collection of the community's most essential and popular iOS apps and utilities",
-  "apps": [
+  "META": {
+    "repoName": "DRKSRC",
+    "repoIcon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/repo-icon.png"
+  },
+  "Utilities": [
     {
       "name": "TrollBox",
       "version": "0.2",
@@ -21,6 +23,61 @@
       "debs": [],
       "enableBackup": true
     },
+    {
+      "name": "AppCommander Devel",
+      "version": "2.0.0-p1",
+      "down": "https://github.com/BomberFish/AppCommander/releases/download/v2.0.0-p1/AppCommander.tipa",
+      "dev": "BomberFish, f1shy-dev",
+      "category": "Utilities",
+      "description": "AppCommander is a powerful iOS utility for app management and system customization. Features include App Manager, Home Screen sorting, and system tweaks. Supports iOS 14.0-17.0.",
+      "bundleID": "ca.bomberfish.AppCommander",
+      "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_4.png"
+      ],
+      "debs": [],
+      "enableBackup": true
+    },
+    {
+      "name": "NXBoot",
+      "version": "0.3.2",
+      "down": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa",
+      "dev": "mologie",
+      "category": "Utilities",
+      "description": "NXBoot is a powerful utility for Nintendo Switch enthusiasts, allowing users to inject custom payloads into their Switch consoles. It supports various firmware versions and offers an intuitive interface for managing and launching payloads.",
+      "bundleID": "com.mologie.NXBoot",
+      "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_3.png"
+      ],
+      "debs": [],
+      "enableBackup": true
+    },
+    {
+      "name": "PurePKG",
+      "version": "2.0.2",
+      "down": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/PurePKG.tipa",
+      "dev": "Lrdsnow",
+      "category": "Utilities",
+      "description": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+.",
+      "bundleID": "uwu.lrdsnow.purepkg",
+      "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_4.png"
+      ],
+      "debs": [],
+      "enableBackup": true
+    }
+  ],
+  "utilities": [
     {
       "name": "Cowabunga",
       "version": "10.3.2",
@@ -61,19 +118,19 @@
       "enableBackup": true
     },
     {
-      "name": "AppCommander Devel",
-      "version": "2.0.0-p1",
-      "down": "https://github.com/BomberFish/AppCommander/releases/download/v2.0.0-p1/AppCommander.tipa",
-      "dev": "BomberFish, f1shy-dev",
-      "category": "Utilities",
-      "description": "AppCommander is a powerful iOS utility for app management and system customization. Features include App Manager, Home Screen sorting, and system tweaks. Supports iOS 14.0-17.0.",
-      "bundleID": "ca.bomberfish.AppCommander",
-      "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/icon.png",
+      "name": "UiharuX Pro",
+      "version": "2.0",
+      "down": "https://github.com/straight-tamago/UiharuX/releases/download/2.0/com.straight-tamago.uiharux-pro-2.0.tipa",
+      "dev": "straight-tamago",
+      "category": "utilities",
+      "description": "TrollRecorder features a convenient HUD Control for managing recordings with a floating ball on your screen, along with Advanced Search capabilities to quickly find calls using comprehensive filters. It ensures security with Biometric Security through Face ID and Touch ID, and tracks locations with Location Metadata for each recording. Enjoy seamless operation with System Audio Integration using Apple's Core Audio technology, and benefit from Precise Time Coding for accurate time stamps on every audio channel.",
+      "bundleID": "com.straight-tamago.uiharux-pro",
+      "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_2.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_3.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_4.png"
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_4.png"
       ],
       "debs": [],
       "enableBackup": true
@@ -116,24 +173,6 @@
       "enableBackup": true
     },
     {
-      "name": "TrollFools",
-      "version": "2.11-28",
-      "down": "https://github.com/huami1314/TrollFools/releases/download/v2.11-28/TrollFools14_2.11-28%40huamidev.tipa",
-      "dev": "huami1314",
-      "category": "Unknown",
-      "description": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
-      "bundleID": "com.huami.TrollFools",
-      "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/icon.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_2.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_3.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_4.png"
-      ],
-      "debs": [],
-      "enableBackup": true
-    },
-    {
       "name": "FCM",
       "version": "1.6",
       "down": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-stock-alpha.ipa",
@@ -147,23 +186,6 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_2.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_3.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_4.png"
-      ],
-      "debs": [],
-      "enableBackup": true
-    },
-    {
-      "name": "NXBoot",
-      "version": "0.3.2",
-      "down": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa",
-      "dev": "mologie",
-      "category": "Utilities",
-      "description": "NXBoot is a powerful utility for Nintendo Switch enthusiasts, allowing users to inject custom payloads into their Switch consoles. It supports various firmware versions and offers an intuitive interface for managing and launching payloads.",
-      "bundleID": "com.mologie.NXBoot",
-      "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/icon.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_2.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_3.png"
       ],
       "debs": [],
       "enableBackup": true
@@ -259,24 +281,6 @@
       "enableBackup": true
     },
     {
-      "name": "LiveContainer",
-      "version": "3.2.0",
-      "down": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.2.0/com.kdt.livecontainer_3.2.0.ipa",
-      "dev": "khanhduytran0",
-      "category": "Games",
-      "description": "LiveContainer allows you to run iOS apps without actually installing them. It bypasses the 10 app limit of free developer accounts, enables multiple versions of an app, and supports multiple data containers. With JIT, codesigning is bypassed entirely. Features include unlimited app installation, tweak support, and instant app switching.",
-      "bundleID": "com.kdt.LiveContainer",
-      "icon": "Apps//home/runner/work/DRKSRC/DRKSRC/Apps/LiveContainer/icon.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_2.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_3.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_4.png"
-      ],
-      "debs": [],
-      "enableBackup": true
-    },
-    {
       "name": "AppIndex",
       "version": "1.0",
       "down": "https://github.com/NSAntoine/AppIndex/releases/download/1.0/AppIndexTrollStore.tipa",
@@ -294,21 +298,23 @@
       ],
       "debs": [],
       "enableBackup": true
-    },
+    }
+  ],
+  "Unknown": [
     {
-      "name": "PurePKG",
-      "version": "2.0.2",
-      "down": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/PurePKG.tipa",
-      "dev": "Lrdsnow",
-      "category": "Utilities",
-      "description": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+.",
-      "bundleID": "uwu.lrdsnow.purepkg",
-      "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/icon.png",
+      "name": "TrollFools",
+      "version": "2.11-28",
+      "down": "https://github.com/huami1314/TrollFools/releases/download/v2.11-28/TrollFools14_2.11-28%40huamidev.tipa",
+      "dev": "huami1314",
+      "category": "Unknown",
+      "description": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
+      "bundleID": "com.huami.TrollFools",
+      "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/icon.png",
       "screenshots": [
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_2.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_3.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_4.png"
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_4.png"
       ],
       "debs": [],
       "enableBackup": true
@@ -331,11 +337,24 @@
       "enableBackup": true
     }
   ],
-  "featured": [
-    "live.cclerc.trollbox",
-    "com.kdt.frontboardapplauncher",
-    "com.leemin.nugget",
-    "com.mologie.NXBoot",
-    "com.roothide.Bootstrap"
+  "Games": [
+    {
+      "name": "LiveContainer",
+      "version": "3.2.0",
+      "down": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.2.0/com.kdt.livecontainer_3.2.0.ipa",
+      "dev": "khanhduytran0",
+      "category": "Games",
+      "description": "LiveContainer allows you to run iOS apps without actually installing them. It bypasses the 10 app limit of free developer accounts, enables multiple versions of an app, and supports multiple data containers. With JIT, codesigning is bypassed entirely. Features include unlimited app installation, tweak support, and instant app switching.",
+      "bundleID": "com.kdt.LiveContainer",
+      "icon": "Apps//home/runner/work/DRKSRC/DRKSRC/Apps/LiveContainer/icon.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_4.png"
+      ],
+      "debs": [],
+      "enableBackup": true
+    }
   ]
 }

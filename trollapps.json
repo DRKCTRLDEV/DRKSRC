@@ -1,6 +1,18 @@
 {
-  "repo": "DRKSRC",
+  "name": "DRKSRC",
+  "subtitle": "Your Fav Source...",
   "description": "DRKSRC: A curated collection of the community's most essential and popular iOS apps and utilities",
+  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/repo-icon.png",
+  "headerURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/repo-header.png",
+  "website": "https://github.com/DRKCTRL/DRKSRC",
+  "tintColor": "#9966CC",
+  "featuredApps": [
+    "live.cclerc.trollbox",
+    "com.straight-tamago.uiharux-pro",
+    "com.huami.TrollFools",
+    "com.sparklechan.swifty",
+    "live.cclerc.geranium"
+  ],
   "apps": [
     {
       "name": "TrollBox",
@@ -71,10 +83,7 @@
       ],
       "appPermissions": {
         "entitlements": {},
-        "privacy": {
-          "NSPhotoLibraryUsageDescription": "Allow the app to access photo library for choosing passcode faces.",
-          "NSAppleMusicUsageDescription": "Allow r/w of /var ?"
-        }
+        "privacy": {}
       }
     },
     {
@@ -148,10 +157,7 @@
       ],
       "appPermissions": {
         "entitlements": {},
-        "privacy": {
-          "NSPhotoLibraryUsageDescription": "Photos",
-          "NSAppleMusicUsageDescription": "Grant permission to the sandbox (needs it for Passcode keys + some other options)"
-        }
+        "privacy": {}
       }
     },
     {
@@ -222,9 +228,7 @@
       ],
       "appPermissions": {
         "entitlements": {},
-        "privacy": {
-          "NSAppleMusicUsageDescription": "unsandbox"
-        }
+        "privacy": {}
       }
     },
     {
@@ -263,7 +267,36 @@
           "changelog": ""
         }
       ],
-      "appPermissions": {}
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "UiharuX Pro",
+      "bundleIdentifier": "com.straight-tamago.uiharux-pro",
+      "developerName": "straight-tamago",
+      "subtitle": "Useful overlays for iOS",
+      "localizedDescription": "TrollRecorder features a convenient HUD Control for managing recordings with a floating ball on your screen, along with Advanced Search capabilities to quickly find calls using comprehensive filters. It ensures security with Biometric Security through Face ID and Touch ID, and tracks locations with Location Metadata for each recording. Enjoy seamless operation with System Audio Integration using Apple's Core Audio technology, and benefit from Precise Time Coding for accurate time stamps on every audio channel.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/icon.png",
+      "category": "utilities",
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_4.png"
+      ],
+      "versions": [
+        {
+          "version": "2.0",
+          "url": "https://github.com/straight-tamago/UiharuX/releases/download/2.0/com.straight-tamago.uiharux-pro-2.0.tipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
     },
     {
       "name": "FrontBoardAppLauncher",
@@ -325,10 +358,7 @@
       ],
       "appPermissions": {
         "entitlements": {},
-        "privacy": {
-          "NSPhotoLibraryUsageDescription": "To save photos and videos to photo library.",
-          "NSFaceIDUsageDescription": "Filza uses Face ID to authenticate"
-        }
+        "privacy": {}
       }
     },
     {
@@ -506,9 +536,7 @@
       ],
       "appPermissions": {
         "entitlements": {},
-        "privacy": {
-          "NSAppleMusicUsageDescription": "Unsandboxing with MacDirtyCow"
-        }
+        "privacy": {}
       }
     },
     {
@@ -611,9 +639,7 @@
       ],
       "appPermissions": {
         "entitlements": {},
-        "privacy": {
-          "NSLocationUsageDescription": "Enabling location for Geranium makes it possible for the app to display your location on the map."
-        }
+        "privacy": {}
       }
     },
     {
@@ -788,24 +814,7 @@
       ],
       "appPermissions": {
         "entitlements": {},
-        "privacy": {
-          "NSContactsUsageDescription": "The guest app is requesting for this permission.",
-          "NSLocationUsageDescription": "The guest app is requesting for this permission.",
-          "NSMicrophoneUsageDescription": "The guest app is requesting for this permission.",
-          "NSCameraUsageDescription": "The guest app is requesting for this permission.",
-          "NSPhotoLibraryUsageDescription": "The guest app is requesting for this permission.",
-          "NSBluetoothAlwaysUsageDescription": "The guest app is requesting for this permission.",
-          "NSBluetoothPeripheralUsageDescription": "The guest app is requesting for this permission.",
-          "NSFaceIDUsageDescription": "The guest app is requesting for this permission.",
-          "NSMotionUsageDescription": "The guest app is requesting for this permission.",
-          "NSSpeechRecognitionUsageDescription": "The guest app is requesting for this permission.",
-          "NSHealthShareUsageDescription": "The guest app is requesting for this permission.",
-          "NSHealthUpdateUsageDescription": "The guest app is requesting for this permission.",
-          "NSAppleMusicUsageDescription": "The guest app is requesting for this permission.",
-          "NSHomeKitUsageDescription": "The guest app is requesting for this permission.",
-          "NSLocalNetworkUsageDescription": "The guest app is requesting for this permission.",
-          "NSUserTrackingUsageDescription": "The guest app is requesting for this permission."
-        }
+        "privacy": {}
       }
     },
     {
@@ -830,7 +839,10 @@
           "changelog": ""
         }
       ],
-      "appPermissions": {}
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
     },
     {
       "name": "PurePKG",
@@ -900,9 +912,7 @@
       ],
       "appPermissions": {
         "entitlements": {},
-        "privacy": {
-          "NSFaceIDUsageDescription": "PurePKG uses Face ID to quickly authenticate purchases."
-        }
+        "privacy": {}
       }
     },
     {
@@ -975,12 +985,5 @@
         "privacy": {}
       }
     }
-  ],
-  "featured": [
-    "live.cclerc.trollbox",
-    "com.kdt.frontboardapplauncher",
-    "com.leemin.nugget",
-    "com.mologie.NXBoot",
-    "com.roothide.Bootstrap"
   ]
 }
