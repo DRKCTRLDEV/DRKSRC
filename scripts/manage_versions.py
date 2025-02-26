@@ -8,7 +8,7 @@ from typing import Dict, Optional
 class VersionManager:
     def __init__(self, apps_root: str):
         self.apps_root = apps_root
-        self.keep_versions = 5
+        self.keep_versions = 10
         self.logger = self._init_logger()
 
     def _init_logger(self):

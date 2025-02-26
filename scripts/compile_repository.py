@@ -70,10 +70,6 @@ class RepoCompiler:
             
             self.logger.info(f"Total apps loaded: {len(apps)}")
             
-            # Only log featured apps if the target format is not 'scarlet'
-            if target_fmt != 'scarlet':
-                self.logger.info(f"Featured apps selected: {featured}")
-            
             return apps, featured
         
         except Exception as e:
@@ -86,7 +82,7 @@ class RepoCompiler:
             if not repo_config:
                 return {"success": False, "error": "Missing repo config"}
             
-            apps, featured = self._load_app_data(target_fmt)  # Pass target_fmt here
+            apps, featured = self._load_app_data(target_fmt)
             
             if not apps:
                 return {"success": False, "error": "No apps found to compile"}
@@ -105,8 +101,7 @@ class RepoCompiler:
             
             for fmt, (filename, formatter) in formats.items():
                 repo_data = formatter(repo_config, apps, featured)
-                # Count the total number of apps based on the input apps list
-                total_apps = len(apps)  # Count the number of apps directly from the input list
+                total_apps = len(apps)
                 self.logger.info(f"Saving {filename} with {total_apps} apps")
                 if not self.save_config(os.path.join(self.root_dir, filename), repo_data):
                     return {"success": False, "error": f"Failed to save {filename}"}
@@ -119,26 +114,43 @@ class RepoCompiler:
 
     def _format_altstore(self, repo_config: Dict, apps: List[Dict], featured: List[str]) -> Dict:
         return {
-            "repo": repo_config.get("name"),
+            "name": repo_config.get("name"),
+            "subtitle": repo_config.get("subtitle"),
             "description": repo_config.get("description"),
+            "iconURL": repo_config.get("iconURL"),
+            "headerURL": repo_config.get("headerURL"),
+            "website": repo_config.get("website"),
+            "tintColor": repo_config.get("tintColor"),
+            "featuredApps": featured,
             "apps": [self._create_altstore_entry(app) for app in apps],
-            "featured": featured
         }
 
     def _format_trollapps(self, repo_config: Dict, apps: List[Dict], featured: List[str]) -> Dict:
         return {
-            "repo": repo_config.get("name"),
+            "name": repo_config.get("name"),
+            "subtitle": repo_config.get("subtitle"),
             "description": repo_config.get("description"),
+            "iconURL": repo_config.get("iconURL"),
+            "headerURL": repo_config.get("headerURL"),
+            "website": repo_config.get("website"),
+            "tintColor": repo_config.get("tintColor"),
+            "featuredApps": featured,
             "apps": [self._create_trollapps_entry(app) for app in apps],
-            "featured": featured
         }
 
-    def _format_scarlet(self, repo_config: Dict, apps: List[Dict], featured: List[str]) -> Dict:
+    def _format_scarlet(self, repo_config: Dict, apps: List[Dict]) -> Dict:
+        categories = defaultdict(list)
+
+        for app in apps:
+            category = app.get("category", "Other")
+            categories[category].append(self._create_scarlet_entry(app))
+
         return {
-            "repo": repo_config.get("name"),
-            "description": repo_config.get("description"),
-            "apps": [self._create_scarlet_entry(app) for app in apps],
-            "featured": featured
+            "META": {
+                "repoName": repo_config.get("name"),
+                "repoIcon": repo_config.get("iconURL"),
+            },
+            **categories
         }
 
     def _create_altstore_entry(self, app: Dict) -> Dict:
@@ -148,11 +160,14 @@ class RepoCompiler:
             "developerName": app.get("devName"),
             "subtitle": app.get("subtitle"),
             "localizedDescription": app.get("description"),
-            "iconURL": app.get("icon") if app.get("icon") else NO_ICON_PATH,  # Use no-icon.png if icon is empty
+            "iconURL": app.get("icon") if app.get("icon") else NO_ICON_PATH,
             "category": app.get("category"),
             "screenshots": app.get("screenshots", []),
             "versions": [self._format_version(v) for v in app.get("versions", [])],
-            "appPermissions": app.get("permissions", {})
+            "appPermissions": {
+              "entitlements": {},
+              "privacy": {}
+            }
         }
 
     def _create_trollapps_entry(self, app: Dict) -> Dict:
@@ -162,11 +177,14 @@ class RepoCompiler:
             "developerName": app.get("devName"),
             "subtitle": app.get("subtitle"),
             "localizedDescription": app.get("description"),
-            "iconURL": app.get("icon") if app.get("icon") else NO_ICON_PATH,  # Use no-icon.png if icon is empty
+            "iconURL": app.get("icon") if app.get("icon") else NO_ICON_PATH,
             "category": app.get("category"),
             "screenshotURLs": app.get("screenshots", []),
             "versions": [self._format_version(v) for v in app.get("versions", [])],
-            "appPermissions": app.get("permissions", {})
+            "appPermissions": {
+              "entitlements": {},
+              "privacy": {}
+            }
         }
 
     def _create_scarlet_entry(self, app: Dict) -> Dict:
@@ -176,10 +194,10 @@ class RepoCompiler:
             "version": latest_version.get("version"),
             "down": latest_version.get("url"),
             "dev": app.get("devName"),
-            "category": app.get("category", "Uncategorized"),
+            "category": app.get("category"),
             "description": app.get("description"),
             "bundleID": app.get("bundleID"),
-            "icon": app.get("icon") if app.get("icon") else NO_ICON_PATH,  # Use no-icon.png if icon is empty
+            "icon": app.get("icon") if app.get("icon") else NO_ICON_PATH,
             "screenshots": app.get("screenshots", []),
             "debs": app.get("scarletDebs", []),
             "enableBackup": app.get("scarletBackup", True)

@@ -46,36 +46,6 @@
             "date": "2022-12-28",
             "size": 12497643,
             "url": "https://github.com/c22dev/TrollBox/releases/download/0.0.8/TrollBox.tipa"
-        },
-        {
-            "version": "0.0.7",
-            "date": "2022-12-27",
-            "size": 8050755,
-            "url": "https://github.com/c22dev/TrollBox/releases/download/0.0.7/TrollBox.tipa"
-        },
-        {
-            "version": "0.0.6",
-            "date": "2022-12-23",
-            "size": 3510461,
-            "url": "https://github.com/c22dev/TrollBox/releases/download/0.0.6/TrollBox.tipa"
-        },
-        {
-            "version": "0.0.5",
-            "date": "2022-12-23",
-            "size": 4532634,
-            "url": "https://github.com/c22dev/TrollBox/releases/download/0.0.5/TrollBox.tipa"
-        },
-        {
-            "version": "0.0.4",
-            "date": "2022-12-22",
-            "size": 3141208,
-            "url": "https://github.com/c22dev/TrollBox/releases/download/0.0.4/TrollBox.tipa"
-        },
-        {
-            "version": "0.0.3",
-            "date": "2022-12-21",
-            "size": 3016450,
-            "url": "https://github.com/c22dev/TrollBox/releases/download/0.0.3/TrollBox.tipa"
         }
     ],
     "scarletDebs": [],

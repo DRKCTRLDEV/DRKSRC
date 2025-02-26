@@ -1,0 +1,27 @@
+{
+    "gitURL/s": [
+        "https://github.com/DevelopCubeLab/EnableQUIC"
+    ],
+    "name": "EnableQUIC",
+    "bundleID": "",
+    "devName": "DevelopCubeLab",
+    "subtitle": "Enables QUIC for iOS",
+    "description": "QUIC, which stands for Quick UDP Internet Connections, is a modern transport layer network protocol designed to improve the performance of web applications over traditional protocols like TCP and TLS.",
+    "category": "utilities",
+    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/EnableQUIC/icon.png",
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/EnableQUIC/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/EnableQUIC/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/EnableQUIC/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/EnableQUIC/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/EnableQUIC/screenshots/IMG_5.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/EnableQUIC/screenshots/IMG_6.png"
+    ],
+    "versions": [],
+    "scarletDebs": [],
+    "scarletBackup": true,
+    "permissions": {
+        "entitlements": {},
+        "privacy": {}
+    }
+}

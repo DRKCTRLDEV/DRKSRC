@@ -1,0 +1,25 @@
+{
+    "gitURL/s": [
+        "https://github.com/leminlimez/Helium/"
+    ],
+    "name": "Helium",
+    "bundleID": "",
+    "devName": "leminlimez",
+    "subtitle": "Status Bar Widgets for TrollStore",
+    "description": "Helium is a new TrollStore tool that lets users add widgets above or below the Status Bar on iOS versions 14 to 17. To install the Helium IPA, you must use TrollStore, as other IPA installers will not work. The latest version offers seven widgets, and after installation, a new icon will appear on your Home Screen; however, the app may not open if developer mode is disabled. Helium is specifically designed for TrollStore, and sideloading it with other installers will fail. Upon launching, you'll find an interface with Home, Settings, and Customize sections, allowing you to activate the HUD, set the update frequency, and enable widgets based on your Helium version.",
+    "category": "utilities",
+    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Helium/icon.png",
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Helium/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Helium/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Helium/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Helium/screenshots/IMG_4.png"
+    ],
+    "versions": [],
+    "scarletDebs": [],
+    "scarletBackup": true,
+    "permissions": {
+        "entitlements": {},
+        "privacy": {}
+    }
+}

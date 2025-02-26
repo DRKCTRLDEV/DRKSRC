@@ -45,36 +45,6 @@
             "date": "2024-06-21",
             "size": 6627862,
             "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/PurePKG.tipa"
-        },
-        {
-            "version": "2.0",
-            "date": "2024-06-21",
-            "size": 6627862,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/PurePKGDemo.ipa"
-        },
-        {
-            "version": "1.7",
-            "date": "2024-06-15",
-            "size": 8067336,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/1.7/PurePKG.tipa"
-        },
-        {
-            "version": "1.7",
-            "date": "2024-06-15",
-            "size": 8067336,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/1.7/PurePKGDemo.ipa"
-        },
-        {
-            "version": "1.6",
-            "date": "2024-06-03",
-            "size": 8499956,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/1.6/PurePKG.tipa"
-        },
-        {
-            "version": "1.6",
-            "date": "2024-06-03",
-            "size": 8499956,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/1.6/PurePKGDemo.ipa"
         }
     ],
     "scarletDebs": [],

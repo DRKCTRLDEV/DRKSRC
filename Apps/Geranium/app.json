@@ -46,30 +46,6 @@
             "date": "2024-01-15",
             "size": 5945760,
             "url": "https://github.com/c22dev/Geranium/releases/download/1.0.4/Geranium.tipa"
-        },
-        {
-            "version": "1.0.3",
-            "date": "2024-01-15",
-            "size": 5945286,
-            "url": "https://github.com/c22dev/Geranium/releases/download/1.0.3/Geranium.tipa"
-        },
-        {
-            "version": "1.0.2",
-            "date": "2024-01-15",
-            "size": 5943936,
-            "url": "https://github.com/c22dev/Geranium/releases/download/1.0.2/Geranium.tipa"
-        },
-        {
-            "version": "1.0.1",
-            "date": "2024-01-14",
-            "size": 5942092,
-            "url": "https://github.com/c22dev/Geranium/releases/download/1.0.1/Geranium.tipa"
-        },
-        {
-            "version": "1.0",
-            "date": "2024-01-14",
-            "size": 5930930,
-            "url": "https://github.com/c22dev/Geranium/releases/download/1.0/Geranium.tipa"
         }
     ],
     "scarletDebs": [],

@@ -48,36 +48,6 @@
             "date": "2023-03-30",
             "size": 21605355,
             "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.1.1/Cowabunga.ipa"
-        },
-        {
-            "version": "10.1.0",
-            "date": "2023-03-28",
-            "size": 21595880,
-            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.1.0/Cowabunga.ipa"
-        },
-        {
-            "version": "10.0.3",
-            "date": "2023-03-25",
-            "size": 21557626,
-            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.3/Cowabunga.ipa"
-        },
-        {
-            "version": "10.0.2",
-            "date": "2023-03-25",
-            "size": 21557066,
-            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.2/Cowabunga.ipa"
-        },
-        {
-            "version": "10.0.1",
-            "date": "2023-03-24",
-            "size": 21557390,
-            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.1/Cowabunga.ipa"
-        },
-        {
-            "version": "10.0.0",
-            "date": "2023-03-23",
-            "size": 21556671,
-            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.0/Cowabunga.ipa"
         }
     ],
     "scarletDebs": [],
