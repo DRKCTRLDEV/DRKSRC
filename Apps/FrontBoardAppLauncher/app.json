@@ -1,33 +1,33 @@
 {
-  "gitURL/s": [
-    "https://github.com/khanhduytran0/FrontBoardAppLauncher",
-    "https://github.com/DRKCTRL/FrontBoardAppLauncher"
-  ],
-  "name": "FrontBoardAppLauncher",
-  "bundleID": "com.kdt.frontboardapplauncher",
-  "devName": "khanhduytran0",
-  "subtitle": "Launch Apps via FrontBoard",
-  "description": "FrontBoardAppLauncher is a utility that allows you to launch apps using FrontBoard on iOS devices. It provides a simple interface to interact with the FrontBoard framework for app management.",
-  "category": "utilities",
-  "icon": "",
-  "screenshots": [
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_1.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_2.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_3.png"
-  ],
-  "versions": [
-    {
-      "version": "1.3.0",
-      "date": "2024-11-17",
-      "size": 27533,
-      "url": "https://github.com/DRKCTRL/FrontBoardAppLauncher/releases/download/1.3.0/FrontBoardAppLauncher.tipa"
-    }
-  ],
-  "scarletDebs": [],
-  "scarletBackup": true,
-  "permissions": {
-    "entitlements": {},
-    "privacy": {}
-  },
-  "bundleIdentifier": "com.kdt.frontboardapplauncher"
+    "gitURL/s": [
+        "https://github.com/khanhduytran0/FrontBoardAppLauncher",
+        "https://github.com/DRKCTRL/FrontBoardAppLauncher"
+    ],
+    "name": "FrontBoardAppLauncher",
+    "bundleID": "com.kdt.frontboardapplauncher",
+    "devName": "khanhduytran0",
+    "subtitle": "Launch Apps via FrontBoard",
+    "description": "FrontBoardAppLauncher is a utility that allows you to launch apps using FrontBoard on iOS devices. It provides a simple interface to interact with the FrontBoard framework for app management.",
+    "category": "utilities",
+    "icon": "",
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_3.png"
+    ],
+    "versions": [
+        {
+            "version": "1.3.0",
+            "date": "2024-11-17",
+            "size": 27533,
+            "url": "https://github.com/DRKCTRL/FrontBoardAppLauncher/releases/download/1.3.0/FrontBoardAppLauncher.tipa"
+        }
+    ],
+    "scarletDebs": [],
+    "scarletBackup": true,
+    "permissions": {
+        "entitlements": {},
+        "privacy": {}
+    },
+    "bundleIdentifier": "com.kdt.frontboardapplauncher"
 }

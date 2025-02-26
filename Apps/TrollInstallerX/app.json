@@ -1,54 +1,54 @@
 {
-  "gitURL/s": [
-    "https://github.com/alfiecg24/TrollInstallerX"
-  ],
-  "name": "TrollInstallerX",
-  "bundleID": "com.huami.TrollFools",
-  "devName": "huami1314",
-  "subtitle": "Universal TrollStore Installer",
-  "description": "TrollInstallerX is a fast and reliable universal TrollStore installer supporting iOS 14.0 - 16.6.1 on both arm64 and arm64e devices. It offers two installation methods: direct installation using kfd exploit and dmaFail PPL bypass for most devices, and indirect installation for A15/A16/M2 devices on iOS 16.5.1 and iOS 16.6-16.6.1. Both methods allow installing the TrollStore persistence helper to maintain System registration status.",
-  "category": "utilities",
-  "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollInstallerX/icon.png",
-  "screenshots": [],
-  "versions": [
-    {
-      "version": "1.0.3",
-      "date": "2024-09-12",
-      "size": 27098183,
-      "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX-20D50.ipa"
+    "gitURL/s": [
+        "https://github.com/alfiecg24/TrollInstallerX"
+    ],
+    "name": "TrollInstallerX",
+    "bundleID": "com.huami.TrollFools",
+    "devName": "huami1314",
+    "subtitle": "Universal TrollStore Installer",
+    "description": "TrollInstallerX is a fast and reliable universal TrollStore installer supporting iOS 14.0 - 16.6.1 on both arm64 and arm64e devices. It offers two installation methods: direct installation using kfd exploit and dmaFail PPL bypass for most devices, and indirect installation for A15/A16/M2 devices on iOS 16.5.1 and iOS 16.6-16.6.1. Both methods allow installing the TrollStore persistence helper to maintain System registration status.",
+    "category": "utilities",
+    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollInstallerX/icon.png",
+    "screenshots": [],
+    "versions": [
+        {
+            "version": "1.0.3",
+            "date": "2024-09-12",
+            "size": 27098183,
+            "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX-20D50.ipa"
+        },
+        {
+            "version": "1.0.3",
+            "date": "2024-09-12",
+            "size": 6889214,
+            "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX.ipa"
+        },
+        {
+            "version": "1.0.2",
+            "date": "2024-04-08",
+            "size": 6888282,
+            "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.2/TrollInstallerX.ipa"
+        },
+        {
+            "version": "1.0.1",
+            "date": "2024-04-06",
+            "size": 6888465,
+            "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.1/TrollInstallerX.ipa"
+        },
+        {
+            "version": "1.0.0",
+            "date": "2024-04-04",
+            "size": 6885899,
+            "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.0/TrollInstallerX.ipa"
+        }
+    ],
+    "scarletDebs": [],
+    "scarletBackup": true,
+    "permissions": {
+        "entitlements": {},
+        "privacy": {
+            "NSAppleMusicUsageDescription": "Unsandboxing with MacDirtyCow"
+        }
     },
-    {
-      "version": "1.0.3",
-      "date": "2024-09-12",
-      "size": 6889214,
-      "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX.ipa"
-    },
-    {
-      "version": "1.0.2",
-      "date": "2024-04-08",
-      "size": 6888282,
-      "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.2/TrollInstallerX.ipa"
-    },
-    {
-      "version": "1.0.1",
-      "date": "2024-04-06",
-      "size": 6888465,
-      "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.1/TrollInstallerX.ipa"
-    },
-    {
-      "version": "1.0.0",
-      "date": "2024-04-04",
-      "size": 6885899,
-      "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.0/TrollInstallerX.ipa"
-    }
-  ],
-  "scarletDebs": [],
-  "scarletBackup": true,
-  "permissions": {
-    "entitlements": {},
-    "privacy": {
-      "NSAppleMusicUsageDescription": "Unsandboxing with MacDirtyCow"
-    }
-  },
-  "bundleIdentifier": "com.Alfie.TrollInstallerX"
+    "bundleIdentifier": "com.Alfie.TrollInstallerX"
 }

@@ -1,35 +1,35 @@
 {
-  "gitURL/s": [
-    "https://github.com/NSAntoine/Santander",
-    "https://github.com/DRKCTRL/Santander"
-  ],
-  "name": "Santander",
-  "bundleID": "com.nsantoine.santander",
-  "devName": "NSAntoine",
-  "subtitle": "Enhanced File Manager for iOS",
-  "description": "Santander aims to enhance the experience of a file manager on an iOS device, using modern and familiar UI alongside new APIs. Note: The project is still in beta, and there are still quite a lot of bugs to fix & enhancements to make.",
-  "category": "utilities",
-  "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Santander/icon.png",
-  "screenshots": [],
-  "versions": [
-    {
-      "version": "1.0",
-      "date": "2024-10-11",
-      "size": 4575378,
-      "url": "https://github.com/DRKCTRL/Santander/releases/download/1.0/Santander.ipa"
+    "gitURL/s": [
+        "https://github.com/NSAntoine/Santander",
+        "https://github.com/DRKCTRL/Santander"
+    ],
+    "name": "Santander",
+    "bundleID": "com.nsantoine.santander",
+    "devName": "NSAntoine",
+    "subtitle": "Enhanced File Manager for iOS",
+    "description": "Santander aims to enhance the experience of a file manager on an iOS device, using modern and familiar UI alongside new APIs. Note: The project is still in beta, and there are still quite a lot of bugs to fix & enhancements to make.",
+    "category": "utilities",
+    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Santander/icon.png",
+    "screenshots": [],
+    "versions": [
+        {
+            "version": "1.0",
+            "date": "2024-10-11",
+            "size": 4575378,
+            "url": "https://github.com/DRKCTRL/Santander/releases/download/1.0/Santander.ipa"
+        },
+        {
+            "version": "1.0",
+            "date": "2024-10-11",
+            "size": 5331159,
+            "url": "https://github.com/DRKCTRL/Santander/releases/download/1.0/SantanderTS.tipa"
+        }
+    ],
+    "scarletDebs": [],
+    "scarletBackup": true,
+    "permissions": {
+        "entitlements": {},
+        "privacy": {}
     },
-    {
-      "version": "1.0",
-      "date": "2024-10-11",
-      "size": 5331159,
-      "url": "https://github.com/DRKCTRL/Santander/releases/download/1.0/SantanderTS.tipa"
-    }
-  ],
-  "scarletDebs": [],
-  "scarletBackup": true,
-  "permissions": {
-    "entitlements": {},
-    "privacy": {}
-  },
-  "bundleIdentifier": "com.serena.santandermm"
+    "bundleIdentifier": "com.serena.santandermm"
 }
