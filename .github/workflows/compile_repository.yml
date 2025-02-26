@@ -3,11 +3,6 @@ name: Compile Repository (FAST)
 on:
   workflow_dispatch:
     inputs:
-      featured_count:
-        description: 'Number of featured apps (default is 5)'
-        required: false
-        type: number
-        default: 5
       format:
         description: 'Format to compile (altstore/trollapps/scarlet, leave empty for all)'
         required: false
@@ -31,9 +26,9 @@ jobs:
     - name: Run compilation
       run: |
         if [ -n "${{ inputs.format }}" ]; then
-          python3 scripts/compile_repository.py "${{ inputs.featured_count }}" "${{ inputs.format }}"
+          python3 scripts/compile_repository.py "${{ inputs.format }}"
         else
-          python3 scripts/compile_repository.py "${{ inputs.featured_count }}"
+          python3 scripts/compile_repository.py
         fi
     
     - name: Commit and push changes
