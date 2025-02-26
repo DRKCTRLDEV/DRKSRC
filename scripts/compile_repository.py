@@ -90,7 +90,7 @@ class RepoCompiler:
             formats = {
                 'altstore': ('altstore.json', self._format_altstore),
                 'trollapps': ('trollapps.json', self._format_trollapps),
-                'scarlet': ('scarlet.json', self._format_scarlet)
+                'scarlet': ('scarlet.json', self._format_scarlet)  # No change needed here
             }
             
             if target_fmt:
@@ -100,7 +100,8 @@ class RepoCompiler:
                 formats = {target_fmt: formats[target_fmt]}
             
             for fmt, (filename, formatter) in formats.items():
-                repo_data = formatter(repo_config, apps, featured)
+                # Call formatter with the correct number of arguments
+                repo_data = formatter(repo_config, apps) if fmt == 'scarlet' else formatter(repo_config, apps, featured)
                 total_apps = len(apps)
                 self.logger.info(f"Saving {filename} with {total_apps} apps")
                 if not self.save_config(os.path.join(self.root_dir, filename), repo_data):
