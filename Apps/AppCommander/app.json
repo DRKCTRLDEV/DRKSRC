@@ -3,7 +3,7 @@
         "https://github.com/BomberFish/AppCommander",
         "https://github.com/BomberFish/AppCommander-legacy"
     ],
-    "name": "AppCommander Devel",
+    "name": "AppCommander",
     "bundleID": "ca.bomberfish.AppCommander",
     "devName": "BomberFish, f1shy-dev",
     "subtitle": "Swiss Army Knife for iPhone Apps (iOS 14.0-17.0)",
