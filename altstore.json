@@ -1,0 +1,989 @@
+{
+  "name": "DRKSRC",
+  "subtitle": "Your Fav Source...",
+  "description": "DRKSRC: A curated collection of the community's most essential and popular iOS apps and utilities",
+  "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/repo-icon.png",
+  "headerURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/repo-header.png",
+  "website": "https://github.com/DRKCTRL/DRKSRC",
+  "tintColor": "#9966CC",
+  "featuredApps": [
+    "live.cclerc.trollbox",
+    "com.straight-tamago.uiharux-pro",
+    "com.huami.TrollFools",
+    "com.sparklechan.swifty",
+    "live.cclerc.geranium"
+  ],
+  "apps": [
+    {
+      "name": "TrollBox",
+      "bundleIdentifier": "live.cclerc.trollbox",
+      "developerName": "c22dev",
+      "subtitle": "AIO TrollStore Tool",
+      "localizedDescription": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/icon.png",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_5.png"
+      ],
+      "versions": [
+        {
+          "version": "0.2",
+          "url": "https://github.com/c22dev/TrollBox/releases/download/0.2/TrollBox.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "0.1",
+          "url": "https://github.com/c22dev/TrollBox/releases/download/0.1/TrollBox.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "0.1",
+          "url": "https://github.com/c22dev/TrollBox/releases/download/0.1/TrollBox16.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "0.0.9",
+          "url": "https://github.com/c22dev/TrollBox/releases/download/0.0.9/TrollBox.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "0.0.8",
+          "url": "https://github.com/c22dev/TrollBox/releases/download/0.0.8/TrollBox.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "0.0.7",
+          "url": "https://github.com/c22dev/TrollBox/releases/download/0.0.7/TrollBox.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "0.0.6",
+          "url": "https://github.com/c22dev/TrollBox/releases/download/0.0.6/TrollBox.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "0.0.5",
+          "url": "https://github.com/c22dev/TrollBox/releases/download/0.0.5/TrollBox.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "0.0.4",
+          "url": "https://github.com/c22dev/TrollBox/releases/download/0.0.4/TrollBox.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "0.0.3",
+          "url": "https://github.com/c22dev/TrollBox/releases/download/0.0.3/TrollBox.tipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "Cowabunga",
+      "bundleIdentifier": "com.leminlimez.cowabunga",
+      "developerName": "leminlimez",
+      "subtitle": "A Jailed Toolbox for iOS",
+      "localizedDescription": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/icon.png",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_5.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_6.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_7.png"
+      ],
+      "versions": [
+        {
+          "version": "10.3.2",
+          "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.2/Cowabunga.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "10.3.1",
+          "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.1/Cowabunga.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "10.3.0",
+          "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.0/Cowabunga.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "10.2.0",
+          "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.2.0/Cowabunga.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "10.1.1",
+          "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.1.1/Cowabunga.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "10.1.0",
+          "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.1.0/Cowabunga.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "10.0.3",
+          "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.3/Cowabunga.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "10.0.2",
+          "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.2/Cowabunga.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "10.0.1",
+          "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.1/Cowabunga.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "10.0.0",
+          "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.0/Cowabunga.ipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "PureKFD",
+      "bundleIdentifier": "uwu.lrdsnow.purekfdiOS",
+      "developerName": "Lrdsnow",
+      "subtitle": "The Purest iOS Toolbox",
+      "localizedDescription": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/icon.png",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_4.png"
+      ],
+      "versions": [
+        {
+          "version": "6.0.2",
+          "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "6.0.2",
+          "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.noSparse.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "6.0.2",
+          "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.noSparse.ts.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "6.0.1",
+          "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "6.0.1",
+          "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.noSparse.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "6.0.1",
+          "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.noSparse.ts.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "6.0",
+          "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "6.0",
+          "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.noSparse.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "6.0",
+          "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.noSparse.ts.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "6.0rc3",
+          "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc3/PureKFD.ipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "AppCommander",
+      "bundleIdentifier": "ca.bomberfish.AppCommander",
+      "developerName": "BomberFish, f1shy-dev",
+      "subtitle": "Swiss Army Knife for iPhone Apps (iOS 14.0-17.0)",
+      "localizedDescription": "AppCommander is a powerful iOS utility for app management and system customization. Features include App Manager, Home Screen sorting, and system tweaks. Supports iOS 14.0-17.0.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/icon.png",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_4.png"
+      ],
+      "versions": [
+        {
+          "version": "2.0.0-p1",
+          "url": "https://github.com/BomberFish/AppCommander/releases/download/v2.0.0-p1/AppCommander.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.0.0",
+          "url": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v1.0.0/AppCommander_v1.0.0.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.0.0_publicbeta1",
+          "url": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v1.0.0_publicbeta1/AppCommander-v1.0.0_publicbeta1.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "0.1-beta.3",
+          "url": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v0.1-beta.3/AppCommander.0.1.Beta.3.ipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "UiharuX Pro",
+      "bundleIdentifier": "com.straight-tamago.uiharux-pro",
+      "developerName": "straight-tamago",
+      "subtitle": "Useful overlays for iOS",
+      "localizedDescription": "TrollRecorder features a convenient HUD Control for managing recordings with a floating ball on your screen, along with Advanced Search capabilities to quickly find calls using comprehensive filters. It ensures security with Biometric Security through Face ID and Touch ID, and tracks locations with Location Metadata for each recording. Enjoy seamless operation with System Audio Integration using Apple's Core Audio technology, and benefit from Precise Time Coding for accurate time stamps on every audio channel.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/icon.png",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_4.png"
+      ],
+      "versions": [
+        {
+          "version": "2.0",
+          "url": "https://github.com/straight-tamago/UiharuX/releases/download/2.0/com.straight-tamago.uiharux-pro-2.0.tipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "FrontBoardAppLauncher",
+      "bundleIdentifier": "com.kdt.frontboardapplauncher",
+      "developerName": "khanhduytran0",
+      "subtitle": "Launch Apps via FrontBoard",
+      "localizedDescription": "FrontBoardAppLauncher is a utility that allows you to launch apps using FrontBoard on iOS devices. It provides a simple interface to interact with the FrontBoard framework for app management.",
+      "iconURL": "/home/runner/work/DRKSRC/DRKSRC/scripts/https:/raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_3.png"
+      ],
+      "versions": [
+        {
+          "version": "1.3.0",
+          "url": "https://github.com/DRKCTRL/FrontBoardAppLauncher/releases/download/1.3.0/FrontBoardAppLauncher.tipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "Filza",
+      "bundleIdentifier": "com.tigisoftware.Filza",
+      "developerName": "TIGI Software",
+      "subtitle": "Powerful File Manager for iOS",
+      "localizedDescription": "Filza is a comprehensive file manager for iOS devices. It offers features like file/folder exploration, powerful file viewers including media player and office document support, file sharing capabilities, terminal access, music library management, package installation, and cloud service integration.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/icon.png",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_5.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_6.png"
+      ],
+      "versions": [
+        {
+          "version": "4.0.2",
+          "url": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/IPA/Filza_NoURLScheme_4.0.2.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "4.0.0",
+          "url": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/IPA/Filza_NoURLScheme_4.0.0.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "3.9.8",
+          "url": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/IPA/Filza_NoURLScheme_3.9.8.ipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "TrollFools",
+      "bundleIdentifier": "com.huami.TrollFools",
+      "developerName": "huami1314",
+      "subtitle": "Tweak Injection Tool for TrollStore (iOS 15+)",
+      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/icon.png",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_4.png"
+      ],
+      "versions": [
+        {
+          "version": "2.11-28",
+          "url": "https://github.com/huami1314/TrollFools/releases/download/v2.11-28/TrollFools14_2.11-28%40huamidev.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.11-28",
+          "url": "https://github.com/huami1314/TrollFools/releases/download/v2.11-28/TrollFools_2.11-28%40huamidev.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.11-25",
+          "url": "https://github.com/huami1314/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25%40huamidev.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.11-25",
+          "url": "https://github.com/huami1314/TrollFools/releases/download/v2.11-25/TrollFools_2.11-25%40huamidev.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.10-23",
+          "url": "https://github.com/huami1314/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23%40huamidev.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.10-23",
+          "url": "https://github.com/huami1314/TrollFools/releases/download/v2.10-23/TrollFools_2.10-23%40huamidev.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.10-22",
+          "url": "https://github.com/huami1314/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22%40huamidev.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.10-22",
+          "url": "https://github.com/huami1314/TrollFools/releases/download/v2.10-22/TrollFools_2.10-22%40huamidev.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.9-21",
+          "url": "https://github.com/huami1314/TrollFools/releases/download/v2.9-21/TrollFools14_2.9-21%40huamidev.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.9-21",
+          "url": "https://github.com/huami1314/TrollFools/releases/download/v2.9-21/TrollFools_2.9-21%40huamidev.tipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "FridaCodeManager",
+      "bundleIdentifier": "com.sparklechan.swifty",
+      "developerName": "fridakitten",
+      "subtitle": "Advanced Frida Code Management Tool",
+      "localizedDescription": "FridaCodeManager is a comprehensive tool for managing and organizing Frida code projects. Features include permission management, project repair capabilities, app/project exports, multithreading support for folder navigation, file grouping, and an enhanced user interface with smooth animations.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/icon.png",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_4.png"
+      ],
+      "versions": [
+        {
+          "version": "1.6",
+          "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-stock-alpha.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.6",
+          "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.5.5",
+          "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.5.5/FridaCodeManager.tipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "NXBoot",
+      "bundleIdentifier": "com.mologie.NXBoot",
+      "developerName": "mologie",
+      "subtitle": "Nintendo Switch Payload Injector",
+      "localizedDescription": "NXBoot is a powerful utility for Nintendo Switch enthusiasts, allowing users to inject custom payloads into their Switch consoles. It supports various firmware versions and offers an intuitive interface for managing and launching payloads.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/icon.png",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_3.png"
+      ],
+      "versions": [
+        {
+          "version": "0.3.2",
+          "url": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "0.3.1",
+          "url": "https://github.com/mologie/nxboot/releases/download/v0.3.1/NXBoot_0.3.1-1.tipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "TrollInstallerX",
+      "bundleIdentifier": "com.huami.TrollFools",
+      "developerName": "huami1314",
+      "subtitle": "Universal TrollStore Installer",
+      "localizedDescription": "TrollInstallerX is a fast and reliable universal TrollStore installer supporting iOS 14.0 - 16.6.1 on both arm64 and arm64e devices. It offers two installation methods: direct installation using kfd exploit and dmaFail PPL bypass for most devices, and indirect installation for A15/A16/M2 devices on iOS 16.5.1 and iOS 16.6-16.6.1. Both methods allow installing the TrollStore persistence helper to maintain System registration status.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollInstallerX/icon.png",
+      "category": "utilities",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0.3",
+          "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX-20D50.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.0.3",
+          "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.0.2",
+          "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.2/TrollInstallerX.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.0.1",
+          "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.1/TrollInstallerX.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.0.0",
+          "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.0/TrollInstallerX.ipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "Nugget",
+      "bundleIdentifier": "com.leemin.nugget",
+      "developerName": "leminlimez",
+      "subtitle": "iOS 16.0-18.1b4 Device Unlock Tool",
+      "localizedDescription": "Unlock your device's full potential on iOS 16.0 through 18.1 beta 4, with partial support for iOS 18.1 beta 5-6. Note: Does not work on iOS 18.1 beta 7 or newer - use PC version instead. Requires .mobiledevicepairing file and wireguard. Uses sparserestore exploit to write to files outside intended restore location, like mobilegestalt. CAUTION: Back up your data before using. Developer not responsible for bootloops or other issues.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Nugget/icon.png",
+      "category": "utilities",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "2.0.1",
+          "url": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v2.0.1/Nugget.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.0",
+          "url": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v2.0/Nugget.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.0.1",
+          "url": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v1.0.1/Nugget.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.0",
+          "url": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v1.0/Nugget.ipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "Geranium",
+      "bundleIdentifier": "live.cclerc.geranium",
+      "developerName": "c22dev, BomberFish, Fiore, Sourcelocation, haxi0",
+      "subtitle": "LocSim, Cleaner & Utility for TrollStore",
+      "localizedDescription": "Geranium is a powerful utility for TrollStore users on iOS 15+. Features include location simulation, device cleaning, daemon management, ScreenTime disabling, and device supervision. Supports multiple languages and offers an intuitive interface for enhancing your iOS experience.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/icon.png",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_5.png"
+      ],
+      "versions": [
+        {
+          "version": "1.1.3",
+          "url": "https://github.com/c22dev/Geranium/releases/download/1.1.3/Geranium.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.1.2",
+          "url": "https://github.com/c22dev/Geranium/releases/download/1.1.2/Geranium.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.1.1",
+          "url": "https://github.com/c22dev/Geranium/releases/download/1.1.1/Geranium.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.1",
+          "url": "https://github.com/c22dev/Geranium/releases/download/1.1/Geranium.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.0.4",
+          "url": "https://github.com/c22dev/Geranium/releases/download/1.0.4/Geranium.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.0.3",
+          "url": "https://github.com/c22dev/Geranium/releases/download/1.0.3/Geranium.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.0.2",
+          "url": "https://github.com/c22dev/Geranium/releases/download/1.0.2/Geranium.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.0.1",
+          "url": "https://github.com/c22dev/Geranium/releases/download/1.0.1/Geranium.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.0",
+          "url": "https://github.com/c22dev/Geranium/releases/download/1.0/Geranium.tipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "Bootstrap",
+      "bundleIdentifier": "com.roothide.Bootstrap",
+      "developerName": "roothide",
+      "subtitle": "Jailbreak Bootstrap Tool",
+      "localizedDescription": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/icon.png",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/screenshots/IMG_3.png"
+      ],
+      "versions": [
+        {
+          "version": "1.3.2",
+          "url": "https://github.com/roothide/Bootstrap/releases/download/1.3.2/Bootstrap.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.3",
+          "url": "https://github.com/roothide/Bootstrap/releases/download/1.3/Bootstrap.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.2.9",
+          "url": "https://github.com/roothide/Bootstrap/releases/download/1.2.9/Bootstrap.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.2.8",
+          "url": "https://github.com/roothide/Bootstrap/releases/download/1.2.8/Bootstrap.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.2.6",
+          "url": "https://github.com/roothide/Bootstrap/releases/download/1.2.6/Bootstrap.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.2.1",
+          "url": "https://github.com/roothide/Bootstrap/releases/download/1.2.1/Bootstrap.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.1.1",
+          "url": "https://github.com/roothide/Bootstrap/releases/download/1.1.1/Bootstrap.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.1",
+          "url": "https://github.com/roothide/Bootstrap/releases/download/1.1/Bootstrap.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.0",
+          "url": "https://github.com/roothide/Bootstrap/releases/download/1.0/Bootstrap.tipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": null,
+      "bundleIdentifier": "com.kdt.CAPerfHUD",
+      "developerName": "khanhduytran0",
+      "subtitle": "System-wide performance HUD for iOS 14+",
+      "localizedDescription": "CAPerfHUD enables a system-wide performance HUD for iOS 14 and above. It requires TrollStore to function. The app allows users to monitor various system performance metrics in real-time. Note that some measurements like frequencies and power consumption may not work, and changes last until backboard restarts (respring).",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/icon.png",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/screenshots/IMG_1.png"
+      ],
+      "versions": [
+        {
+          "version": "0.0.1",
+          "url": "https://github.com/khanhduytran0/CAPerfHUD/releases/download/0.0.1/com.kdt.caperfhud_0.0.1.ipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "Santander",
+      "bundleIdentifier": "com.nsantoine.santander",
+      "developerName": "NSAntoine",
+      "subtitle": "Enhanced File Manager for iOS",
+      "localizedDescription": "Santander aims to enhance the experience of a file manager on an iOS device, using modern and familiar UI alongside new APIs. Note: The project is still in beta, and there are still quite a lot of bugs to fix & enhancements to make.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Santander/icon.png",
+      "category": "utilities",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0",
+          "url": "https://github.com/DRKCTRL/Santander/releases/download/1.0/Santander.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.0",
+          "url": "https://github.com/DRKCTRL/Santander/releases/download/1.0/SantanderTS.tipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "LiveContainer",
+      "bundleIdentifier": "com.kdt.LiveContainer",
+      "developerName": "khanhduytran0",
+      "subtitle": "Run iOS apps without installing",
+      "localizedDescription": "LiveContainer allows you to run iOS apps without actually installing them. It bypasses the 10 app limit of free developer accounts, enables multiple versions of an app, and supports multiple data containers. With JIT, codesigning is bypassed entirely. Features include unlimited app installation, tweak support, and instant app switching.",
+      "iconURL": "Apps//home/runner/work/DRKSRC/DRKSRC/Apps/LiveContainer/icon.png",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_4.png"
+      ],
+      "versions": [
+        {
+          "version": "3.2.0",
+          "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.2.0/com.kdt.livecontainer_3.2.0.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "3.1.0",
+          "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.1.0/com.kdt.livecontainer_3.1.0.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "3.0.0",
+          "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.0.0/com.kdt.livecontainer_3.0.0.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.1.2",
+          "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.2/com.kdt.livecontainer_2.1.2.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.1.1",
+          "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.1/com.kdt.livecontainer_2.1.1.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.1",
+          "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1/com.kdt.livecontainer_2.1.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.0-pre",
+          "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.0-pre/com.kdt.livecontainer_2.0.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.0",
+          "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/1.0/com.kdt.livecontainer.ipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "AppIndex",
+      "bundleIdentifier": "com.serena.AppIndex",
+      "developerName": "NSAntoine, justtryingthingsout",
+      "subtitle": "Modern Applications Manager for iOS",
+      "localizedDescription": "AppIndex is a new, modern App Explorer/Manager app for iOS. It allows users to view, sort, search, and manage applications on their device. Features include viewing extensive app info, backing up and restoring apps, exporting as .ipa files, and more. AppIndex provides detailed information about each app, including bundle identifier, type, download date, version, SDK version, iTunes metadata, size, status, entitlements, URL schemes, and more.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/icon.png",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_5.png"
+      ],
+      "versions": [
+        {
+          "version": "1.0",
+          "url": "https://github.com/NSAntoine/AppIndex/releases/download/1.0/AppIndexTrollStore.tipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "PurePKG",
+      "bundleIdentifier": "uwu.lrdsnow.purepkg",
+      "developerName": "Lrdsnow",
+      "subtitle": "The Purest Jailbreak Package Manager",
+      "localizedDescription": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/icon.png",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_4.png"
+      ],
+      "versions": [
+        {
+          "version": "2.0.2",
+          "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/PurePKG.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.0.2",
+          "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/PurePKGDemo.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.0.1",
+          "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/PurePKG.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.0.1",
+          "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/PurePKGDemo.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.0",
+          "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/PurePKG.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.0",
+          "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/PurePKGDemo.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.7",
+          "url": "https://github.com/Lrdsnow/purepkg/releases/download/1.7/PurePKG.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.7",
+          "url": "https://github.com/Lrdsnow/purepkg/releases/download/1.7/PurePKGDemo.ipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.6",
+          "url": "https://github.com/Lrdsnow/purepkg/releases/download/1.6/PurePKG.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "1.6",
+          "url": "https://github.com/Lrdsnow/purepkg/releases/download/1.6/PurePKGDemo.ipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    },
+    {
+      "name": "TrollFools",
+      "bundleIdentifier": "wiki.qaq.TrollFools",
+      "developerName": "Lessica",
+      "subtitle": "Tweak Injection Tool for TrollStore (iOS 15+)",
+      "localizedDescription": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/icon.png",
+      "category": "utilities",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_3.png"
+      ],
+      "versions": [
+        {
+          "version": "2.12-27",
+          "url": "https://github.com/Lessica/TrollFools/releases/download/v2.12-27/TrollFools14_2.12-27.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.12-27",
+          "url": "https://github.com/Lessica/TrollFools/releases/download/v2.12-27/TrollFools_2.12-27.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.11-25",
+          "url": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.11-25",
+          "url": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools_2.11-25.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.10-23",
+          "url": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.10-23",
+          "url": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools_2.10-23.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.10-22",
+          "url": "https://github.com/Lessica/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.10-22",
+          "url": "https://github.com/Lessica/TrollFools/releases/download/v2.10-22/TrollFools_2.10-22.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.9-21",
+          "url": "https://github.com/Lessica/TrollFools/releases/download/v2.9-21/TrollFools14_2.9-21.tipa",
+          "changelog": ""
+        },
+        {
+          "version": "2.9-21",
+          "url": "https://github.com/Lessica/TrollFools/releases/download/v2.9-21/TrollFools_2.9-21.tipa",
+          "changelog": ""
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      }
+    }
+  ]
+}
