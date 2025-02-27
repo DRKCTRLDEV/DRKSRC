@@ -1,86 +1,81 @@
 {
-    "gitURL/s": [
-        "https://github.com/Lessica/TrollFools"
-    ],
-    "name": "TrollFools",
-    "bundleID": "wiki.qaq.TrollFools",
-    "devName": "Lessica",
-    "subtitle": "Tweak Injection Tool for TrollStore (iOS 15+)",
-    "description": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
-    "category": "Unknown",
-    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/icon.png",
-    "screenshots": [
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_2.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_3.png"
-    ],
-    "versions": [
-        {
-            "version": "2.12-27",
-            "date": "2025-02-23",
-            "size": 5783322,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v2.12-27/TrollFools14_2.12-27.tipa"
-        },
-        {
-            "version": "2.12-27",
-            "date": "2025-02-23",
-            "size": 3541410,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v2.12-27/TrollFools_2.12-27.tipa"
-        },
-        {
-            "version": "2.11-25",
-            "date": "2025-01-17",
-            "size": 5699241,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25.tipa"
-        },
-        {
-            "version": "2.11-25",
-            "date": "2025-01-17",
-            "size": 3487386,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools_2.11-25.tipa"
-        },
-        {
-            "version": "2.10-23",
-            "date": "2025-01-14",
-            "size": 5698258,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23.tipa"
-        },
-        {
-            "version": "2.10-23",
-            "date": "2025-01-14",
-            "size": 3487141,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools_2.10-23.tipa"
-        },
-        {
-            "version": "2.10-22",
-            "date": "2025-01-14",
-            "size": 5698269,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22.tipa"
-        },
-        {
-            "version": "2.10-22",
-            "date": "2025-01-14",
-            "size": 3486354,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v2.10-22/TrollFools_2.10-22.tipa"
-        },
-        {
-            "version": "2.9-21",
-            "date": "2025-01-11",
-            "size": 5666166,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v2.9-21/TrollFools14_2.9-21.tipa"
-        },
-        {
-            "version": "2.9-21",
-            "date": "2025-01-11",
-            "size": 3466422,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v2.9-21/TrollFools_2.9-21.tipa"
-        }
-    ],
-    "scarletDebs": [],
-    "scarletBackup": true,
-    "permissions": {
-        "entitlements": {},
-        "privacy": {}
+  "gitURL/s": [
+    "https://github.com/Lessica/TrollFools"
+  ],
+  "name": "TrollFools",
+  "bundleID": "wiki.qaq.TrollFools",
+  "devName": "Lessica",
+  "subtitle": "Tweak Injection Tool for TrollStore (iOS 15+)",
+  "description": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
+  "category": "Unknown",
+  "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/icon.png",
+  "screenshots": [
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_1.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_2.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_3.png"
+  ],
+  "versions": [
+    {
+      "version": "2.12-27",
+      "date": "2025-02-23",
+      "size": 5783322,
+      "url": "https://github.com/Lessica/TrollFools/releases/download/v2.12-27/TrollFools14_2.12-27.tipa"
     },
-    "bundleIdentifier": "wiki.qaq.TrollFools"
+    {
+      "version": "2.12-27",
+      "date": "2025-02-23",
+      "size": 3541410,
+      "url": "https://github.com/Lessica/TrollFools/releases/download/v2.12-27/TrollFools_2.12-27.tipa"
+    },
+    {
+      "version": "2.11-25",
+      "date": "2025-01-17",
+      "size": 5699241,
+      "url": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25.tipa"
+    },
+    {
+      "version": "2.11-25",
+      "date": "2025-01-17",
+      "size": 3487386,
+      "url": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools_2.11-25.tipa"
+    },
+    {
+      "version": "2.10-23",
+      "date": "2025-01-14",
+      "size": 5698258,
+      "url": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23.tipa"
+    },
+    {
+      "version": "2.10-23",
+      "date": "2025-01-14",
+      "size": 3487141,
+      "url": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools_2.10-23.tipa"
+    },
+    {
+      "version": "2.10-22",
+      "date": "2025-01-14",
+      "size": 5698269,
+      "url": "https://github.com/Lessica/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22.tipa"
+    },
+    {
+      "version": "2.10-22",
+      "date": "2025-01-14",
+      "size": 3486354,
+      "url": "https://github.com/Lessica/TrollFools/releases/download/v2.10-22/TrollFools_2.10-22.tipa"
+    },
+    {
+      "version": "2.9-21",
+      "date": "2025-01-11",
+      "size": 5666166,
+      "url": "https://github.com/Lessica/TrollFools/releases/download/v2.9-21/TrollFools14_2.9-21.tipa"
+    },
+    {
+      "version": "2.9-21",
+      "date": "2025-01-11",
+      "size": 3466422,
+      "url": "https://github.com/Lessica/TrollFools/releases/download/v2.9-21/TrollFools_2.9-21.tipa"
+    }
+  ],
+  "scarletDebs": [],
+  "scarletBackup": true
 }
