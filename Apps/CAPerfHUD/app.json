@@ -1,25 +1,25 @@
 {
-  "gitURL/s": [
-    "https://github.com/khanhduytran0/CAPerfHUD"
-  ],
-  "name": null,
-  "bundleID": "com.kdt.CAPerfHUD",
-  "devName": "khanhduytran0",
-  "subtitle": "System-wide performance HUD for iOS 14+",
-  "description": "CAPerfHUD enables a system-wide performance HUD for iOS 14 and above. It requires TrollStore to function. The app allows users to monitor various system performance metrics in real-time. Note that some measurements like frequencies and power consumption may not work, and changes last until backboard restarts (respring).",
-  "category": "utilities",
-  "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/icon.png",
-  "screenshots": [
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/screenshots/IMG_1.png"
-  ],
-  "versions": [
-    {
-      "version": "0.0.1",
-      "date": "2023-05-21",
-      "size": 11320,
-      "url": "https://github.com/khanhduytran0/CAPerfHUD/releases/download/0.0.1/com.kdt.caperfhud_0.0.1.ipa"
-    }
-  ],
-  "scarletDebs": [],
-  "scarletBackup": true
+    "gitURL/s": [
+        "https://github.com/khanhduytran0/CAPerfHUD"
+    ],
+    "name": null,
+    "bundleID": "com.kdt.CAPerfHUD",
+    "devName": "khanhduytran0",
+    "subtitle": "System-wide performance HUD for iOS 14+",
+    "description": "CAPerfHUD enables a system-wide performance HUD for iOS 14 and above. It requires TrollStore to function. The app allows users to monitor various system performance metrics in real-time. Note that some measurements like frequencies and power consumption may not work, and changes last until backboard restarts (respring).",
+    "category": "utilities",
+    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/icon.png",
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/screenshots/IMG_1.png"
+    ],
+    "versions": [
+        {
+            "version": "0.0.1",
+            "date": "2023-05-21",
+            "size": 11320,
+            "url": "https://github.com/khanhduytran0/CAPerfHUD/releases/download/0.0.1/com.kdt.caperfhud_0.0.1.ipa"
+        }
+    ],
+    "scarletDebs": [],
+    "scarletBackup": true
 }

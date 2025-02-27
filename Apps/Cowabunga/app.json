@@ -1,85 +1,85 @@
 {
-  "gitURL/s": [
-    "https://github.com/leminlimez/Cowabunga"
-  ],
-  "name": "Cowabunga",
-  "bundleID": "com.leminlimez.cowabunga",
-  "devName": "leminlimez",
-  "subtitle": "A Jailed Toolbox for iOS",
-  "description": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1.",
-  "category": "utilities",
-  "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/icon.png",
-  "screenshots": [
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_1.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_2.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_3.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_4.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_5.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_6.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_7.png"
-  ],
-  "versions": [
-    {
-      "version": "10.3.2",
-      "date": "2023-05-29",
-      "size": 16288960,
-      "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.2/Cowabunga.ipa"
-    },
-    {
-      "version": "10.3.1",
-      "date": "2023-05-29",
-      "size": 16288883,
-      "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.1/Cowabunga.ipa"
-    },
-    {
-      "version": "10.3.0",
-      "date": "2023-05-29",
-      "size": 16285936,
-      "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.0/Cowabunga.ipa"
-    },
-    {
-      "version": "10.2.0",
-      "date": "2023-05-12",
-      "size": 16280833,
-      "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.2.0/Cowabunga.ipa"
-    },
-    {
-      "version": "10.1.1",
-      "date": "2023-03-30",
-      "size": 21605355,
-      "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.1.1/Cowabunga.ipa"
-    },
-    {
-      "version": "10.1.0",
-      "date": "2023-03-28",
-      "size": 21595880,
-      "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.1.0/Cowabunga.ipa"
-    },
-    {
-      "version": "10.0.3",
-      "date": "2023-03-25",
-      "size": 21557626,
-      "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.3/Cowabunga.ipa"
-    },
-    {
-      "version": "10.0.2",
-      "date": "2023-03-25",
-      "size": 21557066,
-      "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.2/Cowabunga.ipa"
-    },
-    {
-      "version": "10.0.1",
-      "date": "2023-03-24",
-      "size": 21557390,
-      "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.1/Cowabunga.ipa"
-    },
-    {
-      "version": "10.0.0",
-      "date": "2023-03-23",
-      "size": 21556671,
-      "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.0/Cowabunga.ipa"
-    }
-  ],
-  "scarletDebs": [],
-  "scarletBackup": true
+    "gitURL/s": [
+        "https://github.com/leminlimez/Cowabunga"
+    ],
+    "name": "Cowabunga",
+    "bundleID": "com.leminlimez.cowabunga",
+    "devName": "leminlimez",
+    "subtitle": "A Jailed Toolbox for iOS",
+    "description": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1.",
+    "category": "utilities",
+    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/icon.png",
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_5.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_6.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_7.png"
+    ],
+    "versions": [
+        {
+            "version": "10.3.2",
+            "date": "2023-05-29",
+            "size": 16288960,
+            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.2/Cowabunga.ipa"
+        },
+        {
+            "version": "10.3.1",
+            "date": "2023-05-29",
+            "size": 16288883,
+            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.1/Cowabunga.ipa"
+        },
+        {
+            "version": "10.3.0",
+            "date": "2023-05-29",
+            "size": 16285936,
+            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.0/Cowabunga.ipa"
+        },
+        {
+            "version": "10.2.0",
+            "date": "2023-05-12",
+            "size": 16280833,
+            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.2.0/Cowabunga.ipa"
+        },
+        {
+            "version": "10.1.1",
+            "date": "2023-03-30",
+            "size": 21605355,
+            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.1.1/Cowabunga.ipa"
+        },
+        {
+            "version": "10.1.0",
+            "date": "2023-03-28",
+            "size": 21595880,
+            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.1.0/Cowabunga.ipa"
+        },
+        {
+            "version": "10.0.3",
+            "date": "2023-03-25",
+            "size": 21557626,
+            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.3/Cowabunga.ipa"
+        },
+        {
+            "version": "10.0.2",
+            "date": "2023-03-25",
+            "size": 21557066,
+            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.2/Cowabunga.ipa"
+        },
+        {
+            "version": "10.0.1",
+            "date": "2023-03-24",
+            "size": 21557390,
+            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.1/Cowabunga.ipa"
+        },
+        {
+            "version": "10.0.0",
+            "date": "2023-03-23",
+            "size": 21556671,
+            "url": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.0/Cowabunga.ipa"
+        }
+    ],
+    "scarletDebs": [],
+    "scarletBackup": true
 }
