@@ -102,11 +102,20 @@ class VersionManager:
 
         versions = data.get('versions', []) + new_versions
         versions.sort(key=lambda x: x['date'], reverse=True)
+
+        unique_versions = {}
+        for version in versions:
+            version_number = version['version']
+            if version_number not in unique_versions:
+                unique_versions[version_number] = version
+        versions = list(unique_versions.values())
+
+        versions = versions[:self.keep_versions]
         
         return {
-            'success': True,
+            'success': True ,
             'message': f"Added {len(new_versions)} versions" if new_versions else "No new versions",
-            'versions': versions[:self.keep_versions]
+            'versions': versions
         }
 
     def _save_config(self, path: str, data: Dict):
