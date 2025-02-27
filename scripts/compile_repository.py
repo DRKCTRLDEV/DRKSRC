@@ -15,7 +15,7 @@ def configure_logging():
     )
 
 # Define the path to the no-icon.png file
-NO_ICON_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../static/assets/no-icon.png'))
+NO_ICON_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png'))
 
 class RepoCompiler:
     def __init__(self, root_dir: str = '.', featured_count: int = 5):

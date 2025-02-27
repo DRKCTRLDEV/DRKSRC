@@ -7,7 +7,7 @@
     "devName": "khanhduytran0",
     "subtitle": "Run iOS apps without installing",
     "description": "LiveContainer allows you to run iOS apps without actually installing them. It bypasses the 10 app limit of free developer accounts, enables multiple versions of an app, and supports multiple data containers. With JIT, codesigning is bypassed entirely. Features include unlimited app installation, tweak support, and instant app switching.",
-    "category": "Games",
+    "category": "utilities",
     "icon": "Apps//home/runner/work/DRKSRC/DRKSRC/Apps/LiveContainer/icon.png",
     "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_1.png",
