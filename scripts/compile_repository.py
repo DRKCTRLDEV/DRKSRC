@@ -207,8 +207,11 @@ class RepoCompiler:
     def _format_version(self, version: Dict) -> Dict:
         return {
             "version": version.get("version"),
-            "url": version.get("url"),
-            "changelog": version.get("changelog", "")
+            "date": version.get("date"),
+            "downloadURL": version.get("url"),
+            "size": version.get("size"),
+            "minOSVersion": "13.0",
+            "maxOSVersion": "18.0"
         }
 
 if __name__ == "__main__":
