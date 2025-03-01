@@ -77,41 +77,29 @@ class RepoCompiler:
             return [], []
 
     def compile_repos(self, target_fmt: Optional[str] = None) -> Dict:
-        try:
-            repo_config = self.load_config(os.path.join(self.root_dir, 'repo-info.json'))
-            if not repo_config:
-                return {"success": False, "error": "Missing repo config"}
-            
-            apps, featured = self._load_app_data(target_fmt)
-            
-            if not apps:
-                return {"success": False, "error": "No apps found to compile"}
-            
-            formats = {
-                'altstore': ('altstore.json', self._format_altstore),
-                'trollapps': ('trollapps.json', self._format_trollapps),
-                'scarlet': ('scarlet.json', self._format_scarlet)  # No change needed here
-            }
-            
-            if target_fmt:
-                target_fmt = target_fmt.lower()
-                if target_fmt not in formats:
-                    return {"success": False, "error": f"Invalid format: {target_fmt}"}
-                formats = {target_fmt: formats[target_fmt]}
-            
-            for fmt, (filename, formatter) in formats.items():
-                # Call formatter with the correct number of arguments
-                repo_data = formatter(repo_config, apps) if fmt == 'scarlet' else formatter(repo_config, apps, featured)
-                total_apps = len(apps)
-                self.logger.info(f"Saving {filename} with {total_apps} apps")
-                if not self.save_config(os.path.join(self.root_dir, filename), repo_data):
-                    return {"success": False, "error": f"Failed to save {filename}"}
-            
-            return {"success": True}
-        
-        except Exception as e:
-            self.logger.error(f"Compilation error: {e}")
-            return {"success": False, "error": str(e)}
+        repo_config = self.load_config(os.path.join(self.root_dir, 'repo-info.json'))
+        if not repo_config:
+            return {'success': False, 'error': 'Missing repo config'}
+
+        apps, featured = self._load_app_data(target_fmt)
+        if not apps:
+            return {'success': False, 'error': 'No apps found to compile'}
+
+        formats = {'altstore': ('altstore.json', self._format_altstore),
+                  'trollapps': ('trollapps.json', self._format_trollapps),
+                  'scarlet': ('scarlet.json', self._format_scarlet)}
+
+        if target_fmt and (target_fmt := target_fmt.lower()) in formats:
+            formats = {target_fmt: formats[target_fmt]}
+        elif target_fmt:
+            return {'success': False, 'error': f'Invalid format: {target_fmt}'}
+
+        for fmt, (filename, formatter) in formats.items():
+            repo_data = formatter(repo_config, apps) if fmt == 'scarlet' else formatter(repo_config, apps, featured)
+            if not self.save_config(os.path.join(self.root_dir, filename), repo_data):
+                return {'success': False, 'error': f'Failed to save {filename}'}
+
+        return {'success': True}
 
     def _format_altstore(self, repo_config: Dict, apps: List[Dict], featured: List[str]) -> Dict:
         return {
@@ -123,7 +111,7 @@ class RepoCompiler:
             "website": repo_config.get("website"),
             "tintColor": repo_config.get("tintColor"),
             "featuredApps": featured,
-            "apps": [self._create_altstore_entry(app) for app in apps],
+            "apps": [self._create_entry(app, 'altstore') for app in apps],
         }
 
     def _format_trollapps(self, repo_config: Dict, apps: List[Dict], featured: List[str]) -> Dict:
@@ -136,7 +124,7 @@ class RepoCompiler:
             "website": repo_config.get("website"),
             "tintColor": repo_config.get("tintColor"),
             "featuredApps": featured,
-            "apps": [self._create_trollapps_entry(app) for app in apps],
+            "apps": [self._create_entry(app, 'trollapps') for app in apps],
         }
 
     def _format_scarlet(self, repo_config: Dict, apps: List[Dict]) -> Dict:
@@ -144,7 +132,7 @@ class RepoCompiler:
 
         for app in apps:
             category = app.get("category", "Other")
-            categories[category].append(self._create_scarlet_entry(app))
+            categories[category].append(self._create_entry(app, 'scarlet'))
 
         return {
             "META": {
@@ -154,55 +142,32 @@ class RepoCompiler:
             **categories
         }
 
-    def _create_altstore_entry(self, app: Dict) -> Dict:
-        return {
-            "name": app.get("name"),
-            "bundleIdentifier": app.get("bundleID"),
-            "developerName": app.get("devName"),
-            "subtitle": app.get("subtitle"),
-            "localizedDescription": app.get("description"),
-            "iconURL": app.get("icon") if app.get("icon") else NO_ICON_PATH,
-            "category": app.get("category"),
-            "screenshots": app.get("screenshots", []),
-            "versions": [self._format_version(v) for v in app.get("versions", [])],
-            "appPermissions": {
-              "entitlements": {},
-              "privacy": {}
-            }
+    def _create_entry(self, app: Dict, fmt: str) -> Dict:
+        entry = {
+            'name': app.get('name'),
+            'bundleIdentifier': app.get('bundleID'),
+            'developerName': app.get('devName'),
+            'subtitle': app.get('subtitle'),
+            'localizedDescription': app.get('description'),
+            'iconURL': app.get('icon') if app.get('icon') else NO_ICON_PATH,
+            'category': app.get('category'),
+            'versions': [self._format_version(v) for v in app.get('versions', [])],
+            'appPermissions': {'entitlements': {}, 'privacy': {}}
         }
-
-    def _create_trollapps_entry(self, app: Dict) -> Dict:
-        return {
-            "name": app.get("name"),
-            "bundleIdentifier": app.get("bundleID"),
-            "developerName": app.get("devName"),
-            "subtitle": app.get("subtitle"),
-            "localizedDescription": app.get("description"),
-            "iconURL": app.get("icon") if app.get("icon") else NO_ICON_PATH,
-            "category": app.get("category"),
-            "screenshotURLs": app.get("screenshots", []),
-            "versions": [self._format_version(v) for v in app.get("versions", [])],
-            "appPermissions": {
-              "entitlements": {},
-              "privacy": {}
-            }
-        }
-
-    def _create_scarlet_entry(self, app: Dict) -> Dict:
-        latest_version = app.get("versions", [{}])[0]
-        return {
-            "name": app.get("name"),
-            "version": latest_version.get("version"),
-            "down": latest_version.get("url"),
-            "dev": app.get("devName"),
-            "category": app.get("category"),
-            "description": app.get("description"),
-            "bundleID": app.get("bundleID"),
-            "icon": app.get("icon") if app.get("icon") else NO_ICON_PATH,
-            "screenshots": app.get("screenshots", []),
-            "debs": app.get("scarletDebs", []),
-            "enableBackup": app.get("scarletBackup", True)
-        }
+        if fmt == 'altstore':
+            entry['screenshots'] = app.get('screenshots', [])
+        elif fmt == 'trollapps':
+            entry['screenshotURLs'] = app.get('screenshots', [])
+        elif fmt == 'scarlet':
+            entry.update({
+                'version': app.get('versions', [{}])[0].get('version'),
+                'down': app.get('versions', [{}])[0].get('url'),
+                'dev': app.get('devName'),
+                'description': app.get('description'),
+                'bundleID': app.get('bundleID'),
+                'icon': app.get('icon') if app.get('icon') else NO_ICON_PATH
+            })
+        return entry
 
     def _format_version(self, version: Dict) -> Dict:
         return {
