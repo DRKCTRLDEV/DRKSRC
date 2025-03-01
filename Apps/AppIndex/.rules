@@ -1,0 +1,8 @@
+{
+  "// preferred_extensions": "[.tipa, .ipa, .deb]",
+  "// excluded_extensions": "[.zip, .tar.gz]",
+  "// exclude_patterns": "[debug, beta]",
+  "// strip_v_prefix": "true",
+  "// replace_chars": "{ \"-\": \".\", \"_\": \".\" }",
+  "// remove_chars": "[-beta, -alpha, -dev]"
+}
