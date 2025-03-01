@@ -47,11 +47,11 @@ class VersionManager:
             with open(config, 'r') as f:
                 data = json.load(f)
 
-            if not self._valid_repo(data.get('gitURL/s')):
+            if not self._valid_repo(data.get('gitURLs')):
                 return
 
             if update:
-                result = self._fetch_new_versions(data)
+                result = self._fetch_new_versions(data, os.path.dirname(config))
                 if not result['success']:
                     self.logger.error(f"Failed {app}: {result['message']}")
                     return
@@ -66,11 +66,12 @@ class VersionManager:
         except Exception as e:
             self.logger.error(f"Error processing {app}: {str(e)}")
 
-    def _fetch_new_versions(self, data: Dict) -> Dict:
-        repos = data.get('gitURL/s', [])
+    def _fetch_new_versions(self, data: Dict, app_dir: str) -> Dict:
+        repos = data.get('gitURLs', [])
         repos = [repos] if isinstance(repos, str) else repos
         existing = {v['url'] for v in data.get('versions', [])}
         new_versions = []
+        rules = self._load_rules(app_dir)
 
         for repo in repos:
             if not self._valid_gh_url(repo):
@@ -87,9 +88,9 @@ class VersionManager:
 
                 for release in response.json():
                     for asset in release.get('assets', []):
-                        if asset['name'].lower().endswith(('.tipa', '.ipa')):
+                        if self._should_include_asset(asset, rules):
                             version = {
-                                'version': release['tag_name'].lstrip('v'),
+                                'version': self._format_version_number(release['tag_name'], rules),
                                 'date': release['published_at'].split('T')[0],
                                 'size': asset['size'],
                                 'url': asset['browser_download_url']
@@ -111,6 +112,68 @@ class VersionManager:
             'message': f"Added {len(new_versions)} versions" if new_versions else "No new versions",
             'versions': versions
         }
+
+    def _load_rules(self, app_dir: str) -> Dict:
+        rules_path = os.path.join(app_dir, '.rules')
+        
+        # Create template .rules file if it doesn't exist
+        if not os.path.exists(rules_path):
+            template = {
+                "// preferred_extensions": "[.tipa, .ipa, .deb]",
+                "// excluded_extensions": "[.zip, .tar.gz]",
+                "// exclude_patterns": "[debug, beta]",
+                "// strip_v_prefix": "true",
+                "// replace_chars": "{ \"-\": \".\", \"_\": \".\" }",
+                "// remove_chars": "[-beta, -alpha, -dev]"
+            }
+            try:
+                with open(rules_path, 'w') as f:
+                    json.dump(template, f, indent=2)
+            except Exception as e:
+                self.logger.error(f"Error creating rules template for {os.path.basename(app_dir)}: {str(e)}")
+            return {}
+        
+        try:
+            with open(rules_path, 'r') as f:
+                rules = json.load(f)
+                # Ignore comment lines starting with //
+                rules = {k: v for k, v in rules.items() if not k.startswith("//")}
+                # Return empty dict if rules file is empty or contains no valid rules
+                return rules if any(rules.values()) else {}
+        except Exception as e:
+            self.logger.error(f"Error loading rules for {os.path.basename(app_dir)}: {str(e)}")
+            return {}
+
+    def _should_include_asset(self, asset: Dict, rules: Dict) -> bool:
+        if rules.get('excluded_extensions'):
+            if any(asset['name'].lower().endswith(ext) for ext in rules['excluded_extensions']):
+                return False
+        
+        if rules.get('exclude_patterns'):
+            if any(pattern.lower() in asset['name'].lower() for pattern in rules['exclude_patterns']):
+                return False
+        
+        if rules.get('preferred_extensions'):
+            for ext in rules['preferred_extensions']:
+                if asset['name'].lower().endswith(ext):
+                    return True
+            return False
+        
+        return asset['name'].lower().endswith(('.tipa', '.ipa'))
+
+    def _format_version_number(self, version: str, rules: Dict) -> str:
+        if rules.get('strip_v_prefix') and version.lower().startswith('v'):
+            version = version[1:]
+        
+        if rules.get('remove_chars'):
+            for char in rules['remove_chars']:
+                version = version.replace(char, '')
+        
+        if rules.get('replace_chars'):
+            for char, replacement in rules['replace_chars'].items():
+                version = version.replace(char, replacement)
+        
+        return version.strip()
 
     def _save_config(self, path: str, data: Dict):
         with open(path, 'w') as f:
