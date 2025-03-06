@@ -12,7 +12,7 @@ on:
         options:
           - update
           - remove
-        default: 'update'  # Default for manual runs
+        default: 'update'
       app_list:
         description: 'Comma-separated app names (leave empty for all)'
         required: false
@@ -49,16 +49,16 @@ jobs:
     - name: Run version management
       env:
         REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        # Use scheduled run defaults or workflow_dispatch inputs
         ACTION: ${{ github.event_name == 'schedule' && 'update' || inputs.action }}
         KEEP_VERSIONS: ${{ github.event_name == 'schedule' && 10 || inputs.keep_versions }}
         APP_LIST: ${{ inputs.app_list }}
       run: |
-        # Handle comma-separated app list
+        # Ensure KEEP_VERSIONS is an integer
+        KEEP_VERSIONS_INT=$(printf "%.0f" "$KEEP_VERSIONS")
         if [ -n "$APP_LIST" ]; then
-          python3 scripts/manage_versions.py "$ACTION" --keep "$KEEP_VERSIONS" --apps "$APP_LIST"
+          python3 scripts/manage_versions.py "$ACTION" --keep "$KEEP_VERSIONS_INT" --apps "$APP_LIST"
         else
-          python3 scripts/manage_versions.py "$ACTION" --keep "$KEEP_VERSIONS"
+          python3 scripts/manage_versions.py "$ACTION" --keep "$KEEP_VERSIONS_INT"
         fi
     
     - name: Commit and push changes
