@@ -18,7 +18,7 @@ on:
         required: false
         type: string
       keep_versions:
-        description: 'Number of versions to keep (update only)'
+        description: 'Number of versions to keep'
         required: true
         type: number
         default: 10
@@ -44,7 +44,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install requests
+        pip install requests pyyaml
     
     - name: Run version management
       env:
@@ -54,13 +54,11 @@ jobs:
         KEEP_VERSIONS: ${{ github.event_name == 'schedule' && 10 || inputs.keep_versions }}
         APP_LIST: ${{ inputs.app_list }}
       run: |
-        IFS=',' read -ra APPS <<< "$APP_LIST"
-        for app in "${APPS[@]}"; do
-          python3 scripts/manage_versions.py "$ACTION" "$KEEP_VERSIONS" "$app"
-        done
-        
-        if [ -z "$APP_LIST" ]; then
-          python3 scripts/manage_versions.py "$ACTION" "$KEEP_VERSIONS"
+        # Handle comma-separated app list
+        if [ -n "$APP_LIST" ]; then
+          python3 scripts/manage_versions.py "$ACTION" --keep "$KEEP_VERSIONS" --apps "$APP_LIST"
+        else
+          python3 scripts/manage_versions.py "$ACTION" --keep "$KEEP_VERSIONS"
         fi
     
     - name: Commit and push changes
