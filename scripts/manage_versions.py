@@ -171,8 +171,8 @@ class VersionManager:
         rules_path = os.path.join(app_dir, '.rules.yaml')
         if not os.path.exists(rules_path):
             template = {
-                'preferred_extensions': ['.tipa', '.ipa', '.deb'],
-                'excluded_extensions': ['.zip', '.tar.gz'],
+                'preferred_extensions': ['.tipa', '.ipa'],
+                'excluded_extensions': ['.zip', '.tar.gz', '.deb'],
                 'exclude_patterns': ['debug', 'beta'],
                 'strip_v_prefix': True,
                 'replace_chars': {'-': '.', '_': '.'},
@@ -240,10 +240,20 @@ class VersionManager:
         """Check if a URL is a valid GitHub URL."""
         return url.startswith(("https://github.com/", "http://github.com/"))
 
+def int_or_float_to_int(value: str) -> int:
+    """Convert a string representing an int or float to an integer."""
+    try:
+        num = float(value)  # Handle both "10" and "10.0"
+        if not num.is_integer():
+            raise ValueError("keep must be a whole number")
+        return int(num)
+    except ValueError as e:
+        raise argparse.ArgumentTypeError(f"Invalid value for --keep: {value}. Must be a positive whole number.") from e
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Manage app versions")
     parser.add_argument("action", choices=["update", "remove"], help="Action to perform")
-    parser.add_argument("--keep", type=int, default=5, help="Number of versions to keep")
+    parser.add_argument("--keep", type=int_or_float_to_int, default=5, help="Number of versions to keep")
     parser.add_argument("--apps", type=str, help="Comma-separated list of app names")
     args = parser.parse_args()
 
