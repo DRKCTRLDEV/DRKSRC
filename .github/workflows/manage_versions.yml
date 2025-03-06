@@ -12,13 +12,14 @@ on:
         options:
           - update
           - remove
+        default: 'update'  # Default for manual runs
       app_list:
         description: 'Comma-separated app names (leave empty for all)'
         required: false
         type: string
       keep_versions:
         description: 'Number of versions to keep (update only)'
-        required: false
+        required: true
         type: number
         default: 10
 
@@ -48,15 +49,18 @@ jobs:
     - name: Run version management
       env:
         REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        KEEP_VERSIONS: ${{ inputs.keep_versions }}
+        # Use scheduled run defaults or workflow_dispatch inputs
+        ACTION: ${{ github.event_name == 'schedule' && 'update' || inputs.action }}
+        KEEP_VERSIONS: ${{ github.event_name == 'schedule' && 10 || inputs.keep_versions }}
+        APP_LIST: ${{ inputs.app_list }}
       run: |
-        IFS=',' read -ra APPS <<< "${{ inputs.app_list }}"
+        IFS=',' read -ra APPS <<< "$APP_LIST"
         for app in "${APPS[@]}"; do
-          python3 scripts/manage_versions.py ${{ inputs.action }} $KEEP_VERSIONS "$app" 
+          python3 scripts/manage_versions.py "$ACTION" "$KEEP_VERSIONS" "$app"
         done
         
-        if [ -z "${{ inputs.app_list }}" ]; then
-          python3 scripts/manage_versions.py ${{ inputs.action }} $KEEP_VERSIONS
+        if [ -z "$APP_LIST" ]; then
+          python3 scripts/manage_versions.py "$ACTION" "$KEEP_VERSIONS"
         fi
     
     - name: Commit and push changes
@@ -64,5 +68,5 @@ jobs:
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
         git add Apps/
-        git commit -m "chore: Version ${{ inputs.action }} (keep ${{ inputs.keep_versions }}) for ${{ inputs.app_list || 'all apps' }}" || echo "No changes to commit"
+        git commit -m "chore: Version $ACTION (keep $KEEP_VERSIONS) for ${{ inputs.app_list || 'all apps' }}" || echo "No changes to commit"
         git push
