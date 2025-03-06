@@ -15,14 +15,7 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_2.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_3.png"
     ],
-    "versions": [
-        {
-            "version": "1.3.0",
-            "date": "2024-11-17",
-            "size": 27533,
-            "url": "https://github.com/DRKCTRL/FrontBoardAppLauncher/releases/download/1.3.0/FrontBoardAppLauncher.tipa"
-        }
-    ],
+    "versions": [],
     "scarletDebs": [],
     "scarletBackup": true
 }
