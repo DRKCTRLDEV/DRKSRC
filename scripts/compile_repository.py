@@ -6,7 +6,7 @@ import logging
 import random
 from datetime import datetime
 from typing import Dict, List, Optional
-from collections import defaultdict  # Importing defaultdict
+from collections import defaultdict
 
 def configure_logging():
     logging.basicConfig(
@@ -14,8 +14,8 @@ def configure_logging():
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     )
 
-# Define the path to the no-icon.png file
-NO_ICON_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png'))
+# Define the path to the no-icon.png file as a URL string
+NO_ICON_PATH = 'https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png'
 
 class RepoCompiler:
     def __init__(self, root_dir: str = '.', featured_count: int = 5):
@@ -31,6 +31,9 @@ class RepoCompiler:
                 return None
             with open(path, 'r', encoding='utf-8') as f:
                 return json.load(f)
+        except json.JSONDecodeError as e:
+            self.logger.error(f"Invalid JSON in config file: {path} - {e}")
+            return None
         except Exception as e:
             self.logger.error(f"Config read error: {path} - {e}")
             return None
@@ -47,6 +50,10 @@ class RepoCompiler:
 
     def _load_app_data(self, target_fmt: str) -> tuple[List[Dict], List[str]]:
         try:
+            if not os.path.exists(self.apps_dir):
+                self.logger.error(f"Apps directory does not exist: {self.apps_dir}")
+                return [], []
+            
             apps = []
             bundle_ids = []
             
@@ -59,7 +66,7 @@ class RepoCompiler:
                 if app_config and (bid := app_config.get("bundleID")):
                     apps.append(app_config)
                     bundle_ids.append(bid)
-                    self.logger.info(f"Loaded app: {app_config['name']} with bundle ID: {bid}")
+                    self.logger.info(f"Loaded app: {app_config.get('name', 'Unnamed')} with bundle ID: {bid}")
                 else:
                     self.logger.warning(f"App config missing or invalid in {path}")
 
@@ -79,15 +86,17 @@ class RepoCompiler:
     def compile_repos(self, target_fmt: Optional[str] = None) -> Dict:
         repo_config = self.load_config(os.path.join(self.root_dir, 'repo-info.json'))
         if not repo_config:
-            return {'success': False, 'error': 'Missing repo config'}
+            return {'success': False, 'error': 'Missing or invalid repo config'}
 
         apps, featured = self._load_app_data(target_fmt)
         if not apps:
-            return {'success': False, 'error': 'No apps found to compile'}
+            return {'success': False, 'error': 'No valid apps found to compile'}
 
-        formats = {'altstore': ('altstore.json', self._format_altstore),
-                  'trollapps': ('trollapps.json', self._format_trollapps),
-                  'scarlet': ('scarlet.json', self._format_scarlet)}
+        formats = {
+            'altstore': ('altstore.json', self._format_altstore),
+            'trollapps': ('trollapps.json', self._format_trollapps),
+            'scarlet': ('scarlet.json', self._format_scarlet)
+        }
 
         if target_fmt and (target_fmt := target_fmt.lower()) in formats:
             formats = {target_fmt: formats[target_fmt]}
@@ -143,14 +152,37 @@ class RepoCompiler:
         }
 
     def _create_entry(self, app: Dict, fmt: str) -> Dict:
+        if fmt == 'scarlet':
+            entry = {
+                'name': app.get('name', 'Unnamed App'),
+                'version': app.get('versions', [{}])[0].get('version', 'Unknown'),
+                'down': app.get('versions', [{}])[0].get('url', ''),
+                'category': app.get('category', 'Other'),
+                'description': app.get('description', ''),
+                'bundleID': app.get('bundleID', 'Unknown')
+            }
+            # Optional fields (only included if present)
+            if app.get('icon'):
+                entry['icon'] = app.get('icon')
+            if app.get('scarletDebs'):
+                entry['debs'] = app.get('scarletDebs')
+            if app.get('screenshots'):
+                entry['screenshots'] = app.get('screenshots')
+            if app.get('dev'):
+                entry['dev'] = app.get('dev')
+            if 'scarletBackup' in app:
+                entry['enableBackup'] = app.get('scarletBackup')
+            return entry
+        
         entry = {
-            'name': app.get('name'),
-            'bundleIdentifier': app.get('bundleID'),
-            'developerName': app.get('devName'),
+            'name': app.get('name', 'Unnamed App'),
+            'bundleIdentifier': app.get('bundleID', 'Unknown'),
+            'developerName': app.get('devName', 'Unknown Developer'),
             'subtitle': app.get('subtitle'),
-            'localizedDescription': app.get('description'),
+            'localizedDescription': app.get('description', ''),
             'iconURL': app.get('icon') if app.get('icon') else NO_ICON_PATH,
-            'category': app.get('category'),
+            'category': app.get('category', 'Other'),
+            'screenshots': app.get('screenshots', []),
             'versions': [self._format_version(v) for v in app.get('versions', [])],
             'appPermissions': {'entitlements': {}, 'privacy': {}}
         }
@@ -158,23 +190,14 @@ class RepoCompiler:
             entry['screenshots'] = app.get('screenshots', [])
         elif fmt == 'trollapps':
             entry['screenshotURLs'] = app.get('screenshots', [])
-        elif fmt == 'scarlet':
-            entry.update({
-                'version': app.get('versions', [{}])[0].get('version'),
-                'down': app.get('versions', [{}])[0].get('url'),
-                'dev': app.get('devName'),
-                'description': app.get('description'),
-                'bundleID': app.get('bundleID'),
-                'icon': app.get('icon') if app.get('icon') else NO_ICON_PATH
-            })
         return entry
 
     def _format_version(self, version: Dict) -> Dict:
         return {
-            "version": version.get("version"),
+            "version": version.get("version", "Unknown"),
             "date": version.get("date"),
-            "downloadURL": version.get("url"),
-            "size": version.get("size"),
+            "downloadURL": version.get("url", ""),
+            "size": version.get("size", 0),
             "minOSVersion": "13.0",
             "maxOSVersion": "18.0"
         }
