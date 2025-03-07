@@ -15,7 +15,68 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Helium/screenshots/IMG_3.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Helium/screenshots/IMG_4.png"
     ],
-    "versions": [],
+    "versions": [
+        {
+            "version": "3.2.5",
+            "date": "2024-02-13",
+            "size": 4168281,
+            "url": "https://github.com/leminlimez/Helium/releases/download/v3.2.5/Helium.tipa"
+        },
+        {
+            "version": "2.2.1",
+            "date": "2024-01-13",
+            "size": 3924363,
+            "url": "https://github.com/leminlimez/Helium/releases/download/v2.2.1/Helium.tipa"
+        },
+        {
+            "version": "2.2",
+            "date": "2024-01-13",
+            "size": 3896129,
+            "url": "https://github.com/leminlimez/Helium/releases/download/v2.2/Helium.tipa"
+        },
+        {
+            "version": "2.1",
+            "date": "2024-01-12",
+            "size": 3874054,
+            "url": "https://github.com/leminlimez/Helium/releases/download/v2.1/Helium.tipa"
+        },
+        {
+            "version": "2.0.2",
+            "date": "2023-12-25",
+            "size": 3829465,
+            "url": "https://github.com/leminlimez/Helium/releases/download/v2.0.2/Helium.tipa"
+        },
+        {
+            "version": "2.0.1",
+            "date": "2023-12-21",
+            "size": 3827002,
+            "url": "https://github.com/leminlimez/Helium/releases/download/v2.0.1/Helium.tipa"
+        },
+        {
+            "version": "2.0",
+            "date": "2023-12-21",
+            "size": 3813071,
+            "url": "https://github.com/leminlimez/Helium/releases/download/v2.0/Helium.tipa"
+        },
+        {
+            "version": "1.1",
+            "date": "2023-12-08",
+            "size": 4294026,
+            "url": "https://github.com/leminlimez/Helium/releases/download/v1.1/Helium_ABOVE_STATUS_BAR.tipa"
+        },
+        {
+            "version": "1.1",
+            "date": "2023-12-08",
+            "size": 4293924,
+            "url": "https://github.com/leminlimez/Helium/releases/download/v1.1/Helium_BELOW_STATUS_BAR.tipa"
+        },
+        {
+            "version": "1.0",
+            "date": "2023-11-06",
+            "size": 4259160,
+            "url": "https://github.com/leminlimez/Helium/releases/download/v1.0/Helium.tipa"
+        }
+    ],
     "scarletDebs": [],
     "scarletBackup": true
 }
