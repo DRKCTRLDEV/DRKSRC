@@ -37,7 +37,7 @@ jobs:
     
     - name: Run compilation
       run: |
-        python3 scripts/compile_repo.py "${{ github.event.inputs.format }}"
+        python3 scripts/compile_repository.py "${{ github.event.inputs.format }}"
 
     - name: Commit and push changes
       run: |
