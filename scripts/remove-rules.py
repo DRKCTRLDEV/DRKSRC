@@ -8,21 +8,27 @@ def remove_rules_files(apps=None):
     root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
     apps_dir = os.path.join(root_dir, 'Apps')
     
+    print(f"Looking in directory: {apps_dir}")
+    
     if not os.path.exists(apps_dir):
-        print("Apps directory not found!")
+        print(f"Apps directory not found at: {apps_dir}")
         return
     
     # If specific apps are provided, only process those
     if apps and apps.strip():
         target_apps = [app.strip() for app in apps.split(',')]
+        print(f"Processing specific apps: {target_apps}")
     else:
         # Otherwise, process all apps
         target_apps = [d for d in os.listdir(apps_dir) if os.path.isdir(os.path.join(apps_dir, d))]
+        print(f"Processing all apps found: {target_apps}")
     
     files_removed = 0
     
     for app in target_apps:
         app_path = os.path.join(apps_dir, app)
+        print(f"Checking app directory: {app_path}")
+        
         if not os.path.exists(app_path):
             print(f"Warning: App directory '{app}' not found")
             continue
@@ -34,7 +40,10 @@ def remove_rules_files(apps=None):
         ]
         
         for pattern in patterns:
-            for file_path in glob.glob(pattern):
+            found_files = glob.glob(pattern)
+            print(f"Searching pattern {pattern} - found: {found_files}")
+            
+            for file_path in found_files:
                 try:
                     os.remove(file_path)
                     print(f"Removed: {os.path.relpath(file_path, root_dir)}")
@@ -43,7 +52,10 @@ def remove_rules_files(apps=None):
                     print(f"Error removing {file_path}: {str(e)}")
     
     if files_removed == 0:
-        print("No rules files found to remove")
+        print("No rules files were found to remove. Verify that:")
+        print("1. The files exist in the Apps/[appname] directories")
+        print("2. File extensions are exactly '.rules' or '.rules.yaml'")
+        print("3. The app names provided (if any) match directory names")
     else:
         print(f"Total files removed: {files_removed}")
 
