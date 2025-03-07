@@ -18,62 +18,62 @@
         {
             "version": "1.12.1",
             "date": "2024-06-17",
-            "size": 161720,
-            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.12.1/ch.xxtou.hudapp.jb_1.12.1_iphoneos-arm.deb"
-        },
-        {
-            "version": "1.12.1",
-            "date": "2024-06-17",
-            "size": 161582,
-            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.12.1/ch.xxtou.hudapp.jb_1.12.1_iphoneos-arm64.deb"
-        },
-        {
-            "version": "1.12.1",
-            "date": "2024-06-17",
-            "size": 161658,
-            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.12.1/ch.xxtou.hudapp.jb_1.12.1_iphoneos-arm64e.deb"
-        },
-        {
-            "version": "1.12.1",
-            "date": "2024-06-17",
-            "size": 451840,
-            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.12.1/TrollSpeed%2BAppIntents16_1.12.1.tipa"
+            "size": 162585,
+            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.12.1/TrollSpeed_v1.12.1.tipa"
         },
         {
             "version": "1.12.0",
             "date": "2024-06-16",
-            "size": 133344,
-            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.12.0/ch.xxtou.hudapp.jb_1.12.0_iphoneos-arm.deb"
-        },
-        {
-            "version": "1.12.0",
-            "date": "2024-06-16",
-            "size": 133358,
-            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.12.0/ch.xxtou.hudapp.jb_1.12.0_iphoneos-arm64.deb"
-        },
-        {
-            "version": "1.12.0",
-            "date": "2024-06-16",
-            "size": 452033,
-            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.12.0/TrollSpeed%2BAppIntents16_1.12.0.tipa"
+            "size": 162774,
+            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.12.0/TrollSpeed_v1.12.0.tipa"
         },
         {
             "version": "1.11.11",
             "date": "2024-03-17",
-            "size": 133114,
-            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.11/ch.xxtou.hudapp_1.11.11_iphoneos-arm.deb"
+            "size": 162640,
+            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.11/TrollSpeed_v1.11.11.tipa"
         },
         {
-            "version": "1.11.11",
-            "date": "2024-03-17",
-            "size": 133172,
-            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.11/ch.xxtou.hudapp_1.11.11_iphoneos-arm64.deb"
+            "version": "1.11.9",
+            "date": "2024-03-16",
+            "size": 131308,
+            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.9/ch.xxtou.hudapp_1.11.9_iphoneos-arm.deb"
         },
         {
-            "version": "1.11.11",
-            "date": "2024-03-17",
-            "size": 451905,
-            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.11/TrollSpeed%2BAppIntents16_1.11.11.tipa"
+            "version": "1.11.9",
+            "date": "2024-03-16",
+            "size": 131382,
+            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.9/ch.xxtou.hudapp_1.11.9_iphoneos-arm64.deb"
+        },
+        {
+            "version": "1.11.9",
+            "date": "2024-03-16",
+            "size": 450639,
+            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.9/TrollSpeed%2BAppIntents16_1.11.9.tipa"
+        },
+        {
+            "version": "1.11.9",
+            "date": "2024-03-16",
+            "size": 160981,
+            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.9/TrollSpeed_v1.11.9.tipa"
+        },
+        {
+            "version": "1.11.6",
+            "date": "2024-03-07",
+            "size": 134588,
+            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.6/ch.xxtou.hudapp_1.11.6_iphoneos-arm.deb"
+        },
+        {
+            "version": "1.11.6",
+            "date": "2024-03-07",
+            "size": 131068,
+            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.6/ch.xxtou.hudapp_1.11.6_iphoneos-arm64.deb"
+        },
+        {
+            "version": "1.11.6",
+            "date": "2024-03-07",
+            "size": 453391,
+            "url": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.6/TrollSpeed%2BAppIntents16_1.11.6.tipa"
         }
     ],
     "scarletDebs": [],

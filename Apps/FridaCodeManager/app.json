@@ -17,64 +17,64 @@
     ],
     "versions": [
         {
-            "version": "2.0a5",
-            "date": "2025-02-25",
-            "size": 3084160,
-            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v2.0a5/FridaCodeManager-roothide.deb"
+            "version": "1.6",
+            "date": "2024-10-22",
+            "size": 3165688,
+            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-roothide.deb"
         },
         {
-            "version": "2.0a5",
-            "date": "2025-02-25",
-            "size": 3084472,
-            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v2.0a5/FridaCodeManager-rootless.deb"
+            "version": "1.6",
+            "date": "2024-10-22",
+            "size": 3166104,
+            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-rootless.deb"
         },
         {
-            "version": "2.0a4",
-            "date": "2025-02-07",
-            "size": 4779072,
-            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v2.0a4/FridaCodeManager-roothide.deb"
+            "version": "1.6",
+            "date": "2024-10-22",
+            "size": 66806491,
+            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-stock-alpha.ipa"
         },
         {
-            "version": "2.0a4",
-            "date": "2025-02-07",
-            "size": 4779276,
-            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v2.0a4/FridaCodeManager-rootless.deb"
+            "version": "1.6",
+            "date": "2024-10-22",
+            "size": 70613655,
+            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa"
         },
         {
-            "version": "2.0a3",
-            "date": "2025-02-01",
-            "size": 4779344,
-            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v2.0a3/FridaCodeManager-roothide.deb"
+            "version": "1.5.5",
+            "date": "2024-10-14",
+            "size": 108290634,
+            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.5.5/FridaCodeManager.tipa"
         },
         {
-            "version": "2.0a3",
-            "date": "2025-02-01",
-            "size": 4779124,
-            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v2.0a3/FridaCodeManager-rootless.deb"
+            "version": "1.5.4.1",
+            "date": "2024-10-13",
+            "size": 3175372,
+            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.5.4.1/FridaCodeManager.v1.5.4.2-roothide.deb"
         },
         {
-            "version": "2.0a2",
-            "date": "2025-01-31",
-            "size": 4776120,
-            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v2.0a2/FridaCodeManager-roothide.deb"
+            "version": "1.5.4.1",
+            "date": "2024-10-13",
+            "size": 3173888,
+            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.5.4.1/FridaCodeManager.v1.5.4.2-rootless.deb"
         },
         {
-            "version": "2.0a2",
-            "date": "2025-01-31",
-            "size": 4776176,
-            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v2.0a2/FridaCodeManager-rootless.deb"
+            "version": "1.5.3",
+            "date": "2024-10-09",
+            "size": 3171244,
+            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.5.3/FridaCodeManager-v1.5.3-roothide.deb"
         },
         {
-            "version": "2.0a1",
-            "date": "2025-01-29",
-            "size": 4769472,
-            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v2.0a1/FridaCodeManager-roothide-v2.0a1.deb"
+            "version": "1.5.3",
+            "date": "2024-10-09",
+            "size": 3172072,
+            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.5.3/FridaCodeManager-v1.5.3-rootless.deb"
         },
         {
-            "version": "2.0a1",
-            "date": "2025-01-29",
-            "size": 4770140,
-            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v2.0a1/FridaCodeManager-rootless-v2.0a1.deb"
+            "version": "1.5.1",
+            "date": "2024-09-06",
+            "size": 3156768,
+            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.5.1/FridaCodeManage-v1.5.1-roothide.deb"
         }
     ],
     "scarletDebs": [],

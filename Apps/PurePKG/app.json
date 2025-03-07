@@ -20,61 +20,61 @@
             "version": "2.0.2",
             "date": "2024-07-24",
             "size": 6637698,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/PurePKG.tipa"
-        },
-        {
-            "version": "2.0.2",
-            "date": "2024-07-24",
-            "size": 8793228,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/uwu.lrdsnow.purepkg_appletvos-arm64.deb"
-        },
-        {
-            "version": "2.0.2",
-            "date": "2024-07-24",
-            "size": 2969824,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/uwu.lrdsnow.purepkg_darwin-amd64.deb"
-        },
-        {
-            "version": "2.0.2",
-            "date": "2024-07-24",
-            "size": 2968976,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/uwu.lrdsnow.purepkg_darwin-arm64.deb"
-        },
-        {
-            "version": "2.0.2",
-            "date": "2024-07-24",
-            "size": 3532492,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/uwu.lrdsnow.purepkg_iphoneos-arm.deb"
-        },
-        {
-            "version": "2.0.2",
-            "date": "2024-07-24",
-            "size": 3532576,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/uwu.lrdsnow.purepkg_iphoneos-arm64.deb"
-        },
-        {
-            "version": "2.0.2",
-            "date": "2024-07-24",
-            "size": 3533820,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/uwu.lrdsnow.purepkg_iphoneos-arm64e.deb"
+            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/PurePKGDemo.ipa"
         },
         {
             "version": "2.0.1",
             "date": "2024-06-23",
             "size": 9394403,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/PurePKG.tipa"
+            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/PurePKGDemo.ipa"
         },
         {
             "version": "2.0.1",
             "date": "2024-06-23",
-            "size": 10759404,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/uwu.lrdsnow.purepkg_appletvos-arm64.deb"
+            "size": 3616656,
+            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/uwu.lrdsnow.purepkg_darwin-arm64.deb"
         },
         {
             "version": "2.0.1",
             "date": "2024-06-23",
-            "size": 3615896,
-            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/uwu.lrdsnow.purepkg_darwin-amd64.deb"
+            "size": 5490528,
+            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/uwu.lrdsnow.purepkg_iphoneos-arm.deb"
+        },
+        {
+            "version": "2.0.1",
+            "date": "2024-06-23",
+            "size": 5492660,
+            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/uwu.lrdsnow.purepkg_iphoneos-arm64.deb"
+        },
+        {
+            "version": "2.0.1",
+            "date": "2024-06-23",
+            "size": 5492640,
+            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/uwu.lrdsnow.purepkg_iphoneos-arm64e.deb"
+        },
+        {
+            "version": "2.0",
+            "date": "2024-06-21",
+            "size": 6627862,
+            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/PurePKG.tipa"
+        },
+        {
+            "version": "2.0",
+            "date": "2024-06-21",
+            "size": 6627862,
+            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/PurePKGDemo.ipa"
+        },
+        {
+            "version": "2.0",
+            "date": "2024-06-21",
+            "size": 8790608,
+            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/uwu.lrdsnow.purepkg_appletvos-arm64.deb"
+        },
+        {
+            "version": "2.0",
+            "date": "2024-06-21",
+            "size": 3411932,
+            "url": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/uwu.lrdsnow.purepkg_darwin-amd64.deb"
         }
     ],
     "scarletDebs": [],

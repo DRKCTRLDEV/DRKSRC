@@ -12,38 +12,7 @@
     "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/screenshots/IMG_1.png"
     ],
-    "versions": [
-        {
-            "version": "1.0.0",
-            "date": "2023-05-26",
-            "size": 20542,
-            "url": "https://github.com/khanhduytran0/CAPerfHUD/releases/download/1.0.0/com.kdt.caperfhudmodule_1.0.0_iphoneos-arm.deb"
-        },
-        {
-            "version": "1.0.0",
-            "date": "2023-05-26",
-            "size": 20454,
-            "url": "https://github.com/khanhduytran0/CAPerfHUD/releases/download/1.0.0/com.kdt.caperfhudmodule_1.0.0_iphoneos-arm64.deb"
-        },
-        {
-            "version": "0.0.1",
-            "date": "2023-05-21",
-            "size": 11320,
-            "url": "https://github.com/khanhduytran0/CAPerfHUD/releases/download/0.0.1/com.kdt.caperfhud_0.0.1.ipa"
-        },
-        {
-            "version": "0.0.1",
-            "date": "2023-05-21",
-            "size": 9604,
-            "url": "https://github.com/khanhduytran0/CAPerfHUD/releases/download/0.0.1/com.kdt.caperfhud_0.0.1_iphoneos-arm.deb"
-        },
-        {
-            "version": "0.0.1",
-            "date": "2023-05-21",
-            "size": 9660,
-            "url": "https://github.com/khanhduytran0/CAPerfHUD/releases/download/0.0.1/com.kdt.caperfhud_0.0.1_iphoneos-arm64.deb"
-        }
-    ],
+    "versions": [],
     "scarletDebs": [],
     "scarletBackup": true
 }
