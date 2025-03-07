@@ -1,15 +1,15 @@
-name: Compile Repository (FAST)
+name: Compile Repository
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+    - cron: '0 0 * * *'
   workflow_dispatch:
     inputs:
       format:
-        description: 'Format to compile (altstore/trollapps/scarlet, leave empty for all)'
+        description: 'Format to compile (altstore, trollapps, scarlet, or empty for all)'
         required: false
-        type: string
-        # Optional: Add allowed values
+        default: ''
+        type: choice
         options:
           - ''
           - altstore
@@ -34,26 +34,19 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        # Add any required packages here if needed
-        # pip install -r requirements.txt
     
     - name: Run compilation
       run: |
-        if [ -n "${{ inputs.format }}" ]; then
-          python3 scripts/compile_repository.py "${{ inputs.format }}"
-        else
-          python3 scripts/compile_repository.py
-        fi
-    
+        python3 scripts/compile_repo.py "${{ github.event.inputs.format }}"
+
     - name: Commit and push changes
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
         git add *.json
-        # Check if there are changes before committing
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
-          git commit -m "chore: Update ${{ inputs.format || 'all' }} repository files"
+          git commit -m "chore: Update ${{ github.event.inputs.format || 'all' }} repository files [skip ci]"
           git push
         fi
