@@ -15,7 +15,56 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_3.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_4.png"
     ],
-    "versions": [],
+    "versions": [
+        {
+            "version": "3.2.0",
+            "date": "2025-01-15",
+            "size": 2962233,
+            "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.2.0/com.kdt.livecontainer_3.2.0.ipa"
+        },
+        {
+            "version": "3.1.0",
+            "date": "2024-12-16",
+            "size": 2899038,
+            "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.1.0/com.kdt.livecontainer_3.1.0.ipa"
+        },
+        {
+            "version": "3.0.0",
+            "date": "2024-12-16",
+            "size": 905495,
+            "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.0.0/com.kdt.livecontainer_3.0.0.ipa"
+        },
+        {
+            "version": "2.1.2",
+            "date": "2024-08-15",
+            "size": 194586,
+            "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.2/com.kdt.livecontainer_2.1.2.ipa"
+        },
+        {
+            "version": "2.1.1",
+            "date": "2024-08-08",
+            "size": 195840,
+            "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.1/com.kdt.livecontainer_2.1.1.ipa"
+        },
+        {
+            "version": "2.1",
+            "date": "2024-08-07",
+            "size": 191991,
+            "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1/com.kdt.livecontainer_2.1.ipa"
+        },
+        {
+            "version": "2.0.pre",
+            "date": "2024-04-22",
+            "size": 103293,
+            "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.0-pre/com.kdt.livecontainer_2.0.ipa"
+        },
+        {
+            "version": "1.0",
+            "date": "2023-07-17",
+            "size": 31173,
+            "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/1.0/com.kdt.livecontainer.ipa"
+        }
+    ],
     "scarletDebs": [],
     "scarletBackup": true
 }
