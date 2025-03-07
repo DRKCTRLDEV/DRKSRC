@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import os
 import argparse
-import glob
 
 def remove_rules_files(apps=None):
     # Get the root directory (assuming script is in ./scripts/)
@@ -33,28 +32,27 @@ def remove_rules_files(apps=None):
             print(f"Warning: App directory '{app}' not found")
             continue
             
-        # Look for both .rules and .rules.yaml files
-        patterns = [
-            os.path.join(app_path, '*.rules'),
-            os.path.join(app_path, '*.rules.yaml')
-        ]
+        # Exact filenames to look for
+        filenames = ['.rules', '.rules.yaml']
         
-        for pattern in patterns:
-            found_files = glob.glob(pattern)
-            print(f"Searching pattern {pattern} - found: {found_files}")
+        for filename in filenames:
+            file_path = os.path.join(app_path, filename)
+            print(f"Checking for: {file_path}")
             
-            for file_path in found_files:
+            if os.path.exists(file_path):
                 try:
                     os.remove(file_path)
                     print(f"Removed: {os.path.relpath(file_path, root_dir)}")
                     files_removed += 1
                 except Exception as e:
                     print(f"Error removing {file_path}: {str(e)}")
+            else:
+                print(f"File not found: {file_path}")
     
     if files_removed == 0:
         print("No rules files were found to remove. Verify that:")
-        print("1. The files exist in the Apps/[appname] directories")
-        print("2. File extensions are exactly '.rules' or '.rules.yaml'")
+        print("1. Files are named exactly '.rules' or '.rules.yaml' (no additional extensions)")
+        print("2. Files exist in the Apps/[appname] directories")
         print("3. The app names provided (if any) match directory names")
     else:
         print(f"Total files removed: {files_removed}")
