@@ -117,9 +117,9 @@ class VersionManager:
         versions = {}
         rules = self._load_rules(app_dir)
 
-        token = os.environ.get("REPO_TOKEN")
+        token = os.environ.get("GITHUB_TOKEN")
         if not token:
-            self.logger.error("GitHub token (REPO_TOKEN) not set in environment")
+            self.logger.error("GitHub token (GITHUB_TOKEN) not set in environment")
             return {'success': False, 'message': 'Missing GitHub token', 'versions': []}
         headers = {'Authorization': f'token {token}'}
 
