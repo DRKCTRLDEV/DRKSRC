@@ -1,203 +1,226 @@
-import sys
-import os
-import json
-import logging
-import requests
-import yaml
+#!/usr/bin/env python3
 import argparse
-from typing import Dict, Optional, List, Set
-from requests.exceptions import RequestException
-from concurrent.futures import ThreadPoolExecutor
-from functools import lru_cache
+import json
+import os
+import logging
+import random
+import sys
+from datetime import datetime
+from typing import Dict, List, Optional, Tuple
+from collections import defaultdict
+from pathlib import Path
 
-class VersionManager:
-    def __init__(self, apps_root: str, keep_versions: int = 10, max_workers: int = 4):
-        if not isinstance(keep_versions, int) or keep_versions < 1:
-            raise ValueError("keep_versions must be a positive integer")
-        self.apps_root = apps_root
-        self.keep_versions = keep_versions
-        self.max_workers = max_workers
-        self.logger = self._init_logger()
-        self.token = os.environ.get("GITHUB_TOKEN")
-        self.session = requests.Session()
-        self.session.headers.update({'Authorization': f'token {self.token}'})
+CONFIG = {
+    "NO_ICON_PATH": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
+    "DEFAULT_MIN_OS": "13.0",
+    "DEFAULT_MAX_OS": "18.0",
+    "OUTPUT_FILES": {
+        "altstore": "altstore.json",
+        "trollapps": "trollapps.json",
+        "scarlet": "scarlet.json"
+    }
+}
 
-    def _init_logger(self) -> logging.Logger:
-        logger = logging.getLogger("VersionManager")
-        logger.setLevel(logging.INFO)
-        if not logger.handlers:  # Avoid duplicate handlers
-            handler = logging.StreamHandler()
-            handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
-            logger.addHandler(handler)
-        return logger
+def configure_logging(verbose: bool = False) -> logging.Logger:
+    level = logging.DEBUG if verbose else logging.INFO
+    logging.basicConfig(
+        level=level,
+        format='%(asctime)s - %(levelname)s - %(message)s'
+    )
+    return logging.getLogger(__name__)
 
-    def manage(self, action: str, targets: Optional[List[str]] = None, keep: Optional[int] = None):
-        self.keep_versions = max(1, keep or self.keep_versions)
-        targets = set(targets or []) or {None}
-        apps = [d for d in os.listdir(self.apps_root) if os.path.isdir(os.path.join(self.apps_root, d))]
-        
-        with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
-            futures = [
-                executor.submit(self._process_app, app, action)
-                for app in apps
-                if not targets or app in targets
-            ]
-            for future in futures:
-                future.result()  # Raise any exceptions
+class RepoCompiler:
+    def __init__(self, root_dir: str = '.', featured_count: int = 5, output_dir: str = '.'):
+        self.root_dir = Path(root_dir).resolve()
+        self.apps_dir = self.root_dir / 'Apps'
+        self.output_dir = Path(output_dir).resolve()
+        self.featured_count = featured_count
+        self.logger = configure_logging()
 
-    def _process_app(self, app: str, action: str):
-        path = os.path.join(self.apps_root, app)
-        config_path = os.path.join(path, 'app.json')
-        if not os.path.isfile(config_path):
-            return
-
+    def load_config(self, path: Path) -> Optional[Dict]:
         try:
-            with open(config_path, 'r') as f:
-                data = json.load(f)
+            return json.loads(path.read_text(encoding='utf-8'))
         except (FileNotFoundError, json.JSONDecodeError, PermissionError) as e:
-            self.logger.error(f"Failed to load config for {app}: {str(e)}")
-            return
+            self.logger.error(f"Failed to load {path}: {e}")
+            return None
 
-        if not self._valid_repo(data.get('gitURLs')):
-            return
-
-        if action == 'update':
-            result = self._fetch_new_versions(data, path)
-            if result['success']:
-                data['versions'] = result['versions']
-                self._save_config(config_path, data)
-                self.logger.info(f"Updated {app}: {result['message']}")
-            else:
-                self.logger.error(f"Failed to update {app}: {result['message']}")
-        elif action == 'remove':
-            data['versions'] = []
-            self._save_config(config_path, data)
-            self.logger.info(f"Removed versions for {app}")
-
-    @lru_cache(maxsize=128)
-    def _load_rules(self, app_dir: str) -> Dict:
-        rules_path = os.path.join(app_dir, '.rules.yaml')
-        if not os.path.exists(rules_path):
-            template = {
-                'preferred_extensions': ['.tipa', '.ipa'],
-                'excluded_extensions': ['.zip', '.tar.gz', '.deb'],
-                'exclude_patterns': ['debug', 'beta'],
-                'strip_v_prefix': True,
-                'replace_chars': {'-': '.', '_': '.'},
-                'remove_chars': ['-beta', '-alpha', '-dev']
-            }
-            try:
-                with open(rules_path, 'w') as f:
-                    yaml.dump(template, f, default_flow_style=False)
-                self.logger.info(f"Created rules template for {os.path.basename(app_dir)}")
-            except (IOError, PermissionError) as e:
-                self.logger.error(f"Failed to create rules for {os.path.basename(app_dir)}: {str(e)}")
-            return {}
+    def save_config(self, path: Path, data: Dict, dry_run: bool = False) -> bool:
+        if dry_run:
+            self.logger.info(f"Dry run: Would save to {path}")
+            return True
         try:
-            with open(rules_path, 'r') as f:
-                return yaml.safe_load(f) or {}
-        except (yaml.YAMLError, IOError):
-            return {}
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding='utf-8')
+            self.logger.info(f"Saved to {path}")
+            return True
+        except Exception as e:
+            self.logger.error(f"Failed to save {path}: {e}")
+            return False
 
-    def _fetch_new_versions(self, data: Dict, app_dir: str) -> Dict:
-        if not self.token:
-            return {'success': False, 'message': 'Missing GitHub token', 'versions': []}
+    def _load_app_data(self, target_fmt: str) -> Tuple[List[Dict], List[str]]:
+        if not self.apps_dir.exists():
+            self.logger.error(f"Apps directory not found: {self.apps_dir}")
+            return [], []
 
-        repos = data.get('gitURLs', [])
-        repos = [repos] if isinstance(repos, str) else repos
-        existing: Set[str] = {v['url'] for v in data.get('versions', [])}
-        versions: Dict[str, Dict] = {}
-        rules = self._load_rules(app_dir)
-
-        for repo in repos:
-            if not self._valid_gh_url(repo):
+        apps, bundle_ids = [], []
+        for app_dir in sorted(self.apps_dir.iterdir()):
+            if not app_dir.is_dir():
+                self.logger.debug(f"Skipping non-directory: {app_dir}")
                 continue
-            owner, repo_name = repo.rstrip('/').split('/')[-2:]
-            url = f'https://api.github.com/repos/{owner}/{repo_name}/releases'
-            
-            try:
-                releases = self._fetch_all_pages(url)
-                for release in releases:
-                    for asset in release.get('assets', []):
-                        if self._should_include_asset(asset, rules):
-                            version = {
-                                'version': self._format_version_number(release['tag_name'], rules),
-                                'date': release['published_at'].split('T')[0],
-                                'size': asset['size'],
-                                'url': asset['browser_download_url']
-                            }
-                            if version['url'] not in existing:
-                                versions[version['url']] = version
-            except RequestException as e:
-                return {'success': False, 'message': f"API error: {str(e)}", 'versions': []}
 
-        sorted_versions = sorted(versions.values(), key=lambda x: x['date'], reverse=True)[:self.keep_versions]
-        new_count = len(versions) - (len(data.get('versions', [])) - len(existing & set(versions.keys())))
-        return {
-            'success': True,
-            'message': f"Added {new_count} versions" if new_count > 0 else "No new versions",
-            'versions': sorted_versions
+            app_config = self.load_config(app_dir / 'app.json')
+            if not app_config or not (bid := app_config.get("bundleID")):
+                self.logger.warning(f"Skipping invalid app config in {app_dir}")
+                continue
+            app_config.setdefault("name", "Unnamed App")
+            apps.append(app_config)
+            bundle_ids.append(bid)
+            self.logger.info(f"Loaded app: {app_config['name']} ({bid})")
+
+        if not bundle_ids:
+            self.logger.warning("No valid apps found")
+            return apps, []
+
+        current_week = datetime.now().isocalendar().week
+        random.seed(f"{datetime.now().year}-{current_week}")
+        featured = random.sample(bundle_ids, min(self.featured_count, len(bundle_ids)))
+        random.seed()
+
+        self.logger.info(f"Loaded {len(apps)} apps")
+        return apps, featured
+
+    def compile_repos(self, target_fmt: Optional[str] = None, verbose: bool = False) -> Dict:
+        self.logger.info(f"Compiling for: {target_fmt or 'all'}")
+        repo_config = self.load_config(self.root_dir / 'repo-info.json')
+        if not repo_config:
+            return {'success': False, 'error': 'Missing/invalid repo config'}
+
+        apps, featured = self._load_app_data(target_fmt)
+        if not apps:
+            return {'success': False, 'error': 'No valid apps found'}
+
+        formats = {
+            'altstore': (self.output_dir / CONFIG["OUTPUT_FILES"]["altstore"], self._format_altstore),
+            'trollapps': (self.output_dir / CONFIG["OUTPUT_FILES"]["trollapps"], self._format_trollapps),
+            'scarlet': (self.output_dir / CONFIG["OUTPUT_FILES"]["scarlet"], self._format_scarlet)
         }
 
-    def _fetch_all_pages(self, url: str) -> List[Dict]:
-        results = []
-        while url:
-            response = self.session.get(url, timeout=10)
-            response.raise_for_status()
-            results.extend(response.json())
-            url = response.links.get('next', {}).get('url')
-        return results
+        target_fmt = target_fmt.lower() if target_fmt else None
+        if target_fmt and target_fmt in formats:
+            formats = {target_fmt: formats[target_fmt]}
+        elif target_fmt:
+            return {'success': False, 'error': f'Invalid format: {target_fmt}'}
 
-    def _should_include_asset(self, asset: Dict, rules: Dict) -> bool:
-        name = asset['name'].lower()
-        return (
-            not any(name.endswith(ext) for ext in rules.get('excluded_extensions', [])) and
-            not any(pat.lower() in name for pat in rules.get('exclude_patterns', [])) and
-            (not rules.get('preferred_extensions') or 
-             any(name.endswith(ext) for ext in rules['preferred_extensions']))
-        )
+        for fmt, (path, formatter) in formats.items():
+            repo_data = formatter(repo_config, apps, featured) if fmt != 'scarlet' else formatter(repo_config, apps)
+            if not self.save_config(path, repo_data):
+                return {'success': False, 'error': f'Failed to save {path.name}'}
 
-    def _format_version_number(self, version: str, rules: Dict) -> str:
-        if rules.get('strip_v_prefix', False) and version.lower().startswith('v'):
-            version = version[1:]
-        for char in rules.get('remove_chars', []):
-            version = version.replace(char, '')
-        for char, repl in rules.get('replace_chars', {}).items():
-            version = version.replace(char, repl)
-        return version.strip()
+        self.logger.info("Compilation completed")
+        return {'success': True}
 
-    def _save_config(self, path: str, data: Dict):
-        try:
-            with open(path, 'w') as f:
-                json.dump(data, f, indent=4)
-        except (IOError, PermissionError) as e:
-            self.logger.error(f"Failed to save config {path}: {str(e)}")
+    def _format_altstore(self, repo_config: Dict, apps: List[Dict], featured: List[str]) -> Dict:
+        return {
+            "name": repo_config.get("name", "Unnamed Repository"),
+            "subtitle": repo_config.get("subtitle", ""),
+            "description": repo_config.get("description", ""),
+            "iconURL": repo_config.get("iconURL", ""),
+            "headerURL": repo_config.get("headerURL", ""),
+            "website": repo_config.get("website", ""),
+            "tintColor": repo_config.get("tintColor", ""),
+            "featuredApps": featured,
+            "apps": [self._create_entry(app, 'altstore') for app in apps],
+        }
 
-    def _valid_repo(self, repo) -> bool:
-        repos = [repo] if isinstance(repo, str) else repo or []
-        return any(self._valid_gh_url(u) for u in repos)
+    def _format_trollapps(self, repo_config: Dict, apps: List[Dict], featured: List[str]) -> Dict:
+        return {
+            "name": repo_config.get("name", "Unnamed Repository"),
+            "subtitle": repo_config.get("subtitle", ""),
+            "description": repo_config.get("description", ""),
+            "iconURL": repo_config.get("iconURL", ""),
+            "headerURL": repo_config.get("headerURL", ""),
+            "website": repo_config.get("website", ""),
+            "tintColor": repo_config.get("tintColor", ""),
+            "featuredApps": featured,
+            "apps": [self._create_entry(app, 'trollapps') for app in apps],
+        }
 
-    @staticmethod
-    def _valid_gh_url(url: str) -> bool:
-        return url.startswith(("https://github.com/", "http://github.com/"))
+    def _format_scarlet(self, repo_config: Dict, apps: List[Dict]) -> Dict:
+        categories = defaultdict(list)
+        for app in apps:
+            category = app.get("category", "Other")
+            categories[category].append(self._create_entry(app, 'scarlet'))
 
-def int_or_float_to_int(value: str) -> int:
-    try:
-        num = float(value)
-        if not num.is_integer():
-            raise ValueError
-        return int(num)
-    except ValueError:
-        raise argparse.ArgumentTypeError(f"Invalid keep value: {value}. Must be a positive integer.")
+        return {
+            "META": {
+                "repoName": repo_config.get("name", "Unnamed Repository"),
+                "repoIcon": repo_config.get("iconURL", ""),
+            },
+            **categories
+        }
+
+    def _create_entry(self, app: Dict, fmt: str) -> Dict:
+        if fmt == 'scarlet':
+            versions = app.get('versions', [{}])
+            version_data = versions[0] if versions else {}
+            entry = {
+                'name': app.get('name', 'Unnamed App'),
+                'version': version_data.get('version', 'Unknown'),
+                'down': version_data.get('url', ''),
+                'category': app.get('category', 'Other'),
+                'description': app.get('description', ''),
+                'bundleID': app.get('bundleID', 'Unknown')
+            }
+            if app.get('icon'):
+                entry['icon'] = app['icon']
+            if app.get('scarletDebs'):
+                entry['debs'] = app['scarletDebs']
+            if app.get('screenshots'):
+                entry['screenshots'] = app['screenshots']
+            if app.get('dev'):
+                entry['dev'] = app['dev']
+            if 'scarletBackup' in app:
+                entry['enableBackup'] = app['scarletBackup']
+            return entry
+        
+        entry = {
+            'name': app.get('name', 'Unnamed App'),
+            'bundleIdentifier': app.get('bundleID', 'Unknown'),
+            'developerName': app.get('devName', 'Unknown Developer'),
+            'subtitle': app.get('subtitle', ''),
+            'localizedDescription': app.get('description', ''),
+            'iconURL': app.get('icon', CONFIG["NO_ICON_PATH"]),
+            'category': app.get('category', 'Other'),
+            'screenshots': app.get('screenshots', []),
+            'versions': [self._format_version(v) for v in app.get('versions', [])],
+            'appPermissions': {'entitlements': {}, 'privacy': {}}
+        }
+        if fmt == 'altstore':
+            entry['screenshots'] = app.get('screenshots', [])
+        elif fmt == 'trollapps':
+            entry['screenshotURLs'] = app.get('screenshots', [])
+        return entry
+
+    def _format_version(self, version: Dict) -> Dict:
+        return {
+            "version": version.get("version", "Unknown"),
+            "date": version.get("date", ""),
+            "downloadURL": version.get("url", ""),
+            "size": version.get("size", 0),
+            "minOSVersion": CONFIG["DEFAULT_MIN_OS"],
+            "maxOSVersion": CONFIG["DEFAULT_MAX_OS"]
+        }
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Manage app versions")
-    parser.add_argument("action", choices=["update", "remove"], help="Action to perform")
-    parser.add_argument("--keep", type=int_or_float_to_int, default=5, help="Number of versions to keep")
-    parser.add_argument("--apps", type=str, help="Comma-separated list of app names")
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-f', '--format', type=str, choices=['altstore', 'trollapps', 'scarlet'])
+    parser.add_argument('-v', '--verbose', action='store_true')
     args = parser.parse_args()
 
-    logging.basicConfig(level=logging.INFO)
-    manager = VersionManager(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "Apps"))
-    targets = [t.strip() for t in args.apps.split(",")] if args.apps else None
-    manager.manage(args.action, targets, args.keep)
+    compiler = RepoCompiler()
+    result = compiler.compile_repos(args.format, args.verbose)
+    logger = configure_logging(args.verbose)
+    if not result['success']:
+        logger.error(f"Compilation Failed: {result['error']}")
+        sys.exit(1)
+    logger.info("Compilation Completed")
