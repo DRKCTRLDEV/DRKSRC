@@ -10,14 +10,7 @@
     "category": "utilities",
     "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollInstallerX/icon.png",
     "screenshots": [],
-    "versions": [
-        {
-            "version": "1.0.3",
-            "date": "2024-09-12",
-            "size": 6889214,
-            "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX.ipa"
-        }
-    ],
+    "versions": [],
     "scarletDebs": [],
     "scarletBackup": true
 }

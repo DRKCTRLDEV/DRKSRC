@@ -10,68 +10,7 @@
     "category": "utilities",
     "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollRecorder/icon.png",
     "screenshots": [],
-    "versions": [
-        {
-            "version": "2.15.557",
-            "date": "2025-01-15",
-            "size": 5653440,
-            "url": "https://github.com/Lessica/TrollRecorder/releases/download/v2.15-557/TRApp_2.15-557.tipa"
-        },
-        {
-            "version": "2.14.542",
-            "date": "2024-12-25",
-            "size": 5604122,
-            "url": "https://github.com/Lessica/TrollRecorder/releases/download/v2.14-542/TRApp_2.14-542.tipa"
-        },
-        {
-            "version": "2.5.406",
-            "date": "2024-10-20",
-            "size": 4841357,
-            "url": "https://github.com/Lessica/TrollRecorder/releases/download/v2.5-406/TRApp_2.5-406.tipa"
-        },
-        {
-            "version": "2.4.401",
-            "date": "2024-10-12",
-            "size": 4619521,
-            "url": "https://github.com/Lessica/TrollRecorder/releases/download/v2.4-401/TRApp_2.4-401.tipa"
-        },
-        {
-            "version": "2.2.392",
-            "date": "2024-09-25",
-            "size": 4591128,
-            "url": "https://github.com/Lessica/TrollRecorder/releases/download/v2.2-392/TRApp_2.2-392.tipa"
-        },
-        {
-            "version": "2.1.390",
-            "date": "2024-09-16",
-            "size": 4537567,
-            "url": "https://github.com/Lessica/TrollRecorder/releases/download/v2.1-390/TRApp_2.1-390.tipa"
-        },
-        {
-            "version": "1.22.369",
-            "date": "2024-09-02",
-            "size": 4435874,
-            "url": "https://github.com/Lessica/TrollRecorder/releases/download/v1.22-369/TRApp_1.22-369.tipa"
-        },
-        {
-            "version": "1.20.357",
-            "date": "2024-08-27",
-            "size": 6430475,
-            "url": "https://github.com/Lessica/TrollRecorder/releases/download/v1.20-357/TRApp_1.20-357.tipa"
-        },
-        {
-            "version": "1.18.1.354",
-            "date": "2024-07-24",
-            "size": 4161593,
-            "url": "https://github.com/Lessica/TrollRecorder/releases/download/v1.18.1-354/TRApp_1.18.1-354.tipa"
-        },
-        {
-            "version": "1.18.0.352",
-            "date": "2024-07-12",
-            "size": 4156529,
-            "url": "https://github.com/Lessica/TrollRecorder/releases/download/v1.18.0-352/TRApp_1.18.0-352.tipa"
-        }
-    ],
+    "versions": [],
     "scarletDebs": [],
     "scarletBackup": true
 }

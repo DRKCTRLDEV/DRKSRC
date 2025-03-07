@@ -15,14 +15,7 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Helium/screenshots/IMG_3.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Helium/screenshots/IMG_4.png"
     ],
-    "versions": [
-        {
-            "version": "1.1",
-            "date": "2023-12-08",
-            "size": 4293924,
-            "url": "https://github.com/leminlimez/Helium/releases/download/v1.1/Helium_BELOW_STATUS_BAR.tipa"
-        }
-    ],
+    "versions": [],
     "scarletDebs": [],
     "scarletBackup": true
 }

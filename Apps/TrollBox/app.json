@@ -16,20 +16,7 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_4.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_5.png"
     ],
-    "versions": [
-        {
-            "version": "0.1",
-            "date": "2023-01-29",
-            "size": 14113886,
-            "url": "https://github.com/c22dev/TrollBox/releases/download/0.1/TrollBox16.ipa"
-        },
-        {
-            "version": "0.0.1",
-            "date": "2022-12-19",
-            "size": 2878138,
-            "url": "https://github.com/c22dev/TrollBox/releases/download/0.0.1/TrollBox.tipa"
-        }
-    ],
+    "versions": [],
     "scarletDebs": [],
     "scarletBackup": true
 }
