@@ -16,20 +16,7 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_3.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_4.png"
     ],
-    "versions": [
-        {
-            "version": "2.0.0.p1",
-            "date": "2023-12-25",
-            "size": 2756390,
-            "url": "https://github.com/BomberFish/AppCommander/releases/download/v2.0.0-p1/AppCommander.tipa"
-        },
-        {
-            "version": "1.0.0",
-            "date": "2023-07-12",
-            "size": 16030736,
-            "url": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v1.0.0/AppCommander_v1.0.0.ipa"
-        }
-    ],
+    "versions": [],
     "scarletDebs": [],
     "scarletBackup": true
 }
