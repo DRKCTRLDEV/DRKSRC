@@ -24,7 +24,11 @@ jobs:
       
       - name: Run remove rules script
         run: |
-          python ./scripts/remove-rules.py "${{ github.event.inputs.apps }}"
+          if [ -n "${{ github.event.inputs.apps }}" ]; then
+            python ./scripts/remove-rules.py --apps "${{ github.event.inputs.apps }}"
+          else
+            python ./scripts/remove-rules.py
+          fi
       
       - name: Commit changes
         run: |
