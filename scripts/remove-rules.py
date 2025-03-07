@@ -70,7 +70,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--apps",
         type=str,
-        default="",
+        default=None,
         help="Comma-separated list of app names to process (leave empty for all)"
     )
     
