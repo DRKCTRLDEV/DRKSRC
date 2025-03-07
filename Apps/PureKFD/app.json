@@ -19,62 +19,62 @@
         {
             "version": "6.0.2",
             "date": "2024-11-23",
-            "size": 10806164,
-            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.ipa"
-        },
-        {
-            "version": "6.0.2",
-            "date": "2024-11-23",
-            "size": 4042969,
-            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.noSparse.ts.ipa"
+            "size": 3932657,
+            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.noSparse.ipa"
         },
         {
             "version": "6.0.1",
             "date": "2024-09-29",
-            "size": 10882263,
-            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.ipa"
-        },
-        {
-            "version": "6.0.1",
-            "date": "2024-09-29",
-            "size": 4047225,
-            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.noSparse.ts.ipa"
+            "size": 4005315,
+            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.noSparse.ipa"
         },
         {
             "version": "6.0",
             "date": "2024-09-22",
-            "size": 10025476,
-            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.ipa"
-        },
-        {
-            "version": "6.0",
-            "date": "2024-09-22",
-            "size": 3191275,
-            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.noSparse.ts.ipa"
-        },
-        {
-            "version": "6b1",
-            "date": "2024-09-14",
-            "size": 10692355,
-            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.ipa"
-        },
-        {
-            "version": "6b1",
-            "date": "2024-09-14",
             "size": 3150038,
-            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.noSparse.ipa"
+            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.noSparse.ipa"
         },
         {
-            "version": "6b1",
+            "version": "6.0rc3",
+            "date": "2024-09-21",
+            "size": 10019622,
+            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc3/PureKFD.ipa"
+        },
+        {
+            "version": "6.0rc2",
+            "date": "2024-09-21",
+            "size": 10840489,
+            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc2/PureKFD.ipa"
+        },
+        {
+            "version": "6.0rc",
+            "date": "2024-09-20",
+            "size": 9987366,
+            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc/PureKFD.ipa"
+        },
+        {
+            "version": "6.0b5",
+            "date": "2024-09-19",
+            "size": 9948089,
+            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b5/PureKFD.ipa"
+        },
+        {
+            "version": "6.0b4",
+            "date": "2024-09-16",
+            "size": 9963979,
+            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b4/PureKFD.ipa"
+        },
+        {
+            "version": "6.0b3",
+            "date": "2024-09-15",
+            "size": 10725713,
+            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b3/PureKFD.ipa"
+        },
+        {
+            "version": "6.0b2",
             "date": "2024-09-14",
-            "size": 3191275,
-            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.noSparse.ts.ipa"
-        },
-        {
-            "version": "5.2.1",
-            "date": "2024-07-30",
-            "size": 24374136,
-            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/5.2.1/purekfd.ipa"
+            "size": 9867756,
+            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b2/PureKFD.ipa"
         }
     ],
     "scarletDebs": [],
