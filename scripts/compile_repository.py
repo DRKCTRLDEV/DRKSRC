@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import sys
+import argparse
 import json
 import os
 import logging
@@ -204,9 +204,14 @@ class RepoCompiler:
         }
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Compile repository files for different formats.")
+    parser.add_argument('--format', type=str, choices=['altstore', 'trollapps', 'scarlet'], 
+                        help="Specify the output format (altstore, trollapps, scarlet). If omitted, compiles all formats.")
+    args = parser.parse_args()
+
     configure_logging()
     compiler = RepoCompiler()
-    result = compiler.compile_repos(target_fmt=sys.argv[1] if len(sys.argv) > 1 else None)
+    result = compiler.compile_repos(target_fmt=args.format)
     if not result.get("success"):
         logging.error(f"Compilation failed: {result.get('error')}")
         sys.exit(1)
