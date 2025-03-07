@@ -73,7 +73,6 @@ class RepoCompiler:
                 self.logger.warning("No valid apps found for featured selection")
                 return apps, []
 
-            # Fixed: Get week number from isocalendar tuple (index 1)
             current_week = datetime.now().isocalendar()[1]
             random.seed(f"{datetime.now().year}-{current_week}")
             featured = random.sample(bundle_ids, min(self.featured_count, len(bundle_ids)))
