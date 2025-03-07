@@ -1,0 +1,33 @@
+name: Remove Rules Files
+
+on:
+  workflow_dispatch:
+    inputs:
+      apps:
+        description: 'Comma-separated list of app names to process (leave empty for all)'
+        required: false
+        default: ''
+
+jobs:
+  remove-rules:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      
+      - name: Run remove rules script
+        run: |
+          python ./scripts/remove-rules.py ${{ github.event.inputs.apps }}
+      
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git commit -m "Remove rules files from specified apps" || echo "No changes to commit"
+          git push
