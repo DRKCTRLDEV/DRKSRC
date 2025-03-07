@@ -10,11 +10,10 @@ from collections import defaultdict
 
 def configure_logging():
     logging.basicConfig(
-        level=logging.DEBUG,
+        level=logging.INFO,
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     )
 
-# Define the path to the no-icon.png file as a URL string
 NO_ICON_PATH = 'https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png'
 
 class RepoCompiler:
@@ -42,7 +41,7 @@ class RepoCompiler:
         try:
             os.makedirs(os.path.dirname(path), exist_ok=True)
             with open(path, 'w', encoding='utf-8') as f:
-                json.dump(data, f, indent=2)
+                json.dump(data, f, indent=2, ensure_ascii=False)
             return True
         except Exception as e:
             self.logger.error(f"Config write error: {path} - {e}")
@@ -57,7 +56,7 @@ class RepoCompiler:
             apps = []
             bundle_ids = []
             
-            for app_dir in os.listdir(self.apps_dir):
+            for app_dir in sorted(os.listdir(self.apps_dir)):
                 path = os.path.join(self.apps_dir, app_dir)
                 if not os.path.isdir(path):
                     continue
@@ -70,13 +69,16 @@ class RepoCompiler:
                 else:
                     self.logger.warning(f"App config missing or invalid in {path}")
 
-            current_week = datetime.now().isocalendar()[1]
+            if not bundle_ids:
+                self.logger.warning("No valid apps found for featured selection")
+                return apps, []
+
+            current_week = datetime.now().isocalendar().week
             random.seed(f"{datetime.now().year}-{current_week}")
-            featured = random.sample(bundle_ids, min(self.featured_count, len(bundle_ids))) if bundle_ids else []
+            featured = random.sample(bundle_ids, min(self.featured_count, len(bundle_ids)))
             random.seed()
             
             self.logger.info(f"Total apps loaded: {len(apps)}")
-            
             return apps, featured
         
         except Exception as e:
@@ -161,7 +163,6 @@ class RepoCompiler:
                 'description': app.get('description', ''),
                 'bundleID': app.get('bundleID', 'Unknown')
             }
-            # Optional fields (only included if present)
             if app.get('icon'):
                 entry['icon'] = app.get('icon')
             if app.get('scarletDebs'):
