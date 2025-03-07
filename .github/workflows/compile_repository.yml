@@ -43,6 +43,12 @@ jobs:
           python3 scripts/compile_repository.py --format "${{ github.event.inputs.format }}"
         fi
 
+    - name: Debug - List files
+      run: |
+        ls -la
+        echo "Checking for JSON files:"
+        ls -la *.json || echo "No JSON files found in root directory"
+
     - name: Commit and push changes
       run: |
         git config --global user.name "GitHub Actions"
@@ -50,6 +56,7 @@ jobs:
         git add *.json
         if git diff --staged --quiet; then
           echo "No changes to commit"
+          exit 0  # Explicitly exit with success
         else
           git commit -m "chore: Update ${{ github.event.inputs.format || 'all' }} repository files [skip ci]"
           git push
