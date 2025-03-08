@@ -12,8 +12,8 @@ from pathlib import Path
 
 CONFIG = {
     "NO_ICON_PATH": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
-    "DEFAULT_MIN_OS": "13.0",
-    "DEFAULT_MAX_OS": "18.0",
+    "DEFAULT_MIN_OS": "14.0",
+    "DEFAULT_MAX_OS": "17.0",
     "OUTPUT_FILES": {
         "altstore": "altstore.json",
         "trollapps": "trollapps.json",
