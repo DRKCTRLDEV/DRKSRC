@@ -11,6 +11,8 @@
       "category": "utilities",
       "description": "AppCommander is a powerful iOS utility for app management and system customization. Features include App Manager, Home Screen sorting, and system tweaks. Supports iOS 14.0-17.0.",
       "bundleID": "ca.bomberfish.AppCommander",
+      "icon": "",
+      "dev": "BomberFish, f1shy-dev",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_2.png",
@@ -26,6 +28,8 @@
       "category": "utilities",
       "description": "AppIndex is a new, modern App Explorer/Manager app for iOS. It allows users to view, sort, search, and manage applications on their device. Features include viewing extensive app info, backing up and restoring apps, exporting as .ipa files, and more. AppIndex provides detailed information about each app, including bundle identifier, type, download date, version, SDK version, iTunes metadata, size, status, entitlements, URL schemes, and more.",
       "bundleID": "com.serena.AppIndex",
+      "icon": "",
+      "dev": "NSAntoine, justtryingthingsout",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_2.png",
@@ -42,6 +46,8 @@
       "category": "utilities",
       "description": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications.",
       "bundleID": "com.roothide.Bootstrap",
+      "icon": "",
+      "dev": "roothide",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/screenshots/IMG_2.png",
@@ -56,6 +62,8 @@
       "category": "utilities",
       "description": "CAPerfHUD enables a system-wide performance HUD for iOS 14 and above. It requires TrollStore to function. The app allows users to monitor various system performance metrics in real-time. Note that some measurements like frequencies and power consumption may not work, and changes last until backboard restarts (respring).",
       "bundleID": "com.kdt.CAPerfHUD",
+      "icon": "",
+      "dev": "khanhduytran0",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/screenshots/IMG_1.png"
       ],
@@ -68,6 +76,8 @@
       "category": "utilities",
       "description": "Cowabunga is a jailed toolbox for iOS 14.0-16.1.2 using CVE-2022-46689. It is archived and won't receive updates. Enable Notifications and set Location Services to Always for optimal performance. Note: Some changes are permanent on iOS 14.0-14.8.1.",
       "bundleID": "com.leminlimez.cowabunga",
+      "icon": "",
+      "dev": "leminlimez",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Cowabunga/screenshots/IMG_2.png",
@@ -86,6 +96,8 @@
       "category": "utilities",
       "description": "QUIC, which stands for Quick UDP Internet Connections, is a modern transport layer network protocol designed to improve the performance of web applications over traditional protocols like TCP and TLS.",
       "bundleID": "com.developlab.EnableQUIC",
+      "icon": "",
+      "dev": "DevelopCubeLab",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/EnableQUIC/screenshots/IMG_1.png"
       ],
@@ -98,6 +110,8 @@
       "category": "utilities",
       "description": "Filza is a comprehensive file manager for iOS devices. It offers features like file/folder exploration, powerful file viewers including media player and office document support, file sharing capabilities, terminal access, music library management, package installation, and cloud service integration.",
       "bundleID": "com.tigisoftware.Filza",
+      "icon": "",
+      "dev": "TIGI Software",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_2.png",
@@ -115,6 +129,8 @@
       "category": "utilities",
       "description": "FridaCodeManager is a comprehensive tool for managing and organizing Frida code projects. Features include permission management, project repair capabilities, app/project exports, multithreading support for folder navigation, file grouping, and an enhanced user interface with smooth animations.",
       "bundleID": "com.sparklechan.swifty",
+      "icon": "",
+      "dev": "fridakitten",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_2.png",
@@ -130,6 +146,8 @@
       "category": "utilities",
       "description": "FrontBoardAppLauncher is a utility that allows you to launch apps using FrontBoard on iOS devices. It provides a simple interface to interact with the FrontBoard framework for app management.",
       "bundleID": "com.kdt.frontboardapplauncher",
+      "icon": "",
+      "dev": "khanhduytran0",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_2.png",
@@ -144,6 +162,8 @@
       "category": "utilities",
       "description": "Geranium is a powerful utility for TrollStore users on iOS 15+. Features include location simulation, device cleaning, daemon management, ScreenTime disabling, and device supervision. Supports multiple languages and offers an intuitive interface for enhancing your iOS experience.",
       "bundleID": "live.cclerc.geranium",
+      "icon": "",
+      "dev": "c22dev, BomberFish, Fiore, Sourcelocation, haxi0",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_2.png",
@@ -160,6 +180,8 @@
       "category": "utilities",
       "description": "Helium is a new TrollStore tool that lets users add widgets above or below the Status Bar on iOS versions 14 to 17. To install the Helium IPA, you must use TrollStore, as other IPA installers will not work. The latest version offers seven widgets, and after installation, a new icon will appear on your Home Screen; however, the app may not open if developer mode is disabled. Helium is specifically designed for TrollStore, and sideloading it with other installers will fail. Upon launching, you'll find an interface with Home, Settings, and Customize sections, allowing you to activate the HUD, set the update frequency, and enable widgets based on your Helium version.",
       "bundleID": "com.leemin.helium",
+      "icon": "",
+      "dev": "leminlimez",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Helium/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Helium/screenshots/IMG_2.png",
@@ -175,6 +197,8 @@
       "category": "utilities",
       "description": "LiveContainer allows you to run iOS apps without actually installing them. It bypasses the 10 app limit of free developer accounts, enables multiple versions of an app, and supports multiple data containers. With JIT, codesigning is bypassed entirely. Features include unlimited app installation, tweak support, and instant app switching.",
       "bundleID": "com.kdt.LiveContainer",
+      "icon": "",
+      "dev": "khanhduytran0",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/LiveContainer/screenshots/IMG_2.png",
@@ -190,6 +214,8 @@
       "category": "utilities",
       "description": "NXBoot is a powerful utility for Nintendo Switch enthusiasts, allowing users to inject custom payloads into their Switch consoles. It supports various firmware versions and offers an intuitive interface for managing and launching payloads.",
       "bundleID": "com.mologie.NXBoot",
+      "icon": "",
+      "dev": "mologie",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_2.png",
@@ -204,6 +230,8 @@
       "category": "utilities",
       "description": "Unlock your device's full potential on iOS 16.0 through 18.1 beta 4, with partial support for iOS 18.1 beta 5-6. Note: Does not work on iOS 18.1 beta 7 or newer - use PC version instead. Requires .mobiledevicepairing file and wireguard. Uses sparserestore exploit to write to files outside intended restore location, like mobilegestalt. CAUTION: Back up your data before using. Developer not responsible for bootloops or other issues.",
       "bundleID": "com.leemin.nugget",
+      "icon": "",
+      "dev": "leminlimez",
       "enableBackup": true
     },
     {
@@ -213,6 +241,8 @@
       "category": "utilities",
       "description": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface.",
       "bundleID": "uwu.lrdsnow.purekfdiOS",
+      "icon": "",
+      "dev": "Lrdsnow",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PureKFD/screenshots/IMG_2.png",
@@ -228,6 +258,8 @@
       "category": "utilities",
       "description": "PurePKG is a customization-focused jailbreak package manager for a truly modern jailbreak experience. Supports iOS 14.0+, tvOS 14.0+, MacOS 13.0+, watchOS 8.0+, and visionOS 1.0+.",
       "bundleID": "uwu.lrdsnow.purepkg",
+      "icon": "",
+      "dev": "Lrdsnow",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/PurePKG/screenshots/IMG_2.png",
@@ -243,6 +275,8 @@
       "category": "utilities",
       "description": "Reveil is an open-source tool designed to provide state-of-the-art system and security analysis for iOS applications. Utilizing innovative techniques, it detects software modifications and security threats within the application sandbox, offering insights into CPU, memory, storage, and network usage while respecting sandbox limitations.",
       "bundleID": "com.82flex.Reveil",
+      "icon": "",
+      "dev": "Lessica",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Reveil/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Reveil/screenshots/IMG_2.png",
@@ -259,6 +293,8 @@
       "category": "utilities",
       "description": "Santander aims to enhance the experience of a file manager on an iOS device, using modern and familiar UI alongside new APIs. Note: The project is still in beta, and there are still quite a lot of bugs to fix & enhancements to make.",
       "bundleID": "com.nsantoine.santander",
+      "icon": "",
+      "dev": "NSAntoine",
       "enableBackup": true
     },
     {
@@ -268,6 +304,8 @@
       "category": "utilities",
       "description": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium.",
       "bundleID": "live.cclerc.trollbox",
+      "icon": "",
+      "dev": "c22dev",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_2.png",
@@ -284,6 +322,8 @@
       "category": "utilities",
       "description": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
       "bundleID": "com.huami.TrollFools",
+      "icon": "",
+      "dev": "huami1314",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_2.png",
@@ -299,6 +339,8 @@
       "category": "utilities",
       "description": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
       "bundleID": "wiki.qaq.TrollFools",
+      "icon": "",
+      "dev": "Lessica",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_2.png",
@@ -313,6 +355,8 @@
       "category": "utilities",
       "description": "TrollInstallerX is a fast and reliable universal TrollStore installer supporting iOS 14.0 - 16.6.1 on both arm64 and arm64e devices. It offers two installation methods: direct installation using kfd exploit and dmaFail PPL bypass for most devices, and indirect installation for A15/A16/M2 devices on iOS 16.5.1 and iOS 16.6-16.6.1. Both methods allow installing the TrollStore persistence helper to maintain System registration status.",
       "bundleID": "com.huami.TrollFools",
+      "icon": "",
+      "dev": "huami1314",
       "enableBackup": true
     },
     {
@@ -322,6 +366,8 @@
       "category": "utilities",
       "description": "TrollRecorder features a convenient HUD Control for managing recordings with a floating ball on your screen, along with Advanced Search capabilities to quickly find calls using comprehensive filters. It ensures security with Biometric Security through Face ID and Touch ID, and tracks locations with Location Metadata for each recording. Enjoy seamless operation with System Audio Integration using Apple's Core Audio technology, and benefit from Precise Time Coding for accurate time stamps on every audio channel.",
       "bundleID": "wiki.qaq.trapp",
+      "icon": "",
+      "dev": "Lessica",
       "enableBackup": true
     },
     {
@@ -331,6 +377,8 @@
       "category": "utilities",
       "description": "TrollSpeed is an iOS application that monitors upload and download speeds in real-time, leveraging TrollStore and UIDaemon to display speed metrics persistently below the status bar. It operates with root privileges to ensure uninterrupted performance, making it an essential tool for users seeking to track their network speeds effectively.",
       "bundleID": "ch.xxtou.hudapp",
+      "icon": "",
+      "dev": "Lessica",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollSpeed/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollSpeed/screenshots/IMG_2.png",
@@ -345,6 +393,8 @@
       "category": "utilities",
       "description": "App Launcher, customizable EdgeLight settings, Fake Dynamic Island, ShortcutsMenu, and SnowFall effect on the home screen. Upcoming features include Notification History and a testing MultiTask function. The Menu button is context-sensitive, appearing only when the App Launcher is open, and users can adjust EdgeLight thickness through the settings.",
       "bundleID": "com.straight-tamago.uiharux-pro",
+      "icon": "",
+      "dev": "straight-tamago",
       "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_2.png",
