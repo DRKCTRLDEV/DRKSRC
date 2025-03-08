@@ -5,8 +5,8 @@
     "name": "TrollSpeed",
     "bundleID": "ch.xxtou.hudapp",
     "devName": "Lessica",
-    "subtitle": "",
-    "description": "TrollRecorder features a convenient HUD Control for managing recordings with a floating ball on your screen, along with Advanced Search capabilities to quickly find calls using comprehensive filters. It ensures security with Biometric Security through Face ID and Touch ID, and tracks locations with Location Metadata for each recording. Enjoy seamless operation with System Audio Integration using Apple's Core Audio technology, and benefit from Precise Time Coding for accurate time stamps on every audio channel.",
+    "subtitle": "upload/download in status",
+    "description": "TrollSpeed is an iOS application that monitors upload and download speeds in real-time, leveraging TrollStore and UIDaemon to display speed metrics persistently below the status bar. It operates with root privileges to ensure uninterrupted performance, making it an essential tool for users seeking to track their network speeds effectively.",
     "category": "utilities",
     "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollSpeed/icon.png",
     "screenshots": [

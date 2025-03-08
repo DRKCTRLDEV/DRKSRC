@@ -6,7 +6,7 @@
     "bundleID": "com.straight-tamago.uiharux-pro",
     "devName": "straight-tamago",
     "subtitle": "Useful overlays for iOS",
-    "description": "TrollRecorder features a convenient HUD Control for managing recordings with a floating ball on your screen, along with Advanced Search capabilities to quickly find calls using comprehensive filters. It ensures security with Biometric Security through Face ID and Touch ID, and tracks locations with Location Metadata for each recording. Enjoy seamless operation with System Audio Integration using Apple's Core Audio technology, and benefit from Precise Time Coding for accurate time stamps on every audio channel.",
+    "description": "App Launcher, customizable EdgeLight settings, Fake Dynamic Island, ShortcutsMenu, and SnowFall effect on the home screen. Upcoming features include Notification History and a testing MultiTask function. The Menu button is context-sensitive, appearing only when the App Launcher is open, and users can adjust EdgeLight thickness through the settings.",
     "category": "utilities",
     "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/icon.png",
     "screenshots": [

@@ -1,0 +1,23 @@
+{
+    "gitURLs": [
+        "https://github.com/Lessica/Reveil"
+    ],
+    "name": "Reveil",
+    "bundleID": "com.82flex.Reveil",
+    "devName": "Lessica",
+    "subtitle": "Advanced iOS Security Analysis Tool",
+    "description": "Reveil is an open-source tool designed to provide state-of-the-art system and security analysis for iOS applications. Utilizing innovative techniques, it detects software modifications and security threats within the application sandbox, offering insights into CPU, memory, storage, and network usage while respecting sandbox limitations.",
+    "category": "utilities",
+    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Reveil/icon.png",
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Reveil/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Reveil/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Reveil/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Reveil/screenshots/IMG_4.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Reveil/screenshots/IMG_5.png"
+    ],
+    "versions": [
+    ],
+    "scarletDebs": [],
+    "scarletBackup": true
+}

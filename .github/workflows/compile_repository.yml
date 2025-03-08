@@ -65,7 +65,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: Update ${{ github.event.inputs.format || 'all' }} repository files [skip ci]"
+            git commit -m "chore: Update ${{ github.event.inputs.format || 'all' }} repository files"
             git push
           fi
         env:

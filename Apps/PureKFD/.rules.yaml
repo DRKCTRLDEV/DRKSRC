@@ -1,6 +1,15 @@
 exclude_patterns:
-- debug
-- beta
+- rc3
+- rc2
+- rc
+- b5
+- b4
+- b3
+- b2
+- b1
+- betaOSS
+- beta_landa
+- r2
 excluded_extensions:
 - .zip
 - .tar.gz
@@ -9,10 +18,5 @@ preferred_extensions:
 - .tipa
 - .ipa
 remove_chars:
-- -beta
-- -alpha
-- -dev
 replace_chars:
-  '-': .
-  _: .
 strip_v_prefix: true
