@@ -1,21 +1,28 @@
 {
-  "gitURLs": [
-    "https://github.com/straight-tamago/UiharuX"
-  ],
-  "name": "UiharuX Pro",
-  "bundleID": "com.straight-tamago.uiharux-pro",
-  "devName": "straight-tamago",
-  "subtitle": "Useful overlays for iOS",
-  "description": "App Launcher, customizable EdgeLight settings, Fake Dynamic Island, ShortcutsMenu, and SnowFall effect on the home screen. Upcoming features include Notification History and a testing MultiTask function. The Menu button is context-sensitive, appearing only when the App Launcher is open, and users can adjust EdgeLight thickness through the settings.",
-  "category": "utilities",
-  "icon": "",
-  "screenshots": [
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_1.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_2.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_3.png",
-    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_4.png"
-  ],
-  "versions": [],
-  "scarletDebs": [],
-  "scarletBackup": true
+    "gitURLs": [
+        "https://github.com/straight-tamago/UiharuX"
+    ],
+    "name": "UiharuX Pro",
+    "bundleID": "com.straight-tamago.uiharux-pro",
+    "devName": "straight-tamago",
+    "subtitle": "Useful overlays for iOS",
+    "description": "App Launcher, customizable EdgeLight settings, Fake Dynamic Island, ShortcutsMenu, and SnowFall effect on the home screen. Upcoming features include Notification History and a testing MultiTask function. The Menu button is context-sensitive, appearing only when the App Launcher is open, and users can adjust EdgeLight thickness through the settings.",
+    "category": "utilities",
+    "icon": "",
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_4.png"
+    ],
+    "versions": [
+        {
+            "version": "2.0",
+            "date": "2025-01-26",
+            "size": 3393002,
+            "url": "https://github.com/straight-tamago/UiharuX/releases/download/2.0/com.straight-tamago.uiharux-pro-2.0.tipa"
+        }
+    ],
+    "scarletDebs": [],
+    "scarletBackup": true
 }
