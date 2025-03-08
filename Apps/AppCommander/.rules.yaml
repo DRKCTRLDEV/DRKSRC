@@ -7,6 +7,8 @@ preferred_extensions:
 - .tipa
 - .ipa
 remove_chars:
-- -b1
+- -p1
+- -beta
+- 0_publicbeta
 replace_chars:
 strip_v_prefix: true
