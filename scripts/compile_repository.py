@@ -169,29 +169,27 @@ class RepoCompiler:
                 'down': version_data.get('url', ''),
                 'category': app.get('category', 'Other'),
                 'description': app.get('description', ''),
-                'bundleID': app.get('bundleID', 'Unknown')
+                'bundleID': app.get('bundleID', 'Unknown'),
+                'icon': app.get('icon', CONFIG["NO_ICON_PATH"])
             }
-            if app.get('icon'):
-                entry['icon'] = app['icon']
             if app.get('scarletDebs'):
                 entry['debs'] = app['scarletDebs']
+            if app.get('devName'):
+                entry['dev'] = app['devName']
             if app.get('screenshots'):
                 entry['screenshots'] = app['screenshots']
-            if app.get('dev'):
-                entry['dev'] = app['dev']
             if 'scarletBackup' in app:
                 entry['enableBackup'] = app['scarletBackup']
             return entry
-        
+
         entry = {
             'name': app.get('name', 'Unnamed App'),
             'bundleIdentifier': app.get('bundleID', 'Unknown'),
             'developerName': app.get('devName', 'Unknown Developer'),
             'subtitle': app.get('subtitle', ''),
             'localizedDescription': app.get('description', ''),
-            'iconURL': app.get('icon') or CONFIG["NO_ICON_PATH"],  # Updated line
+            'iconURL': app.get('icon', CONFIG["NO_ICON_PATH"]),
             'category': app.get('category', 'Other'),
-            'screenshots': app.get('screenshots', []),
             'versions': [self._format_version(v) for v in app.get('versions', [])],
             'appPermissions': {'entitlements': {}, 'privacy': {}}
         }
