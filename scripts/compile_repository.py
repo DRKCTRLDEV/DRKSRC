@@ -160,6 +160,10 @@ class RepoCompiler:
         }
 
     def _create_entry(self, app: Dict, fmt: str) -> Dict:
+        icon = app.get('icon')
+        if not icon:
+            icon = CONFIG["NO_ICON_PATH"]
+
         if fmt == 'scarlet':
             versions = app.get('versions', [{}])
             version_data = versions[0] if versions else {}
@@ -170,7 +174,7 @@ class RepoCompiler:
                 'category': app.get('category', 'Other'),
                 'description': app.get('description', ''),
                 'bundleID': app.get('bundleID', 'Unknown'),
-                'icon': app.get('icon', CONFIG["NO_ICON_PATH"])
+                'icon': icon
             }
             if app.get('scarletDebs'):
                 entry['debs'] = app['scarletDebs']
@@ -188,7 +192,7 @@ class RepoCompiler:
             'developerName': app.get('devName', 'Unknown Developer'),
             'subtitle': app.get('subtitle', ''),
             'localizedDescription': app.get('description', ''),
-            'iconURL': app.get('icon', CONFIG["NO_ICON_PATH"]),
+            'iconURL': icon,
             'category': app.get('category', 'Other'),
             'versions': [self._format_version(v) for v in app.get('versions', [])],
             'appPermissions': {'entitlements': {}, 'privacy': {}}
