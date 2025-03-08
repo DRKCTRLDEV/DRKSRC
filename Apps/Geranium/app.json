@@ -1,22 +1,22 @@
 {
-    "gitURLs": [
-        "https://github.com/c22dev/Geranium"
-    ],
-    "name": "Geranium",
-    "bundleID": "live.cclerc.geranium",
-    "devName": "c22dev, BomberFish, Fiore, Sourcelocation, haxi0",
-    "subtitle": "LocSim, Cleaner & Utility for TrollStore",
-    "description": "Geranium is a powerful utility for TrollStore users on iOS 15+. Features include location simulation, device cleaning, daemon management, ScreenTime disabling, and device supervision. Supports multiple languages and offers an intuitive interface for enhancing your iOS experience.",
-    "category": "utilities",
-    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/icon.png",
-    "screenshots": [
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_2.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_3.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_4.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_5.png"
-    ],
-    "versions": [],
-    "scarletDebs": [],
-    "scarletBackup": true
+  "gitURLs": [
+    "https://github.com/c22dev/Geranium"
+  ],
+  "name": "Geranium",
+  "bundleID": "live.cclerc.geranium",
+  "devName": "c22dev, BomberFish, Fiore, Sourcelocation, haxi0",
+  "subtitle": "LocSim, Cleaner & Utility for TrollStore",
+  "description": "Geranium is a powerful utility for TrollStore users on iOS 15+. Features include location simulation, device cleaning, daemon management, ScreenTime disabling, and device supervision. Supports multiple languages and offers an intuitive interface for enhancing your iOS experience.",
+  "category": "utilities",
+  "icon": "",
+  "screenshots": [
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_1.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_2.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_3.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_4.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_5.png"
+  ],
+  "versions": [],
+  "scarletDebs": [],
+  "scarletBackup": true
 }

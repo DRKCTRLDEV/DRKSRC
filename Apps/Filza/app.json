@@ -1,40 +1,40 @@
 {
-    "gitURLs": [],
-    "name": "Filza",
-    "bundleID": "com.tigisoftware.Filza",
-    "devName": "TIGI Software",
-    "subtitle": "Powerful File Manager for iOS",
-    "description": "Filza is a comprehensive file manager for iOS devices. It offers features like file/folder exploration, powerful file viewers including media player and office document support, file sharing capabilities, terminal access, music library management, package installation, and cloud service integration.",
-    "category": "utilities",
-    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/icon.png",
-    "screenshots": [
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_2.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_3.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_4.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_5.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_6.png"
-    ],
-    "versions": [
-        {
-            "version": "4.0.2",
-            "date": "2024-07-24",
-            "size": 13925062,
-            "url": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/IPA/Filza_NoURLScheme_4.0.2.ipa"
-        },
-        {
-            "version": "4.0.0",
-            "date": "2023-01-10",
-            "size": 13893015,
-            "url": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/IPA/Filza_NoURLScheme_4.0.0.ipa"
-        },
-        {
-            "version": "3.9.8",
-            "date": "2022-10-30",
-            "size": 14100822,
-            "url": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/IPA/Filza_NoURLScheme_3.9.8.ipa"
-        }
-    ],
-    "scarletDebs": [],
-    "scarletBackup": true
+  "gitURLs": [],
+  "name": "Filza",
+  "bundleID": "com.tigisoftware.Filza",
+  "devName": "TIGI Software",
+  "subtitle": "Powerful File Manager for iOS",
+  "description": "Filza is a comprehensive file manager for iOS devices. It offers features like file/folder exploration, powerful file viewers including media player and office document support, file sharing capabilities, terminal access, music library management, package installation, and cloud service integration.",
+  "category": "utilities",
+  "icon": "",
+  "screenshots": [
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_1.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_2.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_3.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_4.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_5.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_6.png"
+  ],
+  "versions": [
+    {
+      "version": "4.0.2",
+      "date": "2024-07-24",
+      "size": 13925062,
+      "url": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/IPA/Filza_NoURLScheme_4.0.2.ipa"
+    },
+    {
+      "version": "4.0.0",
+      "date": "2023-01-10",
+      "size": 13893015,
+      "url": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/IPA/Filza_NoURLScheme_4.0.0.ipa"
+    },
+    {
+      "version": "3.9.8",
+      "date": "2022-10-30",
+      "size": 14100822,
+      "url": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/IPA/Filza_NoURLScheme_3.9.8.ipa"
+    }
+  ],
+  "scarletDebs": [],
+  "scarletBackup": true
 }

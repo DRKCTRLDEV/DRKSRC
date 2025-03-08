@@ -1,21 +1,21 @@
 {
-    "gitURLs": [
-        "https://github.com/fridakitten/FridaCodeManager"
-    ],
-    "name": "FridaCodeManager",
-    "bundleID": "com.sparklechan.swifty",
-    "devName": "fridakitten",
-    "subtitle": "Advanced Frida Code Management Tool",
-    "description": "FridaCodeManager is a comprehensive tool for managing and organizing Frida code projects. Features include permission management, project repair capabilities, app/project exports, multithreading support for folder navigation, file grouping, and an enhanced user interface with smooth animations.",
-    "category": "utilities",
-    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/icon.png",
-    "screenshots": [
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_2.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_3.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_4.png"
-    ],
-    "versions": [],
-    "scarletDebs": [],
-    "scarletBackup": true
+  "gitURLs": [
+    "https://github.com/fridakitten/FridaCodeManager"
+  ],
+  "name": "FridaCodeManager",
+  "bundleID": "com.sparklechan.swifty",
+  "devName": "fridakitten",
+  "subtitle": "Advanced Frida Code Management Tool",
+  "description": "FridaCodeManager is a comprehensive tool for managing and organizing Frida code projects. Features include permission management, project repair capabilities, app/project exports, multithreading support for folder navigation, file grouping, and an enhanced user interface with smooth animations.",
+  "category": "utilities",
+  "icon": "",
+  "screenshots": [
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_1.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_2.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_3.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_4.png"
+  ],
+  "versions": [],
+  "scarletDebs": [],
+  "scarletBackup": true
 }

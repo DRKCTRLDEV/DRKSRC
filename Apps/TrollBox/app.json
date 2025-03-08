@@ -1,35 +1,35 @@
 {
-    "gitURLs": [
-        "https://github.com/c22dev/TrollBox"
-    ],
-    "name": "TrollBox",
-    "bundleID": "live.cclerc.trollbox",
-    "devName": "c22dev",
-    "subtitle": "AIO TrollStore Tool",
-    "description": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium.",
-    "category": "utilities",
-    "icon": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/icon.png",
-    "screenshots": [
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_2.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_3.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_4.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_5.png"
-    ],
-    "versions": [
-        {
-            "version": "0.0.2",
-            "date": "2022-12-20",
-            "size": 2945488,
-            "url": "https://github.com/c22dev/TrollBox/releases/download/0.0.2/TrollBox.tipa"
-        },
-        {
-            "version": "0.0.1",
-            "date": "2022-12-19",
-            "size": 2878138,
-            "url": "https://github.com/c22dev/TrollBox/releases/download/0.0.1/TrollBox.tipa"
-        }
-    ],
-    "scarletDebs": [],
-    "scarletBackup": true
+  "gitURLs": [
+    "https://github.com/c22dev/TrollBox"
+  ],
+  "name": "TrollBox",
+  "bundleID": "live.cclerc.trollbox",
+  "devName": "c22dev",
+  "subtitle": "AIO TrollStore Tool",
+  "description": "TrollBox is an all-in-one utility for TrollStore, featuring tools like AirSpammer, Carrier Changer, Location Simulator, and more. Development has been discontinued in favor of Geranium.",
+  "category": "utilities",
+  "icon": "",
+  "screenshots": [
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_1.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_2.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_3.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_4.png",
+    "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollBox/screenshots/IMG_5.png"
+  ],
+  "versions": [
+    {
+      "version": "0.0.2",
+      "date": "2022-12-20",
+      "size": 2945488,
+      "url": "https://github.com/c22dev/TrollBox/releases/download/0.0.2/TrollBox.tipa"
+    },
+    {
+      "version": "0.0.1",
+      "date": "2022-12-19",
+      "size": 2878138,
+      "url": "https://github.com/c22dev/TrollBox/releases/download/0.0.1/TrollBox.tipa"
+    }
+  ],
+  "scarletDebs": [],
+  "scarletBackup": true
 }
