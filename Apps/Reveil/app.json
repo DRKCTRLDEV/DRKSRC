@@ -16,7 +16,68 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Reveil/screenshots/IMG_4.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Reveil/screenshots/IMG_5.png"
     ],
-    "versions": [],
+    "versions": [
+        {
+            "version": "2.0.6",
+            "date": "2024-03-07",
+            "size": 1618997,
+            "url": "https://github.com/Lessica/Reveil/releases/download/v2.0.6/Reveil_2.0.6.tipa"
+        },
+        {
+            "version": "2.0.5",
+            "date": "2024-02-03",
+            "size": 1609826,
+            "url": "https://github.com/Lessica/Reveil/releases/download/v2.0.5/Reveil_2.0.5.tipa"
+        },
+        {
+            "version": "2.0.4",
+            "date": "2024-02-01",
+            "size": 1601802,
+            "url": "https://github.com/Lessica/Reveil/releases/download/v2.0.4/Reveil_2.0.4.tipa"
+        },
+        {
+            "version": "2.0.3",
+            "date": "2024-01-30",
+            "size": 1600055,
+            "url": "https://github.com/Lessica/Reveil/releases/download/v2.0.3/Reveil_2.0.3.tipa"
+        },
+        {
+            "version": "1.2.12",
+            "date": "2024-01-17",
+            "size": 4435491,
+            "url": "https://github.com/Lessica/Reveil/releases/download/v1.2.12/Reveil_1.2.12.tipa"
+        },
+        {
+            "version": "2.0.2",
+            "date": "2024-01-15",
+            "size": 1585115,
+            "url": "https://github.com/Lessica/Reveil/releases/download/v2.0.2/Reveil_2.0.2.tipa"
+        },
+        {
+            "version": "2.0.1",
+            "date": "2024-01-15",
+            "size": 1586872,
+            "url": "https://github.com/Lessica/Reveil/releases/download/v2.0.1/Reveil_2.0.1.tipa"
+        },
+        {
+            "version": "1.2.11",
+            "date": "2024-01-13",
+            "size": 4433281,
+            "url": "https://github.com/Lessica/Reveil/releases/download/v1.2.11/Reveil_1.2.11.tipa"
+        },
+        {
+            "version": "1.2.9",
+            "date": "2024-01-13",
+            "size": 1576899,
+            "url": "https://github.com/Lessica/Reveil/releases/download/v1.2.9/Reveil_1.2.9.tipa"
+        },
+        {
+            "version": "1.2.5",
+            "date": "2024-01-01",
+            "size": 1566157,
+            "url": "https://github.com/Lessica/Reveil/releases/download/v1.2.5/Reveil_1.2.5.tipa"
+        }
+    ],
     "scarletDebs": [],
     "scarletBackup": true
 }

@@ -10,7 +10,32 @@
     "category": "utilities",
     "icon": "",
     "screenshots": [],
-    "versions": [],
+    "versions": [
+        {
+            "version": "1.0.3",
+            "date": "2024-09-12",
+            "size": 6889214,
+            "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX.ipa"
+        },
+        {
+            "version": "1.0.2",
+            "date": "2024-04-08",
+            "size": 6888282,
+            "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.2/TrollInstallerX.ipa"
+        },
+        {
+            "version": "1.0.1",
+            "date": "2024-04-06",
+            "size": 6888465,
+            "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.1/TrollInstallerX.ipa"
+        },
+        {
+            "version": "1.0.0",
+            "date": "2024-04-04",
+            "size": 6885899,
+            "url": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.0/TrollInstallerX.ipa"
+        }
+    ],
     "scarletDebs": [],
     "scarletBackup": true
 }

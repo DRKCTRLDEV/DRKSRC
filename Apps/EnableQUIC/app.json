@@ -12,7 +12,50 @@
     "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/EnableQUIC/screenshots/IMG_1.png"
     ],
-    "versions": [],
+    "versions": [
+        {
+            "version": "1.2.4",
+            "date": "2025-02-21",
+            "size": 362373,
+            "url": "https://github.com/DevelopCubeLab/EnableQUIC/releases/download/1.2.4/EnableQUIC_1.2.4.tipa"
+        },
+        {
+            "version": "1.2.3",
+            "date": "2025-02-18",
+            "size": 362053,
+            "url": "https://github.com/DevelopCubeLab/EnableQUIC/releases/download/1.2.3/EnableQUIC_1.2.3.tipa"
+        },
+        {
+            "version": "1.2.2",
+            "date": "2025-02-18",
+            "size": 361420,
+            "url": "https://github.com/DevelopCubeLab/EnableQUIC/releases/download/1.2.2/EnableQUIC_1.2.2.tipa"
+        },
+        {
+            "version": "1.2.1",
+            "date": "2025-02-18",
+            "size": 350550,
+            "url": "https://github.com/DevelopCubeLab/EnableQUIC/releases/download/1.2.1/EnableQUIC_1.2.1.tipa"
+        },
+        {
+            "version": "1.2",
+            "date": "2025-02-16",
+            "size": 350546,
+            "url": "https://github.com/DevelopCubeLab/EnableQUIC/releases/download/1.2/EnableQUIC_1.2.tipa"
+        },
+        {
+            "version": "1.1",
+            "date": "2025-02-12",
+            "size": 335559,
+            "url": "https://github.com/DevelopCubeLab/EnableQUIC/releases/download/1.1/EnableQUIC_1.1.tipa"
+        },
+        {
+            "version": "1.0-beta",
+            "date": "2025-01-01",
+            "size": 334038,
+            "url": "https://github.com/DevelopCubeLab/EnableQUIC/releases/download/1.0-beta/EnableQUIC_1.0-beta.tipa"
+        }
+    ],
     "scarletDebs": [],
     "scarletBackup": true
 }
