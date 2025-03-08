@@ -9,9 +9,9 @@
   "featuredApps": [
     "com.mologie.NXBoot",
     "ca.bomberfish.AppCommander",
-    "ch.xxtou.hudapp",
+    "wiki.qaq.trapp",
     "com.huami.TrollFools",
-    "live.cclerc.geranium"
+    "com.straight-tamago.uiharux-pro"
   ],
   "apps": [
     {
@@ -1662,6 +1662,103 @@
           "date": "2024-04-04",
           "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.0/TrollInstallerX.ipa",
           "size": 6885899,
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": {},
+        "privacy": {}
+      },
+      "screenshotURLs": []
+    },
+    {
+      "name": "TrollRecorder",
+      "bundleIdentifier": "wiki.qaq.trapp",
+      "developerName": "Lessica",
+      "subtitle": "iOS audio recorder for TrollStore",
+      "localizedDescription": "TrollRecorder features a convenient HUD Control for managing recordings with a floating ball on your screen, along with Advanced Search capabilities to quickly find calls using comprehensive filters. It ensures security with Biometric Security through Face ID and Touch ID, and tracks locations with Location Metadata for each recording. Enjoy seamless operation with System Audio Integration using Apple's Core Audio technology, and benefit from Precise Time Coding for accurate time stamps on every audio channel.",
+      "iconURL": "",
+      "category": "utilities",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "2.7.422",
+          "date": "2024-11-05",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.7-422/TRApp_2.7-422.tipa",
+          "size": 4877044,
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0"
+        },
+        {
+          "version": "2.6.408",
+          "date": "2024-10-26",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.6-408/TRApp_2.6-408.tipa",
+          "size": 4843830,
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0"
+        },
+        {
+          "version": "2.5.406",
+          "date": "2024-10-20",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.5-406/TRApp_2.5-406.tipa",
+          "size": 4841357,
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0"
+        },
+        {
+          "version": "2.4.401",
+          "date": "2024-10-12",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.4-401/TRApp_2.4-401.tipa",
+          "size": 4619521,
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0"
+        },
+        {
+          "version": "2.2.392",
+          "date": "2024-09-25",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.2-392/TRApp_2.2-392.tipa",
+          "size": 4591128,
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0"
+        },
+        {
+          "version": "2.1.390",
+          "date": "2024-09-16",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.1-390/TRApp_2.1-390.tipa",
+          "size": 4537567,
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0"
+        },
+        {
+          "version": "1.22.369",
+          "date": "2024-09-02",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v1.22-369/TRApp_1.22-369.tipa",
+          "size": 4435874,
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0"
+        },
+        {
+          "version": "1.20.357",
+          "date": "2024-08-27",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v1.20-357/TRApp_1.20-357.tipa",
+          "size": 6430475,
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0"
+        },
+        {
+          "version": "1.18.1.354",
+          "date": "2024-07-24",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v1.18.1-354/TRApp_1.18.1-354.tipa",
+          "size": 4161593,
+          "minOSVersion": "14.0",
+          "maxOSVersion": "17.0"
+        },
+        {
+          "version": "1.18.0.352",
+          "date": "2024-07-12",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v1.18.0-352/TRApp_1.18.0-352.tipa",
+          "size": 4156529,
           "minOSVersion": "14.0",
           "maxOSVersion": "17.0"
         }
