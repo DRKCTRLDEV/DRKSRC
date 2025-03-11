@@ -6,7 +6,7 @@
   "utilities": [
     {
       "name": "AppCommander",
-      "version": "2.0.0-p1",
+      "version": "2.0.0",
       "down": "https://github.com/BomberFish/AppCommander/releases/download/v2.0.0-p1/AppCommander.tipa",
       "category": "utilities",
       "description": "AppCommander is a powerful iOS utility for app management and system customization. Features include App Manager, Home Screen sorting, and system tweaks. Supports iOS 14.0-17.0.",
@@ -334,8 +334,8 @@
     },
     {
       "name": "TrollFools",
-      "version": "3.0.28",
-      "down": "https://github.com/Lessica/TrollFools/releases/download/v3.0-28/TrollFools_3.0-28.tipa",
+      "version": "3.2.32",
+      "down": "https://github.com/Lessica/TrollFools/releases/download/v3.2-32/TrollFools_3.2-32.tipa",
       "category": "utilities",
       "description": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
       "bundleID": "wiki.qaq.TrollFools",
@@ -361,8 +361,8 @@
     },
     {
       "name": "TrollRecorder",
-      "version": "2.7.422",
-      "down": "https://github.com/Lessica/TrollRecorder/releases/download/v2.7-422/TRApp_2.7-422.tipa",
+      "version": "3.2.609",
+      "down": "https://github.com/Lessica/TrollRecorder/releases/download/v3.2-609/TRApp_3.2-609.tipa",
       "category": "utilities",
       "description": "TrollRecorder features a convenient HUD Control for managing recordings with a floating ball on your screen, along with Advanced Search capabilities to quickly find calls using comprehensive filters. It ensures security with Biometric Security through Face ID and Touch ID, and tracks locations with Location Metadata for each recording. Enjoy seamless operation with System Audio Integration using Apple's Core Audio technology, and benefit from Precise Time Coding for accurate time stamps on every audio channel.",
       "bundleID": "wiki.qaq.trapp",
