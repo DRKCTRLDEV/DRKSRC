@@ -194,8 +194,7 @@ class RepoCompiler:
             'localizedDescription': app.get('description', ''),
             'iconURL': icon,
             'category': app.get('category', 'Other'),
-            'versions': [self._format_version(v) for v in app.get('versions', [])],
-            'appPermissions': {'entitlements': {}, 'privacy': {}}
+            'versions': [self._format_version(v) for v in app.get('versions', [])]
         }
         if fmt == 'altstore':
             entry['screenshots'] = app.get('screenshots', [])
