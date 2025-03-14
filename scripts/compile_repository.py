@@ -12,8 +12,6 @@ from pathlib import Path
 
 CONFIG = {
     "NO_ICON_PATH": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
-    "DEFAULT_MIN_OS": "14.0",
-    "DEFAULT_MAX_OS": "17.0",
     "OUTPUT_FILES": {
         "altstore": "altstore.json",
         "trollapps": "trollapps.json",
@@ -210,12 +208,8 @@ class RepoCompiler:
             "version": version.get("version", "Unknown"),
             "date": version.get("date", ""),
             "downloadURL": version.get("url", ""),
-            "size": version.get("size", 0),
-            "minOSVersion": CONFIG["DEFAULT_MIN_OS"],
-            "maxOSVersion": CONFIG["DEFAULT_MAX_OS"]
+            "size": version.get("size", 0)
         }
-        if fmt == 'trollapps':  # Add localizedDescription only for TrollApps
-            version_entry["localizedDescription"] = version.get("description", "")
         return version_entry
 
 if __name__ == "__main__":
