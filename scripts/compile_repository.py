@@ -143,6 +143,7 @@ class RepoCompiler:
             "tintColor": repo_config.get("tintColor", ""),
             "featuredApps": featured,
             "apps": [self._create_entry(app, 'trollapps') for app in apps],
+            "news": []  # Added empty news array
         }
 
     def _format_scarlet(self, repo_config: Dict, apps: List[Dict]) -> Dict:
@@ -193,17 +194,19 @@ class RepoCompiler:
             'subtitle': app.get('subtitle', ''),
             'localizedDescription': app.get('description', ''),
             'iconURL': icon,
-            'category': app.get('category', 'Other'),
-            'versions': [self._format_version(v) for v in app.get('versions', [])]
         }
+        if fmt != 'trollapps':  # Only include category for non-TrollApps formats
+            entry['category'] = app.get('category', 'Other')
+        entry['versions'] = [self._format_version(v, fmt) for v in app.get('versions', [])]
         if fmt == 'altstore':
             entry['screenshots'] = app.get('screenshots', [])
         elif fmt == 'trollapps':
             entry['screenshotURLs'] = app.get('screenshots', [])
+            entry['appPermissions'] = {}  # Added empty appPermissions object
         return entry
 
-    def _format_version(self, version: Dict) -> Dict:
-        return {
+    def _format_version(self, version: Dict, fmt: str) -> Dict:
+        version_entry = {
             "version": version.get("version", "Unknown"),
             "date": version.get("date", ""),
             "downloadURL": version.get("url", ""),
@@ -211,6 +214,9 @@ class RepoCompiler:
             "minOSVersion": CONFIG["DEFAULT_MIN_OS"],
             "maxOSVersion": CONFIG["DEFAULT_MAX_OS"]
         }
+        if fmt == 'trollapps':  # Add localizedDescription only for TrollApps
+            version_entry["localizedDescription"] = version.get("description", "")
+        return version_entry
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
