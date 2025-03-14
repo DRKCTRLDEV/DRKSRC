@@ -180,7 +180,7 @@ class RepoCompiler:
             if app.get('devName'):
                 entry['dev'] = app['devName']
             if app.get('screenshots'):
-                entry['screenshots'] = app['screenshots']
+                entry['screenshots'] = app['screenshots'][:4]  # Limit to 4 screenshots
             if 'scarletBackup' in app:
                 entry['enableBackup'] = app['scarletBackup']
             return entry
@@ -197,9 +197,9 @@ class RepoCompiler:
             entry['category'] = app.get('category', 'Other')
         entry['versions'] = [self._format_version(v, fmt) for v in app.get('versions', [])]
         if fmt == 'altstore':
-            entry['screenshots'] = app.get('screenshots', [])
+            entry['screenshots'] = app.get('screenshots', [])[:4]  # Limit to 4 screenshots
         elif fmt == 'trollapps':
-            entry['screenshotURLs'] = app.get('screenshots', [])
+            entry['screenshotURLs'] = app.get('screenshots', [])[:4]  # Limit to 4 screenshots
             entry['appPermissions'] = {}  # Added empty appPermissions object
         return entry
 
