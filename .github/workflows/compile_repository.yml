@@ -38,15 +38,27 @@ jobs:
         with:
           python-version: '3.10'
 
+      - name: Debug Directory Contents
+        run: |
+          echo "Current directory contents:"
+          ls -la .
+          echo "Apps directory contents:"
+          ls -la Apps/ || echo "Apps directory missing or empty"
+          echo "repo-info.json contents:"
+          cat repo-info.json || echo "repo-info.json missing or unreadable"
+
       - name: Ensure Script is Executable
         run: chmod +x scripts/compile_repository.py
 
       - name: Compile Repository Files
         run: |
-          args=""
-          if ${{ inputs.verbose }}; then args="-v"; fi
-          if [ "${{ inputs.format }}" != "all" ]; then args="$args -f ${{ inputs.format }}"; fi
-          python3 scripts/compile_repository.py $args || exit 1
+          # Default to 'all' format and verbose logging
+          FORMAT="${{ inputs.format || 'all' }}"
+          VERBOSE="${{ inputs.verbose || 'false' }}"
+          ARGS="-v"  # Always verbose for debugging
+          if [ "$FORMAT" != "all" ]; then ARGS="$ARGS -f $FORMAT"; fi
+          echo "Running: python3 scripts/compile_repository.py $ARGS"
+          python3 scripts/compile_repository.py $ARGS || exit 1
 
       - name: Commit and Push Changes
         if: success()
@@ -54,7 +66,7 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add *.json || echo "No JSON files to add"
-          git commit -m "chore: Update repository files (${{ inputs.format }})" || echo "No changes to commit"
+          git commit -m "chore: Update repository files (${{ inputs.format || 'all' }})" || echo "No changes to commit"
           git push || echo "Push failed - likely no changes"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
