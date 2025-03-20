@@ -2,7 +2,7 @@
     "gitURLs": [
         "https://github.com/khanhduytran0/CAPerfHUD"
     ],
-    "name": null,
+    "name": "CAPerfHUD",
     "bundleID": "com.kdt.CAPerfHUD",
     "devName": "khanhduytran0",
     "subtitle": "System-wide performance HUD for iOS 14+",
