@@ -21,32 +21,7 @@
       "subtitle": "Swiss Army Knife for iPhone Apps (iOS 14.0-17.0)",
       "localizedDescription": "AppCommander is a powerful iOS utility for app management and system customization. Features include App Manager, Home Screen sorting, and system tweaks. Supports iOS 14.0-17.0.",
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
-      "versions": [
-        {
-          "version": "2.0.0",
-          "date": "2023-12-25",
-          "downloadURL": "https://github.com/BomberFish/AppCommander/releases/download/v2.0.0-p1/AppCommander.tipa",
-          "size": 2756390
-        },
-        {
-          "version": "1.0.0",
-          "date": "2023-07-12",
-          "downloadURL": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v1.0.0/AppCommander_v1.0.0.ipa",
-          "size": 16030736
-        },
-        {
-          "version": "1.0.1",
-          "date": "2023-07-01",
-          "downloadURL": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v1.0.0_publicbeta1/AppCommander-v1.0.0_publicbeta1.ipa",
-          "size": 15941020
-        },
-        {
-          "version": "0.1.3",
-          "date": "2023-04-13",
-          "downloadURL": "https://github.com/BomberFish/AppCommander-legacy/releases/download/v0.1-beta.3/AppCommander.0.1.Beta.3.ipa",
-          "size": 5435252
-        }
-      ],
+      "versions": [],
       "screenshotURLs": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppCommander/screenshots/IMG_2.png",
@@ -62,14 +37,7 @@
       "subtitle": "Modern Applications Manager for iOS",
       "localizedDescription": "AppIndex is a new, modern App Explorer/Manager app for iOS. It allows users to view, sort, search, and manage applications on their device. Features include viewing extensive app info, backing up and restoring apps, exporting as .ipa files, and more. AppIndex provides detailed information about each app, including bundle identifier, type, download date, version, SDK version, iTunes metadata, size, status, entitlements, URL schemes, and more.",
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
-      "versions": [
-        {
-          "version": "1.0",
-          "date": "2023-04-04",
-          "downloadURL": "https://github.com/NSAntoine/AppIndex/releases/download/1.0/AppIndexTrollStore.tipa",
-          "size": 871661
-        }
-      ],
+      "versions": [],
       "screenshotURLs": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/AppIndex/screenshots/IMG_2.png",
@@ -85,62 +53,7 @@
       "subtitle": "Jailbreak Bootstrap Tool",
       "localizedDescription": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications.",
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
-      "versions": [
-        {
-          "version": "1.3.2",
-          "date": "2025-01-09",
-          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.3.2/Bootstrap.tipa",
-          "size": 54595581
-        },
-        {
-          "version": "1.3",
-          "date": "2024-11-18",
-          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.3/Bootstrap.tipa",
-          "size": 54202306
-        },
-        {
-          "version": "1.2.9",
-          "date": "2024-11-11",
-          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.9/Bootstrap.tipa",
-          "size": 54202235
-        },
-        {
-          "version": "1.2.8",
-          "date": "2024-10-05",
-          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.8/Bootstrap.tipa",
-          "size": 54508536
-        },
-        {
-          "version": "1.2.6",
-          "date": "2024-09-11",
-          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.6/Bootstrap.tipa",
-          "size": 54497160
-        },
-        {
-          "version": "1.2.1",
-          "date": "2024-02-05",
-          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.2.1/Bootstrap.tipa",
-          "size": 54521377
-        },
-        {
-          "version": "1.1.1",
-          "date": "2024-01-31",
-          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.1.1/Bootstrap.tipa",
-          "size": 54499627
-        },
-        {
-          "version": "1.1",
-          "date": "2024-01-22",
-          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.1/Bootstrap.tipa",
-          "size": 54500569
-        },
-        {
-          "version": "1.0",
-          "date": "2024-01-17",
-          "downloadURL": "https://github.com/roothide/Bootstrap/releases/download/1.0/Bootstrap.tipa",
-          "size": 54494881
-        }
-      ],
+      "versions": [],
       "screenshotURLs": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Bootstrap/screenshots/IMG_2.png",
@@ -155,14 +68,7 @@
       "subtitle": "System-wide performance HUD for iOS 14+",
       "localizedDescription": "CAPerfHUD enables a system-wide performance HUD for iOS 14 and above. It requires TrollStore to function. The app allows users to monitor various system performance metrics in real-time. Note that some measurements like frequencies and power consumption may not work, and changes last until backboard restarts (respring).",
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
-      "versions": [
-        {
-          "version": "0.0.1",
-          "date": "2023-05-21",
-          "downloadURL": "https://github.com/khanhduytran0/CAPerfHUD/releases/download/0.0.1/com.kdt.caperfhud_0.0.1.ipa",
-          "size": 11320
-        }
-      ],
+      "versions": [],
       "screenshotURLs": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/CAPerfHUD/screenshots/IMG_1.png"
       ],
@@ -177,64 +83,64 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
       "versions": [
         {
-          "version": "10.3.2",
-          "date": "2023-05-29",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.2/Cowabunga.ipa",
-          "size": 16288960
+          "version": "8.1.4",
+          "date": "2023-03-15",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.4/Cowabunga.ipa",
+          "size": 21867855
         },
         {
-          "version": "10.3.1",
-          "date": "2023-05-29",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.1/Cowabunga.ipa",
-          "size": 16288883
+          "version": "8.1.3",
+          "date": "2023-03-13",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.3/Cowabunga.ipa",
+          "size": 21862959
         },
         {
-          "version": "10.3.0",
-          "date": "2023-05-29",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.3.0/Cowabunga.ipa",
-          "size": 16285936
+          "version": "8.1.2",
+          "date": "2023-03-06",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.2/Cowabunga.ipa",
+          "size": 21849343
         },
         {
-          "version": "10.2.0",
-          "date": "2023-05-12",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.2.0/Cowabunga.ipa",
-          "size": 16280833
+          "version": "8.1.1",
+          "date": "2023-02-28",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.1/Cowabunga.ipa",
+          "size": 21849921
         },
         {
-          "version": "10.1.1",
-          "date": "2023-03-30",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.1.1/Cowabunga.ipa",
-          "size": 21605355
+          "version": "8.1.0",
+          "date": "2023-02-26",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.1.0/Cowabunga.ipa",
+          "size": 21796707
         },
         {
-          "version": "10.1.0",
-          "date": "2023-03-28",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.1.0/Cowabunga.ipa",
-          "size": 21595880
+          "version": "8.0.5",
+          "date": "2023-02-20",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.5/Cowabunga.ipa",
+          "size": 20553183
         },
         {
-          "version": "10.0.3",
-          "date": "2023-03-25",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.3/Cowabunga.ipa",
-          "size": 21557626
+          "version": "8.0.4",
+          "date": "2023-02-19",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.4/Cowabunga.ipa",
+          "size": 20564509
         },
         {
-          "version": "10.0.2",
-          "date": "2023-03-25",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.2/Cowabunga.ipa",
-          "size": 21557066
+          "version": "8.0.3",
+          "date": "2023-02-14",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.3/Cowabunga.ipa",
+          "size": 13709675
         },
         {
-          "version": "10.0.1",
-          "date": "2023-03-24",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.1/Cowabunga.ipa",
-          "size": 21557390
+          "version": "8.0.2",
+          "date": "2023-02-13",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.2/Cowabunga.ipa",
+          "size": 13707992
         },
         {
-          "version": "10.0.0",
-          "date": "2023-03-23",
-          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v10.0.0/Cowabunga.ipa",
-          "size": 21556671
+          "version": "8.0.1",
+          "date": "2023-02-12",
+          "downloadURL": "https://github.com/leminlimez/Cowabunga/releases/download/v8.0.1/Cowabunga.ipa",
+          "size": 12238315
         }
       ],
       "screenshotURLs": [
@@ -252,50 +158,7 @@
       "subtitle": "Enables QUIC for iOS",
       "localizedDescription": "QUIC, which stands for Quick UDP Internet Connections, is a modern transport layer network protocol designed to improve the performance of web applications over traditional protocols like TCP and TLS.",
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
-      "versions": [
-        {
-          "version": "1.2.4",
-          "date": "2025-02-21",
-          "downloadURL": "https://github.com/DevelopCubeLab/EnableQUIC/releases/download/1.2.4/EnableQUIC_1.2.4.tipa",
-          "size": 362372
-        },
-        {
-          "version": "1.2.3",
-          "date": "2025-02-18",
-          "downloadURL": "https://github.com/DevelopCubeLab/EnableQUIC/releases/download/1.2.3/EnableQUIC_1.2.3.tipa",
-          "size": 362053
-        },
-        {
-          "version": "1.2.2",
-          "date": "2025-02-18",
-          "downloadURL": "https://github.com/DevelopCubeLab/EnableQUIC/releases/download/1.2.2/EnableQUIC_1.2.2.tipa",
-          "size": 361420
-        },
-        {
-          "version": "1.2.1",
-          "date": "2025-02-18",
-          "downloadURL": "https://github.com/DevelopCubeLab/EnableQUIC/releases/download/1.2.1/EnableQUIC_1.2.1.tipa",
-          "size": 350550
-        },
-        {
-          "version": "1.2",
-          "date": "2025-02-16",
-          "downloadURL": "https://github.com/DevelopCubeLab/EnableQUIC/releases/download/1.2/EnableQUIC_1.2.tipa",
-          "size": 350546
-        },
-        {
-          "version": "1.1",
-          "date": "2025-02-12",
-          "downloadURL": "https://github.com/DevelopCubeLab/EnableQUIC/releases/download/1.1/EnableQUIC_1.1.tipa",
-          "size": 335559
-        },
-        {
-          "version": "1.0-beta",
-          "date": "2025-01-01",
-          "downloadURL": "https://github.com/DevelopCubeLab/EnableQUIC/releases/download/1.0-beta/EnableQUIC_1.0-beta.tipa",
-          "size": 334038
-        }
-      ],
+      "versions": [],
       "screenshotURLs": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/EnableQUIC/screenshots/IMG_1.png"
       ],
@@ -343,26 +206,7 @@
       "subtitle": "Advanced Frida Code Management Tool",
       "localizedDescription": "FridaCodeManager is a comprehensive tool for managing and organizing Frida code projects. Features include permission management, project repair capabilities, app/project exports, multithreading support for folder navigation, file grouping, and an enhanced user interface with smooth animations.",
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
-      "versions": [
-        {
-          "version": "1.6",
-          "date": "2024-10-22",
-          "downloadURL": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-stock-alpha.ipa",
-          "size": 66806491
-        },
-        {
-          "version": "1.6",
-          "date": "2024-10-22",
-          "downloadURL": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa",
-          "size": 70613655
-        },
-        {
-          "version": "1.5.5",
-          "date": "2024-10-14",
-          "downloadURL": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.5.5/FridaCodeManager.tipa",
-          "size": 108290634
-        }
-      ],
+      "versions": [],
       "screenshotURLs": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_2.png",
@@ -378,14 +222,7 @@
       "subtitle": "Launch Apps via FrontBoard",
       "localizedDescription": "FrontBoardAppLauncher is a utility that allows you to launch apps using FrontBoard on iOS devices. It provides a simple interface to interact with the FrontBoard framework for app management.",
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
-      "versions": [
-        {
-          "version": "1.3.0",
-          "date": "2024-11-17",
-          "downloadURL": "https://github.com/DRKCTRL/FrontBoardAppLauncher/releases/download/1.3.0/FrontBoardAppLauncher.tipa",
-          "size": 27533
-        }
-      ],
+      "versions": [],
       "screenshotURLs": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FrontBoardAppLauncher/screenshots/IMG_2.png",
@@ -400,62 +237,7 @@
       "subtitle": "LocSim, Cleaner & Utility for TrollStore",
       "localizedDescription": "Geranium is a powerful utility for TrollStore users on iOS 15+. Features include location simulation, device cleaning, daemon management, ScreenTime disabling, and device supervision. Supports multiple languages and offers an intuitive interface for enhancing your iOS experience.",
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
-      "versions": [
-        {
-          "version": "1.1.3",
-          "date": "2024-09-15",
-          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1.3/Geranium.tipa",
-          "size": 6100320
-        },
-        {
-          "version": "1.1.2",
-          "date": "2024-02-22",
-          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1.2/Geranium.tipa",
-          "size": 6161855
-        },
-        {
-          "version": "1.1.1",
-          "date": "2024-02-07",
-          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1.1/Geranium.tipa",
-          "size": 6135248
-        },
-        {
-          "version": "1.1",
-          "date": "2024-01-18",
-          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.1/Geranium.tipa",
-          "size": 6032621
-        },
-        {
-          "version": "1.0.4",
-          "date": "2024-01-15",
-          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.4/Geranium.tipa",
-          "size": 5945760
-        },
-        {
-          "version": "1.0.3",
-          "date": "2024-01-15",
-          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.3/Geranium.tipa",
-          "size": 5945286
-        },
-        {
-          "version": "1.0.2",
-          "date": "2024-01-15",
-          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.2/Geranium.tipa",
-          "size": 5943936
-        },
-        {
-          "version": "1.0.1",
-          "date": "2024-01-14",
-          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0.1/Geranium.tipa",
-          "size": 5942092
-        },
-        {
-          "version": "1.0",
-          "date": "2024-01-14",
-          "downloadURL": "https://github.com/c22dev/Geranium/releases/download/1.0/Geranium.tipa",
-          "size": 5930930
-        }
-      ],
+      "versions": [],
       "screenshotURLs": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Geranium/screenshots/IMG_2.png",
@@ -471,68 +253,7 @@
       "subtitle": "Status Bar Widgets for TrollStore",
       "localizedDescription": "Helium is a new TrollStore tool that lets users add widgets above or below the Status Bar on iOS versions 14 to 17. To install the Helium IPA, you must use TrollStore, as other IPA installers will not work. The latest version offers seven widgets, and after installation, a new icon will appear on your Home Screen; however, the app may not open if developer mode is disabled. Helium is specifically designed for TrollStore, and sideloading it with other installers will fail. Upon launching, you'll find an interface with Home, Settings, and Customize sections, allowing you to activate the HUD, set the update frequency, and enable widgets based on your Helium version.",
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
-      "versions": [
-        {
-          "version": "3.2.5",
-          "date": "2024-02-13",
-          "downloadURL": "https://github.com/leminlimez/Helium/releases/download/v3.2.5/Helium.tipa",
-          "size": 4168281
-        },
-        {
-          "version": "2.2.1",
-          "date": "2024-01-13",
-          "downloadURL": "https://github.com/leminlimez/Helium/releases/download/v2.2.1/Helium.tipa",
-          "size": 3924363
-        },
-        {
-          "version": "2.2",
-          "date": "2024-01-13",
-          "downloadURL": "https://github.com/leminlimez/Helium/releases/download/v2.2/Helium.tipa",
-          "size": 3896129
-        },
-        {
-          "version": "2.1",
-          "date": "2024-01-12",
-          "downloadURL": "https://github.com/leminlimez/Helium/releases/download/v2.1/Helium.tipa",
-          "size": 3874054
-        },
-        {
-          "version": "2.0.2",
-          "date": "2023-12-25",
-          "downloadURL": "https://github.com/leminlimez/Helium/releases/download/v2.0.2/Helium.tipa",
-          "size": 3829465
-        },
-        {
-          "version": "2.0.1",
-          "date": "2023-12-21",
-          "downloadURL": "https://github.com/leminlimez/Helium/releases/download/v2.0.1/Helium.tipa",
-          "size": 3827002
-        },
-        {
-          "version": "2.0",
-          "date": "2023-12-21",
-          "downloadURL": "https://github.com/leminlimez/Helium/releases/download/v2.0/Helium.tipa",
-          "size": 3813071
-        },
-        {
-          "version": "1.1",
-          "date": "2023-12-08",
-          "downloadURL": "https://github.com/leminlimez/Helium/releases/download/v1.1/Helium_ABOVE_STATUS_BAR.tipa",
-          "size": 4294026
-        },
-        {
-          "version": "1.1",
-          "date": "2023-12-08",
-          "downloadURL": "https://github.com/leminlimez/Helium/releases/download/v1.1/Helium_BELOW_STATUS_BAR.tipa",
-          "size": 4293924
-        },
-        {
-          "version": "1.0",
-          "date": "2023-11-06",
-          "downloadURL": "https://github.com/leminlimez/Helium/releases/download/v1.0/Helium.tipa",
-          "size": 4259160
-        }
-      ],
+      "versions": [],
       "screenshotURLs": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Helium/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Helium/screenshots/IMG_2.png",
@@ -550,58 +271,10 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
       "versions": [
         {
-          "version": "3.3.0",
-          "date": "2025-03-14",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.3.0/com.kdt.livecontainer_3.3.0.ipa",
-          "size": 3155485
-        },
-        {
-          "version": "3.2.0",
-          "date": "2025-01-15",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.2.0/com.kdt.livecontainer_3.2.0.ipa",
-          "size": 2962233
-        },
-        {
-          "version": "3.1.0",
-          "date": "2024-12-16",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.1.0/com.kdt.livecontainer_3.1.0.ipa",
-          "size": 2899038
-        },
-        {
-          "version": "3.0.0",
-          "date": "2024-12-16",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.0.0/com.kdt.livecontainer_3.0.0.ipa",
-          "size": 905495
-        },
-        {
-          "version": "2.1.2",
-          "date": "2024-08-15",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.2/com.kdt.livecontainer_2.1.2.ipa",
-          "size": 194586
-        },
-        {
-          "version": "2.1.1",
-          "date": "2024-08-08",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1.1/com.kdt.livecontainer_2.1.1.ipa",
-          "size": 195840
-        },
-        {
-          "version": "2.1",
-          "date": "2024-08-07",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.1/com.kdt.livecontainer_2.1.ipa",
-          "size": 191991
-        },
-        {
-          "version": "2.0",
-          "date": "2024-04-22",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/2.0-pre/com.kdt.livecontainer_2.0.ipa",
-          "size": 103293
-        },
-        {
-          "version": "1.0",
-          "date": "2023-07-17",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/1.0/com.kdt.livecontainer.ipa",
-          "size": 31173
+          "version": "3.3.1",
+          "date": "2025-03-16",
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.3.1/com.kdt.livecontainer_3.3.1.ipa",
+          "size": 3146175
         }
       ],
       "screenshotURLs": [
@@ -619,20 +292,7 @@
       "subtitle": "Nintendo Switch Payload Injector",
       "localizedDescription": "NXBoot is a powerful utility for Nintendo Switch enthusiasts, allowing users to inject custom payloads into their Switch consoles. It supports various firmware versions and offers an intuitive interface for managing and launching payloads.",
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
-      "versions": [
-        {
-          "version": "0.3.2",
-          "date": "2024-08-31",
-          "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa",
-          "size": 1045270
-        },
-        {
-          "version": "0.3.1",
-          "date": "2024-08-30",
-          "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.1/NXBoot_0.3.1-1.tipa",
-          "size": 1043645
-        }
-      ],
+      "versions": [],
       "screenshotURLs": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/NXBoot/screenshots/IMG_2.png",
@@ -647,32 +307,7 @@
       "subtitle": "iOS 16.0-18.1b4 Device Unlock Tool",
       "localizedDescription": "Unlock your device's full potential on iOS 16.0 through 18.1 beta 4, with partial support for iOS 18.1 beta 5-6. Note: Does not work on iOS 18.1 beta 7 or newer - use PC version instead. Requires .mobiledevicepairing file and wireguard. Uses sparserestore exploit to write to files outside intended restore location, like mobilegestalt. CAUTION: Back up your data before using. Developer not responsible for bootloops or other issues.",
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
-      "versions": [
-        {
-          "version": "2.0.1",
-          "date": "2024-12-01",
-          "downloadURL": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v2.0.1/Nugget.ipa",
-          "size": 7676570
-        },
-        {
-          "version": "2.0",
-          "date": "2024-10-17",
-          "downloadURL": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v2.0/Nugget.ipa",
-          "size": 7675473
-        },
-        {
-          "version": "1.0.1",
-          "date": "2024-09-23",
-          "downloadURL": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v1.0.1/Nugget.ipa",
-          "size": 7742363
-        },
-        {
-          "version": "1.0",
-          "date": "2024-09-22",
-          "downloadURL": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v1.0/Nugget.ipa",
-          "size": 7741677
-        }
-      ],
+      "versions": [],
       "screenshotURLs": [],
       "appPermissions": {}
     },
@@ -685,64 +320,64 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
       "versions": [
         {
-          "version": "6.0.2",
-          "date": "2024-11-23",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.ipa",
-          "size": 10806164
+          "version": "6.0rc2",
+          "date": "2024-09-21",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc2/PureKFD.ipa",
+          "size": 10840489
         },
         {
-          "version": "6.0.2",
-          "date": "2024-11-23",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.noSparse.ipa",
-          "size": 3932657
+          "version": "6.0rc",
+          "date": "2024-09-20",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc/PureKFD.ipa",
+          "size": 9987366
         },
         {
-          "version": "6.0.2",
-          "date": "2024-11-23",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.noSparse.ts.ipa",
-          "size": 4042969
+          "version": "6.0b5",
+          "date": "2024-09-19",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b5/PureKFD.ipa",
+          "size": 9948089
         },
         {
-          "version": "6.0.1",
-          "date": "2024-09-29",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.ipa",
-          "size": 10882263
+          "version": "6.0b4",
+          "date": "2024-09-16",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b4/PureKFD.ipa",
+          "size": 9963979
         },
         {
-          "version": "6.0.1",
-          "date": "2024-09-29",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.noSparse.ipa",
-          "size": 4005315
+          "version": "6.0b3",
+          "date": "2024-09-15",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b3/PureKFD.ipa",
+          "size": 10725713
         },
         {
-          "version": "6.0.1",
-          "date": "2024-09-29",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.noSparse.ts.ipa",
-          "size": 4047225
+          "version": "6.0b2",
+          "date": "2024-09-14",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0b2/PureKFD.ipa",
+          "size": 9867756
         },
         {
-          "version": "6.0",
-          "date": "2024-09-22",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.ipa",
-          "size": 10025476
+          "version": "6b1",
+          "date": "2024-09-14",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.ipa",
+          "size": 10692355
         },
         {
-          "version": "6.0",
-          "date": "2024-09-22",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.noSparse.ipa",
+          "version": "6b1",
+          "date": "2024-09-14",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.noSparse.ipa",
           "size": 3150038
         },
         {
-          "version": "6.0",
-          "date": "2024-09-22",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.noSparse.ts.ipa",
+          "version": "6b1",
+          "date": "2024-09-14",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/v6b1/PureKFD.noSparse.ts.ipa",
           "size": 3191275
         },
         {
-          "version": "6.0rc3",
-          "date": "2024-09-21",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc3/PureKFD.ipa",
-          "size": 10019622
+          "version": "5.2.1",
+          "date": "2024-07-30",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.2.1/purekfd.ipa",
+          "size": 24374136
         }
       ],
       "screenshotURLs": [
@@ -762,64 +397,64 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
       "versions": [
         {
-          "version": "2.0.2",
-          "date": "2024-07-24",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/PurePKG.tipa",
-          "size": 6637698
-        },
-        {
-          "version": "2.0.2",
-          "date": "2024-07-24",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/PurePKGDemo.ipa",
-          "size": 6637698
-        },
-        {
-          "version": "2.0.1",
-          "date": "2024-06-23",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/PurePKG.tipa",
-          "size": 9394403
-        },
-        {
-          "version": "2.0.1",
-          "date": "2024-06-23",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/PurePKGDemo.ipa",
-          "size": 9394403
-        },
-        {
-          "version": "2.0",
-          "date": "2024-06-21",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/PurePKG.tipa",
-          "size": 6627862
-        },
-        {
-          "version": "2.0",
-          "date": "2024-06-21",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/PurePKGDemo.ipa",
-          "size": 6627862
-        },
-        {
-          "version": "1.7",
-          "date": "2024-06-15",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.7/PurePKG.tipa",
-          "size": 8067336
-        },
-        {
-          "version": "1.7",
-          "date": "2024-06-15",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.7/PurePKGDemo.ipa",
-          "size": 8067336
-        },
-        {
-          "version": "1.6",
+          "version": "1.5.1",
           "date": "2024-06-03",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.6/PurePKG.tipa",
-          "size": 8499956
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5.1/PurePKG.tipa",
+          "size": 6399029
         },
         {
-          "version": "1.6",
+          "version": "1.5.1",
           "date": "2024-06-03",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.6/PurePKGDemo.ipa",
-          "size": 8499956
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5.1/PurePKGDemo.ipa",
+          "size": 6399029
+        },
+        {
+          "version": "1.5",
+          "date": "2024-04-22",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5/PurePKG.tipa",
+          "size": 6763487
+        },
+        {
+          "version": "1.5",
+          "date": "2024-04-22",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5/PurePKGDemo.ipa",
+          "size": 6763487
+        },
+        {
+          "version": "1.4",
+          "date": "2024-04-13",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.4/PurePKG.tipa",
+          "size": 21980135
+        },
+        {
+          "version": "1.4",
+          "date": "2024-04-13",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.4/PurePKGDemo.ipa",
+          "size": 21980135
+        },
+        {
+          "version": "1.4",
+          "date": "2024-04-13",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.4/PurePKGDemo_visionOS.ipa",
+          "size": 5737942
+        },
+        {
+          "version": "1.4",
+          "date": "2024-04-13",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.4/PurePKGDemo_watchOS.ipa",
+          "size": 19436030
+        },
+        {
+          "version": "1.3",
+          "date": "2024-04-11",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.3/PurePKG.tipa",
+          "size": 21949811
+        },
+        {
+          "version": "1.3",
+          "date": "2024-04-11",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.3/PurePKGDemo.ipa",
+          "size": 21949811
         }
       ],
       "screenshotURLs": [
@@ -839,64 +474,10 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
       "versions": [
         {
-          "version": "2.0.6",
-          "date": "2024-03-07",
-          "downloadURL": "https://github.com/Lessica/Reveil/releases/download/v2.0.6/Reveil_2.0.6.tipa",
-          "size": 1618997
-        },
-        {
-          "version": "2.0.5",
-          "date": "2024-02-03",
-          "downloadURL": "https://github.com/Lessica/Reveil/releases/download/v2.0.5/Reveil_2.0.5.tipa",
-          "size": 1609826
-        },
-        {
-          "version": "2.0.4",
-          "date": "2024-02-01",
-          "downloadURL": "https://github.com/Lessica/Reveil/releases/download/v2.0.4/Reveil_2.0.4.tipa",
-          "size": 1601802
-        },
-        {
-          "version": "2.0.3",
-          "date": "2024-01-30",
-          "downloadURL": "https://github.com/Lessica/Reveil/releases/download/v2.0.3/Reveil_2.0.3.tipa",
-          "size": 1600055
-        },
-        {
-          "version": "1.2.12",
-          "date": "2024-01-17",
-          "downloadURL": "https://github.com/Lessica/Reveil/releases/download/v1.2.12/Reveil_1.2.12.tipa",
-          "size": 4435491
-        },
-        {
-          "version": "2.0.2",
-          "date": "2024-01-15",
-          "downloadURL": "https://github.com/Lessica/Reveil/releases/download/v2.0.2/Reveil_2.0.2.tipa",
-          "size": 1585115
-        },
-        {
-          "version": "2.0.1",
-          "date": "2024-01-15",
-          "downloadURL": "https://github.com/Lessica/Reveil/releases/download/v2.0.1/Reveil_2.0.1.tipa",
-          "size": 1586872
-        },
-        {
-          "version": "1.2.11",
-          "date": "2024-01-13",
-          "downloadURL": "https://github.com/Lessica/Reveil/releases/download/v1.2.11/Reveil_1.2.11.tipa",
-          "size": 4433281
-        },
-        {
-          "version": "1.2.9",
-          "date": "2024-01-13",
-          "downloadURL": "https://github.com/Lessica/Reveil/releases/download/v1.2.9/Reveil_1.2.9.tipa",
-          "size": 1576899
-        },
-        {
-          "version": "1.2.5",
-          "date": "2024-01-01",
-          "downloadURL": "https://github.com/Lessica/Reveil/releases/download/v1.2.5/Reveil_1.2.5.tipa",
-          "size": 1566157
+          "version": "1.2.3",
+          "date": "2023-12-31",
+          "downloadURL": "https://github.com/Lessica/Reveil/releases/download/v1.2.3/Reveil_1.2.3.tipa",
+          "size": 1564389
         }
       ],
       "screenshotURLs": [
@@ -934,64 +515,16 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
       "versions": [
         {
-          "version": "0.2",
-          "date": "2023-11-28",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.2/TrollBox.tipa",
-          "size": 26633972
+          "version": "0.0.2",
+          "date": "2022-12-20",
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.2/TrollBox.tipa",
+          "size": 2945488
         },
         {
-          "version": "0.1",
-          "date": "2023-01-29",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.1/TrollBox.tipa",
-          "size": 14327984
-        },
-        {
-          "version": "0.1",
-          "date": "2023-01-29",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.1/TrollBox16.ipa",
-          "size": 14113886
-        },
-        {
-          "version": "0.0.9",
-          "date": "2023-01-20",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.9/TrollBox.tipa",
-          "size": 13673796
-        },
-        {
-          "version": "0.0.8",
-          "date": "2022-12-28",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.8/TrollBox.tipa",
-          "size": 12497643
-        },
-        {
-          "version": "0.0.7",
-          "date": "2022-12-27",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.7/TrollBox.tipa",
-          "size": 8050755
-        },
-        {
-          "version": "0.0.6",
-          "date": "2022-12-23",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.6/TrollBox.tipa",
-          "size": 3510461
-        },
-        {
-          "version": "0.0.5",
-          "date": "2022-12-23",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.5/TrollBox.tipa",
-          "size": 4532634
-        },
-        {
-          "version": "0.0.4",
-          "date": "2022-12-22",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.4/TrollBox.tipa",
-          "size": 3141208
-        },
-        {
-          "version": "0.0.3",
-          "date": "2022-12-21",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.3/TrollBox.tipa",
-          "size": 3016450
+          "version": "0.0.1",
+          "date": "2022-12-19",
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.1/TrollBox.tipa",
+          "size": 2878138
         }
       ],
       "screenshotURLs": [
@@ -1011,64 +544,64 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
       "versions": [
         {
-          "version": "2.11.28",
-          "date": "2025-02-15",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.11-28/TrollFools14_2.11-28%40huamidev.tipa",
-          "size": 14433792
+          "version": "2.9.20",
+          "date": "2025-01-10",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-20/TrollFools14_2.9-20_huami.tipa",
+          "size": 14255921
         },
         {
-          "version": "2.11.28",
-          "date": "2025-02-15",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.11-28/TrollFools_2.11-28%40huamidev.tipa",
-          "size": 6542574
+          "version": "2.9.20",
+          "date": "2025-01-10",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-20/TrollFools_2.9-20_huami.tipa",
+          "size": 6434885
         },
         {
-          "version": "2.11.25",
-          "date": "2025-01-17",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25%40huamidev.tipa",
-          "size": 14408490
+          "version": "2.8.18",
+          "date": "2025-01-10",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-18/TrollFools14_2.8-18_huami.tipa",
+          "size": 12618066
         },
         {
-          "version": "2.11.25",
-          "date": "2025-01-17",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.11-25/TrollFools_2.11-25%40huamidev.tipa",
-          "size": 6534606
+          "version": "2.8.18",
+          "date": "2025-01-10",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-18/TrollFools_2.8-18_huami.tipa",
+          "size": 5457739
         },
         {
-          "version": "2.10.23",
-          "date": "2025-01-14",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23%40huamidev.tipa",
-          "size": 14405939
+          "version": "2.8.17",
+          "date": "2025-01-09",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-17/TrollFools14_2.8-17_huami.tipa",
+          "size": 12619164
         },
         {
-          "version": "2.10.23",
-          "date": "2025-01-14",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-23/TrollFools_2.10-23%40huamidev.tipa",
-          "size": 6524034
+          "version": "2.8.17",
+          "date": "2025-01-09",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-17/TrollFools_2.8-17_huami.tipa",
+          "size": 5455363
         },
         {
-          "version": "2.10.22",
-          "date": "2025-01-14",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22%40huamidev.tipa",
-          "size": 14406268
+          "version": "2.7.11",
+          "date": "2024-09-29",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-11/TrollFools14_2.7.11.huami.tipa",
+          "size": 8055831
         },
         {
-          "version": "2.10.22",
-          "date": "2025-01-14",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-22/TrollFools_2.10-22%40huamidev.tipa",
-          "size": 6524499
+          "version": "2.7.11",
+          "date": "2024-09-29",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-11/TrollFools_2.7.11.huami.tipa",
+          "size": 5171573
         },
         {
-          "version": "2.9.21",
-          "date": "2025-01-11",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-21/TrollFools14_2.9-21%40huamidev.tipa",
-          "size": 14241843
+          "version": "2.7.10",
+          "date": "2024-09-29",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-10/TrollFools14_2.7.10.huami.tipa",
+          "size": 8055743
         },
         {
-          "version": "2.9.21",
-          "date": "2025-01-11",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-21/TrollFools_2.9-21%40huamidev.tipa",
-          "size": 6423780
+          "version": "2.7.10",
+          "date": "2024-09-29",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-10/TrollFools_2.7.10.huami.tipa",
+          "size": 5171491
         }
       ],
       "screenshotURLs": [
@@ -1088,64 +621,64 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
       "versions": [
         {
-          "version": "3.5.37",
-          "date": "2025-03-13",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v3.5-37/TrollFools_3.5-37.tipa",
-          "size": 6009456
+          "version": "3.5.38",
+          "date": "2025-03-14",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v3.5-38/TrollFools_3.5-38.tipa",
+          "size": 6010650
         },
         {
-          "version": "3.2.32",
-          "date": "2025-03-09",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v3.2-32/TrollFools_3.2-32.tipa",
-          "size": 5751201
+          "version": "3.3.34",
+          "date": "2025-03-10",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v3.3-34/TrollFools_3.3-34.tipa",
+          "size": 5999829
         },
         {
-          "version": "3.1.30",
-          "date": "2025-03-09",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v3.1-30/TrollFools_3.1-30.tipa",
-          "size": 5609829
-        },
-        {
-          "version": "3.0.28",
-          "date": "2025-03-01",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v3.0-28/TrollFools_3.0-28.tipa",
-          "size": 5565970
-        },
-        {
-          "version": "2.12.27",
-          "date": "2025-02-23",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.12-27/TrollFools14_2.12-27.tipa",
-          "size": 5783322
-        },
-        {
-          "version": "2.12.27",
-          "date": "2025-02-23",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.12-27/TrollFools_2.12-27.tipa",
-          "size": 3541410
-        },
-        {
-          "version": "2.11.25",
-          "date": "2025-01-17",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25.tipa",
-          "size": 5699241
-        },
-        {
-          "version": "2.11.25",
-          "date": "2025-01-17",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools_2.11-25.tipa",
-          "size": 3487386
-        },
-        {
-          "version": "2.10.23",
+          "version": "2.10.22",
           "date": "2025-01-14",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23.tipa",
-          "size": 5698258
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22.tipa",
+          "size": 5698269
         },
         {
-          "version": "2.10.23",
+          "version": "2.10.22",
           "date": "2025-01-14",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools_2.10-23.tipa",
-          "size": 3487141
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-22/TrollFools_2.10-22.tipa",
+          "size": 3486354
+        },
+        {
+          "version": "2.9.21",
+          "date": "2025-01-11",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-21/TrollFools14_2.9-21.tipa",
+          "size": 5666166
+        },
+        {
+          "version": "2.9.21",
+          "date": "2025-01-11",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-21/TrollFools_2.9-21.tipa",
+          "size": 3466422
+        },
+        {
+          "version": "2.9.20",
+          "date": "2025-01-10",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-20/TrollFools14_2.9-20.tipa",
+          "size": 5664942
+        },
+        {
+          "version": "2.9.20",
+          "date": "2025-01-10",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.9-20/TrollFools_2.9-20.tipa",
+          "size": 3466040
+        },
+        {
+          "version": "2.8.16",
+          "date": "2024-12-24",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-16/TrollFools14_2.8-16.tipa",
+          "size": 5434190
+        },
+        {
+          "version": "2.8.16",
+          "date": "2024-12-24",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.8-16/TrollFools_2.8-16.tipa",
+          "size": 3305897
         }
       ],
       "screenshotURLs": [
@@ -1162,32 +695,7 @@
       "subtitle": "Universal TrollStore Installer",
       "localizedDescription": "TrollInstallerX is a fast and reliable universal TrollStore installer supporting iOS 14.0 - 16.6.1 on both arm64 and arm64e devices. It offers two installation methods: direct installation using kfd exploit and dmaFail PPL bypass for most devices, and indirect installation for A15/A16/M2 devices on iOS 16.5.1 and iOS 16.6-16.6.1. Both methods allow installing the TrollStore persistence helper to maintain System registration status.",
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
-      "versions": [
-        {
-          "version": "1.0.3",
-          "date": "2024-09-12",
-          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX.ipa",
-          "size": 6889214
-        },
-        {
-          "version": "1.0.2",
-          "date": "2024-04-08",
-          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.2/TrollInstallerX.ipa",
-          "size": 6888282
-        },
-        {
-          "version": "1.0.1",
-          "date": "2024-04-06",
-          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.1/TrollInstallerX.ipa",
-          "size": 6888465
-        },
-        {
-          "version": "1.0.0",
-          "date": "2024-04-04",
-          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.0/TrollInstallerX.ipa",
-          "size": 6885899
-        }
-      ],
+      "versions": [],
       "screenshotURLs": [],
       "appPermissions": {}
     },
@@ -1200,64 +708,64 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
       "versions": [
         {
-          "version": "3.2.609",
-          "date": "2025-02-22",
-          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v3.2-609/TRApp_3.2-609.tipa",
-          "size": 15067536
+          "version": "3.3.613",
+          "date": "2025-03-11",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v3.3-613/TRApp_3.3-613.tipa",
+          "size": 15074866
         },
         {
-          "version": "3.1.601",
-          "date": "2025-02-20",
-          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v3.1-601/TRApp_3.1-601.tipa",
-          "size": 15008626
+          "version": "2.8.474",
+          "date": "2024-11-18",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.8-474/TRApp_2.8-474.tipa",
+          "size": 5063598
         },
         {
-          "version": "3.0.594",
-          "date": "2025-01-27",
-          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v3.0-594/TRApp_3.0-594.tipa",
-          "size": 14988202
+          "version": "2.7.422",
+          "date": "2024-11-05",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.7-422/TRApp_2.7-422.tipa",
+          "size": 4877044
         },
         {
-          "version": "2.15.557",
-          "date": "2025-01-15",
-          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.15-557/TRApp_2.15-557.tipa",
-          "size": 5653440
+          "version": "2.6.408",
+          "date": "2024-10-26",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.6-408/TRApp_2.6-408.tipa",
+          "size": 4843830
         },
         {
-          "version": "2.14.542",
-          "date": "2024-12-25",
-          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.14-542/TRApp_2.14-542.tipa",
-          "size": 5604122
+          "version": "2.5.406",
+          "date": "2024-10-20",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.5-406/TRApp_2.5-406.tipa",
+          "size": 4841357
         },
         {
-          "version": "2.12.521",
-          "date": "2024-12-12",
-          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.12-521/TRApp_2.12-521.tipa",
-          "size": 5536330
+          "version": "2.4.401",
+          "date": "2024-10-12",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.4-401/TRApp_2.4-401.tipa",
+          "size": 4619521
         },
         {
-          "version": "2.11.509",
-          "date": "2024-12-01",
-          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.11-509/TRApp_2.11-509.tipa",
-          "size": 5392585
+          "version": "2.2.392",
+          "date": "2024-09-25",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.2-392/TRApp_2.2-392.tipa",
+          "size": 4591128
         },
         {
-          "version": "2.10.499",
-          "date": "2024-11-26",
-          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.10-499/TRApp_2.10-499.tipa",
-          "size": 5312133
+          "version": "2.1.390",
+          "date": "2024-09-16",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.1-390/TRApp_2.1-390.tipa",
+          "size": 4537567
         },
         {
-          "version": "2.9.484",
-          "date": "2024-11-20",
-          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.9-484/TRApp_2.9-484.tipa",
-          "size": 5078836
+          "version": "1.22.369",
+          "date": "2024-09-02",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v1.22-369/TRApp_1.22-369.tipa",
+          "size": 4435874
         },
         {
-          "version": "1.18.1.354",
-          "date": "2024-07-24",
-          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v1.18.1-354/TRApp_1.18.1-354.tipa",
-          "size": 4161593
+          "version": "1.20.357",
+          "date": "2024-08-27",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v1.20-357/TRApp_1.20-357.tipa",
+          "size": 6430475
         }
       ],
       "screenshotURLs": [],
@@ -1272,64 +780,64 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
       "versions": [
         {
-          "version": "1.12.1",
-          "date": "2024-06-17",
-          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.12.1/TrollSpeed%2BAppIntents16_1.12.1.tipa",
-          "size": 451840
-        },
-        {
-          "version": "1.12.1",
-          "date": "2024-06-17",
-          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.12.1/TrollSpeed_v1.12.1.tipa",
-          "size": 162585
-        },
-        {
-          "version": "1.12.0",
-          "date": "2024-06-16",
-          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.12.0/TrollSpeed%2BAppIntents16_1.12.0.tipa",
-          "size": 452033
-        },
-        {
-          "version": "1.12.0",
-          "date": "2024-06-16",
-          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.12.0/TrollSpeed_v1.12.0.tipa",
-          "size": 162774
-        },
-        {
-          "version": "1.11.11",
-          "date": "2024-03-17",
-          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.11/TrollSpeed%2BAppIntents16_1.11.11.tipa",
-          "size": 451905
-        },
-        {
-          "version": "1.11.11",
-          "date": "2024-03-17",
-          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.11/TrollSpeed_v1.11.11.tipa",
-          "size": 162640
-        },
-        {
-          "version": "1.11.9",
-          "date": "2024-03-16",
-          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.9/TrollSpeed%2BAppIntents16_1.11.9.tipa",
-          "size": 450639
-        },
-        {
-          "version": "1.11.9",
-          "date": "2024-03-16",
-          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.9/TrollSpeed_v1.11.9.tipa",
-          "size": 160981
-        },
-        {
-          "version": "1.11.6",
+          "version": "1.11.3",
           "date": "2024-03-07",
-          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.6/TrollSpeed%2BAppIntents16_1.11.6.tipa",
-          "size": 453391
+          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.3/TrollSpeed%2BAppIntents16_1.11.3.tipa",
+          "size": 453313
         },
         {
-          "version": "1.11.6",
+          "version": "1.11.3",
           "date": "2024-03-07",
-          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.6/TrollSpeed_v1.11.6.tipa",
-          "size": 164163
+          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.3/TrollSpeed_v1.11.3.tipa",
+          "size": 164297
+        },
+        {
+          "version": "1.11.2",
+          "date": "2024-01-31",
+          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.2/TrollSpeed%2BAppIntents16_1.11.2.tipa",
+          "size": 449009
+        },
+        {
+          "version": "1.11.2",
+          "date": "2024-01-31",
+          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.2/TrollSpeed_v1.11.2.tipa",
+          "size": 159827
+        },
+        {
+          "version": "1.11.0",
+          "date": "2024-01-27",
+          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.0/TrollSpeed%2BAppIntents16_1.11.0.tipa",
+          "size": 446395
+        },
+        {
+          "version": "1.11.0",
+          "date": "2024-01-27",
+          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.0/TrollSpeed_v1.11.0.tipa",
+          "size": 163255
+        },
+        {
+          "version": "1.10.2",
+          "date": "2024-01-26",
+          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.10.2/TrollSpeed_v1.10.2.tipa",
+          "size": 161220
+        },
+        {
+          "version": "1.10.1",
+          "date": "2024-01-25",
+          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.10.1/TrollSpeed_v1.10.1.tipa",
+          "size": 160220
+        },
+        {
+          "version": "1.10.0",
+          "date": "2024-01-25",
+          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.10.0/TrollSpeed_v1.10.0.tipa",
+          "size": 160356
+        },
+        {
+          "version": "1.9.9",
+          "date": "2024-01-24",
+          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.9.9/TrollSpeed_v1.9.9.tipa",
+          "size": 157396
         }
       ],
       "screenshotURLs": [
@@ -1346,14 +854,7 @@
       "subtitle": "Useful overlays for iOS",
       "localizedDescription": "App Launcher, customizable EdgeLight settings, Fake Dynamic Island, ShortcutsMenu, and SnowFall effect on the home screen. Upcoming features include Notification History and a testing MultiTask function. The Menu button is context-sensitive, appearing only when the App Launcher is open, and users can adjust EdgeLight thickness through the settings.",
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
-      "versions": [
-        {
-          "version": "2.0",
-          "date": "2025-01-26",
-          "downloadURL": "https://github.com/straight-tamago/UiharuX/releases/download/2.0/com.straight-tamago.uiharux-pro-2.0.tipa",
-          "size": 3393002
-        }
-      ],
+      "versions": [],
       "screenshotURLs": [
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/UiharuX/screenshots/IMG_2.png",
