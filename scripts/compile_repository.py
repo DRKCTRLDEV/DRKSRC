@@ -80,6 +80,7 @@ class RepoCompiler:
             return apps, []
 
         current_week = datetime.now().isocalendar().week
+        # Seed random with year and week to ensure featured apps are consistent within a week but change weekly
         random.seed(f"{datetime.now().year}-{current_week}")
         featured = random.sample(bundle_ids, min(self.featured_count, len(bundle_ids)))
         random.seed()
