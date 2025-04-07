@@ -53,7 +53,6 @@ jobs:
         KEEP_VERSIONS: ${{ github.event_name == 'schedule' && 10 || inputs.keep_versions }}
         APP_LIST: ${{ inputs.app_list }}
       run: |
-        # Ensure KEEP_VERSIONS is an integer
         KEEP_VERSIONS_INT=$(printf "%.0f" "$KEEP_VERSIONS")
         if [ -n "$APP_LIST" ]; then
           python3 scripts/manage_versions.py "$ACTION" --keep "$KEEP_VERSIONS_INT" --apps "$APP_LIST"

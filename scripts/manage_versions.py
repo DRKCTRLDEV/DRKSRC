@@ -10,16 +10,6 @@ from requests.exceptions import RequestException
 
 class VersionManager:
     def __init__(self, apps_root: str, keep_versions: int = 10):
-        """
-        Initialize VersionManager with root directory and version retention count.
-
-        Args:
-            apps_root: Directory containing app subdirectories.
-            keep_versions: Number of versions to retain (default: 10).
-
-        Raises:
-            ValueError: If keep_versions is not a positive integer.
-        """
         if not isinstance(keep_versions, int) or keep_versions < 1:
             raise ValueError("keep_versions must be a positive integer")
         self.apps_root = apps_root
@@ -27,7 +17,6 @@ class VersionManager:
         self.logger = self._init_logger()
 
     def _init_logger(self) -> logging.Logger:
-        """Initialize and return a configured logger."""
         logger = logging.getLogger("VersionManager")
         logger.setLevel(logging.INFO)
         handler = logging.StreamHandler()
@@ -36,14 +25,6 @@ class VersionManager:
         return logger
 
     def manage(self, action: str, target: Optional[str] = None, keep: Optional[int] = None):
-        """
-        Manage versions for apps based on the specified action.
-
-        Args:
-            action: 'update' or 'remove'.
-            target: Specific app to target (optional).
-            keep: Override default number of versions to keep (optional).
-        """
         self.keep_versions = max(1, keep or self.keep_versions)
         for app in os.listdir(self.apps_root):
             path = os.path.join(self.apps_root, app)
@@ -58,19 +39,15 @@ class VersionManager:
                 self._remove_versions(app, config_path)
 
     def _valid_app_path(self, path: str, config: str, target: Optional[str]) -> bool:
-        """Check if the path is a valid app directory with a config file."""
         return os.path.isdir(path) and os.path.isfile(config) and (not target or os.path.basename(path) == target)
 
     def _update_versions(self, app: str, config: str):
-        """Update versions for the specified app."""
         self._process_versions(app, config, update=True)
 
     def _remove_versions(self, app: str, config: str):
-        """Remove versions for the specified app."""
         self._process_versions(app, config, update=False)
 
     def _process_versions(self, app: str, config: str, update: bool):
-        """Process app versions based on the update flag."""
         try:
             with open(config, 'r') as f:
                 data = json.load(f)
@@ -92,8 +69,12 @@ class VersionManager:
             if not result['success']:
                 self.logger.error(f"Failed to update {app}: {result['message']}")
                 return
-            data['versions'] = result['versions']
-            self.logger.info(f"Successfully updated {app}: {result['message']}")
+            new_versions = result['versions']
+            all_versions = data.get('versions', []) + new_versions
+            sorted_versions = sorted(all_versions, key=lambda x: x['date'], reverse=True)[:self.keep_versions]
+            data['versions'] = sorted_versions
+            added_count = sum(1 for v in sorted_versions if v in new_versions)
+            self.logger.info(f"Updated {app}, added {added_count} new versions, total {len(sorted_versions)} versions")
         else:
             data['versions'] = []
             self.logger.info(f"Removed all versions for {app}")
@@ -101,16 +82,6 @@ class VersionManager:
         self._save_config(config, data)
 
     def _fetch_new_versions(self, data: Dict, app_dir: str) -> Dict:
-        """
-        Fetch new release versions from GitHub repositories.
-
-        Args:
-            data: Configuration data from app.json.
-            app_dir: Directory path of the app.
-
-        Returns:
-            Dict with success status, message, and list of versions.
-        """
         repos = data.get('gitURLs', [])
         repos = [repos] if isinstance(repos, str) else repos
         existing = {v['url'] for v in data.get('versions', [])}
@@ -150,24 +121,15 @@ class VersionManager:
                     self.logger.error(f"API error for {repo}: {str(e)}")
                     return {'success': False, 'message': f"API error: {str(e)}", 'versions': []}
 
-        sorted_versions = sorted(versions.values(), key=lambda x: x['date'], reverse=True)[:self.keep_versions]
-        new_count = len(versions) - (len(data.get('versions', [])) - len(existing & set(versions.keys())))
+        new_versions = list(versions.values())
+        new_count = len(new_versions)
         return {
             'success': True,
-            'message': f"Added {new_count} versions" if new_count > 0 else "No new versions",
-            'versions': sorted_versions
+            'message': f"Fetched {new_count} new versions" if new_count > 0 else "No new versions",
+            'versions': new_versions
         }
 
     def _load_rules(self, app_dir: str) -> Dict:
-        """
-        Load rules from .rules.yaml file, creating a template if absent.
-
-        Args:
-            app_dir: Directory containing the rules file.
-
-        Returns:
-            Dict of rules or empty dict if invalid/absent.
-        """
         rules_path = os.path.join(app_dir, '.rules.yaml')
         if not os.path.exists(rules_path):
             template = {
@@ -195,7 +157,6 @@ class VersionManager:
             return {}
 
     def _should_include_asset(self, asset: Dict, rules: Dict) -> bool:
-        """Determine if an asset should be included based on rules."""
         name = asset['name'].lower()
         if rules.get('excluded_extensions') and any(name.endswith(ext) for ext in rules['excluded_extensions']):
             return False
@@ -206,7 +167,6 @@ class VersionManager:
         return name.endswith(('.tipa', '.ipa'))
 
     def _format_version_number(self, version: str, rules: Dict) -> str:
-        """Format version string according to rules."""
         if rules.get('strip_v_prefix', False) and version.lower().startswith('v'):
             version = version[1:]
         if rules.get('remove_chars'):
@@ -218,7 +178,6 @@ class VersionManager:
         return version.strip()
 
     def _save_config(self, path: str, data: Dict):
-        """Save updated configuration to file."""
         try:
             with open(path, 'w') as f:
                 json.dump(data, f, indent=4)
@@ -226,7 +185,6 @@ class VersionManager:
             self.logger.error(f"Failed to save config {path}: {str(e)}")
 
     def _valid_repo(self, repo) -> bool:
-        """Validate repository information."""
         if not repo:
             self.logger.warning("No repository information provided")
             return False
@@ -237,13 +195,11 @@ class VersionManager:
         return valid
 
     def _valid_gh_url(self, url: str) -> bool:
-        """Check if a URL is a valid GitHub URL."""
         return url.startswith(("https://github.com/", "http://github.com/"))
 
 def int_or_float_to_int(value: str) -> int:
-    """Convert a string representing an int or float to an integer."""
     try:
-        num = float(value)  # Handle both "10" and "10.0"
+        num = float(value)
         if not num.is_integer():
             raise ValueError("keep must be a whole number")
         return int(num)
