@@ -1,7 +1,8 @@
-import os
 import json
 import logging
+import os
 from typing import Optional
+
 from PIL import Image
 
 class AssetManager:

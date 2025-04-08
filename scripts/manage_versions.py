@@ -1,12 +1,13 @@
-import sys
-import os
+import argparse
 import json
 import logging
-import requests
-import yaml
-import argparse
+import os
+import sys
 from typing import Dict, Optional
+
+import requests
 from requests.exceptions import RequestException
+import yaml
 
 class VersionManager:
     def __init__(self, apps_root: str, keep_versions: int = 10):
