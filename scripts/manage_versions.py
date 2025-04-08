@@ -85,8 +85,9 @@ class VersionManager:
         repos = data.get('gitURLs', [])
         repos = [repos] if isinstance(repos, str) else repos
         existing = {v['url'] for v in data.get('versions', [])}
-        versions = {}
+        versions_by_version = {}
         rules = self._load_rules(app_dir)
+        preferred_extensions = rules.get('preferred_extensions', ['.tipa', '.ipa'])
 
         token = os.environ.get("GITHUB_TOKEN")
         if not token:
@@ -108,26 +109,42 @@ class VersionManager:
                     for release in releases:
                         for asset in release.get('assets', []):
                             if self._should_include_asset(asset, rules):
+                                version_str = self._format_version_number(release['tag_name'], rules)
+                                if rules.get('exclude_patterns') and any(pattern.lower() in version_str.lower() for pattern in rules['exclude_patterns']):
+                                    continue
                                 version = {
-                                    'version': self._format_version_number(release['tag_name'], rules),
+                                    'version': version_str,
                                     'date': release['published_at'].split('T')[0],
                                     'size': asset['size'],
                                     'url': asset['browser_download_url']
                                 }
                                 if version['url'] not in existing:
-                                    versions[version['url']] = version
+                                    current = versions_by_version.get(version_str)
+                                    if not current or self._is_preferred_asset(version, current, preferred_extensions):
+                                        versions_by_version[version_str] = version
                     url = response.links.get('next', {}).get('url')
                 except RequestException as e:
                     self.logger.error(f"API error for {repo}: {str(e)}")
                     return {'success': False, 'message': f"API error: {str(e)}", 'versions': []}
 
-        new_versions = list(versions.values())
+        new_versions = list(versions_by_version.values())
         new_count = len(new_versions)
         return {
             'success': True,
             'message': f"Fetched {new_count} new versions" if new_count > 0 else "No new versions",
             'versions': new_versions
         }
+
+    def _is_preferred_asset(self, new: Dict, current: Dict, preferred_extensions: list) -> bool:
+        new_ext = os.path.splitext(new['url'])[1].lower()
+        current_ext = os.path.splitext(current['url'])[1].lower()
+        new_priority = preferred_extensions.index(new_ext) if new_ext in preferred_extensions else len(preferred_extensions)
+        current_priority = preferred_extensions.index(current_ext) if current_ext in preferred_extensions else len(preferred_extensions)
+        if new_priority < current_priority:
+            return True
+        if new_priority == current_priority and new['size'] > current['size']:
+            return True
+        return False
 
     def _load_rules(self, app_dir: str) -> Dict:
         rules_path = os.path.join(app_dir, '.rules.yaml')
@@ -159,8 +176,6 @@ class VersionManager:
     def _should_include_asset(self, asset: Dict, rules: Dict) -> bool:
         name = asset['name'].lower()
         if rules.get('excluded_extensions') and any(name.endswith(ext) for ext in rules['excluded_extensions']):
-            return False
-        if rules.get('exclude_patterns') and any(pattern.lower() in name for pattern in rules['exclude_patterns']):
             return False
         if rules.get('preferred_extensions'):
             return any(name.endswith(ext) for ext in rules['preferred_extensions'])
