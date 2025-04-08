@@ -347,12 +347,6 @@
         {
           "version": "1.6",
           "date": "2024-10-22",
-          "downloadURL": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-stock-alpha.ipa",
-          "size": 66806491
-        },
-        {
-          "version": "1.6",
-          "date": "2024-10-22",
           "downloadURL": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa",
           "size": 70613655
         },
@@ -519,12 +513,6 @@
           "date": "2023-12-08",
           "downloadURL": "https://github.com/leminlimez/Helium/releases/download/v1.1/Helium_ABOVE_STATUS_BAR.tipa",
           "size": 4294026
-        },
-        {
-          "version": "1.1",
-          "date": "2023-12-08",
-          "downloadURL": "https://github.com/leminlimez/Helium/releases/download/v1.1/Helium_BELOW_STATUS_BAR.tipa",
-          "size": 4293924
         },
         {
           "version": "1.0",
@@ -697,34 +685,10 @@
           "size": 10806164
         },
         {
-          "version": "6.0.2",
-          "date": "2024-11-23",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.noSparse.ipa",
-          "size": 3932657
-        },
-        {
-          "version": "6.0.2",
-          "date": "2024-11-23",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.noSparse.ts.ipa",
-          "size": 4042969
-        },
-        {
           "version": "6.0.1",
           "date": "2024-09-29",
           "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.ipa",
           "size": 10882263
-        },
-        {
-          "version": "6.0.1",
-          "date": "2024-09-29",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.noSparse.ipa",
-          "size": 4005315
-        },
-        {
-          "version": "6.0.1",
-          "date": "2024-09-29",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.noSparse.ts.ipa",
-          "size": 4047225
         },
         {
           "version": "6.0",
@@ -733,22 +697,46 @@
           "size": 10025476
         },
         {
-          "version": "6.0",
-          "date": "2024-09-22",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.noSparse.ipa",
-          "size": 3150038
+          "version": "5.2.1",
+          "date": "2024-07-30",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.2.1/purekfd.ipa",
+          "size": 24374136
         },
         {
-          "version": "6.0",
-          "date": "2024-09-22",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.noSparse.ts.ipa",
-          "size": 3191275
+          "version": "5.2",
+          "date": "2024-02-08",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.2/purekfd.ipa",
+          "size": 47591689
         },
         {
-          "version": "6.0rc3",
-          "date": "2024-09-21",
-          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0rc3/PureKFD.ipa",
-          "size": 10019622
+          "version": "5.1",
+          "date": "2024-01-18",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.1/PureKFD.ipa",
+          "size": 24524098
+        },
+        {
+          "version": "5.0",
+          "date": "2024-01-08",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0/purekfd.ipa",
+          "size": 46623713
+        },
+        {
+          "version": "5.0beta",
+          "date": "2023-12-30",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0beta/purekfd.ipa",
+          "size": 43115933
+        },
+        {
+          "version": "4.6",
+          "date": "2023-12-11",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.6/purekfd.ipa",
+          "size": 33681766
+        },
+        {
+          "version": "4.5",
+          "date": "2023-12-09",
+          "downloadURL": "https://github.com/Lrdsnow/PureKFD/releases/download/4.5/purekfd.ipa",
+          "size": 15861998
         }
       ],
       "screenshotURLs": [
@@ -774,21 +762,9 @@
           "size": 6637698
         },
         {
-          "version": "2.0.2",
-          "date": "2024-07-24",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.2/PurePKGDemo.ipa",
-          "size": 6637698
-        },
-        {
           "version": "2.0.1",
           "date": "2024-06-23",
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/PurePKG.tipa",
-          "size": 9394403
-        },
-        {
-          "version": "2.0.1",
-          "date": "2024-06-23",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0.1/PurePKGDemo.ipa",
           "size": 9394403
         },
         {
@@ -798,21 +774,9 @@
           "size": 6627862
         },
         {
-          "version": "2.0",
-          "date": "2024-06-21",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/2.0/PurePKGDemo.ipa",
-          "size": 6627862
-        },
-        {
           "version": "1.7",
           "date": "2024-06-15",
           "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.7/PurePKG.tipa",
-          "size": 8067336
-        },
-        {
-          "version": "1.7",
-          "date": "2024-06-15",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.7/PurePKGDemo.ipa",
           "size": 8067336
         },
         {
@@ -822,10 +786,34 @@
           "size": 8499956
         },
         {
-          "version": "1.6",
+          "version": "1.5.1",
           "date": "2024-06-03",
-          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.6/PurePKGDemo.ipa",
-          "size": 8499956
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5.1/PurePKG.tipa",
+          "size": 6399029
+        },
+        {
+          "version": "1.5",
+          "date": "2024-04-22",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.5/PurePKG.tipa",
+          "size": 6763487
+        },
+        {
+          "version": "1.4",
+          "date": "2024-04-13",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.4/PurePKG.tipa",
+          "size": 21980135
+        },
+        {
+          "version": "1.3",
+          "date": "2024-04-11",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.3/PurePKG.tipa",
+          "size": 21949811
+        },
+        {
+          "version": "1.2",
+          "date": "2024-04-06",
+          "downloadURL": "https://github.com/Lrdsnow/purepkg/releases/download/1.2/PurePKG.tipa",
+          "size": 16998348
         }
       ],
       "screenshotURLs": [
@@ -952,12 +940,6 @@
           "size": 14327984
         },
         {
-          "version": "0.1",
-          "date": "2023-01-29",
-          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.1/TrollBox16.ipa",
-          "size": 14113886
-        },
-        {
           "version": "0.0.9",
           "date": "2023-01-20",
           "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.9/TrollBox.tipa",
@@ -998,6 +980,12 @@
           "date": "2022-12-21",
           "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.3/TrollBox.tipa",
           "size": 3016450
+        },
+        {
+          "version": "0.0.2",
+          "date": "2022-12-20",
+          "downloadURL": "https://github.com/c22dev/TrollBox/releases/download/0.0.2/TrollBox.tipa",
+          "size": 2945488
         }
       ],
       "screenshotURLs": [
@@ -1023,22 +1011,10 @@
           "size": 14433792
         },
         {
-          "version": "2.11.28",
-          "date": "2025-02-15",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.11-28/TrollFools_2.11-28%40huamidev.tipa",
-          "size": 6542574
-        },
-        {
           "version": "2.11.25",
           "date": "2025-01-17",
           "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25%40huamidev.tipa",
           "size": 14408490
-        },
-        {
-          "version": "2.11.25",
-          "date": "2025-01-17",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.11-25/TrollFools_2.11-25%40huamidev.tipa",
-          "size": 6534606
         },
         {
           "version": "2.10.23",
@@ -1047,22 +1023,10 @@
           "size": 14405939
         },
         {
-          "version": "2.10.23",
-          "date": "2025-01-14",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-23/TrollFools_2.10-23%40huamidev.tipa",
-          "size": 6524034
-        },
-        {
           "version": "2.10.22",
           "date": "2025-01-14",
           "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22%40huamidev.tipa",
           "size": 14406268
-        },
-        {
-          "version": "2.10.22",
-          "date": "2025-01-14",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.10-22/TrollFools_2.10-22%40huamidev.tipa",
-          "size": 6524499
         },
         {
           "version": "2.9.21",
@@ -1071,10 +1035,34 @@
           "size": 14241843
         },
         {
-          "version": "2.9.21",
-          "date": "2025-01-11",
-          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-21/TrollFools_2.9-21%40huamidev.tipa",
-          "size": 6423780
+          "version": "2.9.20",
+          "date": "2025-01-10",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.9-20/TrollFools14_2.9-20_huami.tipa",
+          "size": 14255921
+        },
+        {
+          "version": "2.8.18",
+          "date": "2025-01-10",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-18/TrollFools14_2.8-18_huami.tipa",
+          "size": 12618066
+        },
+        {
+          "version": "2.8.17",
+          "date": "2025-01-09",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.8-17/TrollFools14_2.8-17_huami.tipa",
+          "size": 12619164
+        },
+        {
+          "version": "2.7.11",
+          "date": "2024-09-29",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-11/TrollFools14_2.7.11.huami.tipa",
+          "size": 8055831
+        },
+        {
+          "version": "2.7.10",
+          "date": "2024-09-29",
+          "downloadURL": "https://github.com/huami1314/TrollFools/releases/download/v2.7-10/TrollFools14_2.7.10.huami.tipa",
+          "size": 8055743
         }
       ],
       "screenshotURLs": [
@@ -1136,22 +1124,22 @@
           "size": 5783322
         },
         {
-          "version": "2.12.27",
-          "date": "2025-02-23",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.12-27/TrollFools_2.12-27.tipa",
-          "size": 3541410
-        },
-        {
           "version": "2.11.25",
           "date": "2025-01-17",
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25.tipa",
           "size": 5699241
         },
         {
-          "version": "2.11.25",
-          "date": "2025-01-17",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools_2.11-25.tipa",
-          "size": 3487386
+          "version": "2.10.23",
+          "date": "2025-01-14",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23.tipa",
+          "size": 5698258
+        },
+        {
+          "version": "2.10.22",
+          "date": "2025-01-14",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22.tipa",
+          "size": 5698269
         }
       ],
       "screenshotURLs": [
@@ -1172,8 +1160,8 @@
         {
           "version": "1.0.3",
           "date": "2024-09-12",
-          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX.ipa",
-          "size": 6889214
+          "downloadURL": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX-20D50.ipa",
+          "size": 27098183
         },
         {
           "version": "1.0.2",
@@ -1284,22 +1272,10 @@
           "size": 451840
         },
         {
-          "version": "1.12.1",
-          "date": "2024-06-17",
-          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.12.1/TrollSpeed_v1.12.1.tipa",
-          "size": 162585
-        },
-        {
           "version": "1.12.0",
           "date": "2024-06-16",
           "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.12.0/TrollSpeed%2BAppIntents16_1.12.0.tipa",
           "size": 452033
-        },
-        {
-          "version": "1.12.0",
-          "date": "2024-06-16",
-          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.12.0/TrollSpeed_v1.12.0.tipa",
-          "size": 162774
         },
         {
           "version": "1.11.11",
@@ -1308,22 +1284,10 @@
           "size": 451905
         },
         {
-          "version": "1.11.11",
-          "date": "2024-03-17",
-          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.11/TrollSpeed_v1.11.11.tipa",
-          "size": 162640
-        },
-        {
           "version": "1.11.9",
           "date": "2024-03-16",
           "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.9/TrollSpeed%2BAppIntents16_1.11.9.tipa",
           "size": 450639
-        },
-        {
-          "version": "1.11.9",
-          "date": "2024-03-16",
-          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.9/TrollSpeed_v1.11.9.tipa",
-          "size": 160981
         },
         {
           "version": "1.11.6",
@@ -1332,10 +1296,34 @@
           "size": 453391
         },
         {
-          "version": "1.11.6",
+          "version": "1.11.3",
           "date": "2024-03-07",
-          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.6/TrollSpeed_v1.11.6.tipa",
-          "size": 164163
+          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.3/TrollSpeed%2BAppIntents16_1.11.3.tipa",
+          "size": 453313
+        },
+        {
+          "version": "1.11.2",
+          "date": "2024-01-31",
+          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.2/TrollSpeed%2BAppIntents16_1.11.2.tipa",
+          "size": 449009
+        },
+        {
+          "version": "1.11.0",
+          "date": "2024-01-27",
+          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.11.0/TrollSpeed%2BAppIntents16_1.11.0.tipa",
+          "size": 446395
+        },
+        {
+          "version": "1.10.2",
+          "date": "2024-01-26",
+          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.10.2/TrollSpeed_v1.10.2.tipa",
+          "size": 161220
+        },
+        {
+          "version": "1.10.1",
+          "date": "2024-01-25",
+          "downloadURL": "https://github.com/Lessica/TrollSpeed/releases/download/v1.10.1/TrollSpeed_v1.10.1.tipa",
+          "size": 160220
         }
       ],
       "screenshotURLs": [

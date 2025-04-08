@@ -119,7 +119,7 @@
     {
       "name": "FridaCodeManager",
       "version": "1.6",
-      "down": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-stock-alpha.ipa",
+      "down": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa",
       "category": "utilities",
       "description": "FridaCodeManager is a comprehensive tool for managing and organizing Frida code projects. Features include permission management, project repair capabilities, app/project exports, multithreading support for folder navigation, file grouping, and an enhanced user interface with smooth animations.",
       "bundleID": "com.sparklechan.swifty",
@@ -342,7 +342,7 @@
     {
       "name": "TrollInstallerX",
       "version": "1.0.3",
-      "down": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX.ipa",
+      "down": "https://github.com/alfiecg24/TrollInstallerX/releases/download/1.0.3/TrollInstallerX-20D50.ipa",
       "category": "utilities",
       "description": "TrollInstallerX is a fast and reliable universal TrollStore installer supporting iOS 14.0 - 16.6.1 on both arm64 and arm64e devices. It offers two installation methods: direct installation using kfd exploit and dmaFail PPL bypass for most devices, and indirect installation for A15/A16/M2 devices on iOS 16.5.1 and iOS 16.6-16.6.1. Both methods allow installing the TrollStore persistence helper to maintain System registration status.",
       "bundleID": "com.huami.TrollFools",
