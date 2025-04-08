@@ -15,7 +15,20 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_3.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_4.png"
     ],
-    "versions": [],
+    "versions": [
+        {
+            "version": "1.6",
+            "date": "2024-10-22",
+            "size": 70613655,
+            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa"
+        },
+        {
+            "version": "1.5.5",
+            "date": "2024-10-14",
+            "size": 108290634,
+            "url": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.5.5/FridaCodeManager.tipa"
+        }
+    ],
     "scarletDebs": [],
     "scarletBackup": true
 }
