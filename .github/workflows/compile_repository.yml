@@ -2,7 +2,7 @@ name: Compile Repository
 
 on:
   schedule:
-    - cron: '0 0 * * *'    # Runs daily at midnight UTC
+    - cron: '10 23 * * *'  # 23:10 GMT = 00:10 BST
   workflow_dispatch:
     inputs:
       format:
@@ -15,11 +15,6 @@ on:
           - altstore
           - trollapps
           - scarlet
-      verbose:
-        description: 'Enable verbose logging'
-        required: false
-        default: false
-        type: boolean
 
 jobs:
   compile-repo:
@@ -52,11 +47,9 @@ jobs:
 
       - name: Compile Repository Files
         run: |
-          # Default to 'all' format and verbose logging
           FORMAT="${{ inputs.format || 'all' }}"
-          VERBOSE="${{ inputs.verbose || 'false' }}"
-          ARGS="-v"  # Always verbose for debugging
-          if [ "$FORMAT" != "all" ]; then ARGS="$ARGS -f $FORMAT"; fi
+          ARGS=""
+          if [ "$FORMAT" != "all" ]; then ARGS="-f $FORMAT"; fi
           echo "Running: python3 scripts/compile_repository.py $ARGS"
           python3 scripts/compile_repository.py $ARGS || exit 1
 
