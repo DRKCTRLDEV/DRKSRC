@@ -16,10 +16,22 @@
     ],
     "versions": [
         {
+            "version": "3.5.38",
+            "date": "2025-03-14",
+            "size": 6010650,
+            "url": "https://github.com/Lessica/TrollFools/releases/download/v3.5-38/TrollFools_3.5-38.tipa"
+        },
+        {
             "version": "3.5.37",
             "date": "2025-03-13",
             "size": 6009456,
             "url": "https://github.com/Lessica/TrollFools/releases/download/v3.5-37/TrollFools_3.5-37.tipa"
+        },
+        {
+            "version": "3.3.34",
+            "date": "2025-03-10",
+            "size": 5999829,
+            "url": "https://github.com/Lessica/TrollFools/releases/download/v3.3-34/TrollFools_3.3-34.tipa"
         },
         {
             "version": "3.2.32",
@@ -62,18 +74,6 @@
             "date": "2025-01-17",
             "size": 3487386,
             "url": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools_2.11-25.tipa"
-        },
-        {
-            "version": "2.10.23",
-            "date": "2025-01-14",
-            "size": 5698258,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23.tipa"
-        },
-        {
-            "version": "2.10.23",
-            "date": "2025-01-14",
-            "size": 3487141,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools_2.10-23.tipa"
         }
     ],
     "scarletDebs": [],

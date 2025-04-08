@@ -17,6 +17,12 @@
     ],
     "versions": [
         {
+            "version": "3.3.1",
+            "date": "2025-03-16",
+            "size": 3146175,
+            "url": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.3.1/com.kdt.livecontainer_3.3.1.ipa"
+        },
+        {
             "version": "3.3.0",
             "date": "2025-03-14",
             "size": 3155485,
