@@ -23,16 +23,34 @@
             "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.ipa"
         },
         {
+            "version": "6.0.2",
+            "date": "2024-11-23",
+            "size": 4042969,
+            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.2/PureKFD.noSparse.ts.ipa"
+        },
+        {
             "version": "6.0.1",
             "date": "2024-09-29",
             "size": 10882263,
             "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.ipa"
         },
         {
+            "version": "6.0.1",
+            "date": "2024-09-29",
+            "size": 4047225,
+            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0.1/PureKFD.noSparse.ts.ipa"
+        },
+        {
             "version": "6.0",
             "date": "2024-09-22",
             "size": 10025476,
             "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.ipa"
+        },
+        {
+            "version": "6.0",
+            "date": "2024-09-22",
+            "size": 3191275,
+            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/6.0/PureKFD.noSparse.ts.ipa"
         },
         {
             "version": "5.2.1",
@@ -57,24 +75,6 @@
             "date": "2024-01-08",
             "size": 46623713,
             "url": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0/purekfd.ipa"
-        },
-        {
-            "version": "5.0beta",
-            "date": "2023-12-30",
-            "size": 43115933,
-            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/5.0beta/purekfd.ipa"
-        },
-        {
-            "version": "4.6",
-            "date": "2023-12-11",
-            "size": 33681766,
-            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/4.6/purekfd.ipa"
-        },
-        {
-            "version": "4.5",
-            "date": "2023-12-09",
-            "size": 15861998,
-            "url": "https://github.com/Lrdsnow/PureKFD/releases/download/4.5/purekfd.ipa"
         }
     ],
     "scarletDebs": [],
