@@ -14,68 +14,7 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_2.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Lessica)/screenshots/IMG_3.png"
     ],
-    "versions": [
-        {
-            "version": "3.5.38",
-            "date": "2025-03-14",
-            "size": 6010650,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v3.5-38/TrollFools_3.5-38.tipa"
-        },
-        {
-            "version": "3.5.37",
-            "date": "2025-03-13",
-            "size": 6009456,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v3.5-37/TrollFools_3.5-37.tipa"
-        },
-        {
-            "version": "3.3.34",
-            "date": "2025-03-10",
-            "size": 5999829,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v3.3-34/TrollFools_3.3-34.tipa"
-        },
-        {
-            "version": "3.2.32",
-            "date": "2025-03-09",
-            "size": 5751201,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v3.2-32/TrollFools_3.2-32.tipa"
-        },
-        {
-            "version": "3.1.30",
-            "date": "2025-03-09",
-            "size": 5609829,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v3.1-30/TrollFools_3.1-30.tipa"
-        },
-        {
-            "version": "3.0.28",
-            "date": "2025-03-01",
-            "size": 5565970,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v3.0-28/TrollFools_3.0-28.tipa"
-        },
-        {
-            "version": "2.12.27",
-            "date": "2025-02-23",
-            "size": 5783322,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v2.12-27/TrollFools14_2.12-27.tipa"
-        },
-        {
-            "version": "2.12.27",
-            "date": "2025-02-23",
-            "size": 3541410,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v2.12-27/TrollFools_2.12-27.tipa"
-        },
-        {
-            "version": "2.11.25",
-            "date": "2025-01-17",
-            "size": 5699241,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25.tipa"
-        },
-        {
-            "version": "2.11.25",
-            "date": "2025-01-17",
-            "size": 3487386,
-            "url": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools_2.11-25.tipa"
-        }
-    ],
+    "versions": [],
     "scarletDebs": [],
     "scarletBackup": true
 }

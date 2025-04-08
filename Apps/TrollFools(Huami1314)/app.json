@@ -15,68 +15,7 @@
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_3.png",
         "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/TrollFools(Huami1314)/screenshots/IMG_4.png"
     ],
-    "versions": [
-        {
-            "version": "2.11.28",
-            "date": "2025-02-15",
-            "size": 14433792,
-            "url": "https://github.com/huami1314/TrollFools/releases/download/v2.11-28/TrollFools14_2.11-28%40huamidev.tipa"
-        },
-        {
-            "version": "2.11.28",
-            "date": "2025-02-15",
-            "size": 6542574,
-            "url": "https://github.com/huami1314/TrollFools/releases/download/v2.11-28/TrollFools_2.11-28%40huamidev.tipa"
-        },
-        {
-            "version": "2.11.25",
-            "date": "2025-01-17",
-            "size": 14408490,
-            "url": "https://github.com/huami1314/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25%40huamidev.tipa"
-        },
-        {
-            "version": "2.11.25",
-            "date": "2025-01-17",
-            "size": 6534606,
-            "url": "https://github.com/huami1314/TrollFools/releases/download/v2.11-25/TrollFools_2.11-25%40huamidev.tipa"
-        },
-        {
-            "version": "2.10.23",
-            "date": "2025-01-14",
-            "size": 14405939,
-            "url": "https://github.com/huami1314/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23%40huamidev.tipa"
-        },
-        {
-            "version": "2.10.23",
-            "date": "2025-01-14",
-            "size": 6524034,
-            "url": "https://github.com/huami1314/TrollFools/releases/download/v2.10-23/TrollFools_2.10-23%40huamidev.tipa"
-        },
-        {
-            "version": "2.10.22",
-            "date": "2025-01-14",
-            "size": 14406268,
-            "url": "https://github.com/huami1314/TrollFools/releases/download/v2.10-22/TrollFools14_2.10-22%40huamidev.tipa"
-        },
-        {
-            "version": "2.10.22",
-            "date": "2025-01-14",
-            "size": 6524499,
-            "url": "https://github.com/huami1314/TrollFools/releases/download/v2.10-22/TrollFools_2.10-22%40huamidev.tipa"
-        },
-        {
-            "version": "2.9.21",
-            "date": "2025-01-11",
-            "size": 14241843,
-            "url": "https://github.com/huami1314/TrollFools/releases/download/v2.9-21/TrollFools14_2.9-21%40huamidev.tipa"
-        },
-        {
-            "version": "2.9.21",
-            "date": "2025-01-11",
-            "size": 6423780,
-            "url": "https://github.com/huami1314/TrollFools/releases/download/v2.9-21/TrollFools_2.9-21%40huamidev.tipa"
-        }
-    ],
+    "versions": [],
     "scarletDebs": [],
     "scarletBackup": true
 }
