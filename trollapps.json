@@ -550,6 +550,12 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
       "versions": [
         {
+          "version": "3.3.1",
+          "date": "2025-03-16",
+          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.3.1/com.kdt.livecontainer_3.3.1.ipa",
+          "size": 3146175
+        },
+        {
           "version": "3.3.0",
           "date": "2025-03-14",
           "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.3.0/com.kdt.livecontainer_3.3.0.ipa",
@@ -1088,10 +1094,22 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
       "versions": [
         {
+          "version": "3.5.38",
+          "date": "2025-03-14",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v3.5-38/TrollFools_3.5-38.tipa",
+          "size": 6010650
+        },
+        {
           "version": "3.5.37",
           "date": "2025-03-13",
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v3.5-37/TrollFools_3.5-37.tipa",
           "size": 6009456
+        },
+        {
+          "version": "3.3.34",
+          "date": "2025-03-10",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v3.3-34/TrollFools_3.3-34.tipa",
+          "size": 5999829
         },
         {
           "version": "3.2.32",
@@ -1134,18 +1152,6 @@
           "date": "2025-01-17",
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools_2.11-25.tipa",
           "size": 3487386
-        },
-        {
-          "version": "2.10.23",
-          "date": "2025-01-14",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools14_2.10-23.tipa",
-          "size": 5698258
-        },
-        {
-          "version": "2.10.23",
-          "date": "2025-01-14",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.10-23/TrollFools_2.10-23.tipa",
-          "size": 3487141
         }
       ],
       "screenshotURLs": [
@@ -1200,6 +1206,12 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
       "versions": [
         {
+          "version": "3.3.613",
+          "date": "2025-03-11",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v3.3-613/TRApp_3.3-613.tipa",
+          "size": 15074866
+        },
+        {
           "version": "3.2.609",
           "date": "2025-02-22",
           "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v3.2-609/TRApp_3.2-609.tipa",
@@ -1252,12 +1264,6 @@
           "date": "2024-11-20",
           "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v2.9-484/TRApp_2.9-484.tipa",
           "size": 5078836
-        },
-        {
-          "version": "1.18.1.354",
-          "date": "2024-07-24",
-          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v1.18.1-354/TRApp_1.18.1-354.tipa",
-          "size": 4161593
         }
       ],
       "screenshotURLs": [],
