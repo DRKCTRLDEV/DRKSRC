@@ -40,8 +40,8 @@
     },
     {
       "name": "Bootstrap",
-      "version": "1.3.2",
-      "down": "https://github.com/roothide/Bootstrap/releases/download/1.3.2/Bootstrap.tipa",
+      "version": "1.4",
+      "down": "https://github.com/roothide/Bootstrap/releases/download/1.4/Bootstrap.tipa",
       "category": "utilities",
       "description": "Bootstrap is a powerful tool for jailbreaking iOS devices, providing essential functionality for tweaks and system modifications.",
       "bundleID": "com.roothide.Bootstrap",
