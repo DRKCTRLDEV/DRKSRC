@@ -7,11 +7,11 @@
   "website": "https://github.com/DRKCTRL/DRKSRC",
   "tintColor": "#9966CC",
   "featuredApps": [
+    "live.cclerc.trollbox",
     "com.tigisoftware.Filza",
-    "com.developlab.EnableQUIC",
-    "com.huami.TrollFools",
-    "com.leemin.nugget",
-    "com.82flex.Reveil"
+    "wiki.qaq.TrollFools",
+    "com.roothide.Bootstrap",
+    "com.sparklechan.swifty"
   ],
   "apps": [
     {
