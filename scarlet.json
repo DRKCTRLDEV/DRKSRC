@@ -319,8 +319,8 @@
     },
     {
       "name": "TrollFools",
-      "version": "3.5.38",
-      "down": "https://github.com/Lessica/TrollFools/releases/download/v3.5-38/TrollFools_3.5-38.tipa",
+      "version": "3.7.41",
+      "down": "https://github.com/Lessica/TrollFools/releases/download/v3.7-41/TrollFools_3.7-41.tipa",
       "category": "utilities",
       "description": "TrollFools is a powerful utility for TrollStore users on iOS 15 and above, allowing tweak injection into various apps. It offers features like version locking, advanced injection options, and more.",
       "bundleID": "wiki.qaq.TrollFools",

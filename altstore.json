@@ -7,11 +7,11 @@
   "website": "https://github.com/DRKCTRL/DRKSRC",
   "tintColor": "#9966CC",
   "featuredApps": [
-    "live.cclerc.trollbox",
-    "com.tigisoftware.Filza",
-    "wiki.qaq.TrollFools",
-    "com.roothide.Bootstrap",
-    "com.sparklechan.swifty"
+    "com.huami.TrollFools",
+    "com.kdt.frontboardapplauncher",
+    "com.82flex.Reveil",
+    "com.developlab.EnableQUIC",
+    "com.roothide.Bootstrap"
   ],
   "apps": [
     {
@@ -1096,6 +1096,12 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "3.7.41",
+          "date": "2025-04-21",
+          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v3.7-41/TrollFools_3.7-41.tipa",
+          "size": 6028294
+        },
+        {
           "version": "3.5.38",
           "date": "2025-03-14",
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v3.5-38/TrollFools_3.5-38.tipa",
@@ -1148,12 +1154,6 @@
           "date": "2025-01-17",
           "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools14_2.11-25.tipa",
           "size": 5699241
-        },
-        {
-          "version": "2.11.25",
-          "date": "2025-01-17",
-          "downloadURL": "https://github.com/Lessica/TrollFools/releases/download/v2.11-25/TrollFools_2.11-25.tipa",
-          "size": 3487386
         }
       ],
       "screenshots": [
