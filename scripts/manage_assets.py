@@ -72,7 +72,7 @@ class AssetManager:
                 with Image.open(preferred_icon_path) as img:
                     if img.size == (128, 128):
                         # Already 128x128, no need to process
-                        return f"https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/{app_name}/icon.png"
+                        return f"https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/{app_name}/icon.png"
                     else:
                         # Resize to 128x128
                         img_resized = img.resize((128, 128), Image.Resampling.LANCZOS)
@@ -80,7 +80,7 @@ class AssetManager:
                         if img_resized.mode in ('RGBA', 'LA') or (img_resized.mode == 'P' and 'transparency' in img_resized.info):
                             img_resized = img_resized.convert('RGB')
                         img_resized.save(preferred_icon_path, 'PNG')
-                        return f"https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/{app_name}/icon.png"
+                        return f"https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/{app_name}/icon.png"
             except Exception as e:
                 self.logger.error(f"Failed to process existing icon.png for {app_name}: {str(e)}")
                 # Proceed to look for other icons
@@ -101,7 +101,7 @@ class AssetManager:
                         img_resized.save(preferred_icon_path, 'PNG')
                         # Remove original
                         os.remove(icon_path)
-                        return f"https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/{app_name}/icon.png"
+                        return f"https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/{app_name}/icon.png"
                 except Exception as e:
                     self.logger.error(f"Failed to convert icon{ext} for {app_name}: {str(e)}")
                     continue
@@ -144,7 +144,7 @@ class AssetManager:
                     img.save(output_path, 'PNG')
                 
                 # Add URL to list
-                base_url = f"https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/{app_name}/screenshots"
+                base_url = f"https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/{app_name}/screenshots"
                 new_screenshot_urls.append(f"{base_url}/{new_filename}")
                 
                 # Remove original if different from new file

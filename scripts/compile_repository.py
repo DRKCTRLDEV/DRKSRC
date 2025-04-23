@@ -11,7 +11,7 @@ import sys
 from typing import Dict, List, Optional, Tuple
 
 CONFIG = {
-    "NO_ICON_PATH": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/assets/no-icon.png",
+    "NO_ICON_PATH": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/no-icon.png",
     "OUTPUT_FILES": {
         "altstore": "altstore.json",
         "trollapps": "trollapps.json",

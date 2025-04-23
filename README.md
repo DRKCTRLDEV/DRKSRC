@@ -16,16 +16,16 @@
   </p>
 
   <p style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-    <a href="https://fwuf.in/#/esign://addsource?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/trollstore.json">
+    <a href="https://fwuf.in/#/esign://addsource?url=https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/trollstore.json">
       <img src="https://img.shields.io/badge/Add%20to%20ESign-%20blue?style=for-the-badge&color=1e90ff" alt="Add to ESign">
     </a>
-    <a href="https://fwuf.in/#/altstore://add?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/altstore.json">
+    <a href="https://fwuf.in/#/altstore://add?url=https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/altstore.json">
       <img src="https://img.shields.io/badge/Add%20to%20AltStore-%20blue?style=for-the-badge&color=0048ba" alt="Add to AltStore">
     </a>
-    <a href="https://fwuf.in/#/trollapps://add?url=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/trollapps.json">
+    <a href="https://fwuf.in/#/trollapps://add?url=https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/trollapps.json">
       <img src="https://img.shields.io/badge/Add%20to%20TrollApps-%20blue?style=for-the-badge&color=B85CFD" alt="Add to TrollApps">
     </a>
-    <a href="https://fwuf.in/#/scarlet://repo=https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/scarlet.json">
+    <a href="https://fwuf.in/#/scarlet://repo=https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/scarlet.json">
       <img src="https://img.shields.io/badge/Add%20to%20Scarlet-%20blue?style=for-the-badge&color=ff0000" alt="Add to Scarlet">
     </a>
   </p>
@@ -83,5 +83,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ---
 
 <div align="center">
-  Made with ❤️ by DRKCTRL and the amazing iOS community
+  Made with ❤️ by DRK and the amazing iOS community
 </div>

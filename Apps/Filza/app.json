@@ -8,29 +8,29 @@
     "category": "utilities",
     "icon": "",
     "screenshots": [
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_2.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_3.png",
-        "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/Apps/Filza/screenshots/IMG_4.png"
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Filza/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Filza/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Filza/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Filza/screenshots/IMG_4.png"
     ],
     "versions": [
         {
             "version": "4.0.2",
             "date": "2024-07-24",
             "size": 13925062,
-            "url": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/IPA/Filza_NoURLScheme_4.0.2.ipa"
+            "url": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/IPA/Filza_NoURLScheme_4.0.2.ipa"
         },
         {
             "version": "4.0.0",
             "date": "2023-01-10",
             "size": 13893015,
-            "url": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/IPA/Filza_NoURLScheme_4.0.0.ipa"
+            "url": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/IPA/Filza_NoURLScheme_4.0.0.ipa"
         },
         {
             "version": "3.9.8",
             "date": "2022-10-30",
             "size": 14100822,
-            "url": "https://raw.githubusercontent.com/DRKCTRL/DRKSRC/main/static/IPA/Filza_NoURLScheme_3.9.8.ipa"
+            "url": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/IPA/Filza_NoURLScheme_3.9.8.ipa"
         }
     ],
     "scarletDebs": [],
