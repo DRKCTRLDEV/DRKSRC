@@ -7,10 +7,10 @@
 ### Quality iOS Apps, Made Simple 🎉
 
   <p>
-    <a href="https://github.com/DRKCTRL/DRKSRC/stargazers">
+    <a href="https://github.com/DRKCTRLDEV/DRKSRC/stargazers">
       <img src="https://img.shields.io/github/stars/DRKCTRL/DRKSRC?style=flat-square" alt="GitHub stars"/>
     </a>
-    <a href="https://github.com/DRKCTRL/DRKSRC/commits">
+    <a href="https://github.com/DRKCTRLDEV/DRKSRC/commits">
       <img src="https://img.shields.io/github/last-commit/DRKCTRL/DRKSRC?style=flat-square" alt="Last Commit"/>
     </a>
   </p>
@@ -58,7 +58,7 @@ And plenty more excellent apps to explore!
 
 Found something excellent that belongs here?
 
-1. [Create a new issue](https://github.com/DRKCTRL/DRKSRC/issues/new) on GitHub
+1. [Create a new issue](https://github.com/DRKCTRLDEV/DRKSRC/issues/new) on GitHub
 2. Use the title format: `[App Request] Your App Name`
 3. Include the following information:
    - App name and description

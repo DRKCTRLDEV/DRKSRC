@@ -1,7 +1,7 @@
 {
     "gitURLs": [
         "https://github.com/khanhduytran0/FrontBoardAppLauncher",
-        "https://github.com/DRKCTRL/FrontBoardAppLauncher"
+        "https://github.com/DRKCTRLDEV/FrontBoardAppLauncher"
     ],
     "name": "FrontBoardAppLauncher",
     "bundleID": "com.kdt.frontboardapplauncher",
@@ -20,7 +20,7 @@
             "version": "1.3.0",
             "date": "2024-11-17",
             "size": 27533,
-            "url": "https://github.com/DRKCTRL/FrontBoardAppLauncher/releases/download/1.3.0/FrontBoardAppLauncher.tipa"
+            "url": "https://github.com/DRKCTRLDEV/FrontBoardAppLauncher/releases/download/1.3.0/FrontBoardAppLauncher.tipa"
         }
     ],
     "scarletDebs": [],

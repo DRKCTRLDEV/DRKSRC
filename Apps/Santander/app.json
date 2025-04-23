@@ -1,7 +1,7 @@
 {
     "gitURL/s": [
         "https://github.com/NSAntoine/Santander",
-        "https://github.com/DRKCTRL/Santander"
+        "https://github.com/DRKCTRLDEV/Santander"
     ],
     "name": "Santander",
     "bundleID": "com.nsantoine.santander",
@@ -16,7 +16,7 @@
             "version": "1.0",
             "date": "2024-10-11",
             "size": 5331159,
-            "url": "https://github.com/DRKCTRL/Santander/releases/download/1.0/SantanderTS.tipa"
+            "url": "https://github.com/DRKCTRLDEV/Santander/releases/download/1.0/SantanderTS.tipa"
         }
     ],
     "scarletDebs": [],
