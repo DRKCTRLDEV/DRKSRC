@@ -16,6 +16,12 @@
     ],
     "versions": [
         {
+            "version": "1.4",
+            "date": "2025-04-09",
+            "size": 55352551,
+            "url": "https://github.com/roothide/Bootstrap/releases/download/1.4/Bootstrap.tipa"
+        },
+        {
             "version": "1.3.2",
             "date": "2025-01-09",
             "size": 54595581,
