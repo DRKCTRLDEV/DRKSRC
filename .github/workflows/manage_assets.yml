@@ -41,6 +41,7 @@ jobs:
           python3 scripts/manage_assets.py --apps "$APP_LIST"
         else
           python3 scripts/manage_assets.py
+        fi
           
     - name: Commit and push changes
       run: |
