@@ -44,7 +44,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install requests pyyaml python-dotenv
+        pip install requests pyyaml
     
     - name: Run version management
       env:

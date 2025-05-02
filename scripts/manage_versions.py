@@ -2,20 +2,10 @@ import argparse
 import json
 import logging
 import os
-import sys
 from typing import Dict, Optional
-
 import requests
 from requests.exceptions import RequestException
 import yaml
-from dotenv import load_dotenv
-
-load_dotenv()
-
-GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
-if not GITHUB_TOKEN:
-    print("Error: GITHUB_TOKEN environment variable not set")
-    sys.exit(1)
 
 class VersionManager:
     def __init__(self, apps_root: str, keep_versions: int = 10):

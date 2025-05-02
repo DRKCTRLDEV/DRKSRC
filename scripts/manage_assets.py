@@ -3,15 +3,6 @@ import logging
 import os
 from typing import Optional
 from PIL import Image
-from dotenv import load_dotenv
-import sys
-
-load_dotenv()
-
-GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
-if not GITHUB_TOKEN:
-    print("Error: GITHUB_TOKEN environment variable not set")
-    sys.exit(1)
 
 class AssetManager:
     def __init__(self, apps_root: str):

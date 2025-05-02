@@ -28,7 +28,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install pillow requests python-dotenv
+        pip install pillow requests
 
     - name: Run icon scraper
       env:
