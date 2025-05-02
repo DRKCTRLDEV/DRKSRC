@@ -1,0 +1,41 @@
+{
+    "gitURLs": [
+        "https://github.com/lunginspector/Nugget-Mobile-Revamped/"
+    ],
+    "name": "Tender",
+    "bundleID": "com.leemin.helium",
+    "devName": "lunginspector, leminlimez",
+    "subtitle": "On-Device iOS Customization Unleashed",
+    "description": "Tender(/Nugget-Mobile-Revamped) is an advanced iOS application that leverages the SparseRestore exploit to enable on-device system customizations without a jailbreak. Compatible with iOS 16.0 to 18.1.1, it allows users to tweak features like Dynamic Island, Status Bar, and SpringBoard options. Ideal for power users, it requires a .mobiledevicepairing file and WireGuard VPN for setup. Use with caution and back up data, as it may cause device instability.",
+    "category": "utilities",
+    "icon": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Tender/icon.png",
+    "screenshots": [],
+    "versions": [
+        {
+            "version": "3.0",
+            "date": "2025-04-20",
+            "size": 8946828,
+            "url": "https://github.com/lunginspector/Nugget-Mobile-Revamped/releases/download/3.0/Tender-3.0.ipa"
+        },
+        {
+            "version": "2.0",
+            "date": "2025-03-26",
+            "size": 8616758,
+            "url": "https://github.com/lunginspector/Nugget-Mobile-Revamped/releases/download/2.0/Nugget-Revamped-2.0.ipa"
+        },
+        {
+            "version": "1.0.1",
+            "date": "2025-03-10",
+            "size": 7698997,
+            "url": "https://github.com/lunginspector/Nugget-Mobile-Revamped/releases/download/1.0.1/Nugget-1.0.1.ipa"
+        },
+        {
+            "version": "1.0",
+            "date": "2025-03-08",
+            "size": 7670226,
+            "url": "https://github.com/lunginspector/Nugget-Mobile-Revamped/releases/download/1.0/NuggetRevamped.ipa"
+        }
+    ],
+    "scarletDebs": [],
+    "scarletBackup": true
+}

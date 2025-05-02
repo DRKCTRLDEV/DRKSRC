@@ -8,7 +8,7 @@
     "subtitle": "Advanced Frida Code Management Tool",
     "description": "FridaCodeManager is a comprehensive tool for managing and organizing Frida code projects. Features include permission management, project repair capabilities, app/project exports, multithreading support for folder navigation, file grouping, and an enhanced user interface with smooth animations.",
     "category": "utilities",
-    "icon": "",
+    "icon": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/FridaCodeManager/icon.png",
     "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/FridaCodeManager/screenshots/IMG_2.png",

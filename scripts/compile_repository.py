@@ -9,9 +9,17 @@ from pathlib import Path
 import random
 import sys
 from typing import Dict, List, Optional, Tuple
+from dotenv import load_dotenv
+
+load_dotenv()
+
+GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+if not GITHUB_TOKEN:
+    print("Error: GITHUB_TOKEN environment variable not set")
+    sys.exit(1)
 
 CONFIG = {
-    "NO_ICON_PATH": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/no-icon.png",
+    "NO_ICON_PATH": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
     "OUTPUT_FILES": {
         "altstore": "altstore.json",
         "trollapps": "trollapps.json",

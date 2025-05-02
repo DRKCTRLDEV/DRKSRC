@@ -29,7 +29,7 @@ jobs:
       run: python -m pip install --upgrade pip
 
     - name: Install dependencies
-      run: pip install pillow
+      run: pip install pillow python-dotenv
 
     - name: Run asset management
       env:

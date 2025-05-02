@@ -8,7 +8,7 @@
     "subtitle": "Useful overlays for iOS",
     "description": "App Launcher, customizable EdgeLight settings, Fake Dynamic Island, ShortcutsMenu, and SnowFall effect on the home screen. Upcoming features include Notification History and a testing MultiTask function. The Menu button is context-sensitive, appearing only when the App Launcher is open, and users can adjust EdgeLight thickness through the settings.",
     "category": "utilities",
-    "icon": "",
+    "icon": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/UiharuX/icon.png",
     "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/UiharuX/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/UiharuX/screenshots/IMG_2.png",

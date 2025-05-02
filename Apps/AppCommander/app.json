@@ -9,7 +9,7 @@
     "subtitle": "Swiss Army Knife for iPhone Apps (iOS 14.0-17.0)",
     "description": "AppCommander is a powerful iOS utility for app management and system customization. Features include App Manager, Home Screen sorting, and system tweaks. Supports iOS 14.0-17.0.",
     "category": "utilities",
-    "icon": "",
+    "icon": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/AppCommander/icon.png",
     "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/AppCommander/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/AppCommander/screenshots/IMG_2.png",

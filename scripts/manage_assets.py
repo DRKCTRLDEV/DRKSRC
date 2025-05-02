@@ -2,8 +2,16 @@ import json
 import logging
 import os
 from typing import Optional
-
 from PIL import Image
+from dotenv import load_dotenv
+import sys
+
+load_dotenv()
+
+GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+if not GITHUB_TOKEN:
+    print("Error: GITHUB_TOKEN environment variable not set")
+    sys.exit(1)
 
 class AssetManager:
     def __init__(self, apps_root: str):
@@ -44,9 +52,12 @@ class AssetManager:
             return
 
         icon_url = self._convert_and_get_icon_url(app_name, os.path.dirname(config_path))
-        data['icon'] = icon_url
-        self._save_config(config_path, data)
-        self.logger.info(f"Updated icon for {app_name}: {icon_url}")
+        if icon_url:
+            data['icon'] = icon_url
+            self._save_config(config_path, data)
+            self.logger.info(f"Updated icon for {app_name}: {icon_url}")
+        else:
+            self.logger.info(f"No icon found for {app_name}")
 
     def _update_screenshots(self, app_name: str, config_path: str):
         """Update the screenshots list in the app's config."""
@@ -58,9 +69,12 @@ class AssetManager:
             return
 
         screenshot_urls = self._convert_and_get_screenshot_urls(app_name, os.path.dirname(config_path))
-        data['screenshots'] = screenshot_urls
-        self._save_config(config_path, data)
-        self.logger.info(f"Updated screenshots for {app_name}: {len(screenshot_urls)} found")
+        if screenshot_urls:
+            data['screenshots'] = screenshot_urls
+            self._save_config(config_path, data)
+            self.logger.info(f"Updated screenshots for {app_name}: {len(screenshot_urls)} found")
+        else:
+            self.logger.info(f"No screenshots found for {app_name}")
 
     def _convert_and_get_icon_url(self, app_name: str, app_dir: str) -> str:
         """Convert icon to PNG 128x128 and return URL, skipping if already correct."""
@@ -106,14 +120,12 @@ class AssetManager:
                     self.logger.error(f"Failed to convert icon{ext} for {app_name}: {str(e)}")
                     continue
 
-        self.logger.info(f"No icon found for {app_name}")
         return ""
 
     def _convert_and_get_screenshot_urls(self, app_name: str, app_dir: str) -> list:
         """Convert screenshots to PNG with progressive naming, max 4, and return list of URLs."""
         screenshots_dir = os.path.join(app_dir, 'screenshots')
         if not os.path.isdir(screenshots_dir):
-            self.logger.info(f"No screenshots directory found for {app_name}")
             return []
 
         supported_extensions = ['.jpg', '.jpeg', '.png', '.webp']
@@ -124,6 +136,9 @@ class AssetManager:
             if any(filename.lower().endswith(ext) for ext in supported_extensions):
                 screenshot_files.append(filename)
         
+        if not screenshot_files:
+            return []
+            
         # Limit to 4 screenshots
         screenshot_files = sorted(screenshot_files)[:4]
         new_screenshot_urls = []
@@ -154,10 +169,6 @@ class AssetManager:
             except Exception as e:
                 self.logger.error(f"Failed to convert screenshot {filename} for {app_name}: {str(e)}")
                 continue
-
-        if not new_screenshot_urls:
-            self.logger.info(f"No screenshots found or converted for {app_name}")
-            return []
 
         return new_screenshot_urls
 

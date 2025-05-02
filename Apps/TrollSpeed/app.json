@@ -8,7 +8,7 @@
     "subtitle": "upload/download in status",
     "description": "TrollSpeed is an iOS application that monitors upload and download speeds in real-time, leveraging TrollStore and UIDaemon to display speed metrics persistently below the status bar. It operates with root privileges to ensure uninterrupted performance, making it an essential tool for users seeking to track their network speeds effectively.",
     "category": "utilities",
-    "icon": "",
+    "icon": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/TrollSpeed/icon.png",
     "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/TrollSpeed/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/TrollSpeed/screenshots/IMG_2.png",

@@ -8,7 +8,7 @@
     "subtitle": "The Purest iOS Toolbox",
     "description": "PureKFD is an exploit-based jailed package manager supporting iOS versions 14.0 through 18.0/18.1b4. It utilizes SparseRestore CVE-2024-44252, KFD CVE-2023-41974, and MDC CVE-2022-46689 to allow users to customize their experience through a user-friendly interface.",
     "category": "utilities",
-    "icon": "",
+    "icon": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/PureKFD/icon.png",
     "screenshots": [
         "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/PureKFD/screenshots/IMG_1.png",
         "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/PureKFD/screenshots/IMG_2.png",
