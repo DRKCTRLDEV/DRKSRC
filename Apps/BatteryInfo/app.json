@@ -24,12 +24,6 @@
             "url": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.1.7/BatteryInfo_1.1.7.tipa"
         },
         {
-            "version": "1.1.6a",
-            "date": "2025-03-02",
-            "size": 159279,
-            "url": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.1.6a/com.developlab.batteryinfo_1.1.6a.tipa"
-        },
-        {
             "version": "1.1.6",
             "date": "2025-02-23",
             "size": 159267,
@@ -70,6 +64,12 @@
             "date": "2025-02-12",
             "size": 142480,
             "url": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.1/BatteryInfo_1.1.tipa"
+        },
+        {
+            "version": "1.0.4",
+            "date": "2025-02-09",
+            "size": 138447,
+            "url": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.0.4/BatteryInfo_1.0.4.tipa"
         }
     ],
     "scarletDebs": [],

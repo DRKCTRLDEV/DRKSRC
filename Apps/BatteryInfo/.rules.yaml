@@ -1,4 +1,5 @@
 exclude_patterns:
+- "a"
 excluded_extensions:
 - .zip
 - .tar.gz
