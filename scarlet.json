@@ -223,17 +223,6 @@
       "enableBackup": true
     },
     {
-      "name": "Nugget",
-      "version": "2.0.1",
-      "down": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v2.0.1/Nugget.ipa",
-      "category": "utilities",
-      "description": "Unlock your device's full potential on iOS 16.0 through 18.1 beta 4, with partial support for iOS 18.1 beta 5-6. Note: Does not work on iOS 18.1 beta 7 or newer - use PC version instead. Requires .mobiledevicepairing file and wireguard. Uses sparserestore exploit to write to files outside intended restore location, like mobilegestalt. CAUTION: Back up your data before using. Developer not responsible for bootloops or other issues.",
-      "bundleID": "com.leemin.nugget",
-      "icon": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
-      "dev": "leminlimez",
-      "enableBackup": true
-    },
-    {
       "name": "NXBoot",
       "version": "0.3.2",
       "down": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa",
@@ -247,6 +236,17 @@
         "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/NXBoot/screenshots/IMG_2.png",
         "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/NXBoot/screenshots/IMG_3.png"
       ],
+      "enableBackup": true
+    },
+    {
+      "name": "Nugget",
+      "version": "2.0.1",
+      "down": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v2.0.1/Nugget.ipa",
+      "category": "utilities",
+      "description": "Unlock your device's full potential on iOS 16.0 through 18.1 beta 4, with partial support for iOS 18.1 beta 5-6. Note: Does not work on iOS 18.1 beta 7 or newer - use PC version instead. Requires .mobiledevicepairing file and wireguard. Uses sparserestore exploit to write to files outside intended restore location, like mobilegestalt. CAUTION: Back up your data before using. Developer not responsible for bootloops or other issues.",
+      "bundleID": "com.leemin.nugget",
+      "icon": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
+      "dev": "leminlimez",
       "enableBackup": true
     },
     {
