@@ -47,6 +47,12 @@
       "bundleID": "com.developlab.BatteryInfo",
       "icon": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
       "dev": "DevelopCubeLab",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/BatteryInfo/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/BatteryInfo/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/BatteryInfo/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/BatteryInfo/screenshots/IMG_4.png"
+      ],
       "enableBackup": true
     },
     {
@@ -105,6 +111,12 @@
       "bundleID": "com.spotify.client",
       "icon": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
       "dev": "whoeevee",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EeveeSpotify/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EeveeSpotify/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EeveeSpotify/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EeveeSpotify/screenshots/IMG_4.png"
+      ],
       "enableBackup": true
     },
     {
@@ -117,7 +129,8 @@
       "icon": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
       "dev": "DevelopCubeLab",
       "screenshots": [
-        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EnableQUIC/screenshots/IMG_1.png"
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EnableQUIC/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EnableQUIC/screenshots/IMG_2.png"
       ],
       "enableBackup": true
     },
@@ -223,6 +236,23 @@
       "enableBackup": true
     },
     {
+      "name": "Nugget",
+      "version": "2.0.1",
+      "down": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v2.0.1/Nugget.ipa",
+      "category": "utilities",
+      "description": "Unlock your device's full potential on iOS 16.0 through 18.1 beta 4, with partial support for iOS 18.1 beta 5-6. Note: Does not work on iOS 18.1 beta 7 or newer - use PC version instead. Requires .mobiledevicepairing file and wireguard. Uses sparserestore exploit to write to files outside intended restore location, like mobilegestalt. CAUTION: Back up your data before using. Developer not responsible for bootloops or other issues.",
+      "bundleID": "com.leemin.nugget",
+      "icon": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
+      "dev": "leminlimez",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Nugget/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Nugget/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Nugget/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Nugget/screenshots/IMG_4.png"
+      ],
+      "enableBackup": true
+    },
+    {
       "name": "NXBoot",
       "version": "0.3.2",
       "down": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa",
@@ -236,17 +266,6 @@
         "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/NXBoot/screenshots/IMG_2.png",
         "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/NXBoot/screenshots/IMG_3.png"
       ],
-      "enableBackup": true
-    },
-    {
-      "name": "Nugget",
-      "version": "2.0.1",
-      "down": "https://github.com/leminlimez/Nugget-Mobile/releases/download/v2.0.1/Nugget.ipa",
-      "category": "utilities",
-      "description": "Unlock your device's full potential on iOS 16.0 through 18.1 beta 4, with partial support for iOS 18.1 beta 5-6. Note: Does not work on iOS 18.1 beta 7 or newer - use PC version instead. Requires .mobiledevicepairing file and wireguard. Uses sparserestore exploit to write to files outside intended restore location, like mobilegestalt. CAUTION: Back up your data before using. Developer not responsible for bootloops or other issues.",
-      "bundleID": "com.leemin.nugget",
-      "icon": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
-      "dev": "leminlimez",
       "enableBackup": true
     },
     {
@@ -292,6 +311,12 @@
       "bundleID": "com.82flex.Reveil",
       "icon": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
       "dev": "Lessica",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Reveil/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Reveil/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Reveil/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Reveil/screenshots/IMG_4.png"
+      ],
       "enableBackup": true
     },
     {
@@ -311,9 +336,15 @@
       "down": "https://github.com/lunginspector/Nugget-Mobile-Revamped/releases/download/3.0/Tender-3.0.ipa",
       "category": "utilities",
       "description": "Tender(/Nugget-Mobile-Revamped) is an advanced iOS application that leverages the SparseRestore exploit to enable on-device system customizations without a jailbreak. Compatible with iOS 16.0 to 18.1.1, it allows users to tweak features like Dynamic Island, Status Bar, and SpringBoard options. Ideal for power users, it requires a .mobiledevicepairing file and WireGuard VPN for setup. Use with caution and back up data, as it may cause device instability.",
-      "bundleID": "com.leemin.helium",
+      "bundleID": "com.lunginspector.nuggetrevamped",
       "icon": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Tender/icon.png",
       "dev": "lunginspector, leminlimez",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Tender/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Tender/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Tender/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Tender/screenshots/IMG_4.png"
+      ],
       "enableBackup": true
     },
     {
@@ -375,6 +406,9 @@
       "bundleID": "com.huami.TrollFools",
       "icon": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/TrollInstallerX/icon.png",
       "dev": "huami1314",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/TrollInstallerX/screenshots/IMG_1.png"
+      ],
       "enableBackup": true
     },
     {
@@ -386,6 +420,12 @@
       "bundleID": "wiki.qaq.trapp",
       "icon": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
       "dev": "Lessica",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/TrollRecorder/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/TrollRecorder/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/TrollRecorder/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/TrollRecorder/screenshots/IMG_4.png"
+      ],
       "enableBackup": true
     },
     {

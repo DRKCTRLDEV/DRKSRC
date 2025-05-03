@@ -9,7 +9,12 @@
     "description": "TrollRecorder features a convenient HUD Control for managing recordings with a floating ball on your screen, along with Advanced Search capabilities to quickly find calls using comprehensive filters. It ensures security with Biometric Security through Face ID and Touch ID, and tracks locations with Location Metadata for each recording. Enjoy seamless operation with System Audio Integration using Apple's Core Audio technology, and benefit from Precise Time Coding for accurate time stamps on every audio channel.",
     "category": "utilities",
     "icon": "",
-    "screenshots": [],
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/TrollRecorder/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/TrollRecorder/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/TrollRecorder/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/TrollRecorder/screenshots/IMG_4.png"
+    ],
     "versions": [
         {
             "version": "3.4.614",

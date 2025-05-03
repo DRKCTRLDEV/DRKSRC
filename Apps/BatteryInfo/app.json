@@ -9,7 +9,12 @@
     "description": "BatteryInfo is an iOS TrollStore application designed to monitor and record detailed battery information. It provides users with insights into battery health, usage, and performance metrics, leveraging native iOS capabilities for accurate data collection.",
     "category": "utilities",
     "icon": "",
-    "screenshots": [],
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/BatteryInfo/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/BatteryInfo/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/BatteryInfo/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/BatteryInfo/screenshots/IMG_4.png"
+    ],
     "versions": [
         {
             "version": "1.1.8",

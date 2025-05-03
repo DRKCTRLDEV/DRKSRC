@@ -8,7 +8,7 @@
 </div>
 <div align='center'>
 
-[![Add to ESign](https://img.shields.io/badge/Add%20to%20ESign-1e90ff?style=for-the-badge)](https://fwuf.in/#/esign://addsource?url=https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/trollstore.json)[![Add to AltStore](https://img.shields.io/badge/Add%20to%20AltStore-0048ba?style=for-the-badge)](https://fwuf.in/#/altstore://add?url=https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/altstore.json)[![Add to TrollApps](https://img.shields.io/badge/Add%20to%20TrollApps-B85CFD?style=for-the-badge)](https://fwuf.in/#/trollapps://add?url=https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/trollapps.json)[![Add to Scarlet](https://img.shields.io/badge/Add%20to%20Scarlet-ff0000?style=for-the-badge)](https://fwuf.in/#/scarlet://repo=https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/scarlet.json)
+[![Add to AltStore](https://img.shields.io/badge/Add%20to%20AltStore-0048ba?style=for-the-badge)](https://fwuf.in/#/altstore://add?url=https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/altstore.json)[![Add to TrollApps](https://img.shields.io/badge/Add%20to%20TrollApps-B85CFD?style=for-the-badge)](https://fwuf.in/#/trollapps://add?url=https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/trollapps.json)[![Add to Scarlet](https://img.shields.io/badge/Add%20to%20Scarlet-ff0000?style=for-the-badge)](https://fwuf.in/#/scarlet://repo=https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/scarlet.json)
 </div>
 
 >*Work In Progress*

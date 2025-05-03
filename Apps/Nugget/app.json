@@ -9,7 +9,12 @@
     "description": "Unlock your device's full potential on iOS 16.0 through 18.1 beta 4, with partial support for iOS 18.1 beta 5-6. Note: Does not work on iOS 18.1 beta 7 or newer - use PC version instead. Requires .mobiledevicepairing file and wireguard. Uses sparserestore exploit to write to files outside intended restore location, like mobilegestalt. CAUTION: Back up your data before using. Developer not responsible for bootloops or other issues.",
     "category": "utilities",
     "icon": "",
-    "screenshots": [],
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Nugget/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Nugget/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Nugget/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Nugget/screenshots/IMG_4.png"
+    ],
     "versions": [
         {
             "version": "2.0.1",

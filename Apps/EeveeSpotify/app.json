@@ -9,7 +9,12 @@
     "description": "EeveeSpotify is an open-source iOS tweak that unlocks Spotify Premium features, including ad-free listening and unlimited skips, by intercepting and modifying user data in real-time. It supports lyrics from providers like Genius and Musixmatch but cannot enable offline downloads due to server-side limitations.",
     "category": "utilities",
     "icon": "",
-    "screenshots": [],
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EeveeSpotify/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EeveeSpotify/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EeveeSpotify/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EeveeSpotify/screenshots/IMG_4.png"
+    ],
     "versions": [
         {
             "version": "5.9.6",

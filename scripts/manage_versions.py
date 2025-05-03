@@ -223,7 +223,7 @@ def int_or_float_to_int(value: str) -> int:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Manage app versions")
     parser.add_argument("action", choices=["update", "remove"], help="Action to perform")
-    parser.add_argument("--keep", type=int_or_float_to_int, default=5, help="Number of versions to keep")
+    parser.add_argument("--keep", type=int_or_float_to_int, default=10, help="Number of versions to keep")
     parser.add_argument("--apps", type=str, help="Comma-separated list of app names")
     args = parser.parse_args()
 

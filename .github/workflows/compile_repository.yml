@@ -5,16 +5,21 @@ on:
     - cron: '10 23 * * *'  # 23:10 GMT = 00:10 BST
   workflow_dispatch:
     inputs:
-      format:
-        description: 'Format to compile (all, altstore, trollapps, scarlet)'
+      altstore:
+        description: 'Compile AltStore format'
         required: false
-        default: 'all'
-        type: choice
-        options:
-          - all
-          - altstore
-          - trollapps
-          - scarlet
+        type: boolean
+        default: true
+      trollapps:
+        description: 'Compile TrollApps format'
+        required: false
+        type: boolean
+        default: true
+      scarlet:
+        description: 'Compile Scarlet format'
+        required: false
+        type: boolean
+        default: true
 
 jobs:
   compile-repo:
@@ -47,9 +52,16 @@ jobs:
 
       - name: Compile Repository Files
         run: |
-          FORMAT="${{ inputs.format || 'all' }}"
           ARGS=""
-          if [ "$FORMAT" != "all" ]; then ARGS="-f $FORMAT"; fi
+          if [ "${{ inputs.altstore }}" = "true" ]; then ARGS="$ARGS -f altstore"; fi
+          if [ "${{ inputs.trollapps }}" = "true" ]; then ARGS="$ARGS -f trollapps"; fi
+          if [ "${{ inputs.scarlet }}" = "true" ]; then ARGS="$ARGS -f scarlet"; fi
+          
+          # If no formats selected, compile all
+          if [ -z "$ARGS" ]; then
+            ARGS="-f altstore -f trollapps -f scarlet"
+          fi
+          
           echo "Running: python3 scripts/compile_repository.py $ARGS"
           python3 scripts/compile_repository.py $ARGS || exit 1
 
@@ -59,7 +71,7 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add *.json || echo "No JSON files to add"
-          git commit -m "chore: Update repository files (${{ inputs.format || 'all' }})" || echo "No changes to commit"
+          git commit -m "chore: Update repository files" || echo "No changes to commit"
           git push || echo "Push failed - likely no changes"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

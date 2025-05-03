@@ -147,7 +147,12 @@
           "size": 138447
         }
       ],
-      "screenshotURLs": [],
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/BatteryInfo/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/BatteryInfo/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/BatteryInfo/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/BatteryInfo/screenshots/IMG_4.png"
+      ],
       "appPermissions": {}
     },
     {
@@ -392,7 +397,12 @@
           "size": 84754262
         }
       ],
-      "screenshotURLs": [],
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EeveeSpotify/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EeveeSpotify/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EeveeSpotify/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EeveeSpotify/screenshots/IMG_4.png"
+      ],
       "appPermissions": {}
     },
     {
@@ -447,7 +457,8 @@
         }
       ],
       "screenshotURLs": [
-        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EnableQUIC/screenshots/IMG_1.png"
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EnableQUIC/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EnableQUIC/screenshots/IMG_2.png"
       ],
       "appPermissions": {}
     },
@@ -769,34 +780,6 @@
       "appPermissions": {}
     },
     {
-      "name": "NXBoot",
-      "bundleIdentifier": "com.mologie.NXBoot",
-      "developerName": "mologie",
-      "subtitle": "Nintendo Switch Payload Injector",
-      "localizedDescription": "NXBoot is a powerful utility for Nintendo Switch enthusiasts, allowing users to inject custom payloads into their Switch consoles. It supports various firmware versions and offers an intuitive interface for managing and launching payloads.",
-      "iconURL": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
-      "versions": [
-        {
-          "version": "0.3.2",
-          "date": "2024-08-31",
-          "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa",
-          "size": 1045270
-        },
-        {
-          "version": "0.3.1",
-          "date": "2024-08-30",
-          "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.1/NXBoot_0.3.1-1.tipa",
-          "size": 1043645
-        }
-      ],
-      "screenshotURLs": [
-        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/NXBoot/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/NXBoot/screenshots/IMG_2.png",
-        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/NXBoot/screenshots/IMG_3.png"
-      ],
-      "appPermissions": {}
-    },
-    {
       "name": "Nugget",
       "bundleIdentifier": "com.leemin.nugget",
       "developerName": "leminlimez",
@@ -829,7 +812,40 @@
           "size": 7741677
         }
       ],
-      "screenshotURLs": [],
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Nugget/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Nugget/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Nugget/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Nugget/screenshots/IMG_4.png"
+      ],
+      "appPermissions": {}
+    },
+    {
+      "name": "NXBoot",
+      "bundleIdentifier": "com.mologie.NXBoot",
+      "developerName": "mologie",
+      "subtitle": "Nintendo Switch Payload Injector",
+      "localizedDescription": "NXBoot is a powerful utility for Nintendo Switch enthusiasts, allowing users to inject custom payloads into their Switch consoles. It supports various firmware versions and offers an intuitive interface for managing and launching payloads.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
+      "versions": [
+        {
+          "version": "0.3.2",
+          "date": "2024-08-31",
+          "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa",
+          "size": 1045270
+        },
+        {
+          "version": "0.3.1",
+          "date": "2024-08-30",
+          "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.1/NXBoot_0.3.1-1.tipa",
+          "size": 1043645
+        }
+      ],
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/NXBoot/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/NXBoot/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/NXBoot/screenshots/IMG_3.png"
+      ],
       "appPermissions": {}
     },
     {
@@ -1055,7 +1071,12 @@
           "size": 1566157
         }
       ],
-      "screenshotURLs": [],
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Reveil/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Reveil/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Reveil/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Reveil/screenshots/IMG_4.png"
+      ],
       "appPermissions": {}
     },
     {
@@ -1078,7 +1099,7 @@
     },
     {
       "name": "Tender",
-      "bundleIdentifier": "com.leemin.helium",
+      "bundleIdentifier": "com.lunginspector.nuggetrevamped",
       "developerName": "lunginspector, leminlimez",
       "subtitle": "On-Device iOS Customization Unleashed",
       "localizedDescription": "Tender(/Nugget-Mobile-Revamped) is an advanced iOS application that leverages the SparseRestore exploit to enable on-device system customizations without a jailbreak. Compatible with iOS 16.0 to 18.1.1, it allows users to tweak features like Dynamic Island, Status Bar, and SpringBoard options. Ideal for power users, it requires a .mobiledevicepairing file and WireGuard VPN for setup. Use with caution and back up data, as it may cause device instability.",
@@ -1109,7 +1130,12 @@
           "size": 7670226
         }
       ],
-      "screenshotURLs": [],
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Tender/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Tender/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Tender/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Tender/screenshots/IMG_4.png"
+      ],
       "appPermissions": {}
     },
     {
@@ -1381,7 +1407,9 @@
           "size": 6885899
         }
       ],
-      "screenshotURLs": [],
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/TrollInstallerX/screenshots/IMG_1.png"
+      ],
       "appPermissions": {}
     },
     {
@@ -1453,7 +1481,12 @@
           "size": 5312133
         }
       ],
-      "screenshotURLs": [],
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/TrollRecorder/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/TrollRecorder/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/TrollRecorder/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/TrollRecorder/screenshots/IMG_4.png"
+      ],
       "appPermissions": {}
     },
     {

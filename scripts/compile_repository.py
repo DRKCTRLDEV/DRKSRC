@@ -103,16 +103,24 @@ class RepoCompiler:
             'scarlet': (self.output_dir / CONFIG["OUTPUT_FILES"]["scarlet"], self._format_scarlet)
         }
 
-        target_fmt = target_fmt.lower() if target_fmt else None
-        if target_fmt and target_fmt in formats:
+        # Handle single format
+        if target_fmt:
+            target_fmt = target_fmt.lower()
+            if target_fmt not in formats:
+                return {'success': False, 'error': f'Invalid format: {target_fmt}'}
             formats = {target_fmt: formats[target_fmt]}
-        elif target_fmt:
-            return {'success': False, 'error': f'Invalid format: {target_fmt}'}
 
+        # Compile each selected format
         for fmt, (path, formatter) in formats.items():
-            repo_data = formatter(repo_config, apps, featured) if fmt != 'scarlet' else formatter(repo_config, apps)
-            if not self.save_config(path, repo_data):
-                return {'success': False, 'error': f'Failed to save {path.name}'}
+            self.logger.info(f"Compiling {fmt} format...")
+            try:
+                repo_data = formatter(repo_config, apps, featured) if fmt != 'scarlet' else formatter(repo_config, apps)
+                if not self.save_config(path, repo_data):
+                    return {'success': False, 'error': f'Failed to save {path.name}'}
+                self.logger.info(f"Successfully compiled {fmt} format")
+            except Exception as e:
+                self.logger.error(f"Error compiling {fmt} format: {str(e)}")
+                return {'success': False, 'error': f'Error compiling {fmt} format: {str(e)}'}
 
         self.logger.info("Compilation completed")
         return {'success': True}
@@ -214,14 +222,23 @@ class RepoCompiler:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('-f', '--format', type=str, choices=['altstore', 'trollapps', 'scarlet'])
-    parser.add_argument('-v', '--verbose', action='store_true')
+    parser.add_argument('-f', '--format', type=str, choices=['altstore', 'trollapps', 'scarlet'], 
+                       action='append', help='Format to compile (can be specified multiple times)')
+    parser.add_argument('-v', '--verbose', action='store_true', help='Enable verbose output')
     args = parser.parse_args()
 
     compiler = RepoCompiler()
-    result = compiler.compile_repos(args.format, args.verbose)
+    # If no formats specified, compile all formats
+    if not args.format:
+        args.format = ['altstore', 'trollapps', 'scarlet']
+    
+    # Compile each specified format
+    for fmt in args.format:
+        result = compiler.compile_repos(fmt, args.verbose)
+        if not result['success']:
+            logger = configure_logging(args.verbose)
+            logger.error(f"Compilation Failed for {fmt}: {result['error']}")
+            sys.exit(1)
+    
     logger = configure_logging(args.verbose)
-    if not result['success']:
-        logger.error(f"Compilation Failed: {result['error']}")
-        sys.exit(1)
     logger.info("Compilation Completed")
