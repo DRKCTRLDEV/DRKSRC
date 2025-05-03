@@ -458,8 +458,7 @@
         }
       ],
       "screenshots": [
-        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EnableQUIC/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EnableQUIC/screenshots/IMG_2.png"
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EnableQUIC/screenshots/IMG_1.png"
       ]
     },
     {
@@ -780,6 +779,34 @@
       ]
     },
     {
+      "name": "NXBoot",
+      "bundleIdentifier": "com.mologie.NXBoot",
+      "developerName": "mologie",
+      "subtitle": "Nintendo Switch Payload Injector",
+      "localizedDescription": "NXBoot is a powerful utility for Nintendo Switch enthusiasts, allowing users to inject custom payloads into their Switch consoles. It supports various firmware versions and offers an intuitive interface for managing and launching payloads.",
+      "iconURL": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "0.3.2",
+          "date": "2024-08-31",
+          "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa",
+          "size": 1045270
+        },
+        {
+          "version": "0.3.1",
+          "date": "2024-08-30",
+          "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.1/NXBoot_0.3.1-1.tipa",
+          "size": 1043645
+        }
+      ],
+      "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/NXBoot/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/NXBoot/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/NXBoot/screenshots/IMG_3.png"
+      ]
+    },
+    {
       "name": "Nugget",
       "bundleIdentifier": "com.leemin.nugget",
       "developerName": "leminlimez",
@@ -818,34 +845,6 @@
         "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Nugget/screenshots/IMG_2.png",
         "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Nugget/screenshots/IMG_3.png",
         "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/Nugget/screenshots/IMG_4.png"
-      ]
-    },
-    {
-      "name": "NXBoot",
-      "bundleIdentifier": "com.mologie.NXBoot",
-      "developerName": "mologie",
-      "subtitle": "Nintendo Switch Payload Injector",
-      "localizedDescription": "NXBoot is a powerful utility for Nintendo Switch enthusiasts, allowing users to inject custom payloads into their Switch consoles. It supports various firmware versions and offers an intuitive interface for managing and launching payloads.",
-      "iconURL": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
-      "category": "utilities",
-      "versions": [
-        {
-          "version": "0.3.2",
-          "date": "2024-08-31",
-          "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.2/NXBoot_0.3.2-1.tipa",
-          "size": 1045270
-        },
-        {
-          "version": "0.3.1",
-          "date": "2024-08-30",
-          "downloadURL": "https://github.com/mologie/nxboot/releases/download/v0.3.1/NXBoot_0.3.1-1.tipa",
-          "size": 1043645
-        }
-      ],
-      "screenshots": [
-        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/NXBoot/screenshots/IMG_1.png",
-        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/NXBoot/screenshots/IMG_2.png",
-        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/NXBoot/screenshots/IMG_3.png"
       ]
     },
     {
