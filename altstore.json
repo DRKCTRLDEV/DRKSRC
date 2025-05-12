@@ -7,11 +7,11 @@
   "website": "https://github.com/DRKCTRLDEV/DRKSRC",
   "tintColor": "#9966CC",
   "featuredApps": [
+    "com.mologie.NXBoot",
     "com.82flex.Reveil",
-    "com.kdt.frontboardapplauncher",
-    "wiki.qaq.trapp",
-    "com.huami.TrollFools",
-    "com.lunginspector.nuggetrevamped"
+    "com.kdt.CAPerfHUD",
+    "com.developlab.EnableQUIC",
+    "com.kdt.frontboardapplauncher"
   ],
   "apps": [
     {
