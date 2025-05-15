@@ -104,8 +104,8 @@
     },
     {
       "name": "EeveeSpotify",
-      "version": "5.9.6",
-      "down": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.6/EeveeSpotify-5.9.6-9.0.40.ipa",
+      "version": "5.9.7",
+      "down": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.7/EeveeSpotify-5.9.7-9.0.42.ipa",
       "category": "utilities",
       "description": "EeveeSpotify is an open-source iOS tweak that unlocks Spotify Premium features, including ad-free listening and unlimited skips, by intercepting and modifying user data in real-time. It supports lyrics from providers like Genius and Musixmatch but cannot enable offline downloads due to server-side limitations.",
       "bundleID": "com.spotify.client",
@@ -169,8 +169,8 @@
     },
     {
       "name": "FrontBoardAppLauncher",
-      "version": "1.3.0",
-      "down": "https://github.com/DRKCTRLDEV/FrontBoardAppLauncher/releases/download/1.3.0/FrontBoardAppLauncher.tipa",
+      "version": "0.0.1",
+      "down": "https://github.com/khanhduytran0/FrontBoardAppLauncher/releases/download/0.0.1/com.kdt.frontboardapplauncher_0.0.1.tipa",
       "category": "utilities",
       "description": "FrontBoardAppLauncher is a utility that allows you to launch apps using FrontBoard on iOS devices. It provides a simple interface to interact with the FrontBoard framework for app management.",
       "bundleID": "com.kdt.frontboardapplauncher",

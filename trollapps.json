@@ -337,6 +337,12 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
       "versions": [
         {
+          "version": "5.9.7",
+          "date": "2025-05-15",
+          "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.7/EeveeSpotify-5.9.7-9.0.42.ipa",
+          "size": 85016193
+        },
+        {
           "version": "5.9.6",
           "date": "2025-05-02",
           "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.6/EeveeSpotify-5.9.6-9.0.40.ipa",
@@ -389,12 +395,6 @@
           "date": "2025-03-19",
           "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9/EeveeSpotify-5.9-9.0.28.ipa",
           "size": 84520487
-        },
-        {
-          "version": "5.8.8",
-          "date": "2025-03-04",
-          "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.8.8/EeveeSpotify-5.8.8-9.0.26%2Bdebug.ipa",
-          "size": 84754262
         }
       ],
       "screenshotURLs": [
@@ -539,6 +539,12 @@
       "localizedDescription": "FrontBoardAppLauncher is a utility that allows you to launch apps using FrontBoard on iOS devices. It provides a simple interface to interact with the FrontBoard framework for app management.",
       "iconURL": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
       "versions": [
+        {
+          "version": "0.0.1",
+          "date": "2025-05-15",
+          "downloadURL": "https://github.com/khanhduytran0/FrontBoardAppLauncher/releases/download/0.0.1/com.kdt.frontboardapplauncher_0.0.1.tipa",
+          "size": 28649
+        },
         {
           "version": "1.3.0",
           "date": "2024-11-17",
