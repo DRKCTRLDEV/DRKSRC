@@ -17,6 +17,12 @@
     ],
     "versions": [
         {
+            "version": "5.9.7",
+            "date": "2025-05-15",
+            "size": 85016193,
+            "url": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.7/EeveeSpotify-5.9.7-9.0.42.ipa"
+        },
+        {
             "version": "5.9.6",
             "date": "2025-05-02",
             "size": 84760324,
@@ -69,12 +75,6 @@
             "date": "2025-03-19",
             "size": 84520487,
             "url": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9/EeveeSpotify-5.9-9.0.28.ipa"
-        },
-        {
-            "version": "5.8.8",
-            "date": "2025-03-04",
-            "size": 84754262,
-            "url": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.8.8/EeveeSpotify-5.8.8-9.0.26%2Bdebug.ipa"
         }
     ],
     "scarletDebs": [],
