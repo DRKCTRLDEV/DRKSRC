@@ -40,8 +40,8 @@
     },
     {
       "name": "BatteryInfo",
-      "version": "1.1.8",
-      "down": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.1.8/BatteryInfo_1.1.8.tipa",
+      "version": "1.2.0",
+      "down": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.2.0/com.developlab.batteryinfo_1.2.0.tipa",
       "category": "utilities",
       "description": "BatteryInfo is an iOS TrollStore application designed to monitor and record detailed battery information. It provides users with insights into battery health, usage, and performance metrics, leveraging native iOS capabilities for accurate data collection.",
       "bundleID": "com.developlab.BatteryInfo",
