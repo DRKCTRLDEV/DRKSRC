@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="static/assets/DRKSRC (Header)(Pink).png" alt="DRKSRC" width="384">
+<img src="static/assets/DRKSRC (Header).png" alt="DRKSRC">
 </h1>
 
 <div align="center">
