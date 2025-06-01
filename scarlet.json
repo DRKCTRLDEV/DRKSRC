@@ -412,8 +412,8 @@
     },
     {
       "name": "TrollRecorder",
-      "version": "3.5.2.3219",
-      "down": "https://github.com/Lessica/TrollRecorder/releases/download/v3.5.2-3219/TRApp_3.5.2-3219.tipa",
+      "version": "3.5.3.3236",
+      "down": "https://github.com/Lessica/TrollRecorder/releases/download/v3.5.3-3236/TRApp_3.5.3-3236.tipa",
       "category": "utilities",
       "description": "TrollRecorder features a convenient HUD Control for managing recordings with a floating ball on your screen, along with Advanced Search capabilities to quickly find calls using comprehensive filters. It ensures security with Biometric Security through Face ID and Touch ID, and tracks locations with Location Metadata for each recording. Enjoy seamless operation with System Audio Integration using Apple's Core Audio technology, and benefit from Precise Time Coding for accurate time stamps on every audio channel.",
       "bundleID": "wiki.qaq.trapp",
