@@ -7,11 +7,11 @@
   "website": "https://github.com/DRKCTRLDEV/DRKSRC",
   "tintColor": "#9966CC",
   "featuredApps": [
-    "com.nsantoine.santander",
-    "ca.bomberfish.AppCommander",
     "com.roothide.Bootstrap",
-    "com.sparklechan.swifty",
-    "com.leminlimez.cowabunga"
+    "com.mologie.NXBoot",
+    "live.cclerc.trollbox",
+    "com.kdt.frontboardapplauncher",
+    "com.developlab.EnableQUIC"
   ],
   "apps": [
     {
