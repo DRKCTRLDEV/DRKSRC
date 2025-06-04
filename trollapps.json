@@ -87,6 +87,12 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
       "versions": [
         {
+          "version": "1.2.1",
+          "date": "2025-06-04",
+          "downloadURL": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.2.1/com.developlab.batteryinfo_1.2.1.tipa",
+          "size": 327340
+        },
+        {
           "version": "1.2.0",
           "date": "2025-05-16",
           "downloadURL": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.2.0/com.developlab.batteryinfo_1.2.0.tipa",
@@ -139,12 +145,6 @@
           "date": "2025-02-19",
           "downloadURL": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.1.2/BatteryInfo_1.1.2.tipa",
           "size": 148011
-        },
-        {
-          "version": "1.1.1",
-          "date": "2025-02-17",
-          "downloadURL": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.1.1/BatteryInfo_1.1.1.tipa",
-          "size": 145796
         }
       ],
       "screenshotURLs": [
@@ -343,6 +343,12 @@
           "size": 83888442
         },
         {
+          "version": "5.9.9",
+          "date": "2025-05-31",
+          "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.9/EeveeSpotify-5.9.9-9.0.50.ipa",
+          "size": 83866412
+        },
+        {
           "version": "5.9.8",
           "date": "2025-05-27",
           "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.8/EeveeSpotify-5.9.8-9.0.46.ipa",
@@ -389,12 +395,6 @@
           "date": "2025-04-03",
           "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.2/EeveeSpotify-5.9.2-9.0.32%2Bdebug.ipa",
           "size": 84045326
-        },
-        {
-          "version": "5.9.2",
-          "date": "2025-04-03",
-          "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.2/EeveeSpotify-5.9.2-9.0.32.ipa",
-          "size": 83488729
         }
       ],
       "screenshotURLs": [
