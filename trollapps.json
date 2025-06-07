@@ -1016,6 +1016,12 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
       "versions": [
         {
+          "version": "3.3.2-415",
+          "date": "2025-06-07",
+          "downloadURL": "https://github.com/Lessica/Reveil/releases/download/v3.3.2-415/Reveil_3.3.2.tipa",
+          "size": 3297177
+        },
+        {
           "version": "2.0.6",
           "date": "2024-03-07",
           "downloadURL": "https://github.com/Lessica/Reveil/releases/download/v2.0.6/Reveil_2.0.6.tipa",
@@ -1068,12 +1074,6 @@
           "date": "2024-01-13",
           "downloadURL": "https://github.com/Lessica/Reveil/releases/download/v1.2.9/Reveil_1.2.9.tipa",
           "size": 1576899
-        },
-        {
-          "version": "1.2.5",
-          "date": "2024-01-01",
-          "downloadURL": "https://github.com/Lessica/Reveil/releases/download/v1.2.5/Reveil_1.2.5.tipa",
-          "size": 1566157
         }
       ],
       "screenshotURLs": [

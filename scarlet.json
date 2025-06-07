@@ -303,8 +303,8 @@
     },
     {
       "name": "Reveil",
-      "version": "2.0.6",
-      "down": "https://github.com/Lessica/Reveil/releases/download/v2.0.6/Reveil_2.0.6.tipa",
+      "version": "3.3.2-415",
+      "down": "https://github.com/Lessica/Reveil/releases/download/v3.3.2-415/Reveil_3.3.2.tipa",
       "category": "utilities",
       "description": "Reveil is an open-source tool designed to provide state-of-the-art system and security analysis for iOS applications. Utilizing innovative techniques, it detects software modifications and security threats within the application sandbox, offering insights into CPU, memory, storage, and network usage while respecting sandbox limitations.",
       "bundleID": "com.82flex.Reveil",
