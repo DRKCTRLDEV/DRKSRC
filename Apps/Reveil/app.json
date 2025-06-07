@@ -17,6 +17,12 @@
     ],
     "versions": [
         {
+            "version": "3.3.2-415",
+            "date": "2025-06-07",
+            "size": 3297177,
+            "url": "https://github.com/Lessica/Reveil/releases/download/v3.3.2-415/Reveil_3.3.2.tipa"
+        },
+        {
             "version": "2.0.6",
             "date": "2024-03-07",
             "size": 1618997,
@@ -69,12 +75,6 @@
             "date": "2024-01-13",
             "size": 1576899,
             "url": "https://github.com/Lessica/Reveil/releases/download/v1.2.9/Reveil_1.2.9.tipa"
-        },
-        {
-            "version": "1.2.5",
-            "date": "2024-01-01",
-            "size": 1566157,
-            "url": "https://github.com/Lessica/Reveil/releases/download/v1.2.5/Reveil_1.2.5.tipa"
         }
     ],
     "scarletDebs": [],
