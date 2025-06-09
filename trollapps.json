@@ -7,11 +7,11 @@
   "website": "https://github.com/DRKCTRLDEV/DRKSRC",
   "tintColor": "#9966CC",
   "featuredApps": [
-    "com.roothide.Bootstrap",
-    "com.mologie.NXBoot",
-    "live.cclerc.trollbox",
-    "com.kdt.frontboardapplauncher",
-    "com.developlab.EnableQUIC"
+    "com.straight-tamago.uiharux-pro",
+    "com.serena.AppIndex",
+    "com.developlab.EnableQUIC",
+    "live.cclerc.geranium",
+    "com.roothide.Bootstrap"
   ],
   "apps": [
     {
@@ -1438,6 +1438,12 @@
           "size": 15346832
         },
         {
+          "version": "3.5.3.3261",
+          "date": "2025-06-01",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v3.5.3-3261/TRApp_3.5.3-3261.tipa",
+          "size": 15391717
+        },
+        {
           "version": "3.5.2.3219",
           "date": "2025-05-21",
           "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v3.5.2-3219/TRApp_3.5.2-3219.tipa",
@@ -1478,12 +1484,6 @@
           "date": "2025-03-11",
           "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v3.3-613/TRApp_3.3-613.tipa",
           "size": 15074866
-        },
-        {
-          "version": "3.2.609",
-          "date": "2025-02-22",
-          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v3.2-609/TRApp_3.2-609.tipa",
-          "size": 15067536
         }
       ],
       "screenshotURLs": [
