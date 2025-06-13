@@ -35,6 +35,12 @@
             "url": "https://github.com/Lessica/TrollRecorder/releases/download/v3.5.3-3261/TRApp_3.5.3-3261.tipa"
         },
         {
+            "version": "3.5.3.3270",
+            "date": "2025-06-01",
+            "size": 15390989,
+            "url": "https://github.com/Lessica/TrollRecorder/releases/download/v3.5.3-3270/TRApp_3.5.3-3270.tipa"
+        },
+        {
             "version": "3.5.2.3219",
             "date": "2025-05-21",
             "size": 15236779,
@@ -69,12 +75,6 @@
             "date": "2025-04-15",
             "size": 15076216,
             "url": "https://github.com/Lessica/TrollRecorder/releases/download/v3.4-614/TRApp_3.4-614.tipa"
-        },
-        {
-            "version": "3.3.613",
-            "date": "2025-03-11",
-            "size": 15074866,
-            "url": "https://github.com/Lessica/TrollRecorder/releases/download/v3.3-613/TRApp_3.3-613.tipa"
         }
     ],
     "scarletDebs": [],
