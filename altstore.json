@@ -717,6 +717,12 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "3.5.0",
+          "date": "2025-06-15",
+          "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/3.5.0/LiveContainer.ipa",
+          "size": 2928946
+        },
+        {
           "version": "3.4.0",
           "date": "2025-04-20",
           "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/3.4.0/LiveContainer.ipa",
@@ -769,12 +775,6 @@
           "date": "2024-12-16",
           "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.1.0/com.kdt.livecontainer_3.1.0.ipa",
           "size": 2899038
-        },
-        {
-          "version": "3.0.0",
-          "date": "2024-12-16",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.0.0/com.kdt.livecontainer_3.0.0.ipa",
-          "size": 905495
         }
       ],
       "screenshots": [
