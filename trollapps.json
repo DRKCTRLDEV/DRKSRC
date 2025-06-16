@@ -7,11 +7,11 @@
   "website": "https://github.com/DRKCTRLDEV/DRKSRC",
   "tintColor": "#9966CC",
   "featuredApps": [
+    "wiki.qaq.TrollFools",
+    "com.sparklechan.swifty",
     "com.straight-tamago.uiharux-pro",
-    "com.serena.AppIndex",
-    "com.developlab.EnableQUIC",
-    "live.cclerc.geranium",
-    "com.roothide.Bootstrap"
+    "com.spotify.client",
+    "uwu.lrdsnow.purepkg"
   ],
   "apps": [
     {
@@ -716,6 +716,12 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/LiveContainer/icon.png",
       "versions": [
         {
+          "version": "3.5.1",
+          "date": "2025-06-16",
+          "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/3.5.1/LiveContainer.ipa",
+          "size": 2928772
+        },
+        {
           "version": "3.5.0",
           "date": "2025-06-15",
           "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/3.5.0/LiveContainer.ipa",
@@ -768,12 +774,6 @@
           "date": "2025-01-15",
           "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/3.2.0/com.kdt.livecontainer_3.2.0.ipa",
           "size": 2962233
-        },
-        {
-          "version": "3.1.0",
-          "date": "2024-12-16",
-          "downloadURL": "https://github.com/khanhduytran0/LiveContainer/releases/download/3.1.0/com.kdt.livecontainer_3.1.0.ipa",
-          "size": 2899038
         }
       ],
       "screenshotURLs": [
