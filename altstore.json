@@ -518,9 +518,21 @@
           "size": 66806491
         },
         {
+          "version": "1.6",
+          "date": "2024-10-22",
+          "downloadURL": "https://github.com/cr4zyengineer/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa",
+          "size": 70613655
+        },
+        {
           "version": "1.5.5",
           "date": "2024-10-14",
           "downloadURL": "https://github.com/seanistethered/FridaCodeManager/releases/download/v1.5.5/FridaCodeManager.tipa",
+          "size": 108290634
+        },
+        {
+          "version": "1.5.5",
+          "date": "2024-10-14",
+          "downloadURL": "https://github.com/cr4zyengineer/FridaCodeManager/releases/download/v1.5.5/FridaCodeManager.tipa",
           "size": 108290634
         }
       ],
