@@ -337,6 +337,12 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
       "versions": [
         {
+          "version": "6.0",
+          "date": "2025-06-20",
+          "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift6.0/EeveeSpotify-6.0-9.0.52.ipa",
+          "size": 84187021
+        },
+        {
           "version": "5.9.9",
           "date": "2025-05-31",
           "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.9/EeveeSpotify-5.9.9-9.0.48.ipa",
@@ -389,12 +395,6 @@
           "date": "2025-04-15",
           "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.3/EeveeSpotify-5.9.3-9.0.32.ipa",
           "size": 83488702
-        },
-        {
-          "version": "5.9.2",
-          "date": "2025-04-03",
-          "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.2/EeveeSpotify-5.9.2-9.0.32%2Bdebug.ipa",
-          "size": 84045326
         }
       ],
       "screenshotURLs": [
@@ -521,6 +521,12 @@
           "date": "2024-10-22",
           "downloadURL": "https://github.com/cr4zyengineer/FridaCodeManager/releases/download/v1.6/FridaCodeManager-trollstore.tipa",
           "size": 70613655
+        },
+        {
+          "version": "1.6",
+          "date": "2024-10-22",
+          "downloadURL": "https://github.com/cr4zyengineer/FridaCodeManager/releases/download/v1.6/FridaCodeManager-stock-alpha.ipa",
+          "size": 66806491
         },
         {
           "version": "1.5.5",
