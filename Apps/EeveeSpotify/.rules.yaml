@@ -1,0 +1,12 @@
+exclude_patterns:
+excluded_extensions:
+- .zip
+- .tar.gz
+- .deb
+preferred_extensions:
+- .tipa
+- .ipa
+remove_chars:
+- "swift"
+replace_chars:
+strip_v_prefix: true

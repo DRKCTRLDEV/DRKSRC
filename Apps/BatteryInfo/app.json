@@ -1,0 +1,82 @@
+{
+    "gitURLs": [
+        "https://github.com/DevelopCubeLab/BatteryInfo"
+    ],
+    "name": "BatteryInfo",
+    "bundleID": "com.developlab.BatteryInfo",
+    "devName": "DevelopCubeLab",
+    "subtitle": "Battery Monitoring Utility",
+    "description": "BatteryInfo is an iOS TrollStore application designed to monitor and record detailed battery information. It provides users with insights into battery health, usage, and performance metrics, leveraging native iOS capabilities for accurate data collection.",
+    "category": "utilities",
+    "icon": "",
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/BatteryInfo/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/BatteryInfo/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/BatteryInfo/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/BatteryInfo/screenshots/IMG_4.png"
+    ],
+    "versions": [
+        {
+            "version": "1.2.2",
+            "date": "2025-07-09",
+            "size": 346882,
+            "url": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.2.2/com.developlab.batteryinfo_1.2.2.tipa"
+        },
+        {
+            "version": "1.2.1",
+            "date": "2025-06-04",
+            "size": 327340,
+            "url": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.2.1/com.developlab.batteryinfo_1.2.1.tipa"
+        },
+        {
+            "version": "1.2.0",
+            "date": "2025-05-16",
+            "size": 308533,
+            "url": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.2.0/com.developlab.batteryinfo_1.2.0.tipa"
+        },
+        {
+            "version": "1.1.9",
+            "date": "2025-05-16",
+            "size": 219436,
+            "url": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.1.9/com.developlab.batteryinfo_1.1.9.tipa"
+        },
+        {
+            "version": "1.1.8",
+            "date": "2025-03-03",
+            "size": 160066,
+            "url": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.1.8/BatteryInfo_1.1.8.tipa"
+        },
+        {
+            "version": "1.1.7",
+            "date": "2025-03-02",
+            "size": 159281,
+            "url": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.1.7/BatteryInfo_1.1.7.tipa"
+        },
+        {
+            "version": "1.1.6",
+            "date": "2025-02-23",
+            "size": 159267,
+            "url": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.1.6/BatteryInfo_1.1.6.tipa"
+        },
+        {
+            "version": "1.1.5",
+            "date": "2025-02-22",
+            "size": 156903,
+            "url": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.1.5/BatteryInfo_1.1.5.tipa"
+        },
+        {
+            "version": "1.1.4",
+            "date": "2025-02-22",
+            "size": 157019,
+            "url": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.1.4/BatteryInfo_1.1.4.tipa"
+        },
+        {
+            "version": "1.1.3",
+            "date": "2025-02-22",
+            "size": 157076,
+            "url": "https://github.com/DevelopCubeLab/BatteryInfo/releases/download/1.1.3/BatteryInfo_1.1.3.tipa"
+        }
+    ],
+    "scarletDebs": [],
+    "scarletBackup": true
+}

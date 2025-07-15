@@ -1,0 +1,69 @@
+name: Manage Versions
+
+on:
+  schedule:
+    - cron: '0 23 * * *'   # 23:00 GMT = 00:00 BST
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Action (update/remove)'
+        required: true
+        type: choice
+        options:
+          - update
+          - remove
+        default: 'update'
+      app_list:
+        description: 'Comma-separated app names (leave empty for all)'
+        required: false
+        type: string
+      keep_versions:
+        description: 'Number of versions to keep'
+        required: true
+        type: number
+        default: 10
+
+jobs:
+  manage-versions:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    
+    - name: Upgrade pip
+      run: |
+        python -m pip install --upgrade pip
+
+    - name: Install dependencies
+      run: |
+        pip install requests pyyaml
+    
+    - name: Run version management
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ACTION: ${{ github.event_name == 'schedule' && 'update' || inputs.action }}
+        KEEP_VERSIONS: ${{ github.event_name == 'schedule' && 10 || inputs.keep_versions }}
+        APP_LIST: ${{ inputs.app_list }}
+      run: |
+        KEEP_VERSIONS_INT=$(printf "%.0f" "$KEEP_VERSIONS")
+        if [ -n "$APP_LIST" ]; then
+          python3 scripts/manage_versions.py "$ACTION" --keep "$KEEP_VERSIONS_INT" --apps "$APP_LIST"
+        else
+          python3 scripts/manage_versions.py "$ACTION" --keep "$KEEP_VERSIONS_INT"
+        fi
+    
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add Apps/
+        git commit -m "chore: Version $ACTION for ${{ inputs.app_list || 'all apps' }}" || echo "No changes to commit"
+        git push

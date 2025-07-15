@@ -1,0 +1,14 @@
+exclude_patterns:
+excluded_extensions:
+- .zip
+- .tar.gz
+- .deb
+preferred_extensions:
+- .tipa
+- .ipa
+remove_chars:
+- -p1
+- -beta
+- 0_publicbeta
+replace_chars:
+strip_v_prefix: true

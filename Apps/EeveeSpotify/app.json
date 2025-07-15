@@ -1,0 +1,82 @@
+{
+    "gitURLs": [
+        "https://github.com/whoeevee/EeveeSpotify/"
+    ],
+    "name": "EeveeSpotify",
+    "bundleID": "com.spotify.client",
+    "devName": "whoeevee",
+    "subtitle": "Free Spotify Premium Tweak",
+    "description": "EeveeSpotify is an open-source iOS tweak that unlocks Spotify Premium features, including ad-free listening and unlimited skips, by intercepting and modifying user data in real-time. It supports lyrics from providers like Genius and Musixmatch but cannot enable offline downloads due to server-side limitations.",
+    "category": "utilities",
+    "icon": "",
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EeveeSpotify/screenshots/IMG_1.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EeveeSpotify/screenshots/IMG_2.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EeveeSpotify/screenshots/IMG_3.png",
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/EeveeSpotify/screenshots/IMG_4.png"
+    ],
+    "versions": [
+        {
+            "version": "6.0.2",
+            "date": "2025-07-05",
+            "size": 86744126,
+            "url": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift6.0.2/EeveeSpotify-6.0.2-9.0.58-patched.ipa"
+        },
+        {
+            "version": "6.0.2",
+            "date": "2025-07-05",
+            "size": 84840587,
+            "url": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift6.0.2/EeveeSpotify-6.0.2-9.0.58.ipa"
+        },
+        {
+            "version": "6.0.1",
+            "date": "2025-06-27",
+            "size": 86587225,
+            "url": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift6.0.1/EeveeSpotify-6.0.1-9.0.56-patched.ipa"
+        },
+        {
+            "version": "6.0.1",
+            "date": "2025-06-27",
+            "size": 84686653,
+            "url": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift6.0.1/EeveeSpotify-6.0.1-9.0.56.ipa"
+        },
+        {
+            "version": "6.0",
+            "date": "2025-06-20",
+            "size": 84187021,
+            "url": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift6.0/EeveeSpotify-6.0-9.0.52.ipa"
+        },
+        {
+            "version": "5.9.9",
+            "date": "2025-05-31",
+            "size": 83888442,
+            "url": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.9/EeveeSpotify-5.9.9-9.0.48.ipa"
+        },
+        {
+            "version": "5.9.9",
+            "date": "2025-05-31",
+            "size": 83866412,
+            "url": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.9/EeveeSpotify-5.9.9-9.0.50.ipa"
+        },
+        {
+            "version": "5.9.8",
+            "date": "2025-05-27",
+            "size": 83825465,
+            "url": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.8/EeveeSpotify-5.9.8-9.0.46.ipa"
+        },
+        {
+            "version": "5.9.7",
+            "date": "2025-05-15",
+            "size": 85016193,
+            "url": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.7/EeveeSpotify-5.9.7-9.0.42.ipa"
+        },
+        {
+            "version": "5.9.7",
+            "date": "2025-05-15",
+            "size": 83573480,
+            "url": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.7/EeveeSpotify-5.9.7-9.0.44.ipa"
+        }
+    ],
+    "scarletDebs": [],
+    "scarletBackup": true
+}

@@ -1,0 +1,37 @@
+{
+    "gitURLs": [
+        "https://github.com/sourcelocation/AirTroller"
+    ],
+    "name": "AirTroller",
+    "bundleID": "net.sourceloc.AirTroller",
+    "devName": "SourceLocation",
+    "subtitle": "spam AirDrop requests on iOS devices",
+    "description": "AirTroller is an app that allows users to send multiple AirDrop requests for fun. Compatible with both jailbroken devices and those using TrollStore on iOS 14 and above.",
+    "category": "utilities",
+    "icon": "",
+    "screenshots": [
+        "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/Apps/AirTroller/screenshots/IMG_1.png"
+    ],
+    "versions": [
+        {
+            "version": "1.1.1",
+            "date": "2022-11-26",
+            "size": 782388,
+            "url": "https://github.com/sourcelocation/AirTroller/releases/download/1.1.1/AirTroller-1.1.1.tipa"
+        },
+        {
+            "version": "1.1",
+            "date": "2022-11-26",
+            "size": 782092,
+            "url": "https://github.com/sourcelocation/AirTroller/releases/download/1.1/AirTroller-1.1.tipa"
+        },
+        {
+            "version": "1.0",
+            "date": "2022-11-25",
+            "size": 812269,
+            "url": "https://github.com/sourcelocation/AirTroller/releases/download/1.0/AirTroller-1.0.tipa"
+        }
+    ],
+    "scarletDebs": [],
+    "scarletBackup": true
+}

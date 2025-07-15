@@ -1,0 +1,16 @@
+exclude_patterns:
+excluded_extensions:
+- .zip
+- .tar.gz
+- .deb
+preferred_extensions:
+- .tipa
+- .ipa
+remove_chars:
+- a5
+- a4
+- a3
+- a2
+- a1
+replace_chars:
+strip_v_prefix: true

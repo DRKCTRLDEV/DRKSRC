@@ -1,0 +1,22 @@
+exclude_patterns:
+- rc3
+- rc2
+- rc
+- b5
+- b4
+- b3
+- b2
+- b1
+- betaOSS
+- beta_landa
+- r2
+excluded_extensions:
+- .zip
+- .tar.gz
+- .deb
+preferred_extensions:
+- .tipa
+- .ipa
+remove_chars:
+replace_chars:
+strip_v_prefix: true
