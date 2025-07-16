@@ -7,11 +7,11 @@
   "website": "https://github.com/DRKCTRLDEV/DRKSRC",
   "tintColor": "#9966CC",
   "featuredApps": [
-    "ca.bomberfish.AppCommander",
-    "ch.xxtou.hudapp",
+    "com.serena.AppIndex",
     "com.mologie.NXBoot",
-    "com.lunginspector.nuggetrevamped",
-    "com.huami.TrollFools"
+    "live.cclerc.geranium",
+    "com.roothide.Bootstrap",
+    "com.lunginspector.nuggetrevamped"
   ],
   "apps": [
     {
@@ -381,6 +381,12 @@
           "size": 84840587
         },
         {
+          "version": "6.0.2",
+          "date": "2025-07-05",
+          "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift6.0.2/EeveeSpotify-6.0.2-9.0.60-patched.ipa",
+          "size": 87397965
+        },
+        {
           "version": "6.0.1",
           "date": "2025-06-27",
           "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift6.0.1/EeveeSpotify-6.0.1-9.0.56-patched.ipa",
@@ -421,12 +427,6 @@
           "date": "2025-05-15",
           "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.7/EeveeSpotify-5.9.7-9.0.42.ipa",
           "size": 85016193
-        },
-        {
-          "version": "5.9.7",
-          "date": "2025-05-15",
-          "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.7/EeveeSpotify-5.9.7-9.0.44.ipa",
-          "size": 83573480
         }
       ],
       "screenshotURLs": [
@@ -1476,6 +1476,12 @@
       "iconURL": "https://raw.githubusercontent.com/DRKCTRLDEV/DRKSRC/main/static/assets/DRKSRC (No-Icon).png",
       "versions": [
         {
+          "version": "3.5.4.3287",
+          "date": "2025-07-12",
+          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v3.5.4-3287/TRApp_3.5.4-3287.tipa",
+          "size": 15477485
+        },
+        {
           "version": "3.5.3.3236",
           "date": "2025-06-01",
           "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v3.5.3-3236/TRApp_3.5.3-3236.tipa",
@@ -1528,12 +1534,6 @@
           "date": "2025-05-13",
           "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v3.5.1-3208/TRApp_3.5.1-3208.tipa",
           "size": 15106831
-        },
-        {
-          "version": "3.5.616",
-          "date": "2025-05-09",
-          "downloadURL": "https://github.com/Lessica/TrollRecorder/releases/download/v3.5-616/TRApp_3.5-616.tipa",
-          "size": 15090462
         }
       ],
       "screenshotURLs": [
