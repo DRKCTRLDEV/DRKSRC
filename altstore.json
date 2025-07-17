@@ -388,6 +388,12 @@
           "size": 87397965
         },
         {
+          "version": "6.0.2",
+          "date": "2025-07-05",
+          "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift6.0.2/EeveeSpotify-6.0.2-9.0.60.ipa",
+          "size": 85483040
+        },
+        {
           "version": "6.0.1",
           "date": "2025-06-27",
           "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift6.0.1/EeveeSpotify-6.0.1-9.0.56-patched.ipa",
@@ -422,12 +428,6 @@
           "date": "2025-05-27",
           "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.8/EeveeSpotify-5.9.8-9.0.46.ipa",
           "size": 83825465
-        },
-        {
-          "version": "5.9.7",
-          "date": "2025-05-15",
-          "downloadURL": "https://github.com/whoeevee/EeveeSpotify/releases/download/swift5.9.7/EeveeSpotify-5.9.7-9.0.42.ipa",
-          "size": 85016193
         }
       ],
       "screenshots": [
